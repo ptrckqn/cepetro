@@ -1,7 +1,10 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import './styles.css'
 
+import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 import Splash from '../components/splash'
 
 const Container = styled.div`
@@ -14,7 +17,7 @@ const Container = styled.div`
   font-weight: 300;
 `
 
-const AboutPage = () => {
+const ResponsibilityPage = () => {
   return(
     <StaticQuery
       query={graphql`
@@ -33,10 +36,12 @@ const AboutPage = () => {
         const createHTML = () => { return {__html: data.markdownRemark.html} }
         return(
           <div>
+            <NavBar/>
             <Splash full={false} image={frontmatter.image} title={frontmatter.title}/>
             <Container>
               <div dangerouslySetInnerHTML={createHTML()}/>
             </Container>
+            <Footer/>
           </div>
         )
       }}
@@ -44,4 +49,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default ResponsibilityPage

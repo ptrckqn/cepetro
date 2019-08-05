@@ -63,6 +63,9 @@ class News extends Component{
               edges {
                 node {
                   id
+                  fields {
+                    slug
+                  }
                   frontmatter {
                     title
                     image
@@ -81,7 +84,7 @@ class News extends Component{
             return(
               <NewsContainer >
                 {posts && posts.map(({ node: post }) => (
-                  <NewsLink to={post.frontmatter.slug} key={post.id}>
+                  <NewsLink to={post.fields.slug} key={post.id}>
                     <NewsItem background={post.frontmatter.image}>
                       <p>{post.frontmatter.date}</p>
                       <h3>{post.frontmatter.title}</h3>

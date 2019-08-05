@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
+import './styles.css'
 
+import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 import News from '../components/news'
 import Splash from '../components/splash'
 
@@ -156,19 +159,23 @@ export const LandingPage = () => {
       render={ data => {
         const { frontmatter } = data.markdownRemark
         return(
-          <main>
-            <Splash full={true} title={frontmatter.title} image={frontmatter.image} heading={frontmatter.heading}/>
-            <Container>
-              <Heading>Lastest News</Heading>
-              <News short={true}/>
-            </Container>
-            <Container>
-              <AboutTemplate title={frontmatter.about.title} image={frontmatter.about.image} body={frontmatter.about.body}/>
-            </Container>
-            <Container>
-              <WorkTemplate title={frontmatter.work.title} image={frontmatter.work.image} body={frontmatter.work.body}/>
-            </Container>
-          </main>
+          <div>
+            <NavBar/>
+            <main>
+              <Splash full={true} title={frontmatter.title} image={frontmatter.image} heading={frontmatter.heading}/>
+              <Container>
+                <Heading>Lastest News</Heading>
+                <News short={true}/>
+              </Container>
+              <Container>
+                <AboutTemplate title={frontmatter.about.title} image={frontmatter.about.image} body={frontmatter.about.body}/>
+              </Container>
+              <Container>
+                <WorkTemplate title={frontmatter.work.title} image={frontmatter.work.image} body={frontmatter.work.body}/>
+              </Container>
+            </main>
+            <Footer/>
+          </div>
         )}
       }
     />

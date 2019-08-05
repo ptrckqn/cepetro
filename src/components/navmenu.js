@@ -84,14 +84,14 @@ class NavMenu extends Component{
       <Nav className={this.props.menuVisible ? 'active' : 'hidden'}>
         <NavContainer>
           <NavLinks className={this.props.menuVisible ? 'active' : 'hidden'} >
-            <NavLink><Link to='#'>Home</Link></NavLink>
-            <NavLink><Link to='#'>People</Link></NavLink>
-            <NavLink><Link to='#'>Operations</Link></NavLink>
-            <NavLink><Link to='#'>Responsibility</Link></NavLink>
+            <NavLink><Link to='/'>Home</Link></NavLink>
+            <NavLink><Link to='/about'>People</Link></NavLink>
+            <NavLink><Link to='/operations'>Operations</Link></NavLink>
+            <NavLink><Link to='/responsibility'>Responsibility</Link></NavLink>
           </NavLinks>
           <NavLinks className={this.props.menuVisible ? 'active' : 'hidden'}>
-            <NavLinkSecondary><Link to='#'>News</Link></NavLinkSecondary>
-            <NavLinkSecondary><Link to='#'>Contact</Link></NavLinkSecondary>
+            <NavLinkSecondary><Link to='/news'>News</Link></NavLinkSecondary>
+            <NavLinkSecondary><Link to='/contact'>Contact</Link></NavLinkSecondary>
           </NavLinks>
         </NavContainer>
       </Nav>

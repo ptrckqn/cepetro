@@ -1,6 +1,10 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import './styles.css'
+
+import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 
 const Container = styled.div`
   @media screen and (max-width: 767px){
@@ -69,12 +73,16 @@ const NewsPost = () => {
           const { frontmatter } = data.markdownRemark
           const createHTML = () => { return {__html: data.markdownRemark.html} }
           return(
-            <Container>
-              <Heading>{frontmatter.title}</Heading>
-              <Description>{frontmatter.description}</Description>
-              <Image src={frontmatter.image}></Image>
-              <Content dangerouslySetInnerHTML={createHTML()}/>
-            </Container>
+            <div>
+              <NavBar/>
+              <Container>
+                <Heading>{frontmatter.title}</Heading>
+                <Description>{frontmatter.description}</Description>
+                <Image src={frontmatter.image}></Image>
+                <Content dangerouslySetInnerHTML={createHTML()}/>
+              </Container>
+              <Footer/>
+            </div>
           )
         }
       }

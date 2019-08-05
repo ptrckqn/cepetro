@@ -1,7 +1,10 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import './styles.css'
 
+import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 import Splash from '../components/splash'
 
 const Container = styled.div`
@@ -67,6 +70,7 @@ const ContactPage = () => {
               phoneEn
               directEn
               faxEn
+              emailEn
               emailDe
               addressDe
               phoneDe
@@ -80,6 +84,7 @@ const ContactPage = () => {
         const { frontmatter } = data.markdownRemark
         return(
           <div>
+            <NavBar/>
             <Splash full={false} title={frontmatter.title} image={frontmatter.image}/>
             <Container>
               <GoogleMap src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.2659592814025!2d-114.08125774857608!3d51.0481767794619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fe429c134eb%3A0xe45e2d21b7e0515f!2sCentral+European+Petroleum+Ltd!5e0!3m2!1sen!2sca!4v1564940228115!5m2!1sen!2sca" frameborder="0" allowfullscreen></GoogleMap>
@@ -97,10 +102,11 @@ const ContactPage = () => {
                   <Description>{frontmatter.addressDe}</Description>
                   <Description>Phone: {frontmatter.phoneDe}</Description>
                   <Description>Fax: {frontmatter.faxDe}</Description>
-                  <Description>Email: <a href='mailto:${frontmatter.emailDe}'></a>{frontmatter.emailDe}</Description>
+                  <Description>Email: {frontmatter.emailDe}</Description>
                 </div>
               </ContactGrid>
             </Container>
+            <Footer/>
           </div>
         )
       }}

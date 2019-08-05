@@ -1,7 +1,10 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import './styles.css'
 
+import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 import Splash from '../components/splash'
 import News from '../components/news'
 
@@ -32,10 +35,12 @@ const NewsPage = () => {
         const { frontmatter } = data.markdownRemark
         return(
           <div>
+          <NavBar/>
             <Splash full={false} title={frontmatter.title} image={frontmatter.image}/>
             <Container>
               <News />
             </Container>
+            <Footer/>
           </div>
         )
       }}
