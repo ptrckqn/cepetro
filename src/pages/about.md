@@ -12,7 +12,8 @@ Central European Petroleum Ltd., registered in Alberta, Canada in 2006, and its 
 
 The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance.
 
-**Peter Putnam, P. Geol** - _Chairman & Chief Exectuive Officer, Co-Founder of CEP Ltd_
+**Peter Putnam, P. Geol**\
+_Chairman & Chief Exectuive Officer, Co-Founder of CEP Ltd_
 
 > Experience: Mr. Putnam has more than 30 years varied experience in research, operations (exploration, development, and thermal oil recovery), corporate management, strategic positioning, equity raising; and broad international experience covering 6 continents and over 30 countries. Dr. Putnam is a proven value creator who has led several companies, including CEP, into significant land positions in Canada, France, Australia, Germany, and Algeria.
 >
@@ -32,9 +33,13 @@ The management of CEP are well-respected industry professionals with extensive i
 
 ****
 
-**Alula Damte, P. Geol** - _President & Chief Operating Officer, Co-Founder of CEP Ltd, Managing Director of  CEP Gmbh_
+**Alula Damte, P. Geol**\
+_President & Chief Operating Officer, Co-Founder of CEP Ltd, Managing Director of  CEP Gmbh_
 
 > Experience: Dr. Damte has 20 years of petroleum industry and related teaching experience with expertise in petroleum systems analysis of basins in North, East and West Africa, North and South America, Western and Central Europe, and Western Australia. Throughout his industry career, he has provided solutions to structurally complex problems at the basin to prospect scale. He is also responsible for the identification of petroleum opportunities including the eastern Germany play concept for CEP. At CEP he has been the lead negotiator for farmouts and during capital raising efforts.
+>
+> \
+>
 >
 > Education:
 >
@@ -42,6 +47,9 @@ The management of CEP are well-respected industry professionals with extensive i
 >
 >
 > Ph.D., Geology, UC Santa Barbara 1997.
+>
+> \
+>
 >
 > Other Associations:
 >
@@ -57,18 +65,22 @@ The management of CEP are well-respected industry professionals with extensive i
 
 
 
-**Robyn Hemminger** - _Chief Finanical Officer, CEP Ltd_
+**Robyn Hemminger**\
+_Chief Finanical Officer, CEP Ltd_
 
 > Experience: Mr. Hemminger has more than 15 years experience in the investment business including more than 12 years in the energy investment banking sector.  Mr. Hemminger has varied experience in capital raising, mergers and acquisitions and strategic planning across the international energy spectrum including working with energy companies focused in Argentina, Australia, Azerbaijan, Brazil, Canada, Chad, Colombia, Egypt, France, Kazakhstan, Kurdistan, Libya, Mexico, Nigeria, Papua New Guinea, Poland, Romania, Trinidad, Tunisia, Turkey and Yemen.
 >
-> _Education:_
+> \
+>
+>
+> Education:
 >
 > \
 >
 >
-> _B.Sc., Chemistry, University of Manitoba_
+> B.Sc., Chemistry, University of Manitoba
 >
 > \
 >
 >
-> _B. Comm., Finance, University of Manitoba_
+> B. Comm., Finance, University of Manitoba
