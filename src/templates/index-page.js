@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import './styles.css'
 
 import NavBar from '../components/navbar'
@@ -116,7 +116,7 @@ export const AboutTemplate = ({title, image, body}) => (
     <img src={image} alt='about'/>
     <p>
       <Heading>{title}</Heading>
-      {body} <br/> <LearnBtn style={{float: 'right', marginTop: '10px'}}>Learn More</LearnBtn>
+      {body} <br/> <Link to='/about'><LearnBtn style={{float: 'right', marginTop: '10px'}}>Learn More</LearnBtn></Link>
     </p>
   </ImageLeft>
 )
@@ -127,7 +127,7 @@ export const WorkTemplate = ({title, image, body}) => (
     <div style={{clear: 'both'}}></div>
     <p>
       <Heading>{title}</Heading>
-      {body} <br/> <LearnBtn style={{float: 'right', marginTop: '10px'}}>Learn More</LearnBtn>
+      {body} <br/> <Link to='/operations'><LearnBtn style={{float: 'right', marginTop: '10px'}}>Learn More</LearnBtn></Link>
     </p>
   </ImageRight>
 )

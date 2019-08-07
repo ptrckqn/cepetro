@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import './styles.css'
 
@@ -41,53 +41,42 @@ const Description = styled.h4`
 
 const Image = styled.img`
   width: 100%;
-  max-height: 75vh;
+  max-height: 55vh;
   object-fit:  cover;
   margin: 0 auto;
   padding-bottom: 25px;
 `
 
-const Content = styled.div`
-
-`
-
-const NewsPost = () => {
+const NewsPost = ({ data }) => {
+  const { markdownRemark: post } = data
+  const createHTML = () => { return {__html: post.html} }
   return(
-    <StaticQuery
-      query={graphql`
-        query NewsPostById($id: String!){
-          markdownRemark(id: {eq: $id}){
-            id
-            html
-            frontmatter{
-              title
-              image
-              date(formatString: "MMMM Do, YYYY")
-              description
-            }
-            html
-          }
-        }
-      `}
-      render={ data => {
-          const { frontmatter } = data.markdownRemark
-          const createHTML = () => { return {__html: data.markdownRemark.html} }
-          return(
-            <div>
-              <NavBar/>
-              <Container>
-                <Heading>{frontmatter.title}</Heading>
-                <Description>{frontmatter.description}</Description>
-                <Image src={frontmatter.image}></Image>
-                <Content dangerouslySetInnerHTML={createHTML()}/>
-              </Container>
-              <Footer/>
-            </div>
-          )
-        }
-      }
-    />
+    <div>
+      <NavBar/>
+      <Container>
+        <Heading>{post.frontmatter.title}</Heading>
+        <Description>{post.frontmatter.description}</Description>
+        <Image src={post.frontmatter.image}></Image>
+        <div dangerouslySetInnerHTML={createHTML()}/>
+      </Container>
+      <Footer/>
+    </div>
   )
 }
 
 export default NewsPost
+
+export const pageQuery = graphql`
+  query NewsPostByID($id: String!){
+    markdownRemark(id: {eq: $id}){
+      id
+      html
+      frontmatter{
+        title
+        image
+        date(formatString: "MMMM Do, YYYY")
+        description
+      }
+    }
+  }
+`

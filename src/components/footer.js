@@ -40,7 +40,7 @@ const NavLink = styled.li`
   list-style: none;
 `
 
-const Footer = () => {
+const Footer = ({ data }) => {
   return(
     <Container>
       <Content>

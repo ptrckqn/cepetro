@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import NavMenu from './navmenu'
 import styled from 'styled-components'
+import menu from '../images/menu.svg'
+import close from '../images/close.svg'
+import brand from '../images/brand.svg'
 
 const MenuIcon = styled.span`
   @media screen and (max-width: 767px){
@@ -94,9 +98,9 @@ class NavBar extends Component{
   render(){
     return(
       <nav>
-        <MenuIcon style={this.state.menuVisible ? {backgroundImage: 'url(/icons/closeWhite.svg)'} : {backgroundImage: 'url(/icons/menuBlack.svg)'}} onClick={this.toggleState}/>
+        <MenuIcon style={this.state.menuVisible ? {backgroundImage: `url(${close})`} : {backgroundImage: `url(${menu})`}} onClick={this.toggleState}/>
         <BrandDiv className={this.state.show ? 'active' : 'hidden'}>
-          <BrandLogo style={{backgroundImage: 'url(/icons/brand.svg)'}}></BrandLogo>
+          <Link to='/'><BrandLogo style={{backgroundImage: `url(${brand})`}}></BrandLogo></Link>    
         </BrandDiv>
         <NavMenu menuVisible={this.state.menuVisible}/>
       </nav>
