@@ -74,11 +74,11 @@ const NavLinkSecondary = styled(NavLink)`
 class NavMenu extends Component{
 
   render(){
-    if(this.props.menuVisible){
-      document.body.classList.add('noScroll')
-    } else{
-      document.body.classList.remove('noScroll')
-    }
+    // if(this.props.menuVisible){
+    //   document.body.classList.add('noScroll')
+    // } else{
+    //   document.body.classList.remove('noScroll')
+    // }
 
     return(
       <Nav className={this.props.menuVisible ? 'active' : 'hidden'}>
