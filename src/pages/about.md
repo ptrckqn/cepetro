@@ -28,59 +28,44 @@ _Chairman & Chief Exectuive Officer, Co-Founder of CEP Ltd_
 > President and Chief Operating Officer of OSUM Oil Sands Corp. 2007 to 2008;
 >
 > President and Chief Executive Officer of Petrel Robertson Consulting Ltd. from 2000 to 2006.
->
->
 
-****
+- - -
 
 **Alula Damte, P. Geol**\
-_President & Chief Operating Officer, Co-Founder of CEP Ltd, Managing Director of  CEP Gmbh_
+_President & Chief Operating Officer, Co-Founder of CEP Ltd, Managing Director of  CEP GmbH_
 
 > Experience: Dr. Damte has 20 years of petroleum industry and related teaching experience with expertise in petroleum systems analysis of basins in North, East and West Africa, North and South America, Western and Central Europe, and Western Australia. Throughout his industry career, he has provided solutions to structurally complex problems at the basin to prospect scale. He is also responsible for the identification of petroleum opportunities including the eastern Germany play concept for CEP. At CEP he has been the lead negotiator for farmouts and during capital raising efforts.
 >
-> \
->
->
 > Education:
->
-> \
->
 >
 > Ph.D., Geology, UC Santa Barbara 1997.
 >
-> \
->
->
 > Other Associations:
->
-> \
->
 >
 > Board Member, Petrel Robertson Consulting Ltd.;
 >
-> \
->
->
 > Technical Advisor to the Board, SouthWest Energy (H.K.) Ltd.
-
-
 
 **Robyn Hemminger**\
 _Chief Finanical Officer, CEP Ltd_
 
 > Experience: Mr. Hemminger has more than 15 years experience in the investment business including more than 12 years in the energy investment banking sector.  Mr. Hemminger has varied experience in capital raising, mergers and acquisitions and strategic planning across the international energy spectrum including working with energy companies focused in Argentina, Australia, Azerbaijan, Brazil, Canada, Chad, Colombia, Egypt, France, Kazakhstan, Kurdistan, Libya, Mexico, Nigeria, Papua New Guinea, Poland, Romania, Trinidad, Tunisia, Turkey and Yemen.
 >
-> \
->
->
 > Education:
->
-> \
->
 >
 > B.Sc., Chemistry, University of Manitoba
 >
-> \
->
->
 > B. Comm., Finance, University of Manitoba
+
+**Mr. Jaap Bouwman, Economist**\
+_Executive Vice President of CEP GmbH_
+
+> _Experience: Mr. Bouwman is a successful business executive with over 30 years experience. He has a proven track record of successful operations, strong negotiator with extensive experience in building business relationships, with in-depth knowledge of multicultural business environments in Europe, North America, the Middle East, Africa and New Zealand. Mr. Bouwman has worked with CEP since August 2005._
+>
+> _Education:_
+>
+> _Economist, Business Academy Münster-Osnabrück, 1972._
+>
+> _Other Associations:_
+>
+> _Retired Honorary Consul of Germany in Calgary, Canada._
