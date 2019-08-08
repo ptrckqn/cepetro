@@ -3,7 +3,7 @@ templateKey: index-page
 title: Central European Petroleum
 image: /images/uploads/00_headerbild_kanada.jpg
 heading: >-
-  Little bio about what company does; and what you want visitors to know
+  Little bio about what company does and what you want visitors to know
   immediately once landing on the site
 about:
   body: >-
