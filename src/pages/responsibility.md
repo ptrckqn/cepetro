@@ -1,7 +1,7 @@
 ---
 templateKey: responsibility-page
 title: Responsibility
-image: https://images.unsplash.com/photo-1564835718735-d43b1a2bd870?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2573&q=80
+image: /images/uploads/x03_01_teaserbild_gross.jpg.pagespeed.ic.iyxprvscnk.jpg
 ---
 # Nec nec Haud salutat antiqua sagitta
 
