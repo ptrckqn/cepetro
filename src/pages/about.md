@@ -1,8 +1,7 @@
 ---
 templateKey: about-page
 title: About Us
-image: >-
-  https://images.unsplash.com/photo-1564665988677-cd7de1a21d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+image: /images/uploads/01_headerbild_kanada.jpg
 ---
 ## Who We are
 
