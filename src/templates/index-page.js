@@ -8,6 +8,9 @@ import Footer from '../components/footer'
 import News from '../components/news'
 import Splash from '../components/splash'
 
+// CEP Red #d4353e 
+// CEP Blue #3078bc - rgb(48, 120, 188)
+
 const Container = styled.div`
   @media screen and (max-width: 767px){
     padding: 100px 50px 0px;
@@ -20,17 +23,20 @@ const Container = styled.div`
 
 const LearnBtn = styled.div`
   @media screen and (max-width: 767px){
-    color: rgba(160, 160, 160, 0.5);
-    border: 2px solid rgba(160, 160, 160, 0.5);
+    color: rgba(48, 120, 188, 0.5);
+    border: 2px solid rgba(48, 120, 188, 0.5);
   }
   @media screen and (min-width: 768px){
-    color: rgba(160, 160, 160, 0.5);
-    border: 2px solid rgba(160, 160, 160, 0.5);
+    color: rgba(48, 120, 188, 0.5);
+    border: 2px solid rgba(48, 120, 188, 0.5);
     &:hover{
-      border-color: rgb(160, 160, 160);
-      color: rgb(160, 160, 160);
+      border-color: rgb(48, 120, 188);
+      color: rgb(48, 120, 188);
     }
   }
+  background-color: #3078bc;
+  -webkit-background-clip: text;
+  color: transparent;
   display: inline-block;
   text-align: center;
   padding: 8px;
@@ -46,11 +52,12 @@ const Heading = styled.h2`
   @media screen and (min-width: 768px){
     font-size: 2rem;
   }
-  margin-bottom: 20px;
   text-align: center;
-  color: #000;
   font-weight: 600;
   text-transform: uppercase;
+  border-bottom: 2px solid #d4353e;
+  width: 50%;
+  margin: 0 auto 20px auto;
 `
 
 const ImageAndText = styled.div`

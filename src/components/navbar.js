@@ -4,17 +4,17 @@ import NavMenu from './navmenu'
 import styled from 'styled-components'
 import menu from '../images/menu.svg'
 import close from '../images/close.svg'
-import brand from '../images/brand.svg'
+import brand from '../images/cep-logo.png'
 
 const MenuIcon = styled.span`
   @media screen and (max-width: 767px){
-    margin-top: 6vw;
+    margin-top: 10vw;
     margin-left: 6vw;
     width: 4vw;
     height: 4vw;
   }
   @media screen and (min-width: 768px){
-    margin-top: 2vw;
+    margin-top: 3vw;
     margin-left: 2vw;
     height: 2.5vw;
     width: 2.5vw;
@@ -33,13 +33,13 @@ const MenuIcon = styled.span`
 const BrandLogo = styled.span`
 @media screen and (max-width: 767px){
   margin-top: 4vw;
-  width: 10vw;
-  height: 10vw;
+  width: 35vw;
+  height: 15vw;
 }
 @media screen and (min-width: 768px){
   margin-top: 1vw;
-  height: 6vw;
-  width: 6vw;
+  height: 7vw;
+  width: 15vw;
 }
   display: block;
   cursor: pointer;

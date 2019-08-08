@@ -38,6 +38,8 @@ const Heading = styled.h2`
   margin-bottom: 20px;
   text-align: left;
   font-weight: 600;
+  border-bottom: 2px solid #d4353e;
+  width: 70%;
 `
 
 const Description = styled.h4`
@@ -87,15 +89,25 @@ const ContactPage = () => {
             <NavBar/>
             <Splash full={false} title={frontmatter.title} image={frontmatter.image}/>
             <Container>
+            <GoogleMap src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.2659592814025!2d-114.08125774857608!3d51.0481767794619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fe429c134eb%3A0xe45e2d21b7e0515f!2sCentral+European+Petroleum+Ltd!5e0!3m2!1sen!2sca!4v1564940228115!5m2!1sen!2sca" frameborder="0" allowfullscreen></GoogleMap>
               <ContactGrid>
-              <div>
-                <Heading>Our Location</Heading>
-                <Description>123 This Street SE A1B 2C3<br/> Calgary, Alberta, Canada</Description>
-                <Description>P: 555 555 5555</Description>
-                <Description>E: info@google.ca</Description>
-              </div>
-              </ContactGrid>
-            </Container>
+                <div>
+                  <Heading>Central European Petroleum Ltd.</Heading>
+                  <Description>{frontmatter.addressEn}<br/>{frontmatter.addressTwoEn}</Description>
+                  <Description>Phone: {frontmatter.phoneEn}</Description>
+                  <Description>Direct: {frontmatter.directEn}</Description>
+                  <Description>Fax: {frontmatter.faxEn}</Description>
+                  <Description>Email: {frontmatter.emailEn}</Description>
+                </div>
+                <div>
+                  <Heading>CEP Central European Petroleum GmbH</Heading>
+                  <Description>{frontmatter.addressDe}</Description>
+                  <Description>Phone: {frontmatter.phoneDe}</Description>
+                  <Description>Fax: {frontmatter.faxDe}</Description>
+                  <Description>Email: {frontmatter.emailDe}</Description>
+                </div>
+                </ContactGrid>
+              </Container>
             <Footer/>
           </div>
         )
@@ -107,20 +119,5 @@ const ContactPage = () => {
 export default ContactPage
 
 /*
-<GoogleMap src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.2659592814025!2d-114.08125774857608!3d51.0481767794619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fe429c134eb%3A0xe45e2d21b7e0515f!2sCentral+European+Petroleum+Ltd!5e0!3m2!1sen!2sca!4v1564940228115!5m2!1sen!2sca" frameborder="0" allowfullscreen></GoogleMap>
-<div>
-  <Heading>Central European Petroleum Ltd.</Heading>
-  <Description>{frontmatter.addressEn}<br/>{frontmatter.addressTwoEn}</Description>
-  <Description>Phone: {frontmatter.phoneEn}</Description>
-  <Description>Direct: {frontmatter.directEn}</Description>
-  <Description>Fax: {frontmatter.faxEn}</Description>
-  <Description>Email: {frontmatter.emailEn}</Description>
-</div>
-<div>
-  <Heading>CEP Central European Petroleum GmbH</Heading>
-  <Description>{frontmatter.addressDe}</Description>
-  <Description>Phone: {frontmatter.phoneDe}</Description>
-  <Description>Fax: {frontmatter.faxDe}</Description>
-  <Description>Email: {frontmatter.emailDe}</Description>
-</div>
+
 */

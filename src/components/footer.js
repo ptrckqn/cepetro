@@ -18,8 +18,9 @@ const Content = styled.div`
   padding-top: 5vw;
 `
 const CompanyName = styled.h4`
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
+  padding: 0 3rem;
 `
 
 const MainLinks = styled.ul`
@@ -48,7 +49,7 @@ const Footer = ({ data }) => {
           query={graphql`query footerQuery{site{siteMetadata{title}}}`}
           render={data => <CompanyName>{data.site.siteMetadata.title}</CompanyName>}
         />
-        <MainLinks>
+        {/* <MainLinks>
           <NavLink><Link to='#'>Link 1</Link></NavLink>
           <NavLink><Link to='#'>Link 2</Link></NavLink>
           <NavLink><Link to='#'>Link 3</Link></NavLink>
@@ -58,7 +59,7 @@ const Footer = ({ data }) => {
           <NavLink><Link to='#'>Link 1</Link></NavLink>
           <NavLink><Link to='#'>Link 2</Link></NavLink>
           <NavLink><Link to='#'>Link 3</Link></NavLink>
-        </SubLinks>
+        </SubLinks> */}
       </Content>
     </Container>
   )

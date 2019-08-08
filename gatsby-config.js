@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Netlify Template',
+    title: 'Central European Petroleum',
     author: '@ptrckqn',
   },
   plugins: [
@@ -33,12 +33,10 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'gatsby-starter-default',
-        short_name: 'starter',
+        short_name: 'cepetro',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/cep-logo.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-styled-components',
