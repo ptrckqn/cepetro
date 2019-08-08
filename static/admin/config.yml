@@ -91,6 +91,5 @@ collections:
           - {label: 'English Email', name: 'emailEn', widget: 'string'}
           - {label: 'German Address', name: 'addressDe', widget: 'string'}
           - {label: 'German Phone', name: 'phoneDe', widget: 'string'}
-          - {label: 'German Direct', name: 'directDe', widget: 'string'}
           - {label: 'German FAx', name: 'faxDe', widget: 'string'}
           - {label: 'German Email', name: 'emailDe', widget: 'string'}

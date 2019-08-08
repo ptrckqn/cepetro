@@ -13,8 +13,7 @@ about:
     exploration opportunities in the European Union, initially focusing on
     Germany.
   title: Who We Are
-  image: >-
-    https://images.unsplash.com/photo-1564622527056-737ba22ba7ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+  image: /images/uploads/whopic.jpg
 work:
   body: >-
     As medium-size company based in Canada and carrying out most its operations
@@ -23,7 +22,6 @@ work:
     other interest groups while taking the needs of all stakeholders and the
     environment into account. 
   title: What We Do
-  image: >-
-    https://images.unsplash.com/photo-1564622527056-737ba22ba7ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+  image: /images/uploads/Vibrator.jpg
 ---
 
