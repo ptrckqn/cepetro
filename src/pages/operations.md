@@ -1,7 +1,7 @@
 ---
 templateKey: operations-page
 title: Operations
-image: https://images.unsplash.com/photo-1564939336404-a6a5a16e8a1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+image: /images/uploads/img_0477-2-.jpg
 ---
 # Stagno vivat suique
 
