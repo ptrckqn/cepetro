@@ -19,4 +19,4 @@ As medium-size company based in Canada and carrying out most its operations in G
   * Monitors and records performance against these standards;
   * Reviews performance and implements measures to ensure continuous improvement.
 
-  For more information on CEP's committment to corporate social responsibility, please click here (German). 
+  For more information on CEP's committment to corporate social responsibility, please click [here](https://www.cepetro.com/Verantwortung.html) (German). 
