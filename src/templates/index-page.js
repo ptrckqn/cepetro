@@ -55,7 +55,7 @@ const Heading = styled.h2`
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
-  border-bottom: 2px solid #d4353e;
+  border-bottom: 1px solid #333;
   width: 50%;
   margin: 0 auto 20px auto;
 `

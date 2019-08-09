@@ -9,13 +9,13 @@ import brand from '../images/cep-logo.png'
 const MenuIcon = styled.span`
   @media screen and (max-width: 767px){
     margin-top: 10vw;
-    margin-left: 6vw;
+    margin-right: 6vw;
     width: 4vw;
     height: 4vw;
   }
   @media screen and (min-width: 768px){
     margin-top: 3vw;
-    margin-left: 2vw;
+    margin-right: 2vw;
     height: 2.5vw;
     width: 2.5vw;
   }
@@ -24,39 +24,11 @@ const MenuIcon = styled.span`
   position: fixed;
   z-index: 99;
   top: 0;
-  left: 0;
+  right: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 `
-
-const BrandLogo = styled.span`
-@media screen and (max-width: 767px){
-  margin-top: 4vw;
-  width: 35vw;
-  height: 15vw;
-}
-@media screen and (min-width: 768px){
-  margin-top: 1vw;
-  height: 7vw;
-  width: 15vw;
-}
-  display: block;
-  cursor: pointer;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  z-index: 100;
-`
-
-const BrandDiv = styled.div`
-  z-index: 99;
-`
-
-
 
 class NavBar extends Component{
   constructor(){
@@ -99,9 +71,6 @@ class NavBar extends Component{
     return(
       <nav>
         <MenuIcon style={this.state.menuVisible ? {backgroundImage: `url(${close})`} : {backgroundImage: `url(${menu})`}} onClick={this.toggleState}/>
-        <BrandDiv className={this.state.show ? 'active' : 'hidden'}>
-          <Link to='/'><BrandLogo style={{backgroundImage: `url(${brand})`}}></BrandLogo></Link>    
-        </BrandDiv>
         <NavMenu menuVisible={this.state.menuVisible}/>
       </nav>
     )
