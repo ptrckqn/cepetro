@@ -24,7 +24,7 @@ collections:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Featured Image', name: 'image', widget: 'image'}
       - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-      - {label: 'Description', name: 'description', widet: 'text'}
+      - {label: 'Description', name: 'description', widet: 'text', required: falsegi}
       - {label: 'Body', name: 'body', widget: 'markdown'}
       # Fields shown in the admin UI
       #   label: Field label in the admin UI
