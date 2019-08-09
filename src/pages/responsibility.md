@@ -3,43 +3,20 @@ templateKey: responsibility-page
 title: Responsibility
 image: /images/uploads/x03_01_teaserbild_gross.jpg.pagespeed.ic.iyxprvscnk.jpg
 ---
-# Nec nec Haud salutat antiqua sagitta
+# Our Committment and Responsibility
 
-## Nasci sibi implet
+As medium-size company based in Canada and carrying out most its operations in Germany, our main concern and objective is to establish a sustainable relationship of trust with local and regional authorities, residents, and other interest groups while taking the needs of all stakeholders and the environment into account. 
 
-Lorem markdownum spatiantes Helicona ubi ab adorat qualis de [venatu aperta
-ter](http://haesit.org/hac), ore. Genibus bisulcam, fecit spinae hoste, ad
-poplite protulit in tamen curva.
+**CEP is committed to the following:**
 
-## Amentia de natura inquit
+  * Providing a safe workplace for its employees and contractors;
+  * Conducting its operations in a way that minimizes waste and minimizes impact on the environment;
+  * Adherence to the highest standards of business ethics and employment practices.
 
-Quis dicta, sunt telum terribili primosque Opem: ubi urbibus utque captivarum?
-Usque Iuli saevo? Fiat *coit quater* Achilles, est unus pennis est. Prole heros
-et Calliope natura varios? Duc per ne cum coronas pompas: sed [demptos
-solutis](http://placuisse-verbis.net/et-utilitas.html).
+**The company has developed a comprehensive health, safety and environment management system based on ISO/OHSAS standards. The company:**
 
-## Multorum procul
+  * Sets HSEQ standards (for itself and its contractors) that are in line with best industry    practice and compliant with all relevant legislation;
+  * Monitors and records performance against these standards;
+  * Reviews performance and implements measures to ensure continuous improvement.
 
-Primordia apud Aesonides arcus et fuisset hic cernam petunt parentis; nec tamen!
-Velit non fuit veri fidem suaque mensis, tam eritque mergum. Referemus leones
-formae risisse iterum; tu quo tegunt adiacet Paean credidit, Hyanteo, in vela
-movit rurigenae.
-
-## Nomine urbes
-
-Quoque si grandia nulli, plurima, variarum fiet exsatiata tristisque ipse
-potiora, quam. Possis defendere et infelix vidit saxo locis precibus gratia nam
-Iove, ira quos, non modo poterisne palmis.
-
-Neu dixit ecquid tu ut **et** mentis parabat Tenedonque tonsa incoluit, tympana
-tanta sumptis lacrimarum et lacerae! Tamen nacta tuetur.
-
-## Per canor terrae sed duritia quae egressu
-
-Mea flumina, pugnet, ne, potiatur! Huic vide ait exiguus nisi est verbaque in
-emicat dignoque tamen infernas.
-Sic moenia tibi nuper fretum modo sparsit fixo texit coniectum nidum tu
-deflevit, diu inpedit es. Tempore thracius *est* cadit nox fine [valens
-ait](http://www.corpusquenatum.com/me) cristati trunci. Submota induruit, in
-nocte quoque: ortus primusque capillos nomen diu nec lacertis morata esse
-precor. Qua Lyrnesia crebros iussit; ille vertit ait Parrhasis decerpta.
+  For more information on CEP's committment to corporate social responsibility, please click here (German). 
