@@ -7,6 +7,8 @@ image: /images/uploads/01_headerbild_kanada.jpg
 
 Central European Petroleum Ltd., registered in Alberta, Canada in 2006, and its wholly-owned affiliate, CEP Central European Petroleum GmbH, registered in Germany in 2008 (together "CEP"), were set up to pursue petroleum exploration opportunities in the European Union, initially focusing on Germany. The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance. Since incorporation, CEP has acquired over 3.4 million acres of onshore and offshore exploration licenses in the German states of Mecklenburg-Vorpommern and Brandenburg.
 
+- - -
+
 ## CEP Management
 
 The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance.
@@ -27,8 +29,6 @@ _Chairman & Chief Exectuive Officer, Co-Founder of CEP Ltd_
 > President and Chief Operating Officer of OSUM Oil Sands Corp. 2007 to 2008;
 >
 > President and Chief Executive Officer of Petrel Robertson Consulting Ltd. from 2000 to 2006.
-
-- - -
 
 **Alula Damte, P. Geol**\
 _President & Chief Operating Officer, Co-Founder of CEP Ltd, Managing Director of  CEP GmbH_
@@ -59,12 +59,56 @@ _Chief Finanical Officer, CEP Ltd_
 **Mr. Jaap Bouwman, Economist**\
 _Executive Vice President of CEP GmbH_
 
-> _Experience: Mr. Bouwman is a successful business executive with over 30 years experience. He has a proven track record of successful operations, strong negotiator with extensive experience in building business relationships, with in-depth knowledge of multicultural business environments in Europe, North America, the Middle East, Africa and New Zealand. Mr. Bouwman has worked with CEP since August 2005._
+> Experience: Mr. Bouwman is a successful business executive with over 30 years experience. He has a proven track record of successful operations, strong negotiator with extensive experience in building business relationships, with in-depth knowledge of multicultural business environments in Europe, North America, the Middle East, Africa and New Zealand. Mr. Bouwman has worked with CEP since August 2005.
 >
-> _Education:_
+> Education:
 >
-> _Economist, Business Academy Münster-Osnabrück, 1972._
+> Economist, Business Academy Münster-Osnabrück, 1972.
 >
-> _Other Associations:_
+> Other Associations:
 >
-> _Retired Honorary Consul of Germany in Calgary, Canada._
+> Retired Honorary Consul of Germany in Calgary, Canada.
+
+**Mr. David Bertram, P.Eng.**\
+_Vice President Engineering of CEP Ltd_
+
+>Experience: Mr. Bertram has more than 30 years of world-wide experience in petroleum engineering operations, oil and gas field appraisal & development planning, production forecasting, economics, reserves evaluation, and M&A. He worked in production operations and reservoir engineering for Home Oil until 1992, when he joined Shell International: worked in PDO (Muscat) on gas-condensate field appraisal and development planning and then was seconded to Maersk Oil (Copenhagen), where he managed petroleum engineering operations for the Tyra Centre in the Danish sector of the North Sea. Dave then became a partner in Adams Pearson Associates (now part of RPS Energy), where he worked as a reservoir engineering specialist on world-wide projects before starting his own reservoir engineering consulting company in 2006. Mr. Bertram joined CEP in early 2009.
+>
+>Education: 
+>
+>Bsc, Chemical Engineering, University of Calgary, 1979.
+>
+>Professional Memberships:
+>
+>APEGGA, SPE.
+>
+>Other Associations:
+>
+>President, Bertram Reservoir Solutions Inc.
+
+- - -
+
+## CEP Board of Directors
+**Dr. Peter Putnam**\
+_Chairman_
+ 
+**R. Ian Molson**\
+_Deputy Chairman Independent Businessman_
+ 
+**Jeffrey Harris**\
+_Independent Businessman_
+ 
+**Sabrina Liak**\
+_Founding Partner, ALOI Investment Management_
+ 
+**Francis Sommer**\
+_Partner, Pamplona Capital Management_
+ 
+**Carlos A. Pérez-Davila**\
+_Managing Director, Quadrant Capital Advisors, Inc._
+ 
+**Rolf G. Skaar**\
+_Managing Director, Vision iO_
+ 
+**Gregory G. Turnbull**\
+_Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLp_
