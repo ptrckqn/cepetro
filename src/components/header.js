@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import styled, { css, keyframes } from 'styled-components'
-import logoWhite from '../images/cep-logo-white.png'
+import logoWhite from '../images/cep-logo-red-white.png'
 
 const moveInLeft = keyframes`
     0%{

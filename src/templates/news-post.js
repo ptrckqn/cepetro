@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/layout'
 
@@ -63,6 +64,7 @@ const NewsPost = ({ data }) => {
     const createHTML = () => { return {__html: data.markdownRemark.html} }
     return(
         <Layout>
+            <Helmet title='CEPetro'/>
             <Container>
                 <HeadingBox>
                     <Secondary>{frontmatter.title}</Secondary>

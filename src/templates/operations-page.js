@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/layout'
 import Features from '../components/features'
@@ -8,6 +9,7 @@ const OperationsPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
         <Layout>
+            <Helmet title='CEPetro - Operations'/>
             <Features
                 heading={'What we have accomplished'}
                 titleOne={'Our Activities in Germany'}
