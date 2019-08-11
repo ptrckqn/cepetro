@@ -1,82 +1,93 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import './styles.css'
 
-import NavBar from '../components/navbar'
-import Footer from '../components/footer'
+import Layout from '../components/layout'
 
-const Container = styled.div`
-  @media screen and (max-width: 767px){
-    padding: 100px 50px 0px;
-  }
-  @media screen and (min-width: 768px){
-    padding: 125px 75px 0px;
-  }
-  font-weight: 300;
-  line-height: 1.5;
+const Container = styled.section`
+    padding: 20rem 3rem;
+    margin-top: -20vh;
+    text-align: center;
+    background-color: #f7f7f7;
+    @media(max-width: 56.25em){
+        padding: 3rem;
+        padding-top: 20rem;
+    }
 `
 
-const Heading = styled.h2`
-  @media screen and (max-width: 767px){
-    font-size: 1.5rem;
-  }
-  @media screen and (min-width: 768px){
-    font-size: 2rem;
-  }
-  margin-bottom: 20px;
-  text-align: left;
-  font-weight: 600;
+const HeadingBox = styled.div`
+    text-align: center;
+    margin-bottom: 8rem;
 `
 
-const Description = styled.h4`
-  @media screen and (max-width: 767px){
-    font-size: 1.2rem;
-  }
-  @media screen and (min-width: 768px){
-    font-size: 1.3rem;
-  }
-  font-weight: 300;
+const Secondary = styled.h2`
+    display: inline-block;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, rgb(64, 162, 255), rgb(41, 108, 171));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    @media(max-width: 56.25em){
+        font-size: 3rem;
+    }
+    @media (max-width: 37.5em){
+        font-size: 2.25em;
+    }
+`
+
+const Tertiary = styled.h3`
+    font-size; 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
 `
 
 const Image = styled.img`
-  width: 100%;
-  max-height: 55vh;
-  object-fit:  cover;
-  margin: 0 auto;
-  padding-bottom: 25px;
+    max-height: 50rem;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    box-shadow: 0 1.5rem 3rem rgba(0,0,0,.15);
+    margin: 3rem 0;
+`
+
+const Content = styled.div`
+    text-align: left;
+
 `
 
 const NewsPost = ({ data }) => {
-  const { markdownRemark: post } = data
-  const createHTML = () => { return {__html: post.html} }
-  return(
-    <div>
-      <NavBar/>
-      <Container>
-        <Heading>{post.frontmatter.title}</Heading>
-        <Description>{post.frontmatter.description}</Description>
-        <Image src={post.frontmatter.image}></Image>
-        <div dangerouslySetInnerHTML={createHTML()}/>
-      </Container>
-      <Footer/>
-    </div>
-  )
+    const { frontmatter } = data.markdownRemark
+    const createHTML = () => { return {__html: data.markdownRemark.html} }
+    return(
+        <Layout>
+            <Container>
+                <HeadingBox>
+                    <Secondary>{frontmatter.title}</Secondary>
+                </HeadingBox>
+                <Tertiary>{frontmatter.description}</Tertiary>
+                <Tertiary>{frontmatter.date}</Tertiary>
+                <Image src={frontmatter.image}/>
+                <Content dangerouslySetInnerHTML={createHTML()}/>
+            </Container>
+        </Layout>
+    )
 }
 
 export default NewsPost
 
 export const pageQuery = graphql`
-  query NewsPostByID($id: String!){
-    markdownRemark(id: {eq: $id}){
-      id
-      html
-      frontmatter{
-        title
-        image
-        date(formatString: "MMMM Do, YYYY")
-        description
-      }
+    query NewsPostById($id: String!){
+        markdownRemark(id: {eq: $id}){
+            id
+            html
+            frontmatter{
+                title
+                image
+                date(formatString: "MMMM Do, YYYY")
+                description
+            }
+        }
     }
-  }
 `

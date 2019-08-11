@@ -1,51 +1,14 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
-import './styles.css'
+import React from 'React'
 
-import NavBar from '../components/navbar'
-import Footer from '../components/footer'
-import Splash from '../components/splash'
-import News from '../components/news'
-
-const Container = styled.div`
-  @media screen and (max-width: 767px){
-    padding: 100px 50px 0px;
-  }
-  @media screen and (min-width: 768px){
-    padding:  125px 50px 0px;
-  }
-  font-weight: 300;
-`
+import Layout from '../components/layout'
+import Cards from '../components/cards'
 
 const NewsPage = () => {
-  return(
-    <StaticQuery
-      query={graphql`
-        query newsQuery{
-          markdownRemark(frontmatter: {templateKey: {eq: "news-page"}}){
-            frontmatter{
-              title
-              image
-            }
-          }
-        }
-      `}
-      render={ data => {
-        const { frontmatter } = data.markdownRemark
-        return(
-          <div>
-          <NavBar/>
-            <Splash full={false} title={frontmatter.title} image={frontmatter.image}/>
-            <Container>
-              <News />
-            </Container>
-            <Footer/>
-          </div>
-        )
-      }}
-    />
-  )
+    return(
+        <Layout>
+            <Cards />
+        </Layout>
+    )
 }
 
 export default NewsPage

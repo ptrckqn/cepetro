@@ -3,8 +3,10 @@ templateKey: index-page
 title: Central European Petroleum
 image: /images/uploads/00_headerbild_kanada.jpg
 heading: >-
-  Little bio about what company does and what you want visitors to know
-  immediately once landing on the site
+  Little bio about the company
+picOne: /images/uploads/whopic.jpg
+picTwo: /images/uploads/Vibrator.jpg
+picThree: /images/uploads/img_0477-2-.jpg
 about:
   body: >-
     Central European Petroleum Ltd., registered in Alberta, Canada in 2006, and
@@ -13,7 +15,6 @@ about:
     exploration opportunities in the European Union, initially focusing on
     Germany.
   title: Who We Are
-  image: /images/uploads/whopic.jpg
 work:
   body: >-
     As medium-size company based in Canada and carrying out most its operations
@@ -22,6 +23,5 @@ work:
     other interest groups while taking the needs of all stakeholders and the
     environment into account. 
   title: What We Do
-  image: /images/uploads/Vibrator.jpg
 ---
 

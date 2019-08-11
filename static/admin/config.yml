@@ -43,15 +43,22 @@ collections:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Image', name: 'image', widget: 'image'}
           - {label: 'Heading', name: 'heading', widget: 'string'}
-          - {label: 'About', name: 'about', widget: 'object', fields: [{label: 'Title', name: 'title', widet: 'string'}, {label: 'Image', name: 'image', widet: 'image'}, {label: 'Body', name: 'body', widget: 'text'}]}
-          - {label: 'Work', name: 'work', widget: 'object', fields: [{label: 'Title', name: 'title', widet: 'string'}, {label: 'Image', name: 'image', widet: 'image'}, {label: 'Body', name: 'body', widget: 'text'}]}
+          - {label: 'Picture One', name: 'picOne', widget: 'image'}
+          - {label: 'Picture Two', name: 'picTwo', widget: 'image'}
+          - {label: 'Picture Three', name: 'picThree', widget: 'image'}
+          - {label: 'About', name: 'about', widget: 'object', fields: [{label: 'Title', name: 'title', widet: 'string'}, {label: 'Body', name: 'body', widget: 'text'}]}
+          - {label: 'Work', name: 'work', widget: 'object', fields: [{label: 'Title', name: 'title', widet: 'string'} {label: 'Body', name: 'body', widget: 'text'}]}
       - file: 'src/pages/about.md'
         label: 'About Page'
         name: 'about'
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'about-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Image', name: 'image', widget: 'image'}
+          - {label: 'CEP Management', name: 'management', widget: 'markdown'}
+          - {label: 'CEP Board of Directors', name: 'boardOfDirectors', widget: 'markdown'}
+          - {label: 'Picture One', name: 'picOne', widget: 'image'}
+          - {label: 'Picture Two', name: 'picTwo', widget: 'image'}
+          - {label: 'Picture Three', name: 'picThree', widget: 'image'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
       - file: 'src/pages/operations.md'
         label: 'Operations Page'
@@ -59,15 +66,17 @@ collections:
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'operations-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Image', name: 'image', widget: 'image'}
-          - {label: 'Body', name: 'body', widget: 'markdown'}
+          - {label: 'German Operations', name: 'germanyOps', widget: 'markdown'}
+          - {label: 'Polish Operations', name: 'polishOps', widget: 'markdown'}
       - file: 'src/pages/responsibility.md'
         label: 'Responsibility Page'
         name: 'responsibility'
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'responsibility-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Image', name: 'image', widget: 'image'}
+          - {label: 'Picture One', name: 'picOne', widget: 'image'}
+          - {label: 'Picture Two', name: 'picTwo', widget: 'image'}
+          - {label: 'Picture Three', name: 'picThree', widget: 'image'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
       - file: 'src/pages/news/index.md'
         label: 'News Page'
@@ -82,14 +91,7 @@ collections:
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'contact-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Image', name: 'image', widget: 'image'}
-          - {label: 'English Address', name: 'addressEn', widget: 'string'}
-          - {label: 'English Address Line Two', name: 'addressTwoEn', widget: 'string'}
-          - {label: 'English Phone', name: 'phoneEn', widget: 'string'}
-          - {label: 'English Direct', name: 'directEn', widget: 'string'}
-          - {label: 'English Fax', name: 'faxEn', widget: 'string'}
-          - {label: 'English Email', name: 'emailEn', widget: 'string'}
-          - {label: 'German Address', name: 'addressDe', widget: 'string'}
-          - {label: 'German Phone', name: 'phoneDe', widget: 'string'}
-          - {label: 'German FAx', name: 'faxDe', widget: 'string'}
-          - {label: 'German Email', name: 'emailDe', widget: 'string'}
+          - {label: 'Canadian Pic', name: 'picEn', widget: 'image'}
+          - {label: 'German Pic', name: 'picDe', widget: 'image'}
+          - {label: 'English Contact', name: 'contactEn', widget: 'text'}
+          - {label: 'German Contact', name: 'contactDe', widget: 'text'}

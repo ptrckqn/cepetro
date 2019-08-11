@@ -1,7 +1,9 @@
 ---
 templateKey: responsibility-page
-title: Responsibility
-image: /images/uploads/x03_01_teaserbild_gross.jpg.pagespeed.ic.iyxprvscnk.jpg
+title: Our Committment and Responsibility
+picOne: /images/uploads/whopic.jpg
+picTwo: /images/uploads/Vibrator.jpg
+picThree: /images/uploads/img_0477-2-.jpg
 ---
 # Our Committment and Responsibility
 
