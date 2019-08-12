@@ -1,11 +1,10 @@
 ---
 templateKey: index-page
 title: Central European Petroleum
-image: /images/uploads/00_headerbild_kanada.jpg
-heading: >-
-  Little bio about the company
-picOne: /images/uploads/whopic.jpg
-picTwo: /images/uploads/Vibrator.jpg
+image: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+heading: Little bio about the company
+picOne: /images/uploads/obx-deployment.jpg
+picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/img_0477-2-.jpg
 about:
   body: >-
