@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import styled, { css, keyframes } from 'styled-components'
-import logoWhite from '../images/cep-logo-red-white.png'
+import logoWhite from '../images/cep-logo.png'
 
 const moveInLeft = keyframes`
     0%{
@@ -78,8 +78,8 @@ const Primary = styled.h1`
 const Main = styled.span`
     display: block;
     font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
     animation: ${css`${moveInLeft} 1s ease-out`} ;
 
     @media(max-width: 37.5em){
@@ -91,8 +91,8 @@ const Main = styled.span`
 const Sub = styled.span`
     display: block;
     font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
+    font-weight: 400;
+    letter-spacing: .75rem;
     animation: ${css`${moveInRight} 1s ease-out`} ;
     @media(max-width: 37.5em){
         letter-spacing: .5rem;

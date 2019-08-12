@@ -110,11 +110,11 @@ const Title = styled.h4`
     right: 2rem; 
     text-align: right;
     span{
-        padding: 1rem 1.5rem;
+        padding: .75rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
         width: 50;
-        background-image: linear-gradient(to right bottom, rgba(255, 74, 83, .85), rgba(186, 45, 52, .85))
+        background-color: rgba(255, 74, 83, .85);
     }
 `
 
