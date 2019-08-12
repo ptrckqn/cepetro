@@ -117,6 +117,9 @@ const Content = styled.div`
         font-weight: 400;
         text-transform: uppercase;
     }
+    h1, h2, p{
+        padding: .5rem 0;
+    }
     hr{
         margin: 1rem 3rem;
     }

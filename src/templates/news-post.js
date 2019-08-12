@@ -55,8 +55,42 @@ const Image = styled.img`
 `
 
 const Content = styled.div`
+    font-weight: 300;
     text-align: left;
-
+    h1{
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    hr{
+        margin: 1rem 3rem;
+    }
+    h1, h2, p{
+        padding: .5rem 0;
+    }
+    a{
+        color: #ff4a53;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    blockquote{
+        border-left: 1px solid #777;
+        padding-left: 2rem;
+    }
+    img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+    ul, ol{
+        padding-left: 2rem;
+    }
 `
 
 const NewsPost = ({ data }) => {
