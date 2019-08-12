@@ -149,6 +149,9 @@ const Content = styled.div`
         font-weight: 400;
         text-transform: uppercase;
     }
+    hr{
+        margin: 1rem 3rem;
+    }
     a{
         color: #ff4a53;
         text-decoration: none;
