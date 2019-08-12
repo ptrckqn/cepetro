@@ -2,9 +2,9 @@
 templateKey: operations-page
 title: Operations
 germanyOps: >-
-  **CEP is currently exploring the potential of oil deposits in licenced areas
+  CEP is currently exploring the potential of oil deposits in licenced areas
   along the Baltic Sea in Mecklenburg-Western Pomerania and along the
-  German-Polish border in Brandenburg (Germany).** 
+  German-Polish border in Brandenburg (Germany). 
 
 
   Since the commencement of operations in Germany in 2008, CEP has been granted
@@ -31,8 +31,8 @@ germanyOps: >-
 
 
   More information on the licence areas of CEP ("Erlaubnisfelder") and the
-  company’s exploration activities ("Bohrung/Seismik") can be found
-  [here](https://www.cepetro.com/aktivitaeten.html). (German)
+  company’s exploration activities ("Bohrung/Seismik") can be found at:
+  https://www.cepetro.com/aktivitaeten.html (German)
 polishOps: To be updated
 ---
 
