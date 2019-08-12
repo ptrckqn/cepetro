@@ -1,8 +1,8 @@
 ---
 templateKey: contact-page
 title: Let's get in touch
-picEn: /images/uploads/obx-deployment.jpg
-picDe: /images/uploads/obx-deployment.jpg
+picEn: /images/uploads/screen-shot-2019-08-11-at-10.17.12-pm.png
+picDe: /images/uploads/screen-shot-2019-08-11-at-10.17.54-pm.png
 contactEn: |-
   1000-521, 3 Ave SW Calgary, Alberta, T2P 3T3 Canada
   Phone: 1(403)-532-6551
