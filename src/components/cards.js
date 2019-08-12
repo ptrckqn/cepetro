@@ -101,12 +101,12 @@ const Photo = styled.div`
 `
 
 const Title = styled.h4`
-    font-size: 2.8rem; 
+    font-size: 2.5rem; 
     font-weight: 300;
     text-transform: uppercase;
     color: #fff;
     position: absolute;
-    top: 12rem;
+    top: 20rem;
     right: 2rem; 
     text-align: right;
     span{
