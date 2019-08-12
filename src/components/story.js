@@ -85,8 +85,8 @@ const Box = styled.div`
 `
 
 const Shape = styled.figure`
-    width: 15rem;
-    height: 15rem;
+    width: 18rem;
+    height: 18rem;
     float: left;
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path:circle(50% at 50% 50%);
