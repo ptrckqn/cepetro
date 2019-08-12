@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import remark from 'remark'
+import remarkHtml from 'remark-html'
 
 const Container = styled.section`
     background-color: #f7f7f7;
@@ -65,7 +67,7 @@ const Section = styled.div`
 `
 
 const Tertiary = styled.h3`
-    font-size; 1.6rem;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -134,8 +136,45 @@ const PhotoThree = styled(Photo)`
     top: 10rem;
 `
 
+const Content = styled.div`
+    font-weight: 300;
+    text-align: left;
+    h1{
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    a{
+        color: #ff4a53;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    blockquote{
+        border-left: 1px solid #777;
+        padding-left: 2rem;
+    }
+    img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+    ul, ol{
+        padding-left: 2rem;
+    }
+`
+
 class Highlights extends Component{
     render(){
+        const bodyOne = remark().use(remarkHtml).processSync(this.props.bodyOne).toString()
+        const bodyTwo = remark().use(remarkHtml).processSync(this.props.bodyTwo).toString()
+        const createHTML = (toHtml) => { return {__html: toHtml} }
+
         return(
             <Container>
                 <HeadingBox>
@@ -144,9 +183,13 @@ class Highlights extends Component{
                 <Row>
                     <Section>
                         <Tertiary>{this.props.titleOne}</Tertiary>
-                        <Paragraph>{this.props.bodyOne}</Paragraph>
+                        <Paragraph>
+                            <Content dangerouslySetInnerHTML={createHTML(bodyOne)}/>
+                        </Paragraph>
                         <Tertiary>{this.props.titleTwo}</Tertiary>
-                        <Paragraph>{this.props.bodyTwo}</Paragraph>
+                        <Paragraph>
+                            <Content dangerouslySetInnerHTML={createHTML(bodyTwo)}/>
+                        </Paragraph>
                         {this.props.showButton?<Btn to='/about'>Learn More &rarr;</Btn> : <span></span>}
                     </Section>
                     <Section>

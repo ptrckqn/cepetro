@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import remark from 'remark'
+import remarkHtml from 'remark-html'
+
 
 const Container = styled.section`
     padding: 20rem 0;
@@ -81,7 +84,7 @@ const Box = styled.div`
 `
 
 const Tertiary = styled.h3`
-    font-size; 1.6rem;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
 `
@@ -93,8 +96,45 @@ const Paragraph = styled.p`
     }
 `
 
+const Content = styled.div`
+    font-weight: 300;
+    text-align: left;
+    h1{
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    a{
+        color: #ff4a53;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    blockquote{
+        border-left: 1px solid #777;
+        padding-left: 2rem;
+    }
+    img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+    ul, ol{
+        padding-left: 2rem;
+    }
+`
+
 class Features extends Component{
     render(){
+        const bodyOne = remark().use(remarkHtml).processSync(this.props.bodyOne).toString()
+        const bodyTwo = remark().use(remarkHtml).processSync(this.props.bodyTwo).toString()
+        const createHTML = (toHtml) => { return {__html: toHtml} }
+
         return(
             <Container>
                 <HeadingBox>
@@ -107,7 +147,7 @@ class Features extends Component{
                                 {this.props.titleOne}
                             </Tertiary>
                             <Paragraph>
-                                {this.props.bodyOne}
+                                <Content dangerouslySetInnerHTML={createHTML(bodyOne)}/>
                             </Paragraph>
                         </Box>
                     </Section>
@@ -117,7 +157,7 @@ class Features extends Component{
                                 {this.props.titleTwo}
                             </Tertiary>
                             <Paragraph>
-                                {this.props.bodyTwo}
+                                <Content dangerouslySetInnerHTML={createHTML(bodyTwo)}/>
                             </Paragraph>
                         </Box>
                     </Section>

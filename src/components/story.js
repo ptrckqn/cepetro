@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import remark from 'remark'
+import remarkHtml from 'remark-html'
 
 const Container = styled.section`
     padding: 20rem 0;
@@ -136,7 +138,7 @@ const Detail = styled.div`
 `
 
 const Tertiary = styled.h3`
-    font-size; 1.6rem;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
     transform: skewX(12deg);
@@ -155,8 +157,45 @@ const Paragraph = styled.p`
     }
 `
 
+const Content = styled.div`
+    font-weight: 300;
+    text-align: left;
+    h1{
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    a{
+        color: #ff4a53;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    blockquote{
+        border-left: 1px solid #777;
+        padding-left: 2rem;
+    }
+    img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+    ul, ol{
+        padding-left: 2rem;
+    }
+`
+
 class Story extends Component{
     render(){
+        const contactEn = remark().use(remarkHtml).processSync(this.props.contactEn).toString()
+        const contactDe = remark().use(remarkHtml).processSync(this.props.contactDe).toString()
+        const createHTML = (toHtml) => { return {__html: toHtml} }
+
         return(
             <Container>
                 <HeadingBox>
@@ -172,7 +211,7 @@ class Story extends Component{
                                 {this.props.titleOne}
                             </Tertiary>
                             <Paragraph>  
-                                {this.props.contactEn}
+                                <Content dangerouslySetInnerHTML={createHTML(contactEn)}/>
                             </Paragraph>
                         </Detail>
                     </Box>
@@ -187,7 +226,7 @@ class Story extends Component{
                                 {this.props.titleTwo}
                             </Tertiary>
                             <Paragraph>  
-                                {this.props.contactDe}
+                                <Content dangerouslySetInnerHTML={createHTML(contactDe)}/>
                             </Paragraph>
                         </Detail>
                     </Box>
