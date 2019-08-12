@@ -9,14 +9,14 @@ As medium-size company based in Canada and carrying out most its operations in G
 
 CEP is committed to the following:
 
-- Providing a safe workplace for its employees and contractors;
-- Conducting its operations in a way that minimizes waste and minimizes impact on the environment;
-- Adherence to the highest standards of business ethics and employment practices.
+* Providing a safe workplace for its employees and contractors;
+* Conducting its operations in a way that minimizes waste and minimizes impact on the environment;
+* Adherence to the highest standards of business ethics and employment practices.
 
 The company has developed a comprehensive health, safety and environment management system based on ISO/OHSAS standards. The company:
 
-- Sets HSEQ standards (for itself and its contractors) that are in line with best industry    practice and compliant with all relevant legislation;
-- Monitors and records performance against these standards;
-- Reviews performance and implements measures to ensure continuous improvement.
+* Sets HSEQ standards (for itself and its contractors) that are in line with best industry practice and compliant with all relevant legislation;
+* Monitors and records performance against these standards;
+* Reviews performance and implements measures to ensure continuous improvement.
 
-  For more information on CEP's committment to corporate social responsibility, please click go to:https://www.cepetro.com/Verantwortung.html (German). 
+  For more information on CEP's committment to corporate social responsibility, please click [here](https://www.cepetro.com/Verantwortung.html) (German). 

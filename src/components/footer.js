@@ -157,7 +157,7 @@ const Footer = () => {
                 </Section>
                 <Section>
                     <Copyright>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis exercitationem quibusdam quod quos dignissimos ad sapiente ex corporis ducimus voluptas tempore fugit, maxime inventore hic a, vitae nostrum iusto nobis.
+                        &#169; 2019 CEP Central European Petroleum GmbH
                     </Copyright>
                 </Section>
             </Row>
