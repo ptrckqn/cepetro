@@ -11,5 +11,4 @@ This award of the license is based on the test results obtained from the Company
  
 CEP is a private company headquartered in Calgary, Alberta primarily focused on the pursuit of petroleum exploration and production opportunities in Central Europe.
  
-For further information, please contact Dr. Peter Putnam, PhD, P. Geol
-Chairman & Chief Executive Officer, Central European Petroleum Ltd, Suite 1000 – 521 3rd Ave SW, Calgary, Alberta, T2P 3T3 T. 403-532-6551, F. 403-532-6554, www.cepetro.com
+For further information, please contact Dr. Peter Putnam, PhD, P. Geol Chairman & Chief Executive Officer, Central European Petroleum Ltd, Suite 1000 – 521 3rd Ave SW, Calgary, Alberta, T2P 3T3 T. 403-532-6551, F. 403-532-6554, www.cepetro.com
