@@ -1,7 +1,7 @@
 ---
 templateKey: news-post
 title: Central European Petroleum Announces Receipt of Guhlen Production License
-image: 
+image: /images/uploads/x03_01_teaserbild_gross.jpg.pagespeed.ic.iyxprvscnk.jpg
 date: 2017-12-01T14:04:00.000Z
 description: ''
 ---
