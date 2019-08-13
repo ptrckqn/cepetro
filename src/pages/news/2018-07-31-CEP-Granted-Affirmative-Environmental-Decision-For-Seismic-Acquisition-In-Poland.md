@@ -1,7 +1,9 @@
 ---
 templateKey: news-post
-title: CEP Granted Affirmative Environmental Decision For Seismic Acquisition In Poland
-image: 
+title: >-
+  CEP Granted Affirmative Environmental Decision For Seismic Acquisition In
+  Poland
+image: /images/uploads/cep_ltd_seismic_in_poland.jpg
 date: 2018-07-31T14:04:00.000Z
 description: ''
 ---
