@@ -40,9 +40,9 @@ const Container = styled.header`
     position: relative;
     height: 95vh;
     background-image: linear-gradient(
-        to right bottom,
-        rgba(64, 162, 255, .8),
-        rgba(41, 108, 171, .8)),
+        to bottom,
+        rgba(41, 108, 171, 0) 40%, rgba(64, 162, 255, .1) 45%,
+        rgba(41, 108, 171, 1)),
         url(${props => props.image});
     background-size: cover;
     background-position: center;

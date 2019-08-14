@@ -20,7 +20,7 @@ const Box = styled.div`
 `
 
 const Logo = styled.img`
-    height: 15rem;
+    height: 10rem;
 `
 
 const Row = styled.div`

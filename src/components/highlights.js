@@ -8,6 +8,9 @@ const Container = styled.section`
     background-color: #f7f7f7;
     padding: 25rem 0;
     margin-top: -20vh;
+    @media only screen and (max-width: 56.25em){
+        margin-bottom: 25vh;
+    }
 `
 
 const HeadingBox = styled.div`
@@ -106,7 +109,7 @@ const Composition = styled.div`
 `
 
 const Photo = styled.img`
-    width: 55%;
+    width: 75%;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0, .4);
     border-radius: 3px;
     position: absolute;
@@ -123,17 +126,17 @@ const Photo = styled.img`
 
 const PhotoOne = styled(Photo)`
     left: 0;
-    top: -2rem;
+    top: -4rem;
 `
 
 const PhotoTwo = styled(Photo)`
     right: 0;
-    top: 2rem;
+    top: 4rem;
 `
 
 const PhotoThree = styled(Photo)`
     left: 2rem;
-    top: 10rem;
+    top: 14rem;
 `
 
 const Content = styled.div`
