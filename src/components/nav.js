@@ -177,7 +177,7 @@ const Nav = () => {
     return(
     <Container>
         <Checkbox type='checkbox' id='nav-toggle'/>
-        <NavBtn for='nav-toggle'><Icon/></NavBtn>
+        <NavBtn htmlFor='nav-toggle'><Icon/></NavBtn>
         <Background>&nbsp;</Background>
         <Navigation>
         <Link to='/'><Logo src={logoWhite} alt='Logo'/></Link>

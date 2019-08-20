@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 
 import Layout from '../components/layout'
 import Highlights from '../components/highlights'
+import Map from '../components/map'
 import Cards from '../components/cards'
 
 
@@ -23,6 +24,7 @@ export const LandingPage = ({ data }) => {
         picTwo={frontmatter.picTwo}
         picThree={frontmatter.picThree}
       />
+      <Map heading={'Where you can find us'}/>
       <Cards short={true} />
     </Layout>
   )
