@@ -10,7 +10,7 @@ const OperationsPage = ({ data }) => {
     return(
         <Layout>
             <Helmet title='CEPetro - Operations'/>
-            <Features
+            <Showcase
                 heading={'What we have accomplished'}
                 titleOne={'Our Activities'}
                 bodyOne={frontmatter.germanyOps}
