@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import europe from '../images/basemap.png'
-import germany from '../images/germany.png'
-import poland from '../images/poland.png'
-
 const Container = styled.section`
     background-color: #f7f7f7;
     padding: 10rem 0;
@@ -38,7 +34,7 @@ const Secondary = styled.h2`
 `
 
 const MapBox = styled.div`
-   background-image: url(${europe});
+   background-image: url('images/uploads/basemap.png');
    background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
@@ -93,8 +89,8 @@ class Map extends Component{
                     <Secondary>{this.props.heading}</Secondary>
                 </HeadingBox>
                 <MapBox>
-                   <Link to='/operations'><Germany src={germany}/></Link>
-                   <Link to='/operations'><Poland src={poland} /></Link>
+                   <Link to='/operations'><Germany src='images/uploads/germany.png'/></Link>
+                   <Link to='/operations'><Poland src='images/uploads/poland.png' /></Link>
                 </MapBox>
             </Container>
 
