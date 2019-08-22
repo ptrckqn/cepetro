@@ -45,8 +45,8 @@ module.exports = {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          'Monsterrat',
-          'sans-serif\:300,300i,500,500i'
+          'Montserrat',
+          'sans-serif\:300,400,700'
         ]
       }
     },

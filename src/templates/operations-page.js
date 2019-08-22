@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 import Layout from '../components/layout'
-import Features from '../components/features'
+import Showcase from '../components/showcase'
 
 const OperationsPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
@@ -12,10 +12,8 @@ const OperationsPage = ({ data }) => {
             <Helmet title='CEPetro - Operations'/>
             <Features
                 heading={'What we have accomplished'}
-                titleOne={'Our Activities in Germany'}
+                titleOne={'Our Activities'}
                 bodyOne={frontmatter.germanyOps}
-                titleTwo={'Our Activities in Poland'}
-                bodyTwo={frontmatter.polishOps}
             />
         </Layout>
     )

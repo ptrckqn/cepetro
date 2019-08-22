@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         line-height: 1.7;
         color: #777;
