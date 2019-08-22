@@ -187,7 +187,7 @@ const Nav = () => {
                 <Item><To to='/operations'><span>03</span>Operations</To></Item>
                 <Item><To to='/responsibility'><span>04</span>Responsibility</To></Item>
                 <Item><To to='/news'><span>05</span>News</To></Item>
-                <Item><To to='/contact'><span>05</span>Contact</To></Item>
+                <Item><To to='/contact'><span>06</span>Contact</To></Item>
             </List>
         </Navigation>
     </Container>
