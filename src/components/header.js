@@ -65,7 +65,7 @@ const TextBox = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    @media only screen and (max-width: 32em){
+    @media only screen and (max-width: 37.5em){
         top: 50%;
     }
 `

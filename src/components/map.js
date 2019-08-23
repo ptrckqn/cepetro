@@ -48,7 +48,7 @@ const Country = styled.img`
    position: absolute;
    transition: all .3s;
    cursor: pointer;
-   opacity: 0;
+   opacity: 1;
    &:hover{
       opacity: 1;
       transform: scale(1.5);
@@ -63,8 +63,8 @@ const Germany = styled(Country)`
     @media only screen and (max-width: 56.25em){
        top: 43%;
     }
-    @media only screen and (max-width: 32em){
-       top: 45%;
+    @media only screen and (max-width: 37.5em){
+       top: 44%;
     }
 `
 
@@ -76,8 +76,8 @@ const Poland = styled(Country)`
    @media only screen and (max-width: 56.25em){
       top: 43%;
    }  
-   @media only screen and (max-width: 32em){
-      top: 45%;
+   @media only screen and (max-width: 37.5em){
+      top: 44%;
    }
 `
 
