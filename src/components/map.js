@@ -8,6 +8,7 @@ const Container = styled.section`
     margin-top: -20vh;
     @media only screen and (max-width: 56.25em){
         margin-bottom: 25vh;
+        margin-top: 0vh;
     }
 `
 
@@ -48,7 +49,7 @@ const Country = styled.img`
    position: absolute;
    transition: all .3s;
    cursor: pointer;
-   opacity: 1;
+   opacity: 0;
    &:hover{
       opacity: 1;
       transform: scale(1.5);

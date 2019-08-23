@@ -39,10 +39,10 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         line-height: 1.7;
         color: #777;
+        background-color: #f7f7f7;
         font-size: 1.6rem;
         padding: 3rem;
         box-sizing: border-box;
-
         @media (max-width: 56.25em){
             padding: 0;
         }

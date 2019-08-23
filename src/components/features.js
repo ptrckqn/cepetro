@@ -89,23 +89,15 @@ const Tertiary = styled.h3`
     text-transform: uppercase;
 `
 
-const Paragraph = styled.p`
-    font-size: 1.6rem;
-    &:not(:last-child){
-        margin-bottom: 3rem;
-    }
-`
-
 const Content = styled.span`
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
     font-weight: 300;
-    text-align: left;
     h1{
-        font-size: 1.6rem;
         font-weight: 700;
         text-transform: uppercase;
     }
     h2{
-        font-size: 1.6rem;
         font-weight: 400;
         text-transform: uppercase;
     }
@@ -149,22 +141,14 @@ class Features extends Component{
                 <Row>
                     <Section>
                         <Box>
-                            <Tertiary>
-                                {this.props.titleOne}
-                            </Tertiary>
-                            <Paragraph>
-                                <Content dangerouslySetInnerHTML={createHTML(bodyOne)}/>
-                            </Paragraph>
+                            <Tertiary>{this.props.titleOne}</Tertiary>
+                            <Content dangerouslySetInnerHTML={createHTML(bodyOne)}/>
                         </Box>
                     </Section>
                     <Section>
                         <Box>
-                            <Tertiary>
-                                {this.props.titleTwo}
-                            </Tertiary>
-                            <Paragraph>
-                                <Content dangerouslySetInnerHTML={createHTML(bodyTwo)}/>
-                            </Paragraph>
+                            <Tertiary>{this.props.titleTwo}</Tertiary>
+                            <Content dangerouslySetInnerHTML={createHTML(bodyTwo)}/>
                         </Box>
                     </Section>
                 </Row>

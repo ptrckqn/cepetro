@@ -76,13 +76,6 @@ const Tertiary = styled.h3`
     margin-bottom: 1.5rem;
 `
 
-const Paragraph = styled.p`
-    font-size: 1.6rem;
-    &:not(:last-child){
-        margin-bottom: 3rem;
-    }
-`
-
 const Btn = styled(Link)`
     &:link, &:visited{
         font-size: 1.6rem;
@@ -139,16 +132,15 @@ const PhotoThree = styled(Photo)`
     top: 14rem;
 `
 
-const Content = styled.span`
+const Content = styled.div`
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
     font-weight: 300;
-    text-align: left;
     h1{
-        font-size: 1.6rem;
         font-weight: 700;
         text-transform: uppercase;
     }
     h2{
-        font-size: 1.6rem;
         font-weight: 400;
         text-transform: uppercase;
     }
@@ -192,13 +184,9 @@ class Highlights extends Component{
                 <Row>
                     <Section>
                         <Tertiary>{this.props.titleOne}</Tertiary>
-                        <Paragraph>
                             <Content dangerouslySetInnerHTML={createHTML(bodyOne)}/>
-                        </Paragraph>
                         <Tertiary>{this.props.titleTwo}</Tertiary>
-                        <Paragraph>
                             <Content dangerouslySetInnerHTML={createHTML(bodyTwo)}/>
-                        </Paragraph>
                         {this.props.showButton?<Btn to='/about'>Learn More &rarr;</Btn> : <span></span>}
                     </Section>
                     <Section>
