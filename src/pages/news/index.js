@@ -6,7 +6,7 @@ import Cards from '../../components/cards'
 
 const NewsPage = () => {
     return(
-        <Layout>
+        <Layout headingImage='/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'>
             <Helmet title="CEPetro - News"/>
             <Cards />
         </Layout>

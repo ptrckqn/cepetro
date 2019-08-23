@@ -1,6 +1,7 @@
 ---
 templateKey: contact-page
 title: Let's get in touch
+headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 picEn: /images/uploads/screen-shot-2019-08-11-at-10.17.12-pm.png
 picDe: /images/uploads/screen-shot-2019-08-11-at-10.17.54-pm.png
 contactEn: |-

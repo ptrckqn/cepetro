@@ -8,7 +8,7 @@ import Highlights from '../components/highlights'
 const ResponsibilityPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
-        <Layout>
+        <Layout headingImage={frontmatter.headingImage}>
             <Helmet title='CEPetro - Responsibility'/>
             <Highlights
                 heading={'What we are focused on'}
@@ -30,6 +30,7 @@ export const pageQuery = graphql`
         markdownRemark(frontmatter: {templateKey: {eq: "responsibility-page"}}){
             frontmatter{
                 title
+                headingImage
                 picOne
                 picTwo
                 picThree

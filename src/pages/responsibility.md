@@ -1,6 +1,7 @@
 ---
 templateKey: responsibility-page
 title: Our Committment and Responsibility
+headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 picOne: /images/uploads/whopic.jpg
 picTwo: /images/uploads/Vibrator.jpg
 picThree: /images/uploads/img_0477-2-.jpg

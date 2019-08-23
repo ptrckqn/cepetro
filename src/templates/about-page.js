@@ -9,7 +9,7 @@ import Features from '../components/features'
 const AboutPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
-        <Layout>
+        <Layout headingImage={frontmatter.headingImage}>
             <Helmet title='CEPetro - About'/>
             <Highlights
                 heading={'Who we are'}
@@ -37,6 +37,7 @@ export const pageQuery = graphql`
         markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}){
             frontmatter{
                 title
+                headingImage
                 image
                 management
                 boardOfDirectors

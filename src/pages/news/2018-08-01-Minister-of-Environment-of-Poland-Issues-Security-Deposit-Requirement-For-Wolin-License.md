@@ -3,6 +3,7 @@ templateKey: news-post
 title: >-
   Minister of Environment of Poland Issues Security Deposit Requirement for
   Wolin License
+headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 image: /images/uploads/ortseingang-640x317-.jpg
 date: 2018-08-01T14:04:00.000Z
 description: ''

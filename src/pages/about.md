@@ -1,6 +1,7 @@
 ---
 templateKey: about-page
 title: About Us
+headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 management: |-
   The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance.  
 

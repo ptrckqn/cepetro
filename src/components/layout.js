@@ -49,13 +49,13 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
     return(
     <div>
         <GlobalStyle />
         <Nav />
-        <Header />
-        {children}
+        <Header image={props.headingImage}/>
+        {props.children}
         <Footer />
     </div>
     )

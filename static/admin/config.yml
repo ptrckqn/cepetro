@@ -22,6 +22,7 @@ collections:
     fields: # The fields for each document, usually stored in the front matter
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'news-post'}
       - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
       - {label: 'Featured Image', name: 'image', widget: 'image', required: false}
       - {label: 'Publish Date', name: 'date', widget: 'datetime'}
       - {label: 'Description', name: 'description', widget: 'text', required: false}
@@ -41,6 +42,7 @@ collections:
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
           - {label: 'Image', name: 'image', widget: 'image'}
           - {label: 'Heading', name: 'heading', widget: 'string'}
           - {label: 'Picture One', name: 'picOne', widget: 'image'}
@@ -54,6 +56,7 @@ collections:
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'about-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
           - {label: 'CEP Management', name: 'management', widget: 'markdown'}
           - {label: 'CEP Board of Directors', name: 'boardOfDirectors', widget: 'markdown'}
           - {label: 'Picture One', name: 'picOne', widget: 'image'}
@@ -66,14 +69,17 @@ collections:
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'operations-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
           - {label: 'German Operations', name: 'germanyOps', widget: 'markdown'}
           - {label: 'Polish Operations', name: 'polishOps', widget: 'markdown'}
+          - {label: 'Body', name: 'body', widget: 'markdown'}
       - file: 'src/pages/responsibility.md'
         label: 'Responsibility Page'
         name: 'responsibility'
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'responsibility-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
           - {label: 'Picture One', name: 'picOne', widget: 'image'}
           - {label: 'Picture Two', name: 'picTwo', widget: 'image'}
           - {label: 'Picture Three', name: 'picThree', widget: 'image'}
@@ -84,6 +90,7 @@ collections:
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'contact-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
           - {label: 'Canadian Pic', name: 'picEn', widget: 'image'}
           - {label: 'German Pic', name: 'picDe', widget: 'image'}
           - {label: 'English Contact', name: 'contactEn', widget: 'text'}

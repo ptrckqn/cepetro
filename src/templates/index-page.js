@@ -11,7 +11,7 @@ import Cards from '../components/cards'
 export const LandingPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return(
-    <Layout>
+    <Layout headingImage={frontmatter.headingImage}>
       <Helmet title="CEPetro"/>
       <Highlights
         heading={'Get to know us'}
@@ -37,6 +37,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}){
       frontmatter{
         picOne
+        headingImage
         picTwo
         picThree
         about{

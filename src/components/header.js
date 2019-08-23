@@ -99,7 +99,7 @@ const Sub = styled.span`
     }
 `
 
-const Header = () => {
+const Header = (props) => {
     return(
         <StaticQuery
             query={graphql`
@@ -116,7 +116,7 @@ const Header = () => {
             render={ data => {
                 const { frontmatter } = data.markdownRemark
                 return(
-                    <Container image={frontmatter.image}>
+                    <Container image={props.image}>
                         <LogoBox>
                             <Link to='/'><Logo src={logoWhite} alt='Logo'/></Link>
                         </LogoBox>

@@ -8,7 +8,7 @@ import Story from '../components/story'
 const ContactPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
-        <Layout>
+        <Layout headingImage={frontmatter.headingImage}>
             <Helmet title='CEPetro - Contact'/>
             <Story 
                 heading={frontmatter.title}
@@ -30,6 +30,7 @@ export const pageQuery = graphql`
         markdownRemark(frontmatter: {templateKey: {eq: "contact-page"}}){
             frontmatter{
                 title
+                headingImage
                 picEn
                 picDe
                 contactEn

@@ -97,7 +97,7 @@ const NewsPost = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     const createHTML = () => { return {__html: data.markdownRemark.html} }
     return(
-        <Layout>
+        <Layout headingImage={frontmatter.headingImage}>
             <Helmet title='CEPetro'/>
             <Container>
                 <HeadingBox>
@@ -120,6 +120,7 @@ export const pageQuery = graphql`
             id
             html
             frontmatter{
+                headingImage
                 title
                 image
                 date(formatString: "MMMM Do, YYYY")

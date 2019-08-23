@@ -8,7 +8,7 @@ import Showcase from '../components/showcase'
 const OperationsPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
-        <Layout>
+        <Layout headingImage={frontmatter.headingImage}>
             <Helmet title='CEPetro - Operations'/>
             <Showcase
             />
@@ -22,9 +22,11 @@ export const pageQuery = graphql`
     query operationsQuery{
         markdownRemark(frontmatter: {templateKey: {eq: "operations-page"}}){
             frontmatter{
+                headingImage
                 germanyOps
                 polishOps
             }
+            html
         }
     }
 `
