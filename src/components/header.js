@@ -57,7 +57,10 @@ const LogoBox = styled.div`
 `
 
 const Logo = styled.img`
-    height: 10rem;
+    height: 8rem;
+    @media only screen and (max-width: 56.25em){
+        height: 10rem;
+    }
 `
 const TextBox = styled.div`
     position: absolute;
