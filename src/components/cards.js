@@ -25,6 +25,7 @@ const Secondary = styled.h2`
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    
     @media(max-width: 56.25em){
         font-size: 3rem;
     }
@@ -36,7 +37,7 @@ const Secondary = styled.h2`
 const FlexContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 30%;
+    flex: 0 0 50%;
     justify-content: space-around;
     @media(max-width: 56.25em){
         flex: 0 0 100%;
@@ -59,6 +60,12 @@ const Box = styled.div`
     position: relative;
     height: 52rem;
     margin-bottom: 3rem;
+    @media only screen and (max-width: 56.25em){
+        height: 40rem;
+    }
+    @media only screen and (max-width: 37.5em){
+        height: 52rem;
+    }
 `
 
 const Side = styled.div`
@@ -73,6 +80,12 @@ const Side = styled.div`
     border-radius: 3px;
     overflow; hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+    @media only screen and (max-width: 56.25em){
+        height: 40rem;
+    }
+    @media only screen and (max-width: 37.5em){
+        height: 52rem;
+    }
 `
 
 const Front = styled(Side)`
@@ -93,29 +106,23 @@ const Back = styled(Side)`
 const Photo = styled.div`
     background-size: cover;
     background-position: center;
-    height: 23rem;
+    height: 28rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    background-image: linear-gradient(to right bottom, #ff4a53, #ba2d34), url(${props => props.background})
+    background-image: url(${props => props.background})
 `
 
 const Title = styled.h4`
-    font-size: 2.5rem; 
+    font-size: 2rem; 
     font-weight: 300;
     text-transform: uppercase;
-    color: #fff;
+    color: #777;
     position: absolute;
-    top: 20rem;
+    top: 27.5rem;
     right: 2rem; 
+    padding: 1rem;
     text-align: right;
-    span{
-        padding: .75rem 1.5rem;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
-        width: 50;
-        background-color: rgba(255, 74, 83, .85);
-    }
 `
 
 const Paragraph = styled.p`
@@ -147,7 +154,7 @@ const Info = styled.p`
     position: absolute;
     bottom: 0;
     left: 2rem;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 100;
 `
 
