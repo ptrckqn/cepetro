@@ -8,6 +8,7 @@ const Container = styled.section`
     @media only screen and (max-width: 56.25em){
         margin-bottom: 25vh;
     }
+    overflow: hidden;
 `
 
 const HeadingBox = styled.div`
