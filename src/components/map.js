@@ -39,6 +39,7 @@ const MapBox = styled.div`
    background-position: center;
    background-repeat: no-repeat;
    height: 60rem;
+   width: 100%;
    margin: 0 auto;
    position: relative;
 `

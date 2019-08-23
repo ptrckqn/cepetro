@@ -139,7 +139,7 @@ const PhotoThree = styled(Photo)`
     top: 14rem;
 `
 
-const Content = styled.div`
+const Content = styled.span`
     font-weight: 300;
     text-align: left;
     h1{

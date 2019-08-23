@@ -96,7 +96,7 @@ const Paragraph = styled.p`
     }
 `
 
-const Content = styled.div`
+const Content = styled.span`
     font-weight: 300;
     text-align: left;
     h1{
