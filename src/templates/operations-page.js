@@ -11,6 +11,9 @@ const OperationsPage = ({ data }) => {
         <Layout headingImage={frontmatter.headingImage}>
             <Helmet title='CEPetro - Operations'/>
             <Showcase
+                germanOps={frontmatter.germanOps}
+                polishOps={frontmatter.polishOps}
+                default={data.markdownRemark.html}
             />
         </Layout>
     )
@@ -23,7 +26,7 @@ export const pageQuery = graphql`
         markdownRemark(frontmatter: {templateKey: {eq: "operations-page"}}){
             frontmatter{
                 headingImage
-                germanyOps
+                germanOps
                 polishOps
             }
             html

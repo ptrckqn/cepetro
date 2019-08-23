@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import remark from 'remark'
+import remarkHtml from 'remark-html'
 
 const Container = styled.section`
     background-color: #f7f7f7;
     padding: 25rem 0;
     margin-top: -20vh;
-    @media only screen and (max-width: 56.25em){
-        margin-bottom: 25vh;
-    }
     overflow: hidden;
 `
 
@@ -85,7 +84,7 @@ const ViewMore = styled.p`
     cursor: pointer;
 `
 
-const Content = styled.div`
+const Contents = styled.div`
     position: relative;
 `
 
@@ -116,6 +115,44 @@ const Poland = styled(Section)`
     transform: translateX(150%);
 `
 
+const Content = styled.div`
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    h1{
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h2{
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    h1, h2, p{
+        padding: .5rem 0;
+    }
+    hr{
+        margin: 1rem 3rem;
+    }
+    a{
+        color: #ff4a53;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    blockquote{
+        border-left: 1px solid #777;
+        padding-left: 2rem;
+    }
+    img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+    ul, ol{
+        padding-left: 2rem;
+    }
+`
+
 class Showcase extends Component{
     constructor(){
         super()
@@ -144,6 +181,9 @@ class Showcase extends Component{
     }
 
     render(){
+        const germanOps = remark().use(remarkHtml).processSync(this.props.germanOps).toString()
+        const polishOps = remark().use(remarkHtml).processSync(this.props.polishOps).toString()
+        const createHTML = (toHtml) => { return {__html: toHtml} }
         const hideDefault = {
             opacity: '0',
             visibility: 'hidden'
@@ -172,17 +212,17 @@ class Showcase extends Component{
                         </HoverView>
                     </ImageBox>
                 </Images>
-                <Content>
+                <Contents>
                 <Default style={this.state.view === 'default' ? {} : hideDefault}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Adipiscing elit pellentesque habitant morbi tristique. Auctor neque vitae tempus quam pellentesque nec nam. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Interdum velit laoreet id donec ultrices. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet massa vitae tortor condimentum lacinia quis. Morbi tincidunt augue interdum velit euismod. Ultricies leo integer malesuada nunc vel risus commodo.
+                    <Content dangerouslySetInnerHTML={createHTML(this.props.default)}/>
                 </Default>
                 <Germany style={this.state.view === 'germany' ? showView : {}}>
-                Consequat id porta nibh venenatis cras sed felis eget velit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Lobortis scelerisque fermentum dui faucibus in ornare quam. Consequat mauris nunc congue nisi vitae. Etiam erat velit scelerisque in dictum. Netus et malesuada fames ac turpis. Magna eget est lorem ipsum dolor sit amet. Hac habitasse platea dictumst quisque. Sodales ut etiam sit amet nisl purus in mollis. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Netus et malesuada fames ac turpis egestas.
+                    <Content dangerouslySetInnerHTML={createHTML(germanOps)}/>
                 </Germany>
-                <Poland style={this.state.view === 'poland' ? showView : {}}>
-                Nunc id cursus metus aliquam eleifend mi in nulla posuere. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Risus in hendrerit gravida rutrum quisque non. Eu consequat ac felis donec. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Purus in mollis nunc sed id semper risus in hendrerit. Sit amet nisl purus in mollis nunc. Nec feugiat in fermentum posuere urna nec. Amet commodo nulla facilisi nullam vehicula. Sagittis nisl rhoncus mattis rhoncus urna neque viverra.
+                <Poland style={this.state.view === 'poland' ? showView : {}} >
+                    <Content dangerouslySetInnerHTML={createHTML(polishOps)}/>
                 </Poland>
-                </Content>
+                </Contents>
             </Container>
         )
     }
