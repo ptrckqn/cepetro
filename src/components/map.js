@@ -62,12 +62,10 @@ const Country = styled.img`
 
 const Germany = styled(Country)`
   width: 11%;
-  max-width: 13.5rem;
   left: 43%;
   top: 43%;
   @media only screen and (min-width: 75em) {
       top: 40%;
-      max-width: 20rem;
   }
   @media only screen and (max-width: 56.25em) {
     top: 45%;
