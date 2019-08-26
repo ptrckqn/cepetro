@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
 
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import Highlights from '../components/highlights'
 import Features from '../components/features'
@@ -10,7 +10,7 @@ const AboutPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
         <Layout headingImage={frontmatter.headingImage}>
-            <Helmet title='CEPetro - About'/>
+            <SEO title='About Us'/>
             <Highlights
                 heading={'Who we are'}
                 titleOne={frontmatter.title}

@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { Helmet } from 'react-helmet'
 
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 
 const Container = styled.section`
@@ -98,7 +98,7 @@ const NewsPost = ({ data }) => {
     const createHTML = () => { return {__html: data.markdownRemark.html} }
     return(
         <Layout headingImage={frontmatter.headingImage}>
-            <Helmet title='CEPetro'/>
+            <SEO title={frontmatter.title}/>
             <Container>
                 <HeadingBox>
                     <Secondary>{frontmatter.title}</Secondary>

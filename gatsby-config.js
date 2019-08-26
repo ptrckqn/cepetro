@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Central European Petroleum',
+    title: 'CEPetro | ',
+    description: 'Central European Petroleum Ltd., registered in Alberta, Canada in 2006, were set up to pursue petroleum exploration opportunities in the European Union.',
+    url: 'https://www.cepetro.com',
+    keywords: ['Central European Petroleum', 'CEPetro', 'Central European Petro', 'German Petroleum', 'Polish Petroleum', 'Calgary Petroleum'],
     author: '@ptrckqn',
   },
   plugins: [

@@ -1,13 +1,13 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 
+import SEO from '../../components/SEO'
 import Layout from '../../components/layout'
 import Cards from '../../components/cards'
 
 const NewsPage = () => {
     return(
         <Layout headingImage='/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'>
-            <Helmet title="CEPetro - News"/>
+            <SEO title="News"/>
             <Cards />
         </Layout>
     )

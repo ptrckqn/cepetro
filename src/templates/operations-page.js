@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
 
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import Showcase from '../components/showcase'
 
@@ -9,7 +9,7 @@ const OperationsPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
         <Layout headingImage={frontmatter.headingImage}>
-            <Helmet title='CEPetro - Operations'/>
+            <SEO title='Operations'/>
             <Showcase
                 germanOps={frontmatter.germanOps}
                 polishOps={frontmatter.polishOps}

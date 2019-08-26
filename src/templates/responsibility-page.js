@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
 
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import Highlights from '../components/highlights'
 
@@ -9,7 +9,7 @@ const ResponsibilityPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
         <Layout headingImage={frontmatter.headingImage}>
-            <Helmet title='CEPetro - Responsibility'/>
+            <SEO title='Responsibility'/>
             <Highlights
                 heading={'What we are focused on'}
                 titleOne={frontmatter.title}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
 
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import Story from '../components/story'
 
@@ -9,7 +9,7 @@ const ContactPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark
     return(
         <Layout headingImage={frontmatter.headingImage}>
-            <Helmet title='CEPetro - Contact'/>
+            <SEO title='Contact Us'/>
             <Story 
                 heading={frontmatter.title}
                 titleOne={'Central European Petroleum Ltd.'}
