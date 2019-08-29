@@ -15,18 +15,18 @@ const GlobalStyle = createGlobalStyle`
     *, *::after, *::before{
         margin: 0;
         padding: 0;
-        box-sizing: inherit;
+        box-sizing: inherit;   
     }
 
     html{
         font-size: 62.5%;
-
+        
         @media (max-width: 37.5em){
-            font-size: 75%;
+            font-size: 75%;   
         }
 
         @media (max-width: 56.25em){
-            font-size: 56.25%;
+            font-size: 56.25%;   
         }
 
         @media (max-width: 75em){
@@ -52,11 +52,11 @@ const GlobalStyle = createGlobalStyle`
 const Layout = (props) => {
     return(
     <div>
-      <GlobalStyle />
-      <Nav />
-      <Header image={props.headingImage}/>
-      {props.children}
-      <Footer />
+        <GlobalStyle />
+        <Nav />
+        <Header image={props.headingImage}/>
+        {props.children}
+        <Footer />
     </div>
     )
 
