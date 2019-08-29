@@ -1,7 +1,7 @@
 ---
 templateKey: operations-page
 title: Operations
-headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+headingImage: /images/uploads/guhlenwell_lake.jpg
 germanOps: >-
   ## CEP is currently exploring the potential of oil deposits in licenced areas
   along the Baltic Sea in Mecklenburg-Western Pomerania and along the
