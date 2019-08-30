@@ -7,7 +7,7 @@ const Container = styled.section`
   padding: 10rem 0;
   margin-top: -20vh;
   @media only screen and (max-width: 56.25em) {
-    margin-bottom: 25vh;
+    margin-bottom: 0vh;
     margin-top: 0vh;
   }
 `
@@ -47,6 +47,12 @@ const MapBox = styled.div`
   width: 100%;
   margin: 0 auto;
   position: relative;
+  @media only screen and (max-width: 56.25em){
+        height: 50vh;
+  }
+  @media only screen and (max-width: 37.5em){
+    background-size: 275%;
+  }
 `
 
 const Country = styled.img`
@@ -68,16 +74,17 @@ const Germany = styled(Country)`
       top: 40%;
   }
   @media only screen and (max-width: 56.25em) {
-    top: 45%;
+    top: 40%;
   }
   @media only screen and (max-width: 37.5em) {
-    top: 46.5%;
+    top: 20%;
+    left: 30%;
+    width: 35%;
   }
 `
 
 const Poland = styled(Country)`
   width: 12%;
-  max-width: 14rem;
   left: 53%;
   top: 43%;
   @media only screen and (min-width: 75em) {
@@ -85,10 +92,12 @@ const Poland = styled(Country)`
     max-width: 20rem;
   }
   @media only screen and (max-width: 56.25em) {
-    top: 45%;
+    top: 40%;
   }
   @media only screen and (max-width: 37.5em) {
-    top: 46.5%;
+    top: 25%;
+    left: 55%;
+    width: 35%;
   }
 `
 
