@@ -2,6 +2,7 @@
 templateKey: index-page
 title: Central European Petroleum
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+image: /images/uploads/Vibrator.JPG
 heading: Little bio about the company
 picOne: /images/uploads/obx-deployment.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
@@ -16,11 +17,11 @@ about:
   title: Who We Are
 work:
   body: >-
-    As a medium-size company based in Canada and carrying out most its
+    As a medium-size company based in Canada and carrying out most of its
     operations in Germany, our main concern and objective is to establish a
     sustainable relationship of trust with local and regional authorities,
     residents, and other interest groups while taking the needs of all
-    stakeholders and the environment into account. 
+    stakeholders and the environment into account.
   title: What We Do
 ---
 
