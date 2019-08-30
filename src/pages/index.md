@@ -2,18 +2,17 @@
 templateKey: index-page
 title: Central European Petroleum
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
-image: /images/uploads/Vibrator.JPG
 heading: Little bio about the company
 picOne: /images/uploads/obx-deployment.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/img_0477-2-.jpg
 about:
   body: >-
-    Central European Petroleum Ltd., registered in Alberta, Canada in 2006, and
-    its wholly-owned affiliate, CEP Central European Petroleum GmbH, registered
-    in Germany in 2008 (together "CEP"), were set up to pursue petroleum
-    exploration opportunities in the European Union, initially focusing on
-    Germany.
+    **Central European Petroleum Ltd.**, registered in Alberta, Canada in 2006,
+    and its wholly-owned affiliates, CEP Central European Petroleum GmbH,
+    registered in Germany in 2008, and Central European Petroleum Ltd SP Zoo,
+    registered in Poland in 2017, were set up to pursue petroleum exploration
+    opportunities in the European Union.
   title: Who We Are
 work:
   body: >-
