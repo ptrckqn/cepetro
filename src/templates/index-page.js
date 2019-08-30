@@ -1,20 +1,21 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react"
+import { graphql } from "gatsby"
 
-import SEO from '../components/SEO'
-import Layout from '../components/layout'
-import Highlights from '../components/highlights'
-import Map from '../components/map'
-import Cards from '../components/cards'
-
+import SEO from "../components/SEO"
+import Layout from "../components/layout"
+import LocationsButton from "../components/locationsButton"
+import Highlights from "../components/highlights"
+import Map from "../components/map"
+import Cards from "../components/cards"
 
 export const LandingPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  return(
+  return (
     <Layout headingImage={frontmatter.headingImage}>
-      <SEO title="Central European Petroleum"/>
+      <SEO title="Central European Petroleum" />
+      <LocationsButton />
       <Highlights
-        heading={'Get to know us'}
+        heading={"Get to know us"}
         titleOne={frontmatter.about.title}
         bodyOne={frontmatter.about.body}
         titleTwo={frontmatter.work.title}
@@ -24,7 +25,7 @@ export const LandingPage = ({ data }) => {
         picTwo={frontmatter.picTwo}
         picThree={frontmatter.picThree}
       />
-      <Map heading={'Where you can find us'}/>
+      <Map heading={"Where you can find us"} />
       <Cards short={true} />
     </Layout>
   )
@@ -33,18 +34,18 @@ export const LandingPage = ({ data }) => {
 export default LandingPage
 
 export const pageQuery = graphql`
-  query pageQuery{
-    markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}){
-      frontmatter{
+  query pageQuery {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      frontmatter {
         picOne
         headingImage
         picTwo
         picThree
-        about{
+        about {
           title
           body
         }
-        work{
+        work {
           title
           body
         }
