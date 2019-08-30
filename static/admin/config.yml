@@ -43,7 +43,6 @@ collections:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
-          - {label: 'Image', name: 'image', widget: 'image'}
           - {label: 'Heading', name: 'heading', widget: 'string'}
           - {label: 'Picture One', name: 'picOne', widget: 'image'}
           - {label: 'Picture Two', name: 'picTwo', widget: 'image'}
