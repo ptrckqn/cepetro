@@ -7,7 +7,7 @@ import remarkHtml from 'remark-html'
 const Container = styled.section`
     background-color: #f7f7f7;
     padding: 25rem 0;
-    margin-top: -20vh;
+    margin-top: 0;
     @media only screen and (max-width: 56.25em){
         margin-bottom: 25vh;
     }
