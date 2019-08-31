@@ -16,7 +16,7 @@ const Container = styled.footer`
         padding: 6rem 0;
         flex-direction: column;
     }
-    
+
 `
 const Box = styled.div`
     @media only screen and (max-width: 56.25em){
@@ -28,7 +28,7 @@ const Logo = styled.img`
     height: 7rem;
     @media only screen and (max-width: 56.25em){
         height: 10rem;
-    } 
+    }
 `
 
 const Section = styled.div`
@@ -99,16 +99,16 @@ const Copyright = styled.p`
 const Footer = () => {
     return(
         <Container>
-            <Section>
-                <Navigation>
-                    <List>
-                        <Item><To to='/about'>People</To></Item>
-                        <Item><To to='/operations'>Operations</To></Item>
-                        <Item><To to='/responsibility'>Responsibility</To></Item>
-                        <Item><To to='/news'>News</To></Item>
-                        <Item><To to='/contact'>Contact</To></Item>
-                    </List>
-                </Navigation>
+          <Section>
+            <Navigation>
+              <List>
+                <Item><To to='/about'>People</To></Item>
+                <Item><To to='/operations?view=default'>Operations</To></Item>
+                <Item><To to='/responsibility'>Responsibility</To></Item>
+                <Item><To to='/news'>News</To></Item>
+                <Item><To to='/contact'>Contact</To></Item>
+              </List>
+            </Navigation>
             </Section>
             <Box>
                 <Logo src={logoColour} alt='CEPetro Logo'/>

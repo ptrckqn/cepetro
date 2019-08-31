@@ -47,10 +47,10 @@ const MapBox = styled.div`
   width: 100%;
   margin: 0 auto;
   position: relative;
-  @media only screen and (max-width: 56.25em){
-        height: 50vh;
+  @media only screen and (max-width: 56.25em) {
+    height: 50vh;
   }
-  @media only screen and (max-width: 37.5em){
+  @media only screen and (max-width: 37.5em) {
     background-size: 275%;
   }
 `
@@ -71,7 +71,7 @@ const Germany = styled(Country)`
   left: 43%;
   top: 43%;
   @media only screen and (min-width: 75em) {
-      top: 40%;
+    top: 40%;
   }
   @media only screen and (max-width: 56.25em) {
     top: 40%;

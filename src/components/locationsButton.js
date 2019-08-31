@@ -7,6 +7,39 @@ const Container = styled.div`
   margin: 3rem auto -5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content 25rem;
+  @media only screen and (max-width: 43em) {
+    height: 50rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 25rem 25rem;
+  }
+`
+
+const HeadingBox = styled.div`
+  text-align: center;
+  margin-bottom: 8rem;
+  grid-column: 1 / -1;
+`
+
+const Secondary = styled.h2`
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    rgb(64, 162, 255),
+    rgb(41, 108, 171)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  @media (max-width: 56.25em) {
+    font-size: 3rem;
+  }
+  @media (max-width: 37.5em) {
+    font-size: 2.25em;
+  }
 `
 
 const CountryContainer = styled.div`
@@ -67,7 +100,7 @@ const Details = styled.div`
   transition: all 0.3s;
   opacity: 0;
   ${CountryContainer}:hover & {
-    top: 50%;
+    top: 55%;
     opacity: 1;
   }
 `
@@ -82,31 +115,40 @@ const Text = styled.p``
 const LocationsButton = () => {
   return (
     <Container>
-      <GermanyContainer href="https://www.cepetro.de/cepetroleum.html">
-        <Title>Unsere Aktivitäten in Deutschland</Title>
+      <HeadingBox>
+        <Secondary>Visit our other sites</Secondary>
+      </HeadingBox>
+
+      <GermanyContainer>
         <Background />
-        <Details>
-          <Subtitle>CEP Central European Petroleum GmbH</Subtitle>
-          <Text>
-            ist ein deutsches Erdöl- und Erdgasunternehmen mit Sitz in Berlin,
-            das in den Bundesländern Brandenburg und Mecklenburg-Vorpommern nach
-            Fördermöglichkeiten für Erdöl und Erdgas sucht. <br /> Click to view
-            more.
-          </Text>
-        </Details>
+        <a href="https://www.cepetro.de/cepetroleum.html">
+          <Title>Unsere Aktivitäten in Deutschland</Title>
+          <Details>
+            <Subtitle>CEP Central European Petroleum GmbH</Subtitle>
+            <Text>
+              ist ein deutsches Erdöl- und Erdgasunternehmen mit Sitz in Berlin,
+              das in den Bundesländern Brandenburg und Mecklenburg-Vorpommern
+              nach Fördermöglichkeiten für Erdöl und Erdgas sucht. <br /> Click
+              to view more.
+            </Text>
+          </Details>
+        </a>
       </GermanyContainer>
+
       <PolandContainer href="https://www.cepetro.pl">
-        <Title>Our Operations in Poland</Title>
         <Background />
-        <Details>
-          <Subtitle>Central European Petroleum Ltd SP Zoo</Subtitle>
-          <Text>
-            Registered in Poland in 2017, is a wholly-owned affiliate of Central
-            European Petroleum Ltd. pursuing petroleum exploration opportunities
-            in Poland.
-            <br /> Click to view more.
-          </Text>
-        </Details>
+        <a href="https://www.cepetro.pl">
+          <Title>Our Operations in Poland</Title>
+          <Details>
+            <Subtitle>Central European Petroleum Ltd SP Zoo</Subtitle>
+            <Text>
+              Registered in Poland in 2017, is a wholly-owned affiliate of
+              Central European Petroleum Ltd. pursuing petroleum exploration
+              opportunities in Poland.
+              <br /> Click to view more.
+            </Text>
+          </Details>
+        </a>
       </PolandContainer>
     </Container>
   )

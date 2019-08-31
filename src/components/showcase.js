@@ -86,13 +86,19 @@ const ViewMore = styled.p`
 
 const Contents = styled.div`
     position: relative;
+    height: 75vh;
+    @media only screen and (max-width: 37.5em){
+      height: 125vh;
+    }
 `
 
 const Default = styled.div`
     width: 60%;
     margin: 5rem auto;
-    text-align: justify;
     transition: all .5s;
+    @media only screen and (max-width: 56.25em){
+      width: 85%;
+    }
 `
 
 const Section = styled.div`
@@ -102,9 +108,11 @@ const Section = styled.div`
     transition: all .5s;
     left: 50%;
     transform: translateX(-50%);
-    text-align: justify;
     opacity: 0;
     visibility: hidden;
+    @media only screen and (max-width: 56.25em){
+      width: 85%;
+    }
 `
 
 const Germany = styled(Section)`
@@ -164,6 +172,10 @@ class Showcase extends Component{
         this.togglePoland = this.togglePoland.bind(this)
     }
 
+    componentDidMount(){
+
+    }
+
     toggleGermany(){
         if(this.state.view === 'germany'){
             this.setState({view: 'default'})
@@ -197,16 +209,16 @@ class Showcase extends Component{
 
         return(
             <Container>
-                <HeadingBox>
-                    <Secondary>See where we have been</Secondary>
-                </HeadingBox>
-                <Images>
-                    <ImageBox image='https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80' onClick={this.toggleGermany} style={{width: this.state.view === 'germany' ? '90%' : ''}}>
-                        <HoverView>
-                            <ViewMore>{this.state.view !== 'germany' ? 'View our German operations' : 'Go back'}</ViewMore>
-                        </HoverView>
-                    </ImageBox>
-                    <ImageBox image='https://images.unsplash.com/photo-1535232843222-a40c29436fd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2259&q=80' onClick={this.togglePoland} style={{width: this.state.view === 'poland' ? '90%' : ''}}>
+              <HeadingBox>
+                <Secondary>See where we have been</Secondary>
+              </HeadingBox>
+              <Images>
+                <ImageBox image='https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80' onClick={this.toggleGermany} style={{width: this.state.view === 'germany' ? '90%' : ''}}>
+                  <HoverView>
+                    <ViewMore>{this.state.view !== 'germany' ? 'View our German operations' : 'Go back'}</ViewMore>
+                  </HoverView>
+                </ImageBox>
+                <ImageBox image='https://images.unsplash.com/photo-1535232843222-a40c29436fd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2259&q=80' onClick={this.togglePoland} style={{width: this.state.view === 'poland' ? '90%' : ''}}>
                         <HoverView>
                             <ViewMore>{this.state.view !== 'poland' ? 'View our Polish operations' : 'Go back'}</ViewMore>
                         </HoverView>
