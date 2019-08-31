@@ -38,7 +38,7 @@ const moveInRight = keyframes`
 const Container = styled.header`
     z-index: 90;
     position: relative;
-    height: 75vh;
+    height: 90vh;
     background-image: linear-gradient(
         to bottom,
         rgba(41, 108, 171, 0) 40%, rgba(64, 162, 255, .1) 45%,
@@ -46,8 +46,8 @@ const Container = styled.header`
         url(${props => props.image});
     background-size: cover;
     background-position: center;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
 `
 
 const LogoBox = styled.div`
