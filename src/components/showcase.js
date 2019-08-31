@@ -173,7 +173,9 @@ class Showcase extends Component{
     }
 
     componentDidMount(){
-
+      if(this.props.location){
+        this.setState({view: this.props.location.view})
+      }
     }
 
     toggleGermany(){

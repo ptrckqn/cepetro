@@ -109,10 +109,10 @@ class Map extends Component {
           <Secondary>{this.props.heading}</Secondary>
         </HeadingBox>
         <MapBox>
-          <Link to="/operations">
+          <Link to="/operations?view=germany">
             <Germany src="images/uploads/germany.png" />
           </Link>
-          <Link to="/operations">
+          <Link to="/operations?view=poland">
             <Poland src="images/uploads/poland.png" />
           </Link>
         </MapBox>
