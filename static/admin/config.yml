@@ -94,3 +94,11 @@ collections:
           - {label: 'German Pic', name: 'picDe', widget: 'image'}
           - {label: 'English Contact', name: 'contactEn', widget: 'text'}
           - {label: 'German Contact', name: 'contactDe', widget: 'text'}
+      - file: 'src/pages/pl.md'
+        label: 'Poland Page'
+        name: 'pl'
+        fields:
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'pl-page'}
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
+          - {label: 'Body', name: 'body', widget: 'markdown'}

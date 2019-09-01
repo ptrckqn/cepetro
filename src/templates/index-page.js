@@ -8,7 +8,7 @@ import Highlights from "../components/highlights"
 import Map from "../components/map"
 import Cards from "../components/cards"
 
-export const LandingPage = ({ data }) => {
+const LandingPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
     <Layout headingImage={frontmatter.headingImage}>

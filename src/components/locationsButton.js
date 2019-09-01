@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -135,9 +136,9 @@ const LocationsButton = () => {
         </a>
       </GermanyContainer>
 
-      <PolandContainer href="https://www.cepetro.pl">
+      <PolandContainer >
         <Background />
-        <a href="https://www.cepetro.pl">
+        <Link to="/pl">
           <Title>Our Operations in Poland</Title>
           <Details>
             <Subtitle>Central European Petroleum Ltd SP Zoo</Subtitle>
@@ -148,7 +149,7 @@ const LocationsButton = () => {
               <br /> Click to view more.
             </Text>
           </Details>
-        </a>
+        </Link>
       </PolandContainer>
     </Container>
   )

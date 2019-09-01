@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Location } from '@reach/router'
 import queryString from 'query-string'
 
 import SEO from '../components/SEO'
