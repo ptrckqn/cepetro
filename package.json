@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "cepetro",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "CEPetro Company Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Patrick Quan @ptrckqn",
   "dependencies": {
     "@reach/router": "^1.2.1",
     "babel-plugin-styled-components": "^1.10.6",
@@ -50,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ptrckqn/cepetro"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ptrckqn/cepetro/issues"
   }
 }
