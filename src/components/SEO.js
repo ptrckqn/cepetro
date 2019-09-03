@@ -20,7 +20,7 @@ const SEO = (props) => (
             const SEO = data.site.siteMetadata
             return(
                 <Helmet title={ SEO.title + props.title}>
-                    <meta name='decription' content={SEO.description}/>
+                    <meta name='description' content={SEO.description}/>
                     <meta name='keywords' content={SEO.keywords.join(',')}/>
                 </Helmet>
             )
