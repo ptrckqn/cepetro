@@ -1,7 +1,7 @@
 ---
 templateKey: news-post
 title: '''Champ'' relaxes company dress code, denies engineer'
-headingImage: /images/uploads/rh-club-champ.png
+headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 image: /images/uploads/img_1988.jpg
 date: 2019-09-06T16:53:23.558Z
 ---
