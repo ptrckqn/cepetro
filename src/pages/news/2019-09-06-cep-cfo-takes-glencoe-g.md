@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-title: CEP CFO Takes Glencoe G
+title: CEP CFO Takes Glencoe Golf Championship
 headingImage: /images/uploads/gcc-champ.jpg
 date: 2019-09-06T16:21:28.499Z
 ---
