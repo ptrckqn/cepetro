@@ -36,4 +36,4 @@ germanOps: >-
   [here](https://www.cepetro.com/aktivitaeten.html) (German)
 polishOps: To be updated
 ---
-## CEP is currently exploring the potential of oil deposits in licenced areas along the Baltic Sea in Mecklenburg-Western Pomerania and along the German-Polish border in Brandenburg (Germany).
+## CEP is currently exploring the potential of oil deposits in licensed areas along the Baltic Sea in NorthEaster Poland and Mecklenburg-Western Pomerania in Germany as well as along the German-Polish border in Brandenburg (Germany).
