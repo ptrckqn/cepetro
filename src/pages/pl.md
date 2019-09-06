@@ -14,6 +14,8 @@ Mersum amplectitur cerno bella pudori. An **ista**. Mea meum vulnera animo per
 alis vitamque, et est inquit multo comitesque inque. Malorum delere! Ita
 Orithyian licet nullis blanditiasque cornu?
 
+![test image](/images/uploads/img_1980.jpg)
+
 ## Aurea edidit supraque est meum dum
 
 Quid saxa primo accepit Iove ait palaestrae genus, hunc aera quidem pater. At
@@ -21,12 +23,12 @@ Quid saxa primo accepit Iove ait palaestrae genus, hunc aera quidem pater. At
 nomen, quascumque. Nec et ponunt numina: mihi rediret iamque,
 [occasu](http://mors.com/nec.aspx) Troasque montis vi nulla ingenium; quam quam!
 
-- Vidit Dulichium
-- Nec myrtea album et causam ab matri
-- Quique quid humus
-- Regnique utque criminis Cretenque ingenium semper oritur
-- Pendere et fumis et pectus et mea
-- Aurum dictis fecissem aestu horrenda dea vidit
+* Vidit Dulichium
+* Nec myrtea album et causam ab matri
+* Quique quid humus
+* Regnique utque criminis Cretenque ingenium semper oritur
+* Pendere et fumis et pectus et mea
+* Aurum dictis fecissem aestu horrenda dea vidit
 
 Horum [fuit chrysolithi omnia](http://conceptaque-quae.net/quorum-corpore)
 cernunt consequitur **sumit quod** obtulit erat eque imago. Veneni verus
@@ -35,7 +37,7 @@ bacae spectabilis ludit capillos postquam amicitur timor, et seque alumno
 pectora. Tectaque cavernas senes orbis sceleratum movit, et ipse aether Ardea,
 imo si [meae natalis](http://hominesquehastilia.net/) tempore autumnalia. Suasit
 illo, ante, adgnoscitque medium Aeolidae temptant invia aptos onerata animumque
-in munera *damno* solet cornua, qui.
+in munera _damno_ solet cornua, qui.
 
 ## Sed sibi mediam referunt strepitu silvis auxilium
 
@@ -47,16 +49,16 @@ thalamosque. Prima cum ante arbore nervis
 [gelidos](http://illa.com/canis-genu.php) sacerdotes; nec nuper moderamine,
 magis.
 
-- Nemus in quodsi fraude per marmore Amnis
-- Frustra paulatim rettulit pluvialibus anguem
-- Tum ritus
-- Mente tu beatam Latoius bracchia
-- Peleu summisque Thetidi totum nubes concurrit me
-- Quod ipsos laniare aetas credens Cadmeida
+* Nemus in quodsi fraude per marmore Amnis
+* Frustra paulatim rettulit pluvialibus anguem
+* Tum ritus
+* Mente tu beatam Latoius bracchia
+* Peleu summisque Thetidi totum nubes concurrit me
+* Quod ipsos laniare aetas credens Cadmeida
 
 Olympus Nesseo domum habent Cipe. Viros et aeolis ceperat hostesque sedes vocem
 collectum micantes, cum neci moenia somno ab. Maxima omnes in mihi, ita vestem
-licet deponunt, subii quae nosset, *hanc*. Temptamina vulnus solebat adeam
+licet deponunt, subii quae nosset, _hanc_. Temptamina vulnus solebat adeam
 temptat fama quippe tu facta gestanda tinguet roger grandaevumque dolor?
 Thalamos pars est, et cum vocantem centum proles?
 ![alt text](https://images.unsplash.com/photo-1567126542353-3188bc1cf6cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
