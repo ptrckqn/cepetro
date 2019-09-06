@@ -9,6 +9,6 @@ One day after winning the Glencoe G&CC club championship company CFO, Robyn Hemm
 
 > "Polo's, wind and water resistant shells, visors and hats, athletic 'dress' pants and golf gloves should be featured in all employee wardrobes" the memo read.  However, much to the engineers dismay Mr. Hemminger stated "I draw the line at cargo's though, and hikers..  That's public course crap and they'll be non of it in the work place.
 
-The Champ was non-committal when it came to concert and ironic tee shirts.  While not a huge fan of that 'hipster garbage' the beloved Tee's were not outright banned.
+The Champ was non-committal when it came to concert and ironic tee shirts.  While not a huge fan of that 'punk hipster garbage' the beloved Tee's were not outright banned.
 
-![Engineer expresses disappointment at rejection of Cargo Pants.  "But, all the Pockets?!"](/images/uploads/img_1988.jpg "Engineer expresses disappointment at rejection of Cargo Pants.  \\"But, all the Pockets?!\\"")
+![Engineer expresses disappointment at rejection of Cargo Pants.  "But, all the Pockets?!"](/images/uploads/img_1988.jpg "Engineer expresses disappointment at rejection of Cargo Pants.  \\\"But, all the Pockets?!\\\"")
