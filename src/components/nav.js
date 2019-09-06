@@ -96,7 +96,7 @@ const Background = styled.div`
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 
   ${Checkbox}:checked ~ & {
-    transform: scale(80);
+    transform: scale(40);
   }
 
   @media (max-width: 56.25em) {
