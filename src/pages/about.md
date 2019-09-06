@@ -179,7 +179,7 @@ boardOfDirectors: |-
 
   ## Gregory G. Turnbull 
   __Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLp__
-picOne: /images/uploads/whopic.jpg
+picOne: /images/uploads/img_1980.jpg
 picTwo: /images/uploads/Vibrator.jpg
 picThree: /images/uploads/img_0477-2-.jpg
 ---
