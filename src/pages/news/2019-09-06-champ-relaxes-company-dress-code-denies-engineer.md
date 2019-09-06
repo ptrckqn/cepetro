@@ -11,4 +11,4 @@ One day after winning the Glencoe G&CC club championship company CFO, Robyn Hemm
 
 The Champ was non-committal when it came to concert and ironic tee shirts.  While not a huge fan of that 'punk hipster garbage' the beloved Tee's were not outright banned.
 
-![Engineer expresses disappointment at rejection of Cargo Pants.  "But, all the Pockets?!"](/images/uploads/img_1988.jpg "Engineer expresses disappointment at rejection of Cargo Pants.  \"But, all the Pockets?!\"")
+![Engineer expresses disappointment at rejection of Cargo Pants.  "But, all the Pockets?!"](/images/uploads/img_1988.jpg "Engineer expresses disappointment at rejection of Cargo Pants.")
