@@ -1,7 +1,7 @@
 ---
 templateKey: pl-page
 title: Central European Petroleum Ltd SP Zoo
-headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+headingImage: /images/uploads/pl-header.jpg
 ---
 # Orbis lucum
 
