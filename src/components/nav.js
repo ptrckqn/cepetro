@@ -85,18 +85,18 @@ const NavBtn = styled.label`
 `
 
 const Background = styled.div`
-  height: 6rem;
-  width: 6rem;
+  height: 240rem;
+  width: 240rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: -110.5rem;
+  right: -110.5rem;
   background-image: radial-gradient(#40a2ff, #296cab);
   z-index: 97;
+  transform: scale(.02);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-
   ${Checkbox}:checked ~ & {
-    transform: scale(40);
+    transform: scale(1);
   }
 
   @media (max-width: 56.25em) {
