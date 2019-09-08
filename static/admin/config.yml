@@ -44,6 +44,8 @@ collections:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
           - {label: 'Heading', name: 'heading', widget: 'string', required: false}
+          - {label: 'Poland Link Image', name: 'polandImage', widget: 'image'}
+          - {label: 'Germany Link Image', name: 'germanyImage', widget: 'image'}
           - {label: 'Picture One', name: 'picOne', widget: 'image'}
           - {label: 'Picture Two', name: 'picTwo', widget: 'image'}
           - {label: 'Picture Three', name: 'picThree', widget: 'image'}

@@ -53,13 +53,7 @@ const CountryContainer = styled.div`
   background-repeat: no-repeat;
   transition: all 0.3s;
   cursor: pointer;
-`
-const GermanyContainer = styled(CountryContainer)`
-  background-image: url("images/uploads/germanylocationpic.jpg");
-`
-
-const PolandContainer = styled(CountryContainer)`
-  background-image: url("images/uploads/polandlocationpic.jpg");
+  background-image: ${props => `url(${props.image})`}
 `
 
 const Title = styled.h3`
@@ -113,14 +107,14 @@ const Subtitle = styled.h4`
 
 const Text = styled.p``
 
-const LocationsButton = () => {
+const LocationsButton = ({ polandImage, germanyImage}) => {
   return (
     <Container>
       <HeadingBox>
         <Secondary>Visit our other sites</Secondary>
       </HeadingBox>
 
-      <GermanyContainer>
+      <CountryContainer image={germanyImage}>
         <Background />
         <a href="https://www.cepetro.de/cepetroleum.html">
           <Title>Unsere Aktivitäten in Deutschland</Title>
@@ -134,9 +128,9 @@ const LocationsButton = () => {
             </Text>
           </Details>
         </a>
-      </GermanyContainer>
+      </CountryContainer>
 
-      <PolandContainer >
+      <CountryContainer image={polandImage}>
         <Background />
         <Link to="/pl">
           <Title>Our Operations in Poland</Title>
@@ -150,7 +144,7 @@ const LocationsButton = () => {
             </Text>
           </Details>
         </Link>
-      </PolandContainer>
+      </CountryContainer>
     </Container>
   )
 }

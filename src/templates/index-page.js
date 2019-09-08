@@ -13,7 +13,10 @@ const LandingPage = ({ data }) => {
   return (
     <Layout headingImage={frontmatter.headingImage}>
       <SEO title="Central European Petroleum" />
-      <LocationsButton />
+      <LocationsButton
+        polandImage={frontmatter.polandImage}
+        germanyImage={frontmatter.germanyImage}
+      />
       <Highlights
         heading={"Get to know us"}
         titleOne={frontmatter.about.title}
@@ -39,6 +42,8 @@ export const pageQuery = graphql`
       frontmatter {
         picOne
         headingImage
+        polandImage
+        germanyImage
         picTwo
         picThree
         about {
