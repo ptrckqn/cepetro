@@ -100,13 +100,13 @@ const Background = styled.div`
   }
 
   @media (max-width: 56.25em) {
-    top: 4.5rem;
-    right: 4.5rem;
+    top: -112.5rem;
+    right: -112.5rem;
   }
 
   @media (max-width: 37.5em) {
-    top: 3.5rem;
-    right: 3.5rem;
+    top: -113.5rem;
+    right: -113.5rem;
   }
 `
 
