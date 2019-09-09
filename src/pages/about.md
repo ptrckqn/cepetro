@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: About Us
-headingImage: /images/uploads/gaspar-manuel-zaldo-8aqln7mmhh4-unsplash.jpg
+headingImage: /images/uploads/0709-2019-09248211483206895616.jpeg
 management: >-
   The management of CEP are well-respected industry professionals with extensive
   international experience in oil & gas exploration, production, field
