@@ -34,6 +34,22 @@ germanOps: >-
   More information on the licence areas of CEP ("Erlaubnisfelder") and the
   company’s exploration activities ("Bohrung/Seismik") can be found
   [here](https://www.cepetro.com/aktivitaeten.html) (German)
-polishOps: "Initially began focusing on geologically contiguous prospects in Poland in 2010?\n\nIn December 2017, CEP was awarded a 100% working interest in the Wolin Concession in northwest Poland. The Onshore/ Offshore License is flanked by, and on trend with, two conventional gas-bearing reservoirs where 6 successful wells have been drilled to date. \r\n\nCEP sucessfully completed a 2D seismic program in lte 2018 and completed a 3D seismic program, \n\nMore in formation can be found [here](https://focused-payne-ffde0a.netlify.com/pl)"
+polishOps: >-
+  Initially began focusing on geologically contiguous prospects in Poland in
+  2010?
+
+
+  In December 2017, CEP was awarded a 100% working interest in the Wolin
+  Concession in northwest Poland. The Onshore/ Offshore License is flanked by,
+  and on trend with, two conventional gas-bearing reservoirs where 6 successful
+  wells have been drilled to date. 
+
+
+  CEP sucessfully completed a 2D seismic program in late 2018 and in May of 2019
+  completed the first OBN 3D seismic program ever conducted in Poland.
+
+
+  More in formation can be found
+  [here](https://focused-payne-ffde0a.netlify.com/pl)
 ---
 ## CEP is currently exploring the potential of oil deposits in licensed areas along the Baltic Sea in NorthEaster Poland and Mecklenburg-Western Pomerania in Germany as well as along the German-Polish border in Brandenburg (Germany).
