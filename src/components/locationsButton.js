@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -53,7 +53,7 @@ const CountryContainer = styled.div`
   background-repeat: no-repeat;
   transition: all 0.3s;
   cursor: pointer;
-  background-image: ${props => `url(${props.image})`}
+  background-image: ${props => `url(${props.image})`};
 `
 
 const Title = styled.h3`
@@ -100,14 +100,16 @@ const Details = styled.div`
   }
 `
 
-const Subtitle = styled.h4`
-  font-weight: 700;
-  font-size: 1.7rem;
-`
-
 const Text = styled.p``
 
-const LocationsButton = ({ polandImage, germanyImage}) => {
+const LocationsButton = ({
+  germanyTitle,
+  germanyBody,
+  germanyImage,
+  polandTitle,
+  polandBody,
+  polandImage,
+}) => {
   return (
     <Container>
       <HeadingBox>
@@ -117,15 +119,9 @@ const LocationsButton = ({ polandImage, germanyImage}) => {
       <CountryContainer image={germanyImage}>
         <Background />
         <a href="https://www.cepetro.de/cepetroleum.html">
-          <Title>Unsere Aktivitäten in Deutschland</Title>
+          <Title></Title>
           <Details>
-            <Subtitle>CEP Central European Petroleum GmbH</Subtitle>
-            <Text>
-              ist ein deutsches Erdöl- und Erdgasunternehmen mit Sitz in Berlin,
-              das in den Bundesländern Brandenburg und Mecklenburg-Vorpommern
-              nach Fördermöglichkeiten für Erdöl und Erdgas sucht. <br /> Click
-              to view more.
-            </Text>
+            <Text></Text>
           </Details>
         </a>
       </CountryContainer>
@@ -133,15 +129,9 @@ const LocationsButton = ({ polandImage, germanyImage}) => {
       <CountryContainer image={polandImage}>
         <Background />
         <Link to="/pl">
-          <Title>Our Operations in Poland</Title>
+          <Title></Title>
           <Details>
-            <Subtitle>Central European Petroleum Ltd SP Zoo</Subtitle>
-            <Text>
-              Registered in Poland in 2017, is a wholly-owned affiliate of
-              Central European Petroleum Ltd. pursuing petroleum exploration
-              opportunities in Poland.
-              <br /> Click to view more.
-            </Text>
+            <Text></Text>
           </Details>
         </Link>
       </CountryContainer>

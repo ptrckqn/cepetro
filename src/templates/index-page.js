@@ -17,8 +17,12 @@ const LandingPage = ({ data }) => {
     >
       <SEO title="Central European Petroleum" />
       <LocationsButton
-        polandImage={frontmatter.polandImage}
+        germanyTitle={null}
+        germanyBody={null}
         germanyImage={frontmatter.germanyImage}
+        polandTitle={null}
+        polandBody={null}
+        polandImage={frontmatter.polandImage}
       />
       <Highlights
         heading={"Get to know us"}
@@ -46,8 +50,6 @@ export const pageQuery = graphql`
         title
         picOne
         headingImage
-        polandImage
-        germanyImage
         picTwo
         picThree
         about {

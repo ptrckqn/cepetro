@@ -2,9 +2,7 @@
 templateKey: index-page
 title: Central European Petroleum
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
-heading: ''
-polandImage: /images/uploads/pl_link_adbeach.jpg
-germanyImage: /images/uploads/de_link.jpg
+heading: ""
 picOne: /images/uploads/obx-deployment.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/img_0477-2-.jpg
@@ -25,4 +23,3 @@ work:
     stakeholders and the environment into account.
   title: What We Do
 ---
-
