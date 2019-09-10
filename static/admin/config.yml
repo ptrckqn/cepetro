@@ -24,7 +24,7 @@ collections:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
       - {label: 'Featured Image', name: 'image', widget: 'image', required: false}
-      - {label: 'Category', name: 'category', widget: 'select', options: ['Poland', 'Germany', 'General']}
+      - {label: 'Category', name: 'category', widget: 'select', options: ['General', 'Germany', 'Poland']}
       - {label: 'Publish Date', name: 'date', widget: 'datetime'}
       - {label: 'Description', name: 'description', widget: 'text', required: false}
       - {label: 'Body', name: 'body', widget: 'markdown'}
