@@ -108,10 +108,6 @@ const Image = styled.img`
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
   transition: all 0.5s;
-  ${Box}:hover & {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(2px) brightness(80%);
-  }
 `
 
 const Caption = styled.figcaption`
@@ -128,10 +124,6 @@ const Caption = styled.figcaption`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: skewX(12deg);
-  ${Box}:hover & {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
   @media (max-width: 56.25em) {
     transform: skewX(0);
   }
