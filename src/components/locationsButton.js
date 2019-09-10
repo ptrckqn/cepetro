@@ -112,10 +112,6 @@ const LocationsButton = ({
 }) => {
   return (
     <Container>
-      <HeadingBox>
-        <Secondary>Visit our other sites</Secondary>
-      </HeadingBox>
-
       <CountryContainer image={germanyImage}>
         <Background />
         <a href="https://www.cepetro.de/cepetroleum.html">
