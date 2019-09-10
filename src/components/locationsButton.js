@@ -119,9 +119,9 @@ const LocationsButton = ({
       <CountryContainer image={germanyImage}>
         <Background />
         <a href="https://www.cepetro.de/cepetroleum.html">
-          <Title></Title>
+          <Title>{germanyTitle}</Title>
           <Details>
-            <Text></Text>
+            <Text>{germanyBody}</Text>
           </Details>
         </a>
       </CountryContainer>
@@ -129,9 +129,9 @@ const LocationsButton = ({
       <CountryContainer image={polandImage}>
         <Background />
         <Link to="/pl">
-          <Title></Title>
+          <Title>{polandTitle}</Title>
           <Details>
-            <Text></Text>
+            <Text>{polandBody}</Text>
           </Details>
         </Link>
       </CountryContainer>
