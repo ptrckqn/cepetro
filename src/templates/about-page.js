@@ -15,7 +15,7 @@ const AboutPage = ({ data }) => {
     >
       <SEO title="About Us" />
       <Highlights
-        heading={"Who we are"}
+        heading={frontmatter.heading}
         titleOne={frontmatter.title}
         bodyOne={data.markdownRemark.internal.content}
         showButton={false}
@@ -40,6 +40,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
         title
+        heading
         headingImage
         image
         management
