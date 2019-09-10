@@ -93,10 +93,15 @@ collections:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'contact-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
-          - {label: 'Canadian Pic', name: 'picEn', widget: 'image'}
-          - {label: 'German Pic', name: 'picDe', widget: 'image'}
+          - {label: 'English Pic', name: 'picEn', widget: 'image'}
+          - {label: 'English Title', name: 'titleEn', width: 'string}
           - {label: 'English Contact', name: 'contactEn', widget: 'text'}
-          - {label: 'German Contact', name: 'contactDe', widget: 'text'}
+          - {label: 'Germany Title', name: 'titleDe', width: 'string}
+          - {label: 'Germany Contact', name: 'contactDe', widget: 'text'}
+          - {label: 'Poland Title', name: 'titlePl', width: 'string}
+          - {label: 'Poland Contact', name: 'contactPl', widget: 'text'}
+          - {label: 'Netherlands Title', name: 'titleNl', width: 'string}
+          - {label: 'Netherlands Contact', name: 'contactNl', widget: 'text'}
       - file: 'src/pages/pl.md'
         label: 'Poland Page'
         name: 'pl'
