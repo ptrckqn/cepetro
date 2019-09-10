@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/SEO.js"
 import Layout from "../components/layout"
 import PolandBody from "../components/polandBody"
+import Cards from "../components/cards"
 
 const PlPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -13,6 +14,7 @@ const PlPage = ({ data }) => {
       headingImage={frontmatter.headingImage}
     >
       <SEO title="Central European Petroleum Ltd SP Zoo" />
+      <Cards category="Poland" />
       <PolandBody title={frontmatter.title} body={data.markdownRemark.html} />
     </Layout>
   )
