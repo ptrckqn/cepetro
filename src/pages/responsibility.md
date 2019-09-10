@@ -1,7 +1,7 @@
 ---
 templateKey: responsibility-page
 title: Our Committment and Responsibility
-headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+headingImage: /images/uploads/header_lake.jpg
 picOne: /images/uploads/natura2000sign.jpg
 picTwo: /images/uploads/Vibrator.jpg
 picThree: /images/uploads/img_0477-2-.jpg
