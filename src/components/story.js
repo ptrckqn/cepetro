@@ -203,9 +203,9 @@ const Content = styled.span`
 
 class Story extends Component {
   render() {
-    const contactEn = remark()
+    const contact = remark()
       .use(remarkHtml)
-      .processSync(this.props.contactEn)
+      .processSync(this.props.contact)
       .toString()
     const createHTML = toHtml => {
       return { __html: toHtml }
@@ -219,12 +219,12 @@ class Story extends Component {
         <Row>
           <Box>
             <Shape>
-              <Image src={this.props.picEn} alt="Location" />
+              <Image src={this.props.pic} alt="Location" />
             </Shape>
             <Detail>
-              <Tertiary>{this.props.titleOne}</Tertiary>
+              <Tertiary>{this.props.title}</Tertiary>
               <Paragraph>
-                <Content dangerouslySetInnerHTML={createHTML(contactEn)} />
+                <Content dangerouslySetInnerHTML={createHTML(contact)} />
               </Paragraph>
             </Detail>
           </Box>
