@@ -5,6 +5,7 @@ title: >-
   Wolin License
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 image: /images/uploads/ortseingang-640x317-.jpg
+category: Poland
 date: 2018-08-01T14:04:00.000Z
 description: ''
 ---
