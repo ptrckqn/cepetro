@@ -1,6 +1,7 @@
 ---
 templateKey: contact-page
-title: Let's get in touch
+title: Contact us
+heading: Let's get in touch
 headingImage: /images/uploads/header-page.jpeg
 picEn: /images/uploads/screen-shot-2019-08-11-at-10.17.12-pm.png
 titleEn: Central European Petroleum Ltd.
@@ -29,4 +30,3 @@ contactNl: |-
   Fax: +49 (30) 24 31 02 528  
   Email: de-info@cepetro.com
 ---
-

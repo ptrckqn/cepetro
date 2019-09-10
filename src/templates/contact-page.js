@@ -15,7 +15,7 @@ const ContactPage = ({ data }) => {
     >
       <SEO title="Contact Us" />
       <Story
-        heading={frontmatter.title}
+        heading={frontmatter.heading}
         title={frontmatter.titleEn}
         pic={frontmatter.picEn}
         contact={frontmatter.contactEn}
@@ -39,6 +39,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
       frontmatter {
         title
+        heading
         headingImage
         picEn
         titleEn
