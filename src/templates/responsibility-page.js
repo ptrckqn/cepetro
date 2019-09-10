@@ -14,7 +14,7 @@ const ResponsibilityPage = ({ data }) => {
     >
       <SEO title="Responsibility" />
       <Highlights
-        heading={"What we are focused on"}
+        heading={frontmatter.heading}
         titleOne={frontmatter.title}
         bodyOne={data.markdownRemark.internal.content}
         showButton={false}
@@ -35,6 +35,7 @@ export const pageQuery = graphql`
     ) {
       frontmatter {
         title
+        heading
         headingImage
         picOne
         picTwo
