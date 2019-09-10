@@ -11,7 +11,7 @@ backend:
 media_folder: 'static/images/uploads' # Media files will be stored in the repo under static/images/uploads
 public_folder: '/images/uploads' # The src attribute in HTML for uploaded media will begin with /images/uploads
 
-# Collections define the structure of different content types that are managed by netlify-cms
+# Collections define the structure of different content types that are managed by the netlify-cms
 
 collections:
   - name: 'news' # Used in routes.
