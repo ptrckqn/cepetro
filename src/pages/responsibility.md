@@ -2,9 +2,9 @@
 templateKey: responsibility-page
 title: Our Committment and Responsibility
 headingImage: /images/uploads/header_lake.jpg
-picOne: /images/uploads/natura2000sign.jpg
-picTwo: /images/uploads/Vibrator.jpg
-picThree: /images/uploads/img_0477-2-.jpg
+picOne: /images/uploads/img_0477-2-.jpg
+picTwo: /images/uploads/poland_woods.jpg
+picThree: /images/uploads/natura2000sign.jpg
 ---
 As medium-size company based in Canada and carrying out most its operations in Germany, our main concern and objective is to establish a sustainable relationship of trust with local and regional authorities, residents, and other interest groups while taking the needs of all stakeholders and the environment into account. 
 
