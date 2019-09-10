@@ -20,6 +20,7 @@ const OperationsPage = props => {
             ? queryString.parse(props.location.search)
             : null
         }
+        heading={frontmatter.heading}
         germanOps={frontmatter.germanOps}
         polishOps={frontmatter.polishOps}
         default={props.data.markdownRemark.html}
@@ -35,6 +36,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "operations-page" } }) {
       frontmatter {
         title
+        heading
         headingImage
         germanOps
         polishOps

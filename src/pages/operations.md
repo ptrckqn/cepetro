@@ -1,5 +1,6 @@
 ---
 templateKey: operations-page
+heading: See where we've been
 title: Operations
 headingImage: /images/uploads/guhlenwell_lake.jpg
 germanOps: >-
@@ -42,7 +43,7 @@ polishOps: >-
   In December 2017, CEP was awarded a 100% working interest in the Wolin
   Concession in northwest Poland. The Onshore/ Offshore License is flanked by,
   and on trend with, two conventional gas-bearing reservoirs where 6 successful
-  wells have been drilled to date. 
+  wells have been drilled to date.
 
 
   CEP sucessfully completed a 2D seismic program in late 2018 and in May of 2019
@@ -52,4 +53,5 @@ polishOps: >-
   More in formation can be found
   [here](https://focused-payne-ffde0a.netlify.com/pl)
 ---
+
 ## CEP is currently exploring the potential of oil deposits in licensed areas along the Baltic Sea in NorthEaster Poland and Mecklenburg-Western Pomerania in Germany as well as along the German-Polish border in Brandenburg (Germany).
