@@ -3,8 +3,24 @@ templateKey: index-page
 title: Central European Petroleum
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 heading: ''
-polandImage: /images/uploads/pl_link_adbeach.jpg
-germanyImage: /images/uploads/de_link.jpg
+germanySite:
+  body: |-
+    CEP Central European Petroleum GmbH
+    ist ein deutsches Erdöl- und Erdgasunternehmen mit Sitz in Berlin,
+    das in den Bundesländern Brandenburg und Mecklenburg-Vorpommern
+    nach Fördermöglichkeiten für Erdöl und Erdgas sucht. 
+    Click to view more.
+  image: /images/uploads/de_link.jpg
+  title: Unsere Aktivitäten in Deutschland
+polandSite:
+  body: |-
+    Central European Petroleum Ltd SP Zoo
+    Registered in Poland in 2017, is a wholly-owned affiliate of
+    Central European Petroleum Ltd. pursuing petroleum exploration
+    opportunities in Poland.
+    Click to view more.
+  image: /images/uploads/pl_link_adbeach.jpg
+  title: Our Operations in Poland
 picOne: /images/uploads/obx-deployment.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/img_0477-2-.jpg
