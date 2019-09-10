@@ -1,8 +1,8 @@
-import React from 'react'
-import { createGlobalStyle } from 'styled-components'
-import Nav from './nav'
-import Header from './header'
-import Footer from './footer'
+import React from "react"
+import { createGlobalStyle } from "styled-components"
+import Nav from "./nav"
+import Header from "./header"
+import Footer from "./footer"
 
 // Primary Blue: #3078bc rgb(48, 120, 188)
 // Primary Blue Light: ##40a2ff rgb(64, 162, 255)
@@ -49,17 +49,16 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
-const Layout = (props) => {
-    return(
+const Layout = ({ headingImage, headingTitle, children }) => {
+  return (
     <div>
       <GlobalStyle />
       <Nav />
-      <Header image={props.headingImage}/>
-      {props.children}
+      <Header title={headingTitle} image={headingImage} />
+      {children}
       <Footer />
     </div>
-    )
-
+  )
 }
 
 export default Layout

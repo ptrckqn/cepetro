@@ -111,39 +111,20 @@ const Sub = styled.span`
   }
 `
 
-const Header = props => {
+const Header = ({ image, title }) => {
   return (
-    <StaticQuery
-      query={graphql`
-        query headerQuery {
-          markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-            frontmatter {
-              title
-              heading
-              image
-            }
-          }
-        }
-      `}
-      render={data => {
-        const { frontmatter } = data.markdownRemark
-        return (
-          <Container image={props.image}>
-            <LogoBox>
-              <Link to="/">
-                <Logo src={logoWhite} alt="Logo" />
-              </Link>
-            </LogoBox>
-            <TextBox>
-              <Primary>
-                <Main>{frontmatter.title}</Main>
-                <Sub>{frontmatter.heading}</Sub>
-              </Primary>
-            </TextBox>
-          </Container>
-        )
-      }}
-    />
+    <Container image={image}>
+      <LogoBox>
+        <Link to="/">
+          <Logo src={logoWhite} alt="Logo" />
+        </Link>
+      </LogoBox>
+      <TextBox>
+        <Primary>
+          <Main>{title}</Main>
+        </Primary>
+      </TextBox>
+    </Container>
   )
 }
 

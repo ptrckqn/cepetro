@@ -11,7 +11,10 @@ import Cards from "../components/cards"
 const LandingPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
-    <Layout headingImage={frontmatter.headingImage}>
+    <Layout
+      headingTitle={frontmatter.title}
+      headingImage={frontmatter.headingImage}
+    >
       <SEO title="Central European Petroleum" />
       <LocationsButton
         polandImage={frontmatter.polandImage}
@@ -40,6 +43,7 @@ export const pageQuery = graphql`
   query pageQuery {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
+        title
         picOne
         headingImage
         polandImage
