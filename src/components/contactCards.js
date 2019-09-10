@@ -85,6 +85,18 @@ const Content = styled.span`
 `
 
 const ContactCards = props => {
+  const contactDe = remark()
+    .use(remarkHtml)
+    .processSync(props.contactDe)
+    .toString()
+  const contactPl = remark()
+    .use(remarkHtml)
+    .processSync(props.contactPl)
+    .toString()
+  const contactNl = remark()
+    .use(remarkHtml)
+    .processSync(props.contactNl)
+    .toString()
   const createHTML = toHtml => {
     return { __html: toHtml }
   }
@@ -93,15 +105,21 @@ const ContactCards = props => {
       <GridContainer>
         <Box>
           <Tertiary>{props.titleNl}</Tertiary>
-          <Paragraph>{props.contactNl}</Paragraph>
+          <Paragraph>
+            <Content dangerouslySetInnerHTML={createHTML(contactNl)} />
+          </Paragraph>
         </Box>
         <Box>
           <Tertiary>{props.titleDe}</Tertiary>
-          <Paragraph>{props.contactDe}</Paragraph>
+          <Paragraph>
+            <Content dangerouslySetInnerHTML={createHTML(contactDe)} />
+          </Paragraph>
         </Box>
         <Box>
           <Tertiary>{props.titlePl}</Tertiary>
-          <Paragraph>{props.contactPl}</Paragraph>
+          <Paragraph>
+            <Content dangerouslySetInnerHTML={createHTML(contactPl)} />
+          </Paragraph>
         </Box>
       </GridContainer>
     </Container>
