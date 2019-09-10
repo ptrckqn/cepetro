@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Central European Petroleum
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
-heading: ""
+heading: ''
 germanySite:
   body: |-
     CEP Central European Petroleum GmbH
@@ -11,7 +11,7 @@ germanySite:
     nach Fördermöglichkeiten für Erdöl und Erdgas sucht.
     Click to view more.
   image: /images/uploads/de_link.jpg
-  title: Unsere Aktivitäten in Deutschland
+  title: CEP Central European Petroleum GmbH
 polandSite:
   body: |-
     Central European Petroleum Ltd SP Zoo
@@ -20,7 +20,7 @@ polandSite:
     opportunities in Poland.
     Click to view more.
   image: /images/uploads/pl_link_adbeach.jpg
-  title: Our Operations in Poland
+  title: Central European Petroleum Ltd SP Zoo
 picOne: /images/uploads/obx-deployment.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/img_0477-2-.jpg
@@ -41,3 +41,4 @@ work:
     stakeholders and the environment into account.
   title: What We Do
 ---
+
