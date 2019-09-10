@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Story from "../components/story"
+import ContactCards from "../components/contactCards"
 
 const ContactPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -15,12 +16,17 @@ const ContactPage = ({ data }) => {
       <SEO title="Contact Us" />
       <Story
         heading={frontmatter.title}
-        titleOne={"Central European Petroleum Ltd."}
-        titleTwo={"CEP Central European Petroleum GmbH"}
-        picEn={frontmatter.picEn}
-        picDe={frontmatter.picDe}
-        contactEn={frontmatter.contactEn}
+        title={frontmatter.titleEn}
+        pic={frontmatter.picEn}
+        contact={frontmatter.contactEn}
+      />
+      <ContactCards
+        titleDe={frontmatter.titleDe}
         contactDe={frontmatter.contactDe}
+        titlePl={frontmatter.titlePl}
+        contactPl={frontmatter.contactPl}
+        titleNl={frontmatter.titleNl}
+        contactNl={frontmatter.contactNl}
       />
     </Layout>
   )
@@ -35,9 +41,14 @@ export const pageQuery = graphql`
         title
         headingImage
         picEn
-        picDe
+        titleEn
         contactEn
+        titleDe
         contactDe
+        titleNl
+        contactNl
+        titlePl
+        contactPl
       }
     }
   }
