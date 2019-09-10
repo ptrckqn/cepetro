@@ -134,6 +134,7 @@ export const pageQuery = graphql`
       frontmatter {
         headingImage
         title
+        category
         image
         date(formatString: "MMMM Do, YYYY")
         description
