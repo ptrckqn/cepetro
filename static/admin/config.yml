@@ -45,8 +45,8 @@ collections:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
           - {label: 'Heading', name: 'heading', widget: 'string', required: false}
-          - {label: 'Germany Site', name:'germanySite', widget: 'object', fields: [{label: 'Title', name:'germanySiteTitle', widget: 'string'}, {label: 'Body', name:'germanySiteBody', widget: 'text'}, {label: 'Image', name: 'germanySiteImage', widget: 'image'}]}
-          - {label: 'Poland Site', name:'polandSite', widget: 'object', fields: [{label: 'Title', name:'polandSiteTitle', widget: 'string'}, {label: 'Body', name:'polandSiteBody', widget: 'text'}, {label: 'Image', name: 'polandSiteImage', widget: 'image'}]}
+          - {label: 'Germany Site', name:'germanySite', widget: 'object', fields: [{label: 'Title', name: 'title', widget: 'string'}, {label: 'Body', name: 'body', widget: 'text'}, {label: 'Image', name: 'image', widget: 'image'}]}
+          - {label: 'Poland Site', name:'polandSite', widget: 'object', fields: [{label: 'Title', name: 'title', widget: 'string'}, {label: 'Body', name: 'body', widget: 'text'}, {label: 'Image', name: 'image', widget: 'image'}]}
           - {label: 'Picture One', name: 'picOne', widget: 'image'}
           - {label: 'Picture Two', name: 'picTwo', widget: 'image'}
           - {label: 'Picture Three', name: 'picThree', widget: 'image'}
