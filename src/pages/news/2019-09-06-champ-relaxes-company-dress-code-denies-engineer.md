@@ -3,6 +3,7 @@ templateKey: news-post
 title: '''Champ'' relaxes company dress code'
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 image: /images/uploads/rh-club-champ.png
+category: General
 date: 2019-09-06T16:53:23.558Z
 ---
 One day after winning the Glencoe G&CC club championship company CFO, Robyn Hemminger (Champ), has already begun to implement his winning strategies at the office.  Monday morning The Champ sent out a company memo stating that golf attire would be included in the company dress code.
