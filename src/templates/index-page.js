@@ -25,7 +25,7 @@ const LandingPage = ({ data }) => {
         polandImage={frontmatter.polandSite.image}
       />
       <Highlights
-        heading={"Get to know us"}
+        heading={frontmatter.aboutHeading}
         titleOne={frontmatter.about.title}
         bodyOne={frontmatter.about.body}
         titleTwo={frontmatter.work.title}
@@ -35,8 +35,8 @@ const LandingPage = ({ data }) => {
         picTwo={frontmatter.picTwo}
         picThree={frontmatter.picThree}
       />
-      <Map heading={"Where you can find us"} />
-      <Cards short={true} />
+      <Map heading={frontmatter.mapHeading} />
+      <Cards heading={frontmatter.newsHeading} short={true} />
     </Layout>
   )
 }
@@ -52,6 +52,9 @@ export const pageQuery = graphql`
         headingImage
         picTwo
         picThree
+        aboutHeading
+        mapHeading
+        newsHeading
         germanySite {
           title
           body

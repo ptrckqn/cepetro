@@ -234,7 +234,7 @@ class Cards extends Component {
     return (
       <Container>
         <HeadingBox>
-          <Secondary>Catch up on what we have done</Secondary>
+          <Secondary>{this.props.heading}</Secondary>
         </HeadingBox>
         <StaticQuery
           query={graphql`
