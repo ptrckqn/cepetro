@@ -21,8 +21,12 @@ const OperationsPage = props => {
             : null
         }
         heading={frontmatter.heading}
-        germanOps={frontmatter.germanOps}
-        polishOps={frontmatter.polishOps}
+        germanImage={frontmatter.germany.image}
+        germanText={frontmatter.germany.imageText}
+        germanOps={frontmatter.germany.germanOps}
+        polandImage={frontmatter.poland.image}
+        polandText={frontmatter.poland.imageText}
+        polishOps={frontmatter.poland.polishOps}
         default={props.data.markdownRemark.html}
       />
     </Layout>
@@ -38,8 +42,16 @@ export const pageQuery = graphql`
         title
         heading
         headingImage
-        germanOps
-        polishOps
+        germany {
+          germanOps
+          imageText
+          image
+        }
+        poland {
+          polishOps
+          imageText
+          image
+        }
       }
       html
     }

@@ -231,27 +231,27 @@ class Showcase extends Component {
         </HeadingBox>
         <Images>
           <ImageBox
-            image="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+            image={this.props.germanImage}
             onClick={this.toggleGermany}
             style={{ width: this.state.view === "germany" ? "90%" : "" }}
           >
             <HoverView>
               <ViewMore>
                 {this.state.view !== "germany"
-                  ? "View our German operations"
+                  ? this.props.germanText
                   : "Go back"}
               </ViewMore>
             </HoverView>
           </ImageBox>
           <ImageBox
-            image="https://images.unsplash.com/photo-1535232843222-a40c29436fd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2259&q=80"
+            image={this.props.Polandimage}
             onClick={this.togglePoland}
             style={{ width: this.state.view === "poland" ? "90%" : "" }}
           >
             <HoverView>
               <ViewMore>
                 {this.state.view !== "poland"
-                  ? "View our Polish operations"
+                  ? this.props.polandText
                   : "Go back"}
               </ViewMore>
             </HoverView>
