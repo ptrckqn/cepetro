@@ -244,7 +244,7 @@ class Showcase extends Component {
             </HoverView>
           </ImageBox>
           <ImageBox
-            image={this.props.Polandimage}
+            image={this.props.polandImage}
             onClick={this.togglePoland}
             style={{ width: this.state.view === "poland" ? "90%" : "" }}
           >
