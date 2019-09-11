@@ -53,8 +53,8 @@ collections:
           - {label: 'About Heading', name: 'aboutHeading', widget: 'string'}
           - {label: 'Map Heading', name: 'mapHeading', widget: 'string'}
           - {label: 'News Heading', name: 'newsHeading', widget: 'string'}
-          - {label: 'About', name: 'about', widget: 'object', fields: [{label: 'Title', name: 'title', widet: 'string'}, {label: 'Body', name: 'body', widget: 'markdown'}]}
-          - {label: 'Work', name: 'work', widget: 'object', fields: [{label: 'Title', name: 'title', widet: 'string'}, {label: 'Body', name: 'body', widget: 'markdown'}]}
+          - {label: 'About', name: 'about', widget: 'object', fields: [{label: 'Title', name: 'title', widget: 'string'}, {label: 'Body', name: 'body', widget: 'markdown'}]}
+          - {label: 'Work', name: 'work', widget: 'object', fields: [{label: 'Title', name: 'title', widget: 'string'}, {label: 'Body', name: 'body', widget: 'markdown'}]}
       - file: 'src/pages/about.md'
         label: 'About Page'
         name: 'about'
@@ -77,8 +77,8 @@ collections:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Page Heading', name: 'heading', widget: 'string'}
           - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
-          - {label: 'German Operations', name: 'germanOps', widget: 'markdown'}
-          - {label: 'Polish Operations', name: 'polishOps', widget: 'markdown'}
+          - {label: 'Germany', name: 'germany', widget: 'object', fields: [{label: 'Image', name: 'image', widget: 'image'}, {label: 'Overlay Text', name: 'text', widget: 'string'}, {label: 'Operations', name: 'ops', widget: 'markdown'}]
+          - {label: 'Poland', name: 'poland', widget: 'object', fields: [{label: 'Image', name: 'image', widget: 'image'}, {label: 'Overlay Text', name: 'text', widget: 'string'}, {label: 'Operations', name: 'ops', widget: 'markdown'}]
           - {label: 'Body', name: 'body', widget: 'markdown'}
       - file: 'src/pages/responsibility.md'
         label: 'Responsibility Page'
