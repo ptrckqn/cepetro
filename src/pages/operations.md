@@ -1,7 +1,7 @@
 ---
 templateKey: operations-page
-heading: See where we've been
 title: Operations
+heading: See where we've been
 headingImage: /images/uploads/guhlenwell_lake.jpg
 germanOps: >-
   ## CEP is currently exploring the potential of oil deposits in licenced areas
@@ -9,49 +9,18 @@ germanOps: >-
   German-Polish border in Brandenburg (Germany).
 
 
-  > Since the commencement of operations in Germany in 2008, CEP has been
-  granted eight licences to explore the feasibility of producing oil in areas
-  covering about 1.5 million acres along the Baltic Sea in Mecklenburg-Western
-  Pomerania and on the German-Polish border in Brandenburg. Should these
-  exploratory activities yield positive results, CEP intends to seek permission
-  to start the production of oil and intensify its search for further deposits
-  in the north-east of Germany.   
-
-
-  The presence of oil and gas deposits in the areas explored by CEP in
-  Mecklenburg-Western Pomerania and Brandenburg is well documented. They were
-  first explored and developed by the former state-owned production company
-  Erdöl-Erdgas Gommern (EEG) in former East Germany – long before modern
-  technology and innovative techniques were available. However, despite the
-  existing knowledge, the areas currently explored by CEP feature a number of
-  large and small anomalies that require further investigation.  
-
-
-  To this end, CEP builds on the know-how of the former EEG and combines it with
-  modern, state-of-the-art techniques to map new structures and to determine the
-  existence of reservoirs and develop new oil fields.  
+  > Following the initial grant in 2007, CEP held eight exploration licenses at
+  peak activity covering about 1.5 million acres in the states of Mecklenburg
+  Vorpommern and Brandenburg. Field operations commenced in 2009 with
+  acquisition of 3D seismic and the first exploration well was drilled in 2011.
+  CEP made a gas condensate discovery in 2016 and was later awarded the Guhlen
+  Production License in September 2017. Activities are currently focused on
+  appraising the discovery 
 
 
   More information on the licence areas of CEP ("Erlaubnisfelder") and the
   company’s exploration activities ("Bohrung/Seismik") can be found
   [here](https://www.cepetro.com/aktivitaeten.html) (German)
-polishOps: >-
-  Initially began focusing on geologically contiguous prospects in Poland in
-  2010?
-
-
-  In December 2017, CEP was awarded a 100% working interest in the Wolin
-  Concession in northwest Poland. The Onshore/ Offshore License is flanked by,
-  and on trend with, two conventional gas-bearing reservoirs where 6 successful
-  wells have been drilled to date.
-
-
-  CEP sucessfully completed a 2D seismic program in late 2018 and in May of 2019
-  completed the first OBN 3D seismic program ever conducted in Poland.
-
-
-  More in formation can be found
-  [here](https://focused-payne-ffde0a.netlify.com/pl)
+polishOps: "CEP expanded its exploration activities into neighboring Poland by participating in the first hydrocarbon concessions licensing round in 2016 after successfully completing the pre-qualification procedure. Following the competitive process which follows the European Union Directive 94/22, CEP was awarded the Wolin Concession in northwest Poland in December 2017. The Onshore/ Offshore License is flanked by, and on trend with, two conventional gas-bearing reservoirs where 6 successful wells have been drilled to date.\r\n\n\rCEP has successfully completed an onshore 2D seismic program in late 2018 and in early June of 2019, completed an OBN based 3D seismic survey which is the first of its kind to be conducted in Poland. More information about our activities in Poland can be found here\n\nMore in formation can be found [here](https://focused-payne-ffde0a.netlify.com/pl)"
 ---
-
-## CEP is currently exploring the potential of oil deposits in licensed areas along the Baltic Sea in NorthEaster Poland and Mecklenburg-Western Pomerania in Germany as well as along the German-Polish border in Brandenburg (Germany).
+## CEP IS CURRENTLY EXPLORING THE HYDROCARBON POTENTIAL OF THE SOUTHERN PERMIAN BASIN MARGIN IN NORTHWESTERN POLAND AND NORTHEASTERN GERMANY.
