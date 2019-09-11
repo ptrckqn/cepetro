@@ -202,13 +202,13 @@ class Showcase extends Component {
   }
 
   render() {
-    const germanOps = remark()
+    const germanyOps = remark()
       .use(remarkHtml)
-      .processSync(this.props.germanOps)
+      .processSync(this.props.germanyOps)
       .toString()
-    const polishOps = remark()
+    const polandOps = remark()
       .use(remarkHtml)
-      .processSync(this.props.polishOps)
+      .processSync(this.props.polandOps)
       .toString()
     const createHTML = toHtml => {
       return { __html: toHtml }
@@ -231,14 +231,14 @@ class Showcase extends Component {
         </HeadingBox>
         <Images>
           <ImageBox
-            image={this.props.germanImage}
+            image={this.props.germanyImage}
             onClick={this.toggleGermany}
             style={{ width: this.state.view === "germany" ? "90%" : "" }}
           >
             <HoverView>
               <ViewMore>
                 {this.state.view !== "germany"
-                  ? this.props.germanText
+                  ? this.props.germanyText
                   : "Go back"}
               </ViewMore>
             </HoverView>
@@ -262,10 +262,10 @@ class Showcase extends Component {
             <Content dangerouslySetInnerHTML={createHTML(this.props.default)} />
           </Default>
           <Germany style={this.state.view === "germany" ? showView : {}}>
-            <Content dangerouslySetInnerHTML={createHTML(germanOps)} />
+            <Content dangerouslySetInnerHTML={createHTML(germanyOps)} />
           </Germany>
           <Poland style={this.state.view === "poland" ? showView : {}}>
-            <Content dangerouslySetInnerHTML={createHTML(polishOps)} />
+            <Content dangerouslySetInnerHTML={createHTML(polandOps)} />
           </Poland>
         </Contents>
       </Container>

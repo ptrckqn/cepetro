@@ -21,12 +21,12 @@ const OperationsPage = props => {
             : null
         }
         heading={frontmatter.heading}
-        germanImage={frontmatter.germany.image}
-        germanText={frontmatter.germany.imageText}
-        germanOps={frontmatter.germany.germanOps}
+        germanyImage={frontmatter.germany.image}
+        germanyText={frontmatter.germany.text}
+        germanyOps={frontmatter.germany.ops}
         polandImage={frontmatter.poland.image}
-        polandText={frontmatter.poland.imageText}
-        polishOps={frontmatter.poland.polishOps}
+        polandText={frontmatter.poland.text}
+        polandOps={frontmatter.poland.ops}
         default={props.data.markdownRemark.html}
       />
     </Layout>
@@ -43,13 +43,13 @@ export const pageQuery = graphql`
         heading
         headingImage
         germany {
-          germanOps
-          imageText
+          ops
+          text
           image
         }
         poland {
-          polishOps
-          imageText
+          ops
+          text
           image
         }
       }
