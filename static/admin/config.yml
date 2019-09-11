@@ -77,8 +77,8 @@ collections:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Page Heading', name: 'heading', widget: 'string'}
           - {label: 'Heading Image', name: 'headingImage', widget: 'image', default: '/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg'}
-          - {label: 'Germany', name: 'germany', widget: 'object', fields: [{label: 'Image', name: 'image', widget: 'image'}, {label: 'Overlay Text', name: 'text', widget: 'string'}, {label: 'Operations', name: 'ops', widget: 'markdown'}]
-          - {label: 'Poland', name: 'poland', widget: 'object', fields: [{label: 'Image', name: 'image', widget: 'image'}, {label: 'Overlay Text', name: 'text', widget: 'string'}, {label: 'Operations', name: 'ops', widget: 'markdown'}]
+          - {label: 'Germany', name: 'germany', widget: 'object', fields: [{label: 'Image', name: 'image', widget: 'image'}, {label: 'Overlay Text', name: 'text', widget: 'string'}, {label: 'Operations', name: 'ops', widget: 'markdown'}]}
+          - {label: 'Poland', name: 'poland', widget: 'object', fields: [{label: 'Image', name: 'image', widget: 'image'}, {label: 'Overlay Text', name: 'text', widget: 'string'}, {label: 'Operations', name: 'ops', widget: 'markdown'}]}
           - {label: 'Body', name: 'body', widget: 'markdown'}
       - file: 'src/pages/responsibility.md'
         label: 'Responsibility Page'
