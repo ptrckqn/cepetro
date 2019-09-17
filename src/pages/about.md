@@ -9,22 +9,34 @@ management: >-
   operations and finance.  
 
 
-  ---  
+  - - -
 
 
-  ## Peter Putnam, P. Geol
+  ## Peter Putnam, PhD, P. Geol
 
-  __CHAIRMAN & CHIEF EXECUTIVE OFFICER, CO-FOUNDER OF CEP LTD__
+
+  **CHAIRMAN & CHIEF EXECUTIVE OFFICER, CO-FOUNDER OF CEP LTD**
 
 
   Experience:
-    * Mr. Putnam has more than 30 years varied experience in research, operations (exploration, development, and thermal oil recovery), corporate management, strategic positioning, equity raising; and broad international experience covering 6 continents and over 30 countries. Dr. Putnam is a proven value creator who has led several companies, including CEP, into significant land positions in Canada, France, Australia, Germany, and Algeria.
+
+
+  * Mr. Putnam has more than 30 years varied experience in research, operations
+  (exploration, development, and thermal oil recovery), corporate management,
+  strategic positioning, equity raising; and broad international experience
+  covering 6 continents and over 30 countries. Dr. Putnam is a proven value
+  creator who has led several companies, including CEP, into significant land
+  positions in Canada, France, Australia, Germany, and Algeria.
+
 
   Education:
-    * Ph.D., Geology, University of Calgary, 1985.
+
+
+  * Ph.D., Geology, University of Calgary, 1985.
 
 
   Other Associations:
+
 
   * President, Hay Valley Resources; President and Chief
 
@@ -33,16 +45,18 @@ management: >-
   * Executive Officer of Petrel Robertson Consulting Ltd. from 2000 to 2006.
 
 
-  ---
+  - - -
 
 
-  ## Alula Damte, P. Geol  
+  ## Alula Damte, PhD, P. Geol
 
-  __PRESIDENT & CHIEF OPERATING OFFICER, CO-FOUNDER OF CEP LTD - MANAGING
-  DIRECTOR OF CEP GMBH__
+
+  **PRESIDENT & CHIEF OPERATING OFFICER, CO-FOUNDER OF CEP LTD - MANAGING
+  DIRECTOR OF CEP GMBH**
 
 
   Experience:
+
 
   * Dr. Damte has 20 years of petroleum industry and related teaching experience
   with expertise in petroleum systems analysis of basins in North, East and West
@@ -56,25 +70,28 @@ management: >-
 
   Education:
 
+
   * Ph.D., Geology, UC Santa Barbara 1997.
 
 
-
   Other Associations:
+
 
   * Board Member, Petrel Robertson Consulting Ltd.; Technical Advisor to the
   Board, SouthWest Energy (H.K.) Ltd.
 
 
-  ---
+  - - -
 
 
   ## Robyn Hemminger
 
-  __CHIEF FINANCIAL OFFICER, CEP LTD__
+
+  **CHIEF FINANCIAL OFFICER, CEP LTD**
 
 
   Experience:
+
 
   * Mr. Hemminger has more than 15 years experience in the investment business
   including more than 12 years in the energy investment banking sector.  Mr.
@@ -88,19 +105,22 @@ management: >-
 
   Education:
 
+
   * B.Sc., Chemistry, University of Manitoba; B. Comm., Finance, University of
   Manitoba
 
 
-  ---
+  - - -
 
 
-  ## Mr. Jaap Bouwman, Economist
+  ## Jaap Bouwman, Economist
 
-  __EXECUTIVE VICE PRESIDENT OF CEP GMBH__
+
+  **EXECUTIVE VICE PRESIDENT OF CEP GMBH**
 
 
   Experience:
+
 
   * Mr. Bouwman is a successful business executive with over 30 years
   experience. He has a proven track record of successful operations, strong
@@ -112,23 +132,27 @@ management: >-
 
   Education:
 
+
   * Economist, Business Academy Münster-Osnabrück, 1972.
 
 
   Other Associations:
 
+
   * Retired Honorary Consul of Germany in Calgary, Canada.
 
 
-  ---
+  - - -
 
 
-  ## Mr. David Bertram, P.Eng.
+  ## David Bertram, P.Eng.
 
-  __VICE PRESIDENT ENGINEERING OF CEP LTD__
+
+  **VICE PRESIDENT ENGINEERING OF CEP LTD**
 
 
   Experience:
+
 
   * Mr. Bertram has more than 30 years of world-wide experience in petroleum
   engineering operations, oil and gas field appraisal & development planning,
@@ -146,15 +170,18 @@ management: >-
 
   Education:
 
+
   * BSc, Chemical Engineering, University of Calgary, 1979.
 
 
   Professional Memberships:
 
+
   * APEGGA, SPE.
 
 
   Other Associations:
+
 
   * President, Bertram Reservoir Solutions Inc.
 boardOfDirectors: |-
