@@ -6,9 +6,9 @@ headingImage: /images/uploads/guhlenwell_lake.jpg
 germany:
   image: /images/uploads/natura2000sign.jpg
   ops: >-
-    ## CEP is currently exploring the potential of oil deposits in licenced
-    areas along the Baltic Sea in Mecklenburg-Western Pomerania and along the
-    German-Polish border in Brandenburg (Germany).
+    ## CEP is currently exploring the hydrocarbon potential along the Baltic Sea
+    in Mecklenburg-Vorpommern and along the German-Polish border in Brandenburg
+    (Germany).
 
 
     > Following the initial grant in 2007, CEP held eight exploration licenses
