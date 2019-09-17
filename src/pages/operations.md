@@ -4,7 +4,7 @@ title: Operations
 heading: See where we've been
 headingImage: /images/uploads/guhlenwell_lake.jpg
 germany:
-  image: /images/uploads/natura2000sign.jpg
+  image: /images/uploads/guhlen_flare.jpg
   ops: >-
     ## CEP is currently exploring the hydrocarbon potential along the Baltic Sea
     in Mecklenburg-Vorpommern and along the German-Polish border in Brandenburg
@@ -25,7 +25,7 @@ germany:
     [here](https://www.cepetro.com/aktivitaeten.html) (German)
   text: View our German Operations
 poland:
-  image: /images/uploads/de_link.jpg
+  image: /images/uploads/beach_vibes_pl.jpg
   ops: "CEP expanded its exploration activities into neighboring Poland by participating in the first hydrocarbon concessions licensing round in 2016 after successfully completing the pre-qualification procedure. Following the competitive process which follows the European Union Directive 94/22, CEP was awarded the Wolin Concession in northwest Poland in December 2017. The Onshore/ Offshore License is flanked by, and on trend with, two conventional gas-bearing reservoirs where 6 successful wells have been drilled to date.\r\n\n\rCEP has successfully completed an onshore 2D seismic program in late 2018 and in early June of 2019, completed an OBN based 3D seismic survey which is the first of its kind to be conducted in Poland. More information about our activities in Poland can be found here\n\nMore in formation can be found [here](https://focused-payne-ffde0a.netlify.com/pl)"
   text: View our Polish operation
 ---
