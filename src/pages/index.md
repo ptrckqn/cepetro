@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Central European Petroleum
 headingImage: /images/uploads/hero.jpg
-heading: ""
+heading: ''
 germanySite:
   body: |-
     CEP Central European Petroleum GmbH
@@ -44,3 +44,4 @@ work:
     stakeholders and the environment into account.
   title: What We Do
 ---
+
