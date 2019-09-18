@@ -53,7 +53,7 @@ const To = styled(Link)`
   }
 `
 
-const LogoLink = styled.span`
+const LogoLink = styled(Link)`
   margin: 1rem auto 1rem 2rem;
 `
 
