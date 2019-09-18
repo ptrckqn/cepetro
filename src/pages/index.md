@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Central European Petroleum
-headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+headingImage: /images/uploads/hero.jpg
 heading: ""
 germanySite:
   body: |-
