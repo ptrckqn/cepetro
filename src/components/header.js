@@ -70,13 +70,10 @@ const Logo = styled.img`
 `
 const TextBox = styled.div`
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  @media only screen and (max-width: 37.5em) {
-    top: 50%;
-  }
 `
 
 const Primary = styled.h1`
@@ -98,7 +95,7 @@ const Main = styled.span`
 
   @media (max-width: 37.5em) {
     letter-spacing: 1rem;
-    font-size: 5rem;
+    font-size: 7vw;
   }
 `
 
