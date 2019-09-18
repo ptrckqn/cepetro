@@ -1,6 +1,7 @@
 import React from "react"
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import Nav from "./nav"
+import NavDesktop from "./navDesktop"
 import Header from "./header"
 import Footer from "./footer"
 
@@ -49,15 +50,20 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
+const Container = styled.div`
+  position: relative;
+`
+
 const Layout = ({ headingImage, headingTitle, children }) => {
   return (
-    <div>
+    <Container>
       <GlobalStyle />
       <Nav />
+      <NavDesktop />
       <Header title={headingTitle} image={headingImage} />
       {children}
       <Footer />
-    </div>
+    </Container>
   )
 }
 
