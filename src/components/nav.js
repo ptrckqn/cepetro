@@ -3,7 +3,12 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import logoWhite from "../images/cep-logo.png"
 
-const Container = styled.div``
+const Container = styled.div`
+  display: none;
+  @media only screen and (max-width: 43em) {
+    display: block;
+  }
+`
 
 const Checkbox = styled.input`
     display: none;
@@ -93,7 +98,7 @@ const Background = styled.div`
   right: -110.5rem;
   background-image: radial-gradient(#40a2ff, #296cab);
   z-index: 97;
-  transform: scale(.02);
+  transform: scale(0.02);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   ${Checkbox}:checked ~ & {
     transform: scale(1);

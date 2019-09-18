@@ -106,10 +106,7 @@ const NewsPost = ({ data }) => {
     return { __html: data.markdownRemark.html }
   }
   return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
+    <Layout headingTitle="News" headingImage={frontmatter.headingImage}>
       <SEO title={frontmatter.title} />
       <Container>
         <HeadingBox>

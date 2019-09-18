@@ -59,9 +59,13 @@ const LogoBox = styled.div`
 `
 
 const Logo = styled.img`
+  display: none;
   height: 8rem;
   @media only screen and (max-width: 56.25em) {
     height: 10rem;
+  }
+  @media only screen and (max-width: 43em) {
+    display: block;
   }
 `
 const TextBox = styled.div`
