@@ -2,7 +2,7 @@
 templateKey: operations-page
 title: Operations
 heading: See where we've been
-headingImage: /images/uploads/guhlenwell_lake.jpg
+headingImage: /images/uploads/guhlenrig_flare.jpg
 germany:
   image: /images/uploads/guhlen_flare.jpg
   ops: >-
