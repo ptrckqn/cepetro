@@ -1,7 +1,7 @@
 ---
 templateKey: pl-page
 title: Central European Petroleum Ltd SP Zoo
-headingImage: /images/uploads/pl-header.jpg
+headingImage: /images/uploads/pl_sunset.jpg
 ---
 # Orbis lucum
 
