@@ -5,8 +5,6 @@ import remarkHtml from "remark-html"
 
 const Container = styled.section`
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh;
   overflow: hidden;
 `
 
@@ -90,10 +88,7 @@ const ViewMore = styled.p`
 
 const Contents = styled.div`
   position: relative;
-  height: 30vh;
-  @media only screen and (max-width: 37.5em) {
-    height: 125vh;
-  }
+  height: 50vh;
 `
 
 const Default = styled.div`
