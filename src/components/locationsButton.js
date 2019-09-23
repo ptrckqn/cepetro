@@ -5,21 +5,15 @@ import styled from "styled-components"
 const Container = styled.div`
   width: 95%;
   height: 25rem;
-  margin: 3rem auto -5rem;
+  margin: 5rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: max-content 25rem;
+  grid-template-rows: 25rem;
   @media only screen and (max-width: 43em) {
     height: 50rem;
     grid-template-columns: 1fr;
-    grid-template-rows: max-content 25rem 25rem;
+    grid-template-rows: 25rem 25rem;
   }
-`
-
-const HeadingBox = styled.div`
-  text-align: center;
-  margin-bottom: 8rem;
-  grid-column: 1 / -1;
 `
 
 const Secondary = styled.h2`
@@ -112,10 +106,6 @@ const LocationsButton = ({
 }) => {
   return (
     <Container>
-      <HeadingBox>
-        <Secondary></Secondary>
-      </HeadingBox>
-
       <CountryContainer image={germanyImage}>
         <Background />
         <a href="https://www.cepetro.de/cepetroleum.html">

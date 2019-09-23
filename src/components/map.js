@@ -5,16 +5,13 @@ import styled from "styled-components"
 const Container = styled.section`
   background-color: #f7f7f7;
   padding: 10rem 0;
-  margin-top: -20vh;
-  @media only screen and (max-width: 56.25em) {
-    margin-bottom: 0vh;
-    margin-top: 0vh;
-  }
 `
 
 const HeadingBox = styled.div`
   text-align: center;
-  margin-bottom: 8rem;
+  @media only screen and (max-width: 37.5em) {
+    margin-bottom: 3rem;
+  }
 `
 
 const Secondary = styled.h2`
@@ -43,7 +40,7 @@ const MapBox = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   margin: 0 auto;
   position: relative;

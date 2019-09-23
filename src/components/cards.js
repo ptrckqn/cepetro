@@ -2,13 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import { Link, StaticQuery, graphql } from "gatsby"
 
-const Container = styled.section`
-  background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
-  margin-top: -20vh;
-  @media (max-width: 56.25em) {
-  }
-`
+const Container = styled.section``
 
 const HeadingBox = styled.div`
   text-align: center;

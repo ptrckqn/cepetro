@@ -74,6 +74,7 @@ const TextBox = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 90%;
 `
 
 const Primary = styled.h1`

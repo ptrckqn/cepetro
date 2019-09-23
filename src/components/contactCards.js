@@ -4,9 +4,7 @@ import remark from "remark"
 import remarkHtml from "remark-html"
 
 const Container = styled.section`
-  background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
-  margin-top: -20vh;
+  margin-bottom: 5rem;
 `
 
 const GridContainer = styled.div`
