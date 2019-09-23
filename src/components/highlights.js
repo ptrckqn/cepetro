@@ -13,10 +13,6 @@ const Container = styled.section`
   @media only screen and (max-width: 43em) {
     grid-template-columns: 1fr;
     grid-template-rows: max-content repeat(2, 1fr);
-    margin-bottom: 25rem;
-  }
-  @media only screen and (max-width: 37.5em) {
-    margin-bottom: 5rem;
   }
 `
 
