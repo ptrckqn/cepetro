@@ -27,6 +27,10 @@ germany:
 poland:
   image: /images/uploads/beach_vibes_pl.jpg
   ops: >-
+    ## CEP is currently exploring the hydrocarbon potential along the Baltic
+    coast of Northwestern Poland.
+
+
     CEP has successfully completed an onshore 2D seismic program in late 2018
     and in early June of 2019, completed an OBN based 3D seismic survey which is
     the first of its kind to be conducted in Poland. 
