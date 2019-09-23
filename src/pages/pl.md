@@ -7,9 +7,4 @@ picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/img_0477-2-.jpg
 mapBody: Test text
 ---
-
-**Central European Petroleum Ltd.**, registered in Alberta, Canada in 2006,
-and its wholly-owned affiliates, CEP Central European Petroleum GmbH,
-registered in Germany in 2008, and Central European Petroleum Ltd SP Zoo,
-registered in Poland in 2017, were set up to pursue petroleum exploration
-opportunities in the European Union.
+**Central European Petroleum Ltd.** expanded its exploration activities into Poland by participating in the first hydrocarbon concessions licensing round in 2016 after successfully completing the pre-qualification procedure. Following the competitive process which follows the European Union Directive 94/22, CEP was awarded the Wolin Concession in northwest Poland in December 2017. The Onshore/ Offshore License is flanked by, and on trend with, two conventional gas-bearing reservoirs where 6 successful wells have been drilled to date.
