@@ -17,16 +17,17 @@ contactDe: |-
   Phone: +49 (30) 24 31 02 190  
   Fax: +49 (30) 24 31 02 528  
   Email: de-info@cepetro.com
-titlePl: Poland address
+titlePl: Central European Petroleum Ltd. sp. z o.o.
 contactPl: |-
-  Address: Rosenstraße 2 D-10178 Berlin  
-  Phone: +49 (30) 24 31 02 190  
-  Fax: +49 (30) 24 31 02 528  
-  Email: de-info@cepetro.com
-titleNl: Netherlands Address
+  Address: Al. Jana Pawła II no. 23, 00-854 Warsaw
+  Phone: LTD?
+  Fax:   
+  Email: info@cepetro.com
+titleNl: CEP Central European Petroleum B.V.
 contactNl: |-
-  Address: Rosenstraße 2 D-10178 Berlin  
-  Phone: +49 (30) 24 31 02 190  
-  Fax: +49 (30) 24 31 02 528  
-  Email: de-info@cepetro.com
+  Address:  2132WT Hoofddorp
+  Phone:
+  Fax:   
+  Email: info@cepetro.com
 ---
+
