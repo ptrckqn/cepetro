@@ -64,7 +64,7 @@ const Title = styled.h3`
   transform: translate(-50%, -50%);
   color: #f7f7f7;
   text-transform: uppercase;
-  font-size: 2.3rem;
+  font-size: 2rem;
   z-index: 3;
   transition: all 0.3s;
   @media only screen and (max-width: 56.25em) {
