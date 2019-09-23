@@ -5,13 +5,7 @@ import remarkHtml from 'remark-html'
 
 
 const Container = styled.section`
-    padding: 20rem 0;
-    margin-top: -20vh;
-    background-color: #f7f7f7;
-    @media(max-width: 56.25em){
-        padding: 3rem;
-        padding-top: 20rem;
-    }
+    padding: 3rem 0;
 `
 
 const HeadingBox = styled.div`
