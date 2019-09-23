@@ -13,16 +13,16 @@ const Map = styled.div`
   max-width: 114rem;
   margin: 0 auto;
   padding: 3rem;
-  @media only screen and (max-width: 56.25em){
+  @media only screen and (max-width: 43em) {
     grid-template-columns: 1fr;
   }
 `
 
-const Content = styled.div`
-  
-`
+const Content = styled.div``
 
-const Poland = styled.img``
+const Poland = styled.img`
+  width: 100%;
+`
 
 const PlPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark

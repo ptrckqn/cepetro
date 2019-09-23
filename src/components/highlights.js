@@ -9,10 +9,14 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: max-content 1fr;
-  margin: 5rem 0;
+  margin: 3rem 0;
   @media only screen and (max-width: 43em) {
     grid-template-columns: 1fr;
     grid-template-rows: max-content repeat(2, 1fr);
+    margin-bottom: 25rem;
+  }
+  @media only screen and (max-width: 37.5em) {
+    margin-bottom: 5rem;
   }
 `
 
@@ -101,9 +105,6 @@ const Photo = styled.img`
 const PhotoOne = styled(Photo)`
   left: 0;
   top: -4rem;
-  @media only screen and(max-width: 56.25em) {
-    top: -2rem;
-  }
 `
 
 const PhotoTwo = styled(Photo)`
