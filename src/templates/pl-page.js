@@ -31,14 +31,14 @@ const PlPage = ({ data }) => {
       <SEO title="Central European Petroleum Ltd SP Zoo" />
       <Highlights
         heading={frontmatter.aboutHeading}
-        titleOne={frontmatter.title}
+        titleOne={frontmatter.aboutTitle}
         bodyOne={data.markdownRemark.html}
         picOne={frontmatter.picOne}
         picTwo={frontmatter.picTwo}
         picThree={frontmatter.picThree}
       />
       <Map>
-        <Content>{frontmatter.mapText}</Content>
+        <Content>{frontmatter.mapBody}</Content>
         <Poland src="images/uploads/poland.png" />
       </Map>
       <Cards category="Poland" />
@@ -54,10 +54,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         headingImage
+        aboutTitle
         picOne
         picTwo
         picThree
-        mapText
+        mapBody
       }
       html
     }
