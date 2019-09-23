@@ -10,6 +10,10 @@ const Container = styled.section`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: max-content 1fr;
   margin: 5rem 0;
+  @media only screen and (max-width: 43em) {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content repeat(2, 1fr);
+  }
 `
 
 const HeadingBox = styled.div`
@@ -75,27 +79,31 @@ const Btn = styled(Link)`
 
 const Composition = styled.div`
   position: relative;
+  height: 100%;
 `
 
 const Photo = styled.img`
-    width: 75%;
-    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .4);
-    border-radius: 3px;
-    position: absolute;
-    z-index; 9;
-    transition: all .3s;
-    &:hover{
-        transform: scale(1.05) translateY(-5px);
-        z-index: 10;
-    }
-    ${Composition}:hover &:not(:hover){
-        transform: scale(0.95);
-    }
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  position: absolute;
+  z-index: 9;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05) translateY(-5px);
+    z-index: 10;
+  }
+  ${Composition}:hover &:not(:hover) {
+    transform: scale(0.95);
+  }
 `
 
 const PhotoOne = styled(Photo)`
   left: 0;
   top: -4rem;
+  @media only screen and(max-width: 56.25em) {
+    top: -2rem;
+  }
 `
 
 const PhotoTwo = styled(Photo)`
