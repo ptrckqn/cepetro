@@ -19,15 +19,14 @@ contactDe: |-
   Email: de-info@cepetro.com
 titlePl: Central European Petroleum Ltd. sp. z o.o.
 contactPl: |-
-  Address: Al. Jana Pawła II 23, 00-854 Warsaw
+  Address: Al. Jana Pawła II 23, 00-854 Warsaw  
   Phone: 1-403-532-6551  
   Fax: 1-403-532-6554  
   Email: info@cepetro.com
 titleNl: CEP Central European Petroleum B.V.
 contactNl: |-
-  Address:  Siriusdreef 17, 2132 WT Hoofddorp
+  Address:  Siriusdreef 17, 2132 WT Hoofddorp  
   Phone: 1-403-532-6551  
   Fax: 1-403-532-6554  
   Email: info@cepetro.com
 ---
-
