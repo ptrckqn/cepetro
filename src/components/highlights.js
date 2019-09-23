@@ -91,11 +91,11 @@ const Photo = styled.img`
   transition: all 0.3s;
   transform: translate(-50%, -50%);
   &:hover {
-    transform: scale(1.05)
+    transform: scale(1.05) translate(-50%, -50%)
     z-index: 10;
   }
   ${Composition}:hover &:not(:hover) {
-    transform: scale(0.95);
+    transform: scale(0.95) translate(-50%, -50%);
   }
 `
 
