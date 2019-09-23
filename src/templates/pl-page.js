@@ -35,7 +35,6 @@ const PlPage = ({ data }) => {
       <SEO title="Central European Petroleum Ltd SP Zoo" />
       <Highlights
         heading={frontmatter.aboutHeading}
-        titleOne={frontmatter.aboutTitle}
         bodyOne={data.markdownRemark.html}
         picOne={frontmatter.picOne}
         picTwo={frontmatter.picTwo}
@@ -58,7 +57,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         headingImage
-        aboutTitle
         picOne
         picTwo
         picThree
