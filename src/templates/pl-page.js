@@ -12,10 +12,14 @@ const Map = styled.div`
   grid-template-columns: repeat(2, 1fr);
   max-width: 114rem;
   margin: 0 auto;
+  padding: 3rem;
+  @media only screen and (max-width: 56.25em){
+    grid-template-columns: 1fr;
+  }
 `
 
 const Content = styled.div`
-  padding: 3rem;
+  
 `
 
 const Poland = styled.img``
