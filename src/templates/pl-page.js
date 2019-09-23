@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import SEO from "../components/SEO.js"
 import Layout from "../components/layout"
-import PolandBody from "../components/polandBody"
+import Highlights from "../components/highlights"
 import Cards from "../components/cards"
 
 const PlPage = ({ data }) => {
@@ -12,10 +12,19 @@ const PlPage = ({ data }) => {
     <Layout
       headingTitle={frontmatter.title}
       headingImage={frontmatter.headingImage}
+      noNav
     >
       <SEO title="Central European Petroleum Ltd SP Zoo" />
+      <Highlights
+        heading={frontmatter.aboutHeading}
+        titleOne={frontmatter.title}
+        bodyOne={data.markdownRemark.body}
+        showButton={true}
+        picOne={frontmatter.picOne}
+        picTwo={frontmatter.picTwo}
+        picThree={frontmatter.picThree}
+      />
       <Cards category="Poland" />
-      <PolandBody title={frontmatter.title} body={data.markdownRemark.html} />
     </Layout>
   )
 }
@@ -28,6 +37,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         headingImage
+        picOne
+        picTwo
+        picThree
       }
       html
     }

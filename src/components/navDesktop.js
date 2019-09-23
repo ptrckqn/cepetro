@@ -61,7 +61,7 @@ const Logo = styled.img`
   height: 7rem;
 `
 
-const NavDesktop = () => {
+const NavDesktop = ({ noNav }) => {
   return (
     <Container>
       <Navigation>
@@ -69,21 +69,25 @@ const NavDesktop = () => {
           <LogoLink to="/">
             <Logo src={logoWhite} alt="Logo" />
           </LogoLink>
-          <Item>
-            <To to="/about">People</To>
-          </Item>
-          <Item>
-            <To to="/operations">Operations</To>
-          </Item>
-          <Item>
-            <To to="/responsibility">Responsibility</To>
-          </Item>
-          <Item>
-            <To to="/news">News</To>
-          </Item>
-          <Item>
-            <To to="/contact">Contact</To>
-          </Item>
+          {noNav ? null : (
+            <>
+              <Item>
+                <To to="/about">People</To>
+              </Item>
+              <Item>
+                <To to="/operations">Operations</To>
+              </Item>
+              <Item>
+                <To to="/responsibility">Responsibility</To>
+              </Item>
+              <Item>
+                <To to="/news">News</To>
+              </Item>
+              <Item>
+                <To to="/contact">Contact</To>
+              </Item>
+            </>
+          )}
         </List>
       </Navigation>
     </Container>

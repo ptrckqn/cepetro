@@ -183,14 +183,19 @@ const Logo = styled.img`
   height: 10rem;
 `
 
-const Nav = () => {
+const Nav = ({ noNav }) => {
   return (
     <Container>
       <Checkbox type="checkbox" id="nav-toggle" />
-      <NavBtn htmlFor="nav-toggle">
-        <Icon />
-      </NavBtn>
-      <Background>&nbsp;</Background>
+      {noNav ? null : (
+        <>
+          <NavBtn htmlFor="nav-toggle">
+            <Icon />
+          </NavBtn>
+          <Background>&nbsp;</Background>
+        </>
+      )}
+
       <Navigation>
         <Link to="/">
           <Logo src={logoWhite} alt="Logo" />

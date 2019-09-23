@@ -54,12 +54,12 @@ const Container = styled.div`
   position: relative;
 `
 
-const Layout = ({ headingImage, headingTitle, children }) => {
+const Layout = ({ noNav, headingImage, headingTitle, children }) => {
   return (
     <Container>
       <GlobalStyle />
-      <Nav />
-      <NavDesktop />
+      <Nav noNav={noNav} />
+      <NavDesktop noNav={noNav} />
       <Header title={headingTitle} image={headingImage} />
       {children}
       <Footer />
