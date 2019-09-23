@@ -1,8 +1,7 @@
 ---
 templateKey: pl-page
-title: Central European Petroleum Ltd. sp. zoo
+title: Central European Petroleum Ltd. sp. z o.o.
 headingImage: /images/uploads/pl_sunset.jpg
-aboutTitle: This is the title for the about section
 picOne: /images/uploads/obx-deployment.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/img_0477-2-.jpg
