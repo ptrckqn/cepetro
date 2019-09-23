@@ -83,14 +83,15 @@ const Composition = styled.div`
 `
 
 const Photo = styled.img`
-  width: 55%;
+  max-width: 35rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 3px;
   position: absolute;
   z-index: 9;
   transition: all 0.3s;
+  transform: translate(-50%, -50%);
   &:hover {
-    transform: scale(1.05) translateY(-5px);
+    transform: scale(1.05)
     z-index: 10;
   }
   ${Composition}:hover &:not(:hover) {
@@ -99,18 +100,18 @@ const Photo = styled.img`
 `
 
 const PhotoOne = styled(Photo)`
-  left: 0;
-  top: -4rem;
+  left: 50%;
+  top: 50%;
 `
 
 const PhotoTwo = styled(Photo)`
-  right: 0;
-  top: 4rem;
+  left: 50%;
+  top: 50%;
 `
 
 const PhotoThree = styled(Photo)`
-  left: 2rem;
-  top: 14rem;
+  left: 50%;
+  top: 50%;
 `
 
 const Content = styled.div`

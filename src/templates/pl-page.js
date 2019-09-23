@@ -10,8 +10,7 @@ import Cards from "../components/cards"
 const Map = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 114rem;
-  margin: 0 auto;
+  margin: 25rem auto;
   padding: 3rem;
   @media only screen and (max-width: 43em) {
     grid-template-columns: 1fr;
@@ -21,7 +20,8 @@ const Map = styled.div`
 const Content = styled.div``
 
 const Poland = styled.img`
-  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
 `
 
 const PlPage = ({ data }) => {
