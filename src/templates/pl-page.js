@@ -10,9 +10,13 @@ import Cards from "../components/cards"
 const Map = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 114rem;
+  margin: 0 auto;
 `
 
-const Content = styled.div``
+const Content = styled.div`
+  padding: 3rem;
+`
 
 const Poland = styled.img``
 
@@ -34,7 +38,7 @@ const PlPage = ({ data }) => {
         picThree={frontmatter.picThree}
       />
       <Map>
-        <Content></Content>
+        <Content>{frontmatter.mapText}</Content>
         <Poland src="images/uploads/poland.png" />
       </Map>
       <Cards category="Poland" />
@@ -53,6 +57,7 @@ export const pageQuery = graphql`
         picOne
         picTwo
         picThree
+        mapText
       }
       html
     }
