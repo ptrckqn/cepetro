@@ -6,11 +6,17 @@ import remarkHtml from "remark-html"
 
 const Container = styled.section`
   background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content 1fr;
+  margin: 5rem 0;
 `
 
 const HeadingBox = styled.div`
   text-align: center;
   margin-bottom: 8rem;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 `
 
 const Secondary = styled.h2`
@@ -34,38 +40,8 @@ const Secondary = styled.h2`
   }
 `
 
-const Row = styled.div`
-  max-width: 114rem;
-  margin: 0 auto;
-  &:not(:last-child) {
-    margin-bottom: 8rem;
-    @media (max-width: 56.25em) {
-      margin-bottom: 6rem;
-    }
-  }
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media (max-width: 56.25em) {
-    max-width: 70rem;
-  }
-`
-
 const Section = styled.div`
-  float: left;
-  width: calc((100% - 6rem) / 2);
   padding: 3rem;
-  @media (max-width: 56.25em) {
-    width: 100% !important;
-  }
-  &:not(:last-child) {
-    margin-right: 6rem;
-    @media (max-width: 56.25em) {
-      margin-right: 0;
-    }
-  }
 `
 
 const Tertiary = styled.h3`
@@ -192,26 +168,24 @@ class Highlights extends Component {
         <HeadingBox>
           <Secondary>{this.props.heading}</Secondary>
         </HeadingBox>
-        <Row>
-          <Section>
-            <Tertiary>{this.props.titleOne}</Tertiary>
-            <Content dangerouslySetInnerHTML={createHTML(bodyOne)} />
-            <Tertiary>{this.props.titleTwo}</Tertiary>
-            <Content dangerouslySetInnerHTML={createHTML(bodyTwo)} />
-            {this.props.showButton ? (
-              <Btn to="/about">Learn More &rarr;</Btn>
-            ) : (
-              <span></span>
-            )}
-          </Section>
-          <Section>
-            <Composition>
-              <PhotoOne src={this.props.picOne} alt="Photo 1" />
-              <PhotoTwo src={this.props.picTwo} alt="Photo 2" />
-              <PhotoThree src={this.props.picThree} alt="Photo 3" />
-            </Composition>
-          </Section>
-        </Row>
+        <Section>
+          <Tertiary>{this.props.titleOne}</Tertiary>
+          <Content dangerouslySetInnerHTML={createHTML(bodyOne)} />
+          <Tertiary>{this.props.titleTwo}</Tertiary>
+          <Content dangerouslySetInnerHTML={createHTML(bodyTwo)} />
+          {this.props.showButton ? (
+            <Btn to="/about">Learn More &rarr;</Btn>
+          ) : (
+            <span></span>
+          )}
+        </Section>
+        <Section>
+          <Composition>
+            <PhotoOne src={this.props.picOne} alt="Photo 1" />
+            <PhotoTwo src={this.props.picTwo} alt="Photo 2" />
+            <PhotoThree src={this.props.picThree} alt="Photo 3" />
+          </Composition>
+        </Section>
       </Container>
     )
   }
