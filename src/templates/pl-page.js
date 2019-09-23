@@ -18,8 +18,7 @@ const PlPage = ({ data }) => {
       <Highlights
         heading={frontmatter.aboutHeading}
         titleOne={frontmatter.title}
-        bodyOne={data.markdownRemark.body}
-        showButton={true}
+        bodyOne={data.markdownRemark.html}
         picOne={frontmatter.picOne}
         picTwo={frontmatter.picTwo}
         picThree={frontmatter.picThree}

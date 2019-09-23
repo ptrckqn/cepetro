@@ -90,7 +90,7 @@ const ViewMore = styled.p`
 
 const Contents = styled.div`
   position: relative;
-  height: 75vh;
+  height: 30vh;
   @media only screen and (max-width: 37.5em) {
     height: 125vh;
   }

@@ -30,7 +30,7 @@ const LandingPage = ({ data }) => {
         bodyOne={frontmatter.about.body}
         titleTwo={frontmatter.work.title}
         bodyTwo={frontmatter.work.body}
-        showButton={true}
+        showButton
         picOne={frontmatter.picOne}
         picTwo={frontmatter.picTwo}
         picThree={frontmatter.picThree}
