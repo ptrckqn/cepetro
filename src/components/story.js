@@ -141,7 +141,7 @@ const Tertiary = styled.h3`
   }
 `
 
-const Paragraph = styled.p`
+const Paragraph = styled.span`
   padding: 3rem;
   font-size: 1.6rem;
   transform: skewX(12deg);

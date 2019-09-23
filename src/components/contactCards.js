@@ -35,7 +35,7 @@ const Tertiary = styled.h3`
   text-align: center;
 `
 
-const Paragraph = styled.p`
+const Paragraph = styled.span`
   width: 100%;
   margin: 0 auto;
   padding: 3rem;

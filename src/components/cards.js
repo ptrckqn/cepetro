@@ -128,16 +128,6 @@ const Title = styled.h4`
   text-align: right;
 `
 
-const Paragraph = styled.p`
-  position: absolute;
-  bottom: 0;
-  padding: 3rem;
-  font-size: 1.6rem;
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-`
-
 const Cta = styled.div`
   position: absolute;
   top: 50%;

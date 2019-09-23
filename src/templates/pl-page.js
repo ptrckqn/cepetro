@@ -1,10 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import SEO from "../components/SEO.js"
 import Layout from "../components/layout"
 import Highlights from "../components/highlights"
 import Cards from "../components/cards"
+
+const Map = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+`
+
+const Content = styled.div``
+
+const Poland = styled.img``
 
 const PlPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -23,6 +33,10 @@ const PlPage = ({ data }) => {
         picTwo={frontmatter.picTwo}
         picThree={frontmatter.picThree}
       />
+      <Map>
+        <Content></Content>
+        <Poland src="images/uploads/poland.png" />
+      </Map>
       <Cards category="Poland" />
     </Layout>
   )
