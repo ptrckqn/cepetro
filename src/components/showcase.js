@@ -89,10 +89,12 @@ const ViewMore = styled.p`
 
 const Contents = styled.div`
   position: relative;
-  height: 50vh;
 `
 
 const Default = styled.div`
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60%;
   margin: 5rem auto;
   transition: all 0.5s;
@@ -102,8 +104,8 @@ const Default = styled.div`
 `
 
 const Section = styled.div`
+  margin: 5rem auto;
   position: absolute;
-  top: 0;
   width: 60%;
   transition: all 0.5s;
   left: 50%;
@@ -121,6 +123,12 @@ const Germany = styled(Section)`
 
 const Poland = styled(Section)`
   transform: translateX(150%);
+`
+
+// Used to ensure the height of the container fits all of the absolute content
+const HiddenContent = styled.div`
+  visibility: hidden;
+  width: 55%;
 `
 
 const Content = styled.div`
@@ -263,6 +271,17 @@ class Showcase extends Component {
           <Poland style={this.state.view === "poland" ? showView : {}}>
             <Content dangerouslySetInnerHTML={createHTML(polandOps)} />
           </Poland>
+          {this.state.view === "default" ? (
+            <HiddenContent
+              dangerouslySetInnerHTML={createHTML(this.props.default)}
+            />
+          ) : null}
+          {this.state.view === "germany" ? (
+            <HiddenContent dangerouslySetInnerHTML={createHTML(germanyOps)} />
+          ) : null}
+          {this.state.view === "poland" ? (
+            <HiddenContent dangerouslySetInnerHTML={createHTML(polandOps)} />
+          ) : null}
         </Contents>
       </Container>
     )
