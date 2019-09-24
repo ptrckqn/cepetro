@@ -24,9 +24,9 @@ polandSite:
 picOne: /images/uploads/obx-deployment.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/img_0477-2-.jpg
-aboutHeading: Get To Know Us
+aboutHeading: About Us
 mapHeading: Where you can find us
-newsHeading: Catch up on what we've done
+newsHeading: Latest News
 about:
   body: >-
     **Central European Petroleum Ltd.**, registered in Alberta, Canada in 2006,
