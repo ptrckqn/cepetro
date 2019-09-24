@@ -21,7 +21,7 @@ management: >-
   Experience:
 
 
-  * Mr. Putnam has more than 30 years varied experience in research, operations
+  * Dr. Putnam has more than 30 years varied experience in research, operations
   (exploration, development, and thermal oil recovery), corporate management,
   strategic positioning, equity raising; and broad international experience
   covering 6 continents and over 30 countries. Dr. Putnam is a proven value
@@ -185,31 +185,39 @@ management: >-
 
   * President, Bertram Reservoir Solutions Inc.
 boardOfDirectors: |-
-  ## Dr. Peter Putnam (Chairman)
+  ## Peter Putnam (Chairman)
+
+  **CEO, Central European Petroleum LTD.**
 
   ## R. Ian Molson (Deputy Chairman)
-  __Independent Businessman__
+
+  **Independent Businessman**
 
   ## Jeffrey Harris
-  __Independent Businessman__
+
+  **Independent Businessman**
 
   ## Sabrina Liak
-  __Founding Partner, ALOI Investment Management__
+
+  **Founding Partner, ALOI Investment Management**
 
   ## Francis Sommer
-  __Partner, Pamplona Capital Management__
+
+  **Partner, Pamplona Capital Management**
 
   ## Carlos A. Pérez-Davila
-  __Managing Director, Quadrant Capital Advisors, Inc.__
+
+  **Managing Director, Quadrant Capital Advisors, Inc.**
 
   ## Rolf G. Skaar
-  __Managing Director, Vision iO__
+
+  **Managing Director, Vision iO**
 
   ## Gregory G. Turnbull
-  __Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLp__
+
+  **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLp**
 picOne: /images/uploads/img_1980.jpg
 picTwo: /images/uploads/Vibrator.jpg
 picThree: /images/uploads/img_0477-2-.jpg
 ---
-
-**Central European Petroleum LTD.** registered in Alberta, Canada in 2006, and its wholly-owned affiliates, CEP Central European Petroleum GmbH, registered in Germany in 2008, and Central European Petroleum Ltd SP Zoo, registered in Poland in 2017, were set up to pursue petroleum exploration opportunities in the European Union, initially focusing on Germany. The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance. Since incorporation, CEP has acquired over 3.4 million acres of onshore and offshore exploration licenses in the German states of Mecklenburg-Vorpommern and Brandenburg.
+**Central European Petroleum LTD.** registered in Alberta, Canada in 2006, and its wholly-owned affiliates, CEP Central European Petroleum GmbH, registered in Germany in 2008, and Central European Petroleum Ltd. sp. z o.o., registered in Poland in 2017, were set up to pursue petroleum exploration opportunities in the European Union, initially focusing on Germany. The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance.

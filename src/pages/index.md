@@ -21,12 +21,12 @@ polandSite:
     Click to view more.
   image: /images/uploads/pl_link_adbeach.jpg
   title: Central European Petroleum Ltd SP Zoo
-picOne: /images/uploads/obx-deployment.jpg
+picOne: /images/uploads/gln_flare1.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
-picThree: /images/uploads/img_0477-2-.jpg
-aboutHeading: Get To Know Us
+picThree: /images/uploads/obx-deployment.jpg
+aboutHeading: About Us
 mapHeading: Where you can find us
-newsHeading: Catch up on what we've done
+newsHeading: Latest News
 about:
   body: >-
     **Central European Petroleum Ltd.**, registered in Alberta, Canada in 2006,
