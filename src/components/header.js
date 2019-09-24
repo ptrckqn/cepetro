@@ -82,7 +82,7 @@ const Primary = styled.h1`
 
 const Main = styled.span`
   display: block;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
   letter-spacing: 1.5rem;
   animation: ${css`
