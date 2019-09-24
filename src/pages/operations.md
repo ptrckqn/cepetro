@@ -31,12 +31,14 @@ poland:
     coast of Northwestern Poland.
 
 
-    CEP has successfully completed an onshore 2D seismic program in late 2018
-    and in early June of 2019, completed an OBN based 3D seismic survey which is
-    the first of its kind to be conducted in Poland. 
+    > Following the granting of the 'Wolin' onshore/ offshore license in
+    Northeaster Poland in CEP has successfully completed 2 seismic program; an
+    onshore 2D seismic program in late 2018 and in early June of 2019, an OBN
+    based 3D seismic survey which is the first of its kind to be conducted in
+    Poland. 
 
 
-    More information can be found [here](/pl)
+    More information on CEP's Polish activities can be found [here](/pl)
   text: View our Polish operation
 ---
 
