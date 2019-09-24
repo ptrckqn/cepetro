@@ -21,7 +21,7 @@ management: >-
   Experience:
 
 
-  * Mr. Putnam has more than 30 years varied experience in research, operations
+  * Dr. Putnam has more than 30 years varied experience in research, operations
   (exploration, development, and thermal oil recovery), corporate management,
   strategic positioning, equity raising; and broad international experience
   covering 6 continents and over 30 countries. Dr. Putnam is a proven value
