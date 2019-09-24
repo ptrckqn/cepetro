@@ -185,28 +185,37 @@ management: >-
 
   * President, Bertram Reservoir Solutions Inc.
 boardOfDirectors: |-
-  ## Dr. Peter Putnam (Chairman)
+  ## Peter Putnam (Chairman)
+
+  **CEO, Central European Petroleum LTD.**
 
   ## R. Ian Molson (Deputy Chairman)
-  __Independent Businessman__
+
+  **Independent Businessman**
 
   ## Jeffrey Harris
-  __Independent Businessman__
+
+  **Independent Businessman**
 
   ## Sabrina Liak
-  __Founding Partner, ALOI Investment Management__
+
+  **Founding Partner, ALOI Investment Management**
 
   ## Francis Sommer
-  __Partner, Pamplona Capital Management__
+
+  **Partner, Pamplona Capital Management**
 
   ## Carlos A. Pérez-Davila
-  __Managing Director, Quadrant Capital Advisors, Inc.__
+
+  **Managing Director, Quadrant Capital Advisors, Inc.**
 
   ## Rolf G. Skaar
-  __Managing Director, Vision iO__
+
+  **Managing Director, Vision iO**
 
   ## Gregory G. Turnbull
-  __Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLp__
+
+  **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLp**
 picOne: /images/uploads/img_1980.jpg
 picTwo: /images/uploads/Vibrator.jpg
 picThree: /images/uploads/img_0477-2-.jpg
