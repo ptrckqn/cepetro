@@ -17,9 +17,10 @@ const Container = styled.footer`
     flex-direction: column;
   }
 `
-const Box = styled.div`
+const LogoBox = styled.div`
   @media only screen and (max-width: 56.25em) {
     order: 1;
+    width: 25%;
   }
 `
 
@@ -111,9 +112,9 @@ const Footer = () => {
           </List>
         </Navigation>
       </Section>
-      <Box>
+      <LogoBox>
         <Logo />
-      </Box>
+      </LogoBox>
       <Section>
         <Copyright>&#169; Central European Petroleum LTD</Copyright>
       </Section>
