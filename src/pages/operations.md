@@ -24,7 +24,7 @@ germany:
     [here](https://www.cepetro.com/aktivitaeten.html) (German)
   text: View our German Operations
 poland:
-  image: /images/uploads/beach_vibes_pl.jpg
+  image: /images/uploads/beach_vibes2.jpg
   ops: >-
     ## CEP is currently exploring the hydrocarbon potential along the Baltic
     coast of Northwestern Poland.
