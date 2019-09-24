@@ -4,7 +4,14 @@ import remark from "remark"
 import remarkHtml from "remark-html"
 
 const Container = styled.section`
+  display: grid;
   padding: 3rem 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content 1fr;
+  @media only screen and (max-width: 43em) {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+  }
 `
 
 const HeadingBox = styled.div`
@@ -52,36 +59,18 @@ const Row = styled.div`
   }
 `
 
-const Section = styled.div`
-  float: left;
-  width: calc((100% - 6rem) / 2);
-  @media (max-width: 56.25em) {
-    width: 100% !important;
-  }
-  &:not(:last-child) {
-    margin-right: 6rem;
-    @media (max-width: 56.25em) {
-      margin-right: 0;
-    }
-  }
+const Box = styled.div`
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
 `
 
-const Box = styled.div`
-    background-color: rgba(255, 255, 255, .8);
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow; 0 1.5rem 4rem rgba(#000, .15);
-    transition: transform .3s;
-    margin-bottom: 3rem;
-    &:hover{
-        transform: translateY(-1.5rem) scale(1.05);
-    }
+const LightBox = styled(Box)`
+  background-color: rgba(255, 255, 255, 0.8);
 `
 
 const Tertiary = styled.h3`
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
 `
@@ -91,11 +80,11 @@ const Content = styled.span`
   margin-bottom: 3rem;
   font-weight: 300;
   h1 {
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
   }
   h2 {
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
   }
   h1,
@@ -143,23 +132,14 @@ class Features extends Component {
 
     return (
       <Container>
-        <HeadingBox>
-          <Secondary>{this.props.heading}</Secondary>
-        </HeadingBox>
-        <Row>
-          <Section>
-            <Box>
-              <Tertiary>{this.props.titleOne}</Tertiary>
-              <Content dangerouslySetInnerHTML={createHTML(bodyOne)} />
-            </Box>
-          </Section>
-          <Section>
-            <Box>
-              <Tertiary>{this.props.titleTwo}</Tertiary>
-              <Content dangerouslySetInnerHTML={createHTML(bodyTwo)} />
-            </Box>
-          </Section>
-        </Row>
+        <LightBox>
+          <Tertiary>{this.props.titleOne}</Tertiary>
+          <Content dangerouslySetInnerHTML={createHTML(bodyOne)} />
+        </LightBox>
+        <Box>
+          <Tertiary>{this.props.titleTwo}</Tertiary>
+          <Content dangerouslySetInnerHTML={createHTML(bodyTwo)} />
+        </Box>
       </Container>
     )
   }
