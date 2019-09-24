@@ -6,11 +6,12 @@ import remarkHtml from "remark-html"
 const Container = styled.section`
   background-color: #f7f7f7;
   overflow: hidden;
+  padding: 10rem 0;
 `
 
 const HeadingBox = styled.div`
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 `
 
 const Secondary = styled.h2`

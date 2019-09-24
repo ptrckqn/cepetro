@@ -9,7 +9,7 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: max-content 1fr;
-  margin: 3rem 0;
+  padding: 10rem 0;
   @media only screen and (max-width: 43em) {
     grid-template-columns: 1fr;
     grid-template-rows: max-content repeat(2, 1fr);
@@ -18,7 +18,7 @@ const Container = styled.section`
 
 const HeadingBox = styled.div`
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
 `

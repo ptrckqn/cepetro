@@ -4,10 +4,9 @@ import remark from "remark"
 import remarkHtml from "remark-html"
 
 const Container = styled.section`
-  padding: 20rem 0;
+  padding: 10rem 0;
   position: relative;
   background-color: #f7f7f7;
-  margin-top: -20vh;
 `
 
 const BackgroundVideo = styled.div`
@@ -29,7 +28,7 @@ const Video = styled.video`
 
 const HeadingBox = styled.div`
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 `
 
 const Secondary = styled.h2`

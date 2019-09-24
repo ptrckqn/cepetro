@@ -18,7 +18,7 @@ const Container = styled.section`
 
 const HeadingBox = styled.div`
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 `
 
 const Secondary = styled.h2`
