@@ -23,7 +23,7 @@ polandSite:
   title: Central European Petroleum Ltd SP Zoo
 picOne: /images/uploads/obx-deployment.jpg
 picTwo: /images/uploads/boat_equipment_2.jpg
-picThree: /images/uploads/img_0477-2-.jpg
+picThree: /images/uploads/guhlen_flare_zoom.jpg
 aboutHeading: About Us
 mapHeading: Where you can find us
 newsHeading: Latest News
