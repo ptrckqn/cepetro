@@ -20,8 +20,7 @@ germany:
     focused on appraising the discovery
 
 
-    More information on the licence areas of CEP ("Erlaubnisfelder") and the
-    company’s exploration activities ("Bohrung/Seismik") can be found
+    More information on CEP's activities in Germany can be found
     [here](https://www.cepetro.com/aktivitaeten.html) (German)
   text: View our German Operations
 poland:
