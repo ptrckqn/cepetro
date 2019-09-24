@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import logoColour from "../images/cep-logo.png"
+import Logo from "./logo"
 
 const Container = styled.footer`
   background-color: #333;
@@ -20,13 +20,6 @@ const Container = styled.footer`
 const Box = styled.div`
   @media only screen and (max-width: 56.25em) {
     order: 1;
-  }
-`
-
-const Logo = styled.img`
-  height: 7rem;
-  @media only screen and (max-width: 56.25em) {
-    height: 10rem;
   }
 `
 
@@ -119,7 +112,7 @@ const Footer = () => {
         </Navigation>
       </Section>
       <Box>
-        <Logo src={logoColour} alt="CEPetro Logo" />
+        <Logo />
       </Box>
       <Section>
         <Copyright>&#169; Central European Petroleum LTD</Copyright>

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import logoWhite from "../images/cep-logo.png"
+import Logo from "./logo"
 
 const Container = styled.div`
   position: absolute;
@@ -53,12 +53,9 @@ const To = styled(Link)`
   }
 `
 
-const LogoLink = styled(Link)`
+const LogoBox = styled.span`
+  width: 20rem;
   margin: 1rem auto 1rem 2rem;
-`
-
-const Logo = styled.img`
-  height: 7rem;
 `
 
 const NavDesktop = ({ noNav }) => {
@@ -66,9 +63,12 @@ const NavDesktop = ({ noNav }) => {
     <Container>
       <Navigation>
         <List>
-          <LogoLink to="/">
-            <Logo src={logoWhite} alt="Logo" />
-          </LogoLink>
+          <LogoBox>
+            <Link to="/">
+              <Logo />
+            </Link>
+          </LogoBox>
+
           {noNav ? null : (
             <>
               <Item>

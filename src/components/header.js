@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery, Link } from "gatsby"
 import styled, { css, keyframes } from "styled-components"
-import logoWhite from "../images/cep-logo.png"
+import Logo from "./logo"
 
 const moveInLeft = keyframes`
     0%{
@@ -56,18 +56,13 @@ const LogoBox = styled.div`
   position: absolute;
   top: 4rem;
   left: 4rem;
-`
-
-const Logo = styled.img`
   display: none;
-  height: 8rem;
-  @media only screen and (max-width: 56.25em) {
-    height: 10rem;
-  }
+  width: 17rem;
   @media only screen and (max-width: 43em) {
     display: block;
   }
 `
+
 const TextBox = styled.div`
   position: absolute;
   top: 50%;
@@ -118,7 +113,7 @@ const Header = ({ image, title }) => {
     <Container image={image}>
       <LogoBox>
         <Link to="/">
-          <Logo src={logoWhite} alt="Logo" />
+          <Logo />
         </Link>
       </LogoBox>
       <TextBox>

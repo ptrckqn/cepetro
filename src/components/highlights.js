@@ -102,7 +102,7 @@ const Photo = styled.img`
 
 const PhotoOne = styled(Photo)`
   left: 40%;
-  top: 15%;
+  top: 40%;
 `
 
 const PhotoTwo = styled(Photo)`
