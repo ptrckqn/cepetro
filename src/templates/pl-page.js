@@ -38,6 +38,7 @@ const Secondary = styled.h2`
 const PolandMap = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content 1fr;
   margin: 25rem auto;
   padding: 3rem;
   @media only screen and (max-width: 43em) {
@@ -62,9 +63,6 @@ const PlPage = ({ data }) => {
       noNav
     >
       <SEO title="Central European Petroleum Ltd SP Zoo" />
-      <HeadingBox>
-        <Secondary>About Us</Secondary>
-      </HeadingBox>
       <Highlights
         heading={frontmatter.aboutHeading}
         bodyOne={data.markdownRemark.html}
@@ -72,17 +70,14 @@ const PlPage = ({ data }) => {
         picTwo={frontmatter.picTwo}
         picThree={frontmatter.picThree}
       />
-      <HeadingBox>
-        <Secondary>Asset Location</Secondary>
-      </HeadingBox>
       <PolandMap>
+        <HeadingBox>
+          <Secondary>{frontmatter.assetHeading}</Secondary>
+        </HeadingBox>
         <Content>{frontmatter.mapBody}</Content>
         <Poland src="images/uploads/poland.png" />
       </PolandMap>
-      <HeadingBox>
-        <Secondary>Latest News</Secondary>
-      </HeadingBox>
-      <Cards category="Poland" />
+      <Cards heading={frontmatter.newsHeading} category="Poland" />
     </Layout>
   )
 }
@@ -95,6 +90,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         headingImage
+        aboutHeading
+        assetHeading
+        newsHeading
         picOne
         picTwo
         picThree

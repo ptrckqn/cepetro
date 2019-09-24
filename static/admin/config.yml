@@ -267,6 +267,9 @@ collections:
               widget: "image",
               default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
             }
+          - { label: "About Heading", name: "aboutHeading", widget: "string" }
+          - { label: "Asset Heading", name: "assetHeading", widget: "string" }
+          - { label: "News Heading", name: "newsHeading", widget: "string" }
           - { label: "Picture One", name: "picOne", widget: "image" }
           - { label: "Picture Two", name: "picTwo", widget: "image" }
           - { label: "Picture Three", name: "picThree", widget: "image" }
