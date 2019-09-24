@@ -128,7 +128,11 @@ const Poland = styled(Section)`
 // Used to ensure the height of the container fits all of the absolute content
 const HiddenContent = styled.div`
   visibility: hidden;
-  width: 55%;
+  margin: 5rem auto 10rem;
+  width: 60%;
+  @media only screen and (max-width: 56.25em) {
+    width: 85%;
+  }
 `
 
 const Content = styled.div`
