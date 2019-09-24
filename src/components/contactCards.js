@@ -10,7 +10,7 @@ const Container = styled.section`
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 0.5rem;
   align-items: center;
   justify-items: center;
   @media only screen and (max-width: 56.25em) {
@@ -27,7 +27,7 @@ const Box = styled.div`
 `
 
 const Tertiary = styled.h3`
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
