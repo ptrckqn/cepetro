@@ -30,8 +30,8 @@ poland:
     coast of Northwestern Poland.
 
 
-    > Following the granting of the 'Wolin' onshore/ offshore license in
-    Northeaster Poland in CEP has successfully completed 2 seismic program; an
+    > Following the award of the 'Wolin' Onshore/ Offshore License in
+    Northeastern Poland CEP has successfully completed 2 seismic programs; an
     onshore 2D seismic program in late 2018 and in early June of 2019, an OBN
     based 3D seismic survey which is the first of its kind to be conducted in
     Poland. 
