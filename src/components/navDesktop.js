@@ -54,7 +54,7 @@ const To = styled(Link)`
 `
 
 const LogoBox = styled.span`
-  width: 30rem;
+  width: 22rem;
   margin: 1rem auto 1rem 2rem;
 `
 
