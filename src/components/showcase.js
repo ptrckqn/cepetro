@@ -77,6 +77,9 @@ const HoverView = styled.div`
   &:hover {
     opacity: 1;
   }
+  @media only screen and (max-width: 56.25em) {
+    opacity: 1;
+  }
 `
 
 const ViewMore = styled.p`
