@@ -37,7 +37,7 @@ const Secondary = styled.h2`
 
 const PolandMap = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: max-content 1fr;
   margin: 25rem auto;
   padding: 3rem;
@@ -75,7 +75,7 @@ const PlPage = ({ data }) => {
           <Secondary>{frontmatter.assetHeading}</Secondary>
         </HeadingBox>
         <Content>{frontmatter.mapBody}</Content>
-        <Poland src="images/uploads/poland.png" />
+        <Poland src="images/uploads/poland-2.png" />
       </PolandMap>
       <Cards heading={frontmatter.newsHeading} category="Poland" />
     </Layout>
