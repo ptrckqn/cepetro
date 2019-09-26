@@ -36,7 +36,7 @@ const Secondary = styled.h2`
 `
 
 const MapBox = styled.div`
-  background-image: url("images/uploads/basemap.png");
+  background-image: ${props => `url(${props.image})`};
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -105,7 +105,7 @@ class Map extends Component {
         <HeadingBox>
           <Secondary>{this.props.heading}</Secondary>
         </HeadingBox>
-        <MapBox>
+        <MapBox image={this.props.image}>
           <Link to="/operations?view=germany">
             <Germany src="images/uploads/germany.png" />
           </Link>

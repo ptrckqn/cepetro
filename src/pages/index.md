@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Central European Petroleum
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
-heading: ''
+heading: ""
 germanySite:
   body: |-
     CEP Central European Petroleum GmbH
@@ -26,6 +26,7 @@ picTwo: /images/uploads/boat_equipment_2.jpg
 picThree: /images/uploads/obx-deployment.jpg
 aboutHeading: About Us
 mapHeading: Where you can find us
+mapImage: /images/uploads/basemap.png
 newsHeading: Latest News
 about:
   body: >-
@@ -44,4 +45,3 @@ work:
     stakeholders and the environment into account.
   title: What We Do
 ---
-

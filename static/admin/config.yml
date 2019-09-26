@@ -111,6 +111,7 @@ collections:
           - { label: "Picture Three", name: "picThree", widget: "image" }
           - { label: "About Heading", name: "aboutHeading", widget: "string" }
           - { label: "Map Heading", name: "mapHeading", widget: "string" }
+          - { label: "Map Image", name: "mapImage", widget: "image" }
           - { label: "News Heading", name: "newsHeading", widget: "string" }
           - {
               label: "About",
