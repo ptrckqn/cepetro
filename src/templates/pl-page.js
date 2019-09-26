@@ -50,7 +50,7 @@ const Content = styled.div``
 
 const Poland = styled.img`
   width: 100%;
-  max-width: 50rem;
+  max-width: 100rem;
   margin: 0 auto;
 `
 
@@ -75,7 +75,7 @@ const PlPage = ({ data }) => {
           <Secondary>{frontmatter.assetHeading}</Secondary>
         </HeadingBox>
         <Content>{frontmatter.mapBody}</Content>
-        <Poland src="images/uploads/poland-2.png" />
+        <Poland src={frontmatter.mapImage} />
       </PolandMap>
       <Cards heading={frontmatter.newsHeading} category="Poland" />
     </Layout>
@@ -97,6 +97,7 @@ export const pageQuery = graphql`
         picTwo
         picThree
         mapBody
+        mapImage
       }
       html
     }

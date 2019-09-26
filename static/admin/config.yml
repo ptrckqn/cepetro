@@ -273,5 +273,6 @@ collections:
           - { label: "Picture One", name: "picOne", widget: "image" }
           - { label: "Picture Two", name: "picTwo", widget: "image" }
           - { label: "Picture Three", name: "picThree", widget: "image" }
-          - { label: "Map Body", name: mapBody, widget: "text" }
+          - { label: "Map Body", name: "mapBody", widget: "text" }
+          - { label: "Map Image", name: "mapImage", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
