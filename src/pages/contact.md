@@ -2,7 +2,7 @@
 templateKey: contact-page
 title: Contact us
 heading: Let's get in touch
-headingImage: /images/uploads/yyc_skyline1.jpeg
+headingImage: /images/uploads/header-page2.jpeg
 picEn: /images/uploads/screen-shot-2019-08-11-at-10.17.12-pm.png
 titleEn: Central European Petroleum Ltd.
 contactEn: |-
