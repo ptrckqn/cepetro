@@ -184,7 +184,7 @@ management: >-
 boardOfDirectors: |-
   ## Peter Putnam (Chairman)
 
-  **CEO, Central European Petroleum LTD.**
+  **CEO, Central European Petroleum Ltd.**
 
   ## R. Ian Molson (Deputy Chairman)
 
@@ -212,7 +212,7 @@ boardOfDirectors: |-
 
   ## Gregory G. Turnbull
 
-  **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLp**
+  **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLP**
 picOne: /images/uploads/img_1980.jpg
 picTwo: /images/uploads/Vibrator.jpg
 picThree: /images/uploads/img_0477-2-.jpg
