@@ -35,10 +35,10 @@ management: >-
 
   * President, Hay Valley Resources;
 
-  * President and Chief Operating Officer of OSUM Oil Sands Corp. 2007 to 2008;
+  * President and Chief Operating Officer, OSUM Oil Sands Corp. 2007 to 2008;
 
-  * President and Chief Executive Officer of Petrel Robertson Consulting Ltd.
-  from 2000 to 2006.
+  * President and Chief Executive Officer, Petrel Robertson Consulting Ltd. from
+  2000 to 2006.
 
 
   - - -
