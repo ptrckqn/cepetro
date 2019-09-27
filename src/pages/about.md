@@ -10,7 +10,7 @@ management: >-
   ## Peter Putnam, PhD, P. Geol
 
 
-  **CHAIRMAN & CHIEF EXECUTIVE OFFICER, CO-FOUNDER OF CEP LTD**
+  **CHAIRMAN & CHIEF EXECUTIVE OFFICER**
 
 
   Experience:
@@ -47,8 +47,7 @@ management: >-
   ## Alula Damte, PhD, P. Geol
 
 
-  **PRESIDENT & CHIEF OPERATING OFFICER, CO-FOUNDER OF CEP LTD - MANAGING
-  DIRECTOR OF CEP GMBH**
+  **PRESIDENT & CHIEF OPERATING OFFICER, MANAGING DIRECTOR OF CEP GMBH**
 
 
   Experience:
@@ -84,7 +83,7 @@ management: >-
   ## Robyn Hemminger
 
 
-  **CHIEF FINANCIAL OFFICER, CEP LTD**
+  **CHIEF FINANCIAL OFFICER**
 
 
   Experience:
@@ -103,8 +102,9 @@ management: >-
   Education:
 
 
-  * B.Sc., Chemistry, University of Manitoba; B. Comm., Finance, University of
-  Manitoba
+  * B.Sc., Chemistry, University of Manitoba
+
+  * B. Comm., Finance, University of Manitoba
 
 
   - - -
@@ -113,7 +113,7 @@ management: >-
   ## Jaap Bouwman, Economist
 
 
-  **EXECUTIVE VICE PRESIDENT OF CEP GMBH**
+  **EXECUTIVE VICE PRESIDENT OF CEP GmbH**
 
 
   Experience:
@@ -145,7 +145,7 @@ management: >-
   ## David Bertram, P.Eng.
 
 
-  **VICE PRESIDENT ENGINEERING OF CEP LTD**
+  **VICE PRESIDENT, ENGINEERING**
 
 
   Experience:
