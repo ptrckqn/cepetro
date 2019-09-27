@@ -4,11 +4,6 @@ title: About Us
 heading: Who we are
 headingImage: /images/uploads/people_header.jpg
 management: >-
-  The management of CEP are well-respected industry professionals with extensive
-  international experience in oil & gas exploration, production, field
-  operations and finance.  
-
-
   - - -
 
 
@@ -24,7 +19,7 @@ management: >-
   * Dr. Putnam has more than 30 years varied experience in research, operations
   (exploration, development, and thermal oil recovery), corporate management,
   strategic positioning, equity raising; and broad international experience
-  covering 6 continents and over 30 countries. Dr. Putnam is a proven value
+  covering 6 continents and over 30 countries.  Dr. Putnam is a proven value
   creator who has led several companies, including CEP, into significant land
   positions in Canada, France, Australia, Germany, and Algeria.
 
@@ -62,10 +57,10 @@ management: >-
   * Dr. Damte has 20 years of petroleum industry and related teaching experience
   with expertise in petroleum systems analysis of basins in North, East and West
   Africa, North and South America, Western and Central Europe, and Western
-  Australia. Throughout his industry career, he has provided solutions to
-  structurally complex problems at the basin to prospect scale. He is also
+  Australia.  Throughout his industry career, he has provided solutions to
+  structurally complex problems at the basin to prospect scale.  He is also
   responsible for the identification of petroleum opportunities including the
-  eastern Germany play concept for CEP. At CEP he has been the lead negotiator
+  eastern Germany play concept for CEP.  At CEP he has been the lead negotiator
   for farmouts and during capital raising efforts.
 
 
@@ -78,8 +73,9 @@ management: >-
   Other Associations:
 
 
-  * Board Member, Petrel Robertson Consulting Ltd.; Technical Advisor to the
-  Board, SouthWest Energy (H.K.) Ltd.
+  * Board Member, Petrel Robertson Consulting Ltd.;
+
+  * Technical Adviser to the Board, SouthWest Energy (H.K.) Ltd.
 
 
   - - -
@@ -124,10 +120,10 @@ management: >-
 
 
   * Mr. Bouwman is a successful business executive with over 30 years
-  experience. He has a proven track record of successful operations, strong
+  experience.  He has a proven track record of successful operations, strong
   negotiator with extensive experience in building business relationships, with
   in-depth knowledge of multicultural business environments in Europe, North
-  America, the Middle East, Africa and New Zealand. Mr. Bouwman has worked with
+  America, the Middle East, Africa and New Zealand.  Mr. Bouwman has worked with
   CEP since August 2005.
 
 
@@ -157,16 +153,16 @@ management: >-
 
   * Mr. Bertram has more than 30 years of world-wide experience in petroleum
   engineering operations, oil and gas field appraisal & development planning,
-  production forecasting, economics, reserves evaluation, and M&A. He worked in
+  production forecasting, economics, reserves evaluation, and M&A.  He worked in
   production operations and reservoir engineering for Home Oil until 1992, when
   he joined Shell International: worked in PDO (Muscat) on gas-condensate field
   appraisal and development planning and then was seconded to Maersk Oil
   (Copenhagen), where he managed petroleum engineering operations for the Tyra
-  Centre in the Danish sector of the North Sea. Dave then became a partner in
-  Adams Pearson Associates (now part of RPS Energy), where he worked as a
-  reservoir engineering specialist on world-wide projects before starting his
-  own reservoir engineering consulting company in 2006. Mr. Bertram joined CEP
-  in early 2009.
+  Centre in the Danish sector of the North Sea.  Mr. Bertram then became a
+  partner in Adams Pearson Associates (now part of RPS Energy), where he worked
+  as a reservoir engineering specialist on world-wide projects before starting
+  his own reservoir engineering consulting company in 2006.  Mr. Bertram joined
+  CEP in early 2009.
 
 
   Education:
