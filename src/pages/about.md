@@ -95,7 +95,7 @@ management: >-
   and strategic planning across the international energy spectrum including
   working with energy companies focused in Argentina, Australia, Azerbaijan,
   Brazil, Canada, Chad, Colombia, Egypt, France, Kazakhstan, Kurdistan, Libya,
-  Mexico, Nigeria,Papua New Guinea, Poland, Romania, Trinidad, Tunisia, Turkey
+  Mexico, Nigeria, Papua New Guinea, Poland, Romania, Trinidad, Tunisia, Turkey
   and Yemen.
 
 
