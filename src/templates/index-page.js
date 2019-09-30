@@ -44,7 +44,7 @@ const LandingPage = ({ data }) => {
 export default LandingPage
 
 export const pageQuery = graphql`
-  query pageQuery {
+  query indexQuery {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title

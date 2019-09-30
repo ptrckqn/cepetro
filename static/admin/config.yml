@@ -203,6 +203,23 @@ collections:
                 ],
             }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/news.md"
+        label: "News Page"
+        name: "news"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "news-age",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Heading Image",
+              name: "headingImage",
+              widget: "image",
+              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
+            }
       - file: "src/pages/responsibility.md"
         label: "Responsibility Page"
         name: "responsibility"
