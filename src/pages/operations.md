@@ -1,7 +1,7 @@
 ---
 templateKey: operations-page
 title: Operations
-heading: See where we Operate
+heading: Where we Operate
 headingImage: /images/uploads/guhlenrig_flare.jpg
 germany:
   image: /images/uploads/guhlen_flare.jpg

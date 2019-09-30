@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-publish: true
+publish: false
 title: CEP successfully completes first OBN program in Poland
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 image: /images/uploads/obx-deployment_news.jpg

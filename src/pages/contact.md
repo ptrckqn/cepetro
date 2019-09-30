@@ -1,7 +1,7 @@
 ---
 templateKey: contact-page
 title: Contact us
-heading: Let's get in touch
+heading: Our Offices
 headingImage: /images/uploads/header-page2.jpeg
 picEn: /images/uploads/screen-shot-2019-08-11-at-10.17.12-pm.png
 titleEn: Central European Petroleum Ltd.
@@ -10,7 +10,7 @@ contactEn: |-
   Phone: 1-403-532-6551  
   Direct: 1-587-955-1050  
   Fax: 1-403-532-6554  
-  Email: info@cepetro.com
+  Email: info@cepetro.com  
 titleDe: CEP Central European Petroleum GmbH
 contactDe: |-
   Address: Rosenstraße 2 D-10178 Berlin  
