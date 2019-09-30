@@ -108,6 +108,7 @@ const Copyright = styled.p`
 
 const MadeBy = styled.a`
   color: #777;
+  display: block;
   text-decoration: none;
   padding-top: 2rem;
   width: 80%;
@@ -119,7 +120,6 @@ const MadeBy = styled.a`
   @media (max-width: 56.25em) {
     width: 100%;
     float: none;
-    order: 3;
   }
 `
 
