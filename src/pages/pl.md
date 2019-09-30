@@ -8,7 +8,10 @@ newsHeading: Latest News
 picOne: /images/uploads/acquisition_office.jpg
 picTwo: /images/uploads/wood_vibes.jpg
 picThree: /images/uploads/ship_blast.jpg
-mapBody: Test text
+mapBody: >-
+  The Wolin Concession is an Onshore/ Offshore License Block located in
+  Northwestern Poland at the Baltic coast along the Polish-German border, 50 km
+  North of Szczecin.
 mapImage: /images/uploads/poland-2.png
 ---
 
