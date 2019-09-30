@@ -25,12 +25,7 @@ collections:
           widget: "hidden",
           default: "news-post",
         }
-      - {
-          label: "Published",
-          name: "published",
-          widget: "boolean",
-          deafult: true,
-        }
+      - { label: "Publish", name: "publish", widget: "boolean", deafult: true }
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Heading Image",

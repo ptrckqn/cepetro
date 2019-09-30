@@ -236,6 +236,7 @@ class Cards extends Component {
                       slug
                     }
                     frontmatter {
+                      publish
                       title
                       image
                       category
@@ -255,7 +256,7 @@ class Cards extends Component {
               <FlexContainer>
                 {posts &&
                   posts.map(({ node: post }) => {
-                    if (!this.props.category) {
+                    if (!this.props.category && post.frontmatter.publish) {
                       return (
                         <Card
                           key={post.id}
@@ -266,7 +267,8 @@ class Cards extends Component {
                         />
                       )
                     } else if (
-                      post.frontmatter.category === this.props.category
+                      post.frontmatter.category === this.props.category &&
+                      post.frontmatter.publish
                     ) {
                       return (
                         <Card
