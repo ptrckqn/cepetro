@@ -106,6 +106,18 @@ const Copyright = styled.p`
   }
 `
 
+const MadeBy = styled.a`
+  color: #777;
+  text-decoration: none;
+  padding-top: 2rem;
+  width: 80%;
+  float: right;
+  text-align: center;
+  &:hover {
+    color: #fff;
+  }
+`
+
 const Footer = () => {
   return (
     <Container>
@@ -145,6 +157,9 @@ const Footer = () => {
       </LogoBox>
       <Section>
         <Copyright>&#169; Central European Petroleum Ltd.</Copyright>
+        <MadeBy href="https://www.github.com/ptrckqn" target="__blank">
+          Made by Patrick Quan
+        </MadeBy>
       </Section>
     </Container>
   )
