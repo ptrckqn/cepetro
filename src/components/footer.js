@@ -51,28 +51,46 @@ const Navigation = styled.div`
 
 const List = styled.ul`
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-column-gap: 1.5rem;
+  justify-content: center;
+  justify-items: center;
 `
 
-const Item = styled.li`
-  display: inline-block;
-  &:not(:last-child) {
-    margin-right: 1.5rem;
+const Item = styled.li``
+
+const To = styled(Link)`
+  &:link,
+  &:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s;
+    padding-bottom: 3rem;
+  }
+  &:hover,
+  &:active {
+    color: #3078bc;
   }
 `
 
-const To = styled(Link)`
-    &:link, &:visited{}
-        color: #f7f7f7;
-        text-decoration: none;
-        text-transform: uppercase;
-        display: inline-block;
-        transition: all .3s;
-        padding-bottom: 3rem;
-    }
-    &:hover, &:active{
-        color: #3078bc;
-    }
-
+const DownloadLink = styled.a`
+  &:link,
+  &:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s;
+    padding-bottom: 3rem;
+    cursor: pointer;
+  }
+  &:hover,
+  &:active {
+    color: #3078bc;
+  }
 `
 
 const Copyright = styled.p`
@@ -109,6 +127,16 @@ const Footer = () => {
             <Item>
               <To to="/contact">Contact</To>
             </Item>
+            <Item style={{ gridColumn: "1 / 3" }}>
+              <DownloadLink href="/images/uploads/terms-of-use.pdf">
+                Terms of use
+              </DownloadLink>
+            </Item>
+            <Item style={{ gridColumn: "3 / 6" }}>
+              <DownloadLink href="/images/uploads/privacy-policy.pdf">
+                Privacy Policy
+              </DownloadLink>
+            </Item>
           </List>
         </Navigation>
       </Section>
@@ -116,7 +144,7 @@ const Footer = () => {
         <Logo />
       </LogoBox>
       <Section>
-        <Copyright>&#169; Central European Petroleum LTD</Copyright>
+        <Copyright>&#169; Central European Petroleum Ltd.</Copyright>
       </Section>
     </Container>
   )
