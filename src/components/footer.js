@@ -14,11 +14,13 @@ const Container = styled.footer`
   color: #f7f7f7;
   @media only screen and (max-width: 56.25em) {
     padding: 6rem 0;
+    grid-template-columns: 1fr;
   }
 `
 const LogoBox = styled.div`
   width: 60%;
   @media only screen and (max-width: 56.25em) {
+    width: 30%;
   }
 `
 
