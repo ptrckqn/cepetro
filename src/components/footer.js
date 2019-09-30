@@ -116,6 +116,11 @@ const MadeBy = styled.a`
   &:hover {
     color: #fff;
   }
+  @media (max-width: 56.25em) {
+    width: 100%;
+    float: none;
+    order: 3;
+  }
 `
 
 const Footer = () => {
