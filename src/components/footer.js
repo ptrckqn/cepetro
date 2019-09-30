@@ -4,38 +4,26 @@ import styled from "styled-components"
 import Logo from "./logo"
 
 const Container = styled.footer`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
   background-color: #333;
   padding: 10rem 2rem 8rem;
-  display: flex;
   font-size: 1.4rem;
   color: #f7f7f7;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
   @media only screen and (max-width: 56.25em) {
     padding: 6rem 0;
-    flex-direction: column;
   }
 `
 const LogoBox = styled.div`
+  width: 60%;
   @media only screen and (max-width: 56.25em) {
-    order: 1;
-    width: 25%;
   }
 `
 
 const Section = styled.div`
-  float: left;
-  width: calc((100% - 6rem) / 2);
   @media (max-width: 56.25em) {
-    width: 80% !important;
-    order: 2;
-  }
-  &:not(:last-child) {
-    margin-right: 6rem;
-    @media (max-width: 56.25em) {
-      margin-right: 0;
-    }
   }
 `
 
@@ -44,7 +32,6 @@ const Navigation = styled.div`
   padding-top: 2rem;
   display: inline-block;
   @media (max-width: 56.25em) {
-    width: 100%;
     text-align: center;
   }
 `
@@ -85,6 +72,7 @@ const DownloadLink = styled.a`
     display: inline-block;
     transition: all 0.3s;
     padding-bottom: 3rem;
+    margin: 0 1.5rem;
     cursor: pointer;
   }
   &:hover,
@@ -96,12 +84,10 @@ const DownloadLink = styled.a`
 const Copyright = styled.p`
   border-top: 1px solid #777;
   padding-top: 2rem;
-  width: 80%;
-  float: right;
   text-align: center;
+  display: block;
   @media (max-width: 56.25em) {
     width: 100%;
-    float: none;
     order: 3;
   }
 `
@@ -112,14 +98,12 @@ const MadeBy = styled.a`
   text-decoration: none;
   padding-top: 2rem;
   width: 80%;
-  float: right;
   text-align: center;
   &:hover {
     color: #fff;
   }
   @media (max-width: 56.25em) {
     width: 100%;
-    float: none;
   }
 `
 
@@ -144,16 +128,6 @@ const Footer = () => {
             <Item>
               <To to="/contact">Contact</To>
             </Item>
-            <Item style={{ gridColumn: "1 / 3" }}>
-              <DownloadLink href="/images/uploads/terms-of-use.pdf">
-                Terms of use
-              </DownloadLink>
-            </Item>
-            <Item style={{ gridColumn: "3 / 6" }}>
-              <DownloadLink href="/images/uploads/privacy-policy.pdf">
-                Privacy Policy
-              </DownloadLink>
-            </Item>
           </List>
         </Navigation>
       </Section>
@@ -162,9 +136,15 @@ const Footer = () => {
       </LogoBox>
       <Section>
         <Copyright>&#169; Central European Petroleum Ltd.</Copyright>
-        <MadeBy href="https://www.github.com/ptrckqn" target="__blank">
+        {/* <MadeBy href="https://www.github.com/ptrckqn" target="__blank">
           Made by Patrick Quan
-        </MadeBy>
+        </MadeBy> */}
+        <DownloadLink href="/images/uploads/privacy-policy.pdf">
+          Privacy Policy
+        </DownloadLink>
+        <DownloadLink href="/images/uploads/terms-of-use.pdf">
+          Terms of use
+        </DownloadLink>
       </Section>
     </Container>
   )
