@@ -21,7 +21,7 @@ germany:
 
 
     More information on CEP's activities in Germany can be found
-    [here](https://www.cepetro.com/aktivitaeten.html) (German)
+    [here](https://www.cepetro.de/cepetroleum.html) (German)
   text: View our German Operations
 poland:
   image: /images/uploads/beach_vibes2.jpg
