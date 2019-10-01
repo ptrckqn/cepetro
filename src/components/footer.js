@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Logo from "./logo"
 
 const Container = styled.footer`
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -35,7 +36,7 @@ const Navigation = styled.div`
   display: inline-block;
   @media (max-width: 56.25em) {
     text-align: center;
-  }
+  }l
 `
 
 const List = styled.ul`
@@ -68,7 +69,8 @@ const To = styled(Link)`
 const DownloadLink = styled.a`
   &:link,
   &:visited {
-    color: #f7f7f7;
+    color: #777;
+    font-size: 1.1rem;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -92,6 +94,12 @@ const Copyright = styled.p`
     width: 100%;
     order: 3;
   }
+`
+
+const Legal = styled.span`
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
 `
 
 const MadeBy = styled.a`
@@ -141,13 +149,15 @@ const Footer = () => {
         {/* <MadeBy href="https://www.github.com/ptrckqn" target="__blank">
           Made by Patrick Quan
         </MadeBy> */}
+      </Section>
+      <Legal>
         <DownloadLink href="/images/uploads/privacy-policy.pdf">
           Privacy Policy
         </DownloadLink>
         <DownloadLink href="/images/uploads/terms-of-use.pdf">
           Terms of use
         </DownloadLink>
-      </Section>
+      </Legal>
     </Container>
   )
 }
