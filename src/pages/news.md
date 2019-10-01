@@ -1,6 +1,6 @@
 ---
 templateKey: news-page
 title: News
-headingImage: /images/uploads/header1.jpg
+headingImage: /images/uploads/gln_flare1.jpg
 ---
 
