@@ -13,6 +13,6 @@ On December 1, 2017, the Polish government signed an agreement awarding Central 
 Wolin Concession
 
 * For Concession Agreement click [here](http://www.cepetro.com/images/uploads/wolin-licence-decision-1-12-2017-26146810_1-.pdf)
-* For Wolin Map (1:50 000) click [here](<https://www.cepetro.com/images/uploads/Wolin website official 50k.png>)
+* For Wolin Map (1:50 000) click [here](https://www.cepetro.com/images/uploads/Wolin_50k.png)
 
 `securities advisory. cep is not a reporting issuer and cep’s securities are not traded on any stock exchange in any jurisdiction, including without limitation, in canada or the united states, and thus, is not subject to regulation by any stock exchange. this press release is not an offer of the securities for sale in the united states. the securities of the company have not been registered under the u.s. securities act of 1933, as amended, and may not be offered or sold in the united states absent registration or an exemption from registration. this press release shall not constitute an offer to sell or the solicitation of an offer to buy nor shall there be any sale of the securities in any state in which such offer, solicitation or sale would be unlawful.`
