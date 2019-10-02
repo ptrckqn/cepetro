@@ -1,0 +1,4 @@
+# Redirect domain aliases to primary domain
+https://new-www.cepetro.com/* https://www.cepetro.com/:splat 301!
+https://danehill.pl/* https://www.cepetro.com/:splat 301!
+https://www.danehill.pl/* https://www.cepetro.com/:splat 301!
