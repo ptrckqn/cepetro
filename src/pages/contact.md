@@ -6,7 +6,7 @@ headingImage: /images/uploads/header-page2.jpeg
 picEn: /images/uploads/screen-shot-2019-08-11-at-10.17.12-pm.png
 titleEn: Central European Petroleum Ltd.
 contactEn: |-
-  Address: 1000-521, 3 Ave SW Calgary, AB, T2P 3T3 
+  Address: 1000-521, 3 Ave SW Calgary, AB, T2P 3T3  
   Phone: 1-403-532-6551  
   Direct: 1-587-955-1050  
   Fax: 1-403-532-6554  
