@@ -78,7 +78,13 @@ export const pageQuery = graphql`
         }
         aboutHeading
         mapHeading
-        mapImage
+        mapImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         newsHeading
         germanySite {
           title

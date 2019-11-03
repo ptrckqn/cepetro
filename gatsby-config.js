@@ -15,6 +15,8 @@ module.exports = {
     author: "@ptrckqn",
   },
   plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     {
       //Used for gatsby image support
@@ -38,8 +40,6 @@ module.exports = {
         path: `${__dirname}/static/images/uploads`,
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
