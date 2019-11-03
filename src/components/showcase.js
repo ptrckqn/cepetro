@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import remark from "remark"
 import remarkHtml from "remark-html"
+import BackgroundImage from "gatsby-background-image"
 
 const Container = styled.section`
   background-color: #f7f7f7;
@@ -45,7 +46,7 @@ const Images = styled.div`
   }
 `
 
-const ImageBox = styled.div`
+const ImageBox = styled(BackgroundImage)`
   width: 50%;
   height: 50rem;
   position: relative;
@@ -242,7 +243,7 @@ class Showcase extends Component {
         </HeadingBox>
         <Images>
           <ImageBox
-            image={this.props.germanyImage}
+            fluid={this.props.germanyImage.childImageSharp.fluid}
             onClick={this.toggleGermany}
             style={{ width: this.state.view === "germany" ? "90%" : "" }}
           >
@@ -255,7 +256,7 @@ class Showcase extends Component {
             </HoverView>
           </ImageBox>
           <ImageBox
-            image={this.props.polandImage}
+            fluid={this.props.polandImage.childImageSharp.fluid}
             onClick={this.togglePoland}
             style={{ width: this.state.view === "poland" ? "90%" : "" }}
           >

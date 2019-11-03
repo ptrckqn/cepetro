@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import remark from "remark"
 import remarkHtml from "remark-html"
-
+import Img from "gatsby-image"
 import SEO from "../components/SEO.js"
 import Layout from "../components/layout"
 import Highlights from "../components/highlights"
@@ -90,7 +90,7 @@ const Content = styled.div`
   }
 `
 
-const Poland = styled.img`
+const Poland = styled(Img)`
   width: 100%;
   max-width: 100rem;
   margin: 0 auto;
@@ -127,7 +127,7 @@ const PlPage = ({ data }) => {
               .toString()
           )}
         />
-        <Poland src={frontmatter.mapImage} />
+        <Poland fluid={frontmatter.mapImage.childImageSharp.fluid} />
       </PolandMap>
       <Cards heading={frontmatter.newsHeading} category="Poland" />
     </Layout>
@@ -141,15 +141,45 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "pl-page" } }) {
       frontmatter {
         title
-        headingImage
+        headingImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         aboutHeading
         assetHeading
         newsHeading
-        picOne
-        picTwo
-        picThree
+        picOne {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        picTwo {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        picThree {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         mapBody
-        mapImage
+        mapImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       html
     }

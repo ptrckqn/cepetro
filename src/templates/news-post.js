@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-
+import Img from "gatsby-image"
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 
@@ -49,7 +49,7 @@ const Tertiary = styled.h3`
     text-align: left;
 `
 
-const Image = styled.img`
+const Image = styled(Img)`
   max-height: 50rem;
   max-width: 100%;
   margin: 0 auto;
@@ -114,7 +114,7 @@ const NewsPost = ({ data }) => {
         </HeadingBox>
         <Tertiary>{frontmatter.description}</Tertiary>
         <Tertiary>{frontmatter.date}</Tertiary>
-        <Image src={frontmatter.image} />
+        <Image fluid={frontmatter.image.childImageSharp.fluid} />
         <Content dangerouslySetInnerHTML={createHTML()} />
       </Container>
     </Layout>
@@ -129,10 +129,22 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        headingImage
+        headingImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         title
         category
-        image
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         date(formatString: "MMMM Do, YYYY")
         description
       }

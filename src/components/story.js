@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import remark from "remark"
 import remarkHtml from "remark-html"
+import Img from "gatsby-image"
 
 const Container = styled.section`
   padding: 10rem 0;
@@ -103,7 +104,7 @@ const Shape = styled.figure`
   }
 `
 
-const Image = styled.img`
+const Image = styled(Img)`
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
   transition: all 0.5s;
@@ -210,7 +211,10 @@ class Story extends Component {
         <Row>
           <Box>
             <Shape>
-              <Image src={this.props.pic} alt="Location" />
+              <Image
+                fluid={this.props.pic.childImageSharp.fluid}
+                alt="Location"
+              />
             </Shape>
             <Detail>
               <Tertiary>{this.props.title}</Tertiary>

@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import styled from "styled-components"
 
 const Container = styled.section`
@@ -35,8 +36,7 @@ const Secondary = styled.h2`
   }
 `
 
-const MapBox = styled.div`
-  background-image: ${props => `url(${props.image})`};
+const MapBox = styled(BackgroundImage)`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -105,7 +105,8 @@ class Map extends Component {
         <HeadingBox>
           <Secondary>{this.props.heading}</Secondary>
         </HeadingBox>
-        <MapBox image={this.props.image}>
+
+        <MapBox fluid={this.props.image.childImageSharp.fluid}>
           <Link to="/operations?view=germany">
             <Germany src="images/uploads/germany.png" />
           </Link>

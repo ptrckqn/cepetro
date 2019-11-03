@@ -40,8 +40,20 @@ export const pageQuery = graphql`
       frontmatter {
         title
         heading
-        headingImage
-        picEn
+        headingImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        picEn {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         titleEn
         contactEn
         titleDe
