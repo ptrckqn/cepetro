@@ -269,7 +269,7 @@ collections:
           - { label: "Poland Contact", name: "contactPl", widget: "text" }
           - { label: "Netherlands Title", name: "titleNl", width: "string" }
           - { label: "Netherlands Contact", name: "contactNl", widget: "text" }
-      - file: "src/pages/pl.md"
+      - file: "src/pages/pl/index.md"
         label: "Poland Page"
         name: "pl"
         fields:
@@ -295,8 +295,38 @@ collections:
           - {
               label: "Map Body",
               name: "mapBody",
-              widget: "text",
+              widget: "markdown",
               required: false,
             }
           - { label: "Map Image", name: "mapImage", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/pl/wolin.md"
+        label: "Wolin Page"
+        name: "wolin"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "news-post",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Heading Image",
+              name: "headingImage",
+              widget: "image",
+              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
+            }
+          - {
+              label: "Featured Image",
+              name: "image",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
           - { label: "Body", name: "body", widget: "markdown" }

@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
+import remark from "remark"
+import remarkHtml from "remark-html"
 
 import SEO from "../components/SEO.js"
 import Layout from "../components/layout"
@@ -46,7 +48,47 @@ const PolandMap = styled.div`
     grid-row-gap: 2rem;
   }
 `
-const Content = styled.div``
+const Content = styled.div`
+  font-weight: 300;
+  text-align: left;
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  hr {
+    margin: 1rem 3rem;
+  }
+  h1,
+  h2,
+  p {
+    padding: 0.5rem 0;
+  }
+  a {
+    color: #ff4a53;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  blockquote {
+    border-left: 1px solid #777;
+    padding-left: 2rem;
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  ul,
+  ol {
+    padding-left: 2rem;
+  }
+`
 
 const Poland = styled.img`
   width: 100%;
@@ -56,6 +98,9 @@ const Poland = styled.img`
 
 const PlPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const createHTML = toHtml => {
+    return { __html: toHtml }
+  }
   return (
     <Layout
       headingTitle={frontmatter.title}
@@ -74,7 +119,14 @@ const PlPage = ({ data }) => {
         <HeadingBox>
           <Secondary>{frontmatter.assetHeading}</Secondary>
         </HeadingBox>
-        <Content>{frontmatter.mapBody}</Content>
+        <Content
+          dangerouslySetInnerHTML={createHTML(
+            remark()
+              .use(remarkHtml)
+              .processSync(frontmatter.mapBody)
+              .toString()
+          )}
+        />
         <Poland src={frontmatter.mapImage} />
       </PolandMap>
       <Cards heading={frontmatter.newsHeading} category="Poland" />
