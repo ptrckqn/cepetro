@@ -1,6 +1,7 @@
 ---
-templateKey: news-post
-title: Wolin Title
+templateKey: pl-post
+title: Wolin title
+heading: Wolin, Poland
 headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 image: /images/uploads/wolinmap_news.png
 description: ""
