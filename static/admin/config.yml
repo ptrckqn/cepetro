@@ -269,8 +269,12 @@ collections:
           - { label: "Poland Contact", name: "contactPl", widget: "text" }
           - { label: "Netherlands Title", name: "titleNl", width: "string" }
           - { label: "Netherlands Contact", name: "contactNl", widget: "text" }
+
+  - name: polandPages
+    label: Poland Pages
+    files:
       - file: "src/pages/pl/index.md"
-        label: "Poland Page"
+        label: "Main Page"
         name: "pl"
         fields:
           - {
