@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import remark from "remark"
 import remarkHtml from "remark-html"
 
@@ -82,11 +83,9 @@ const Composition = styled.div`
   height: 100%;
 `
 
-const Photo = styled.img`
+const Wrapper = styled.div`
   width: 55%;
   max-width: 35rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
   position: absolute;
   z-index: 9;
   transition: all 0.3s;
@@ -98,21 +97,22 @@ const Photo = styled.img`
   ${Composition}:hover &:not(:hover) {
     transform: scale(0.95) translate(-50%, -50%);
   }
+  :nth-child(1) {
+    left: 40%;
+    top: 35%;
+  }
+  :nth-child(2) {
+    left: 60%;
+    top: 50%;
+  }
+  :nth-child(3) {
+    left: 30%;
+    top: 60%;
+  }
 `
-
-const PhotoOne = styled(Photo)`
-  left: 40%;
-  top: 35%;
-`
-
-const PhotoTwo = styled(Photo)`
-  left: 60%;
-  top: 50%;
-`
-
-const PhotoThree = styled(Photo)`
-  left: 30%;
-  top: 60%;
+const Photo = styled(Img)`
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
 `
 
 const Content = styled.div`
@@ -188,9 +188,24 @@ class Highlights extends Component {
         </Section>
         <Section>
           <Composition>
-            <PhotoOne src={this.props.picOne} alt="Photo 1" />
-            <PhotoTwo src={this.props.picTwo} alt="Photo 2" />
-            <PhotoThree src={this.props.picThree} alt="Photo 3" />
+            <Wrapper>
+              <Photo
+                fluid={this.props.picOne.childImageSharp.fluid}
+                alt="Photo 1"
+              />
+            </Wrapper>
+            <Wrapper>
+              <Photo
+                fluid={this.props.picTwo.childImageSharp.fluid}
+                alt="Photo 2"
+              />
+            </Wrapper>
+            <Wrapper>
+              <Photo
+                fluid={this.props.picThree.childImageSharp.fluid}
+                alt="Photo 3"
+              />
+            </Wrapper>
           </Composition>
         </Section>
       </Container>

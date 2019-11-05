@@ -1,7 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-
+import remark from "remark"
+import remarkHtml from "remark-html"
+import Img from "gatsby-image"
 import SEO from "../components/SEO.js"
 import Layout from "../components/layout"
 import Highlights from "../components/highlights"
@@ -46,9 +48,49 @@ const PolandMap = styled.div`
     grid-row-gap: 2rem;
   }
 `
-const Content = styled.div``
+const Content = styled.div`
+  font-weight: 300;
+  text-align: left;
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  hr {
+    margin: 1rem 3rem;
+  }
+  h1,
+  h2,
+  p {
+    padding: 0.5rem 0;
+  }
+  a {
+    color: #ff4a53;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  blockquote {
+    border-left: 1px solid #777;
+    padding-left: 2rem;
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  ul,
+  ol {
+    padding-left: 2rem;
+  }
+`
 
-const Poland = styled.img`
+const Poland = styled(Img)`
   width: 100%;
   max-width: 100rem;
   margin: 0 auto;
@@ -56,6 +98,9 @@ const Poland = styled.img`
 
 const PlPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const createHTML = toHtml => {
+    return { __html: toHtml }
+  }
   return (
     <Layout
       headingTitle={frontmatter.title}
@@ -74,8 +119,15 @@ const PlPage = ({ data }) => {
         <HeadingBox>
           <Secondary>{frontmatter.assetHeading}</Secondary>
         </HeadingBox>
-        <Content>{frontmatter.mapBody}</Content>
-        <Poland src={frontmatter.mapImage} />
+        <Content
+          dangerouslySetInnerHTML={createHTML(
+            remark()
+              .use(remarkHtml)
+              .processSync(frontmatter.mapBody)
+              .toString()
+          )}
+        />
+        <Poland fluid={frontmatter.mapImage.childImageSharp.fluid} />
       </PolandMap>
       <Cards heading={frontmatter.newsHeading} category="Poland" />
     </Layout>
@@ -89,15 +141,45 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "pl-page" } }) {
       frontmatter {
         title
-        headingImage
+        headingImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         aboutHeading
         assetHeading
         newsHeading
-        picOne
-        picTwo
-        picThree
+        picOne {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        picTwo {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        picThree {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         mapBody
-        mapImage
+        mapImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       html
     }

@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { Link, StaticQuery, graphql } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 
 const Container = styled.section`
   padding: 10rem 0;
@@ -102,14 +103,13 @@ const Back = styled(Side)`
   }
 `
 
-const Photo = styled.div`
+const Photo = styled(BackgroundImage)`
   background-size: cover;
   background-position: center;
   height: 28rem;
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  background-image: url(${props => props.background});
 `
 
 const Title = styled.h4`
@@ -189,7 +189,9 @@ class Card extends Component {
       <Section>
         <Box>
           <Front>
-            <Photo background={this.props.background}>&nbsp;</Photo>
+            <Photo fluid={this.props.background.childImageSharp.fluid}>
+              &nbsp;
+            </Photo>
             <Title>
               <span>{this.props.title}</span>
             </Title>
@@ -238,7 +240,13 @@ class Cards extends Component {
                     frontmatter {
                       publish
                       title
-                      image
+                      image {
+                        childImageSharp {
+                          fluid {
+                            ...GatsbyImageSharpFluid
+                          }
+                        }
+                      }
                       category
                       date(formatString: "MMM Do, YYYY")
                     }

@@ -25,7 +25,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "news-page" } }) {
       frontmatter {
         title
-        headingImage
+        headingImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

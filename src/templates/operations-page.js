@@ -41,16 +41,34 @@ export const pageQuery = graphql`
       frontmatter {
         title
         heading
-        headingImage
+        headingImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         germany {
           ops
           text
-          image
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         poland {
           ops
           text
-          image
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
       html

@@ -100,22 +100,27 @@ const Content = styled.div`
   }
 `
 
-const NewsPost = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  const createHTML = () => {
-    return { __html: data.markdownRemark.html }
+const NewsPost = ({
+  data: {
+    markdownRemark: {
+      html,
+      frontmatter: { title, heading, headingImage, description, image },
+    },
+  },
+}) => {
+  const createHTML = toHtml => {
+    return { __html: toHtml }
   }
   return (
-    <Layout headingTitle="News" headingImage={frontmatter.headingImage}>
-      <SEO title={frontmatter.title} />
+    <Layout headingTitle={title} headingImage={headingImage}>
+      <SEO title={title} />
       <Container>
         <HeadingBox>
-          <Secondary>{frontmatter.title}</Secondary>
+          <Secondary>{heading}</Secondary>
         </HeadingBox>
-        <Tertiary>{frontmatter.description}</Tertiary>
-        <Tertiary>{frontmatter.date}</Tertiary>
-        <Image fluid={frontmatter.image.childImageSharp.fluid} />
-        <Content dangerouslySetInnerHTML={createHTML()} />
+        <Tertiary>{description}</Tertiary>
+        <Image fluid={image.childImageSharp.fluid} />
+        <Content dangerouslySetInnerHTML={createHTML(html)} />
       </Container>
     </Layout>
   )
@@ -124,9 +129,8 @@ const NewsPost = ({ data }) => {
 export default NewsPost
 
 export const pageQuery = graphql`
-  query NewsPostById($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
+  query PlPostQuery {
+    markdownRemark(frontmatter: { templateKey: { eq: "pl-post" } }) {
       html
       frontmatter {
         headingImage {
@@ -137,7 +141,7 @@ export const pageQuery = graphql`
           }
         }
         title
-        category
+        heading
         image {
           childImageSharp {
             fluid {
@@ -145,7 +149,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        date(formatString: "MMMM Do, YYYY")
         description
       }
     }

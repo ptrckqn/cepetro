@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, StaticQuery, Link } from "gatsby"
 import styled, { css, keyframes } from "styled-components"
 import Logo from "./logo"
+import BackgroundImage from "gatsby-background-image"
 
 const moveInLeft = keyframes`
     0%{
@@ -35,11 +36,10 @@ const moveInRight = keyframes`
     }
 `
 
-const Container = styled.header`
+const Container = styled(BackgroundImage)`
   z-index: 90;
   position: relative;
   height: 70vh;
-  background-image: url(${props => props.image});
   background-size: cover;
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
@@ -110,7 +110,7 @@ const Sub = styled.span`
 
 const Header = ({ image, title }) => {
   return (
-    <Container image={image}>
+    <Container fluid={image.childImageSharp.fluid}>
       <LogoBox>
         <Link to="/">
           <Logo />

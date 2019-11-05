@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 
 const Container = styled.div`
   width: 95%;
@@ -37,7 +38,7 @@ const Secondary = styled.h2`
   }
 `
 
-const CountryContainer = styled.div`
+const CountryContainer = styled(BackgroundImage)`
   position: relative;
   display: flex;
   justify-content: center;
@@ -47,7 +48,6 @@ const CountryContainer = styled.div`
   background-repeat: no-repeat;
   transition: all 0.3s;
   cursor: pointer;
-  background-image: ${props => `url(${props.image})`};
 `
 
 const Title = styled.h3`
@@ -106,7 +106,7 @@ const LocationsButton = ({
 }) => {
   return (
     <Container>
-      <CountryContainer image={germanyImage}>
+      <CountryContainer fluid={germanyImage.childImageSharp.fluid}>
         <Background />
         <a href="https://www.cepetro.de/cepetroleum.html">
           <Title>{germanyTitle}</Title>
@@ -116,7 +116,7 @@ const LocationsButton = ({
         </a>
       </CountryContainer>
 
-      <CountryContainer image={polandImage}>
+      <CountryContainer fluid={polandImage.childImageSharp.fluid}>
         <Background />
         <Link to="/pl">
           <Title>{polandTitle}</Title>
