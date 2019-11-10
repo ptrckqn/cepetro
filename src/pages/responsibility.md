@@ -5,9 +5,9 @@ headingImage: /images/uploads/header_lake.jpg
 highlights:
   title: What we are focused on
   images:
-    - /images/uploads/img_0477-2-.jpg
-    - /images/uploads/poland_woods.jpg
-    - /images/uploads/natura2000sign.jpg
+    - image: /images/uploads/img_0477-2-.jpg
+    - image: /images/uploads/poland_woods.jpg
+    - image: /images/uploads/natura2000sign.jpg
   data:
     - title: Our Commitment and Responsibility
       body: >-

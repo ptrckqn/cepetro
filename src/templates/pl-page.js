@@ -38,9 +38,11 @@ export const pageQuery = graphql`
         highlights {
           title
           images {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid_noBase64
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
               }
             }
           }

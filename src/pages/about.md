@@ -5,9 +5,9 @@ headingImage: /images/uploads/people_header.jpg
 highlights:
   title: Who we are
   images:
-    - /images/uploads/rocks.jpg
-    - /images/uploads/observation-of-vibrators.jpg
-    - /images/uploads/bohrplatzbesichtigung_mh2017_web.jpg
+    - image: /images/uploads/rocks.jpg
+    - image: /images/uploads/observation-of-vibrators.jpg
+    - image: /images/uploads/bohrplatzbesichtigung_mh2017_web.jpg
   data:
     - title: About Us
       body: >-

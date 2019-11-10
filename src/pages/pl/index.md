@@ -5,9 +5,9 @@ headingImage: /images/uploads/pl_sunset.jpg
 highlights:
   title: About Us
   images:
-    - /images/uploads/acquisition_office.jpg
-    - /images/uploads/wood_vibes.jpg
-    - /images/uploads/ship_blast.jpg
+    - image: /images/uploads/acquisition_office.jpg
+    - image: /images/uploads/wood_vibes.jpg
+    - image: /images/uploads/ship_blast.jpg
   data:
     - title: this is a title
       body: >-

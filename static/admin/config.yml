@@ -7,330 +7,410 @@ backend:
 #publish_mode: editorial_workflow
 
 # Relative path where uploaded images are stored. Global path in gatsbyjs begins in the /static directory
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute in HTML for uploaded media will begin with /images/uploads
+media_folder: static/images/uploads # Media files will be stored in the repo under static/images/uploads
+public_folder: /images/uploads # The src attribute in HTML for uploaded media will begin with /images/uploads
 
 # Collections define the structure of different content types that are managed by the netlify-cms
 
 collections:
-  - name: "news" # Used in routes.
-    label: "News" # Used in the admin UI for post types
-    folder: "src/pages/news" # The path to the folder where the documents are stored. For a gatsbyjs markdown files would be created in /src/pages/news
+  - name: news # Used in routes.
+    label: News # Used in the admin UI for post types
+    folder: src/pages/news # The path to the folder where the documents are stored. For a gatsbyjs markdown files would be created in /src/pages/news
     create: true # Allows the user to create new documents in this collection through netlify-cms
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template ex. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually stored in the front matter
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "news-post",
-        }
-      - { label: "Publish", name: "publish", widget: "boolean", deafult: true }
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Heading Image",
-          name: "headingImage",
-          widget: "image",
-          default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-        }
-      - {
-          label: "Featured Image",
-          name: "image",
-          widget: "image",
-          required: false,
-        }
-      - {
-          label: "Category",
-          name: "category",
-          widget: "select",
-          options: ["General", "Germany", "Poland"],
-        }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - {
-          label: "Description",
-          name: "description",
-          widget: "text",
-          required: false,
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: Template Key
+        name: templateKey
+        widget: hidden
+        default: news-post
+      - label: Publish
+        name: publish
+        widget: boolean
+        default: true
+      - label: Title
+        name: title
+        widget: string
+      - label: Heading Image
+        name: headingImage
+        widget: image
+        default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+      - label: Featured Image
+        name: image
+        widget: image
+        required: false
+      - label: Category
+        name: category
+        widget: select
+        options: ["General", "Germany", "Poland"]
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Description
+        name: description
+        widget: text
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
       # Fields shown in the admin UI
       #   label: Field label in the admin UI
       #   name: Field name in the document front matter
       #   widget: Determines UI style and value data type
       #   default (optional): Sets a default value for the field
-
-  - name: "pages"
-    label: "Pages"
+  - name: pages
+    label: Pages
     files:
-      - file: "src/pages/index.md"
-        label: "Landing Page"
-        name: "index"
+      - files: src/pages/index.md
+        label: Landing Page
+        name: index
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index-page",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: "Heading Image",
-              name: "headingImage",
-              widget: "image",
-              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-            }
-          - {
-              label: "Heading",
-              name: "heading",
-              widget: "string",
-              required: false,
-            }
-          - {
-              label: "Germany Site",
-              name: "germanySite",
-              widget: "object",
-              fields:
-                [
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Body", name: "body", widget: "text" },
-                  { label: "Image", name: "image", widget: "image" },
-                ],
-            }
-          - {
-              label: "Poland Site",
-              name: "polandSite",
-              widget: "object",
-              fields:
-                [
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Body", name: "body", widget: "text" },
-                  { label: "Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Picture One", name: "picOne", widget: "image" }
-          - { label: "Picture Two", name: "picTwo", widget: "image" }
-          - { label: "Picture Three", name: "picThree", widget: "image" }
-          - { label: "About Heading", name: "aboutHeading", widget: "string" }
-          - { label: "Map Heading", name: "mapHeading", widget: "string" }
-          - { label: "Map Image", name: "mapImage", widget: "image" }
-          - { label: "News Heading", name: "newsHeading", widget: "string" }
-          - {
-              label: "About",
-              name: "about",
-              widget: "object",
-              fields:
-                [
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Body", name: "body", widget: "markdown" },
-                ],
-            }
-          - {
-              label: "Work",
-              name: "work",
-              widget: "object",
-              fields:
-                [
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Body", name: "body", widget: "markdown" },
-                ],
-            }
-      - file: "src/pages/about.md"
-        label: "About Page"
-        name: "about"
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: index-page
+          - label: Title
+            name: title
+            widget: string
+          - label: Heading Image
+            name: headingImage
+            widget: image
+            default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+          - label: Location Buttons
+            name: locations
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Image
+                name: image
+                widget: image
+              - label: Body
+                name: body
+                widget: markdown
+          - label: Highlights Section
+            name: highlights
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Images
+                name: images
+                widget: list
+                field:
+                  - label: Image
+                    name: image
+                    widget: image
+              - label: Content
+                name: data
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Body
+                    name: body
+                    widget: markdown
+          - label: Map Section
+            name: map
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Image
+                name: image
+                widget: image
+          - label: News Section
+            name: news
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+      - file: src/pages/about.md
+        label: About Page
+        name: about
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "about-page",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Heading", name: "heading", widget: "string" }
-          - {
-              label: "Heading Image",
-              name: "headingImage",
-              widget: "image",
-              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-            }
-          - { label: "CEP Management", name: "management", widget: "markdown" }
-          - {
-              label: "CEP Board of Directors",
-              name: "boardOfDirectors",
-              widget: "markdown",
-            }
-          - { label: "Picture One", name: "picOne", widget: "image" }
-          - { label: "Picture Two", name: "picTwo", widget: "image" }
-          - { label: "Picture Three", name: "picThree", widget: "image" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/operations.md"
-        label: "Operations Page"
-        name: "operations"
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: about-page
+          - label: Title
+            name: title
+            widget: string
+          - label: Heading Image
+            name: headingImage
+            widget: image
+            default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+          - label: Highlights Section
+            name: highlights
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Images
+                name: images
+                widget: list
+                field:
+                  - label: Image
+                    name: image
+                    widget: image
+              - label: Content
+                name: data
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Body
+                    name: body
+                    widget: markdown
+          - label: Features Section
+            name: features
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Body
+                name: body
+                widget: markdown
+      - file: src/pages/operations.md
+        label: Operations Page
+        name: operations
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "operations-page",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Heading", name: "heading", widget: "string" }
-          - {
-              label: "Heading Image",
-              name: "headingImage",
-              widget: "image",
-              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-            }
-          - {
-              label: "Germany",
-              name: "germany",
-              widget: "object",
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Overlay Text", name: "text", widget: "string" },
-                  { label: "Operations", name: "ops", widget: "markdown" },
-                ],
-            }
-          - {
-              label: "Poland",
-              name: "poland",
-              widget: "object",
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Overlay Text", name: "text", widget: "string" },
-                  { label: "Operations", name: "ops", widget: "markdown" },
-                ],
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/news.md"
-        label: "News Page"
-        name: "news"
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: operations-page
+          - label: Title
+            name: title
+            widget: string
+          - label: Heading Image
+            name: headingImage
+            widget: image
+            default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+          - label: Showcase Section
+            name: showcase
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Default Section
+                name: main
+                widget: markdown
+              - label: Secondary Sections
+                name: data
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Body
+                    name: body
+                    widget: markdown
+      - file: src/pages/news.md
+        label: News Page
+        name: news
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "news-age",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: "Heading Image",
-              name: "headingImage",
-              widget: "image",
-              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-            }
-      - file: "src/pages/responsibility.md"
-        label: "Responsibility Page"
-        name: "responsibility"
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: news-page
+          - label: Title
+            name: title
+            widget: string
+          - label: Heading Image
+            name: headingImage
+            widget: image
+            default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+      - file: src/pages/responsibility.md
+        label: Responsibility Page
+        name: responsibility
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "responsibility-page",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Heading", name: "heading", widget: "string" }
-          - {
-              label: "Heading Image",
-              name: "headingImage",
-              widget: "image",
-              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-            }
-          - { label: "Picture One", name: "picOne", widget: "image" }
-          - { label: "Picture Two", name: "picTwo", widget: "image" }
-          - { label: "Picture Three", name: "picThree", widget: "image" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/contact.md"
-        label: "Contact Page"
-        name: "contact"
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: responsibility-page
+          - label: Title
+            name: title
+            widget: string
+          - label: Heading Image
+            name: headingImage
+            widget: image
+            default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+          - label: Highlights Section
+            name: highlights
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Images
+                name: images
+                widget: list
+                field:
+                  - label: Image
+                    name: image
+                    widget: image
+              - label: Content
+                name: data
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Body
+                    name: body
+                    widget: markdown
+      - file: src/pages/contact.md
+        label: Contact Page
+        name: contact
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "contact-page",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Heading", name: "heading", widget: "string" }
-          - {
-              label: "Heading Image",
-              name: "headingImage",
-              widget: "image",
-              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-            }
-          - { label: "English Pic", name: "picEn", widget: "image" }
-          - { label: "English Title", name: "titleEn", width: "string" }
-          - { label: "English Contact", name: "contactEn", widget: "text" }
-          - { label: "Germany Title", name: "titleDe", width: "string" }
-          - { label: "Germany Contact", name: "contactDe", widget: "text" }
-          - { label: "Poland Title", name: "titlePl", width: "string" }
-          - { label: "Poland Contact", name: "contactPl", widget: "text" }
-          - { label: "Netherlands Title", name: "titleNl", width: "string" }
-          - { label: "Netherlands Contact", name: "contactNl", widget: "text" }
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: contact-page
+          - label: Title
+            name: title
+            widget: string
+          - label: Heading Image
+            name: headingImage
+            widget: image
+            default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+          - label: Main Contact Information
+            name: main
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Name
+                name: name
+                widget: string
+              - label: Image
+                name: image
+                widget: image
+              - label: Contact Information
+                name: data
+                widget: list
+          - label: Secondary Contact Information
+            name: secondary
+            widget: list
+            fields:
+              - label: Name
+                name: title
+                widget: string
+              - label: Contact Information
+                name: data
+                widget: list
 
   - name: polandPages
     label: Poland Pages
     files:
-      - file: "src/pages/pl/index.md"
-        label: "Main Page"
-        name: "pl"
+      - file: src/pages/pl/index.md
+        label: Main Page
+        name: pl
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "pl-page",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: "Heading Image",
-              name: "headingImage",
-              widget: "image",
-              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-            }
-          - { label: "About Heading", name: "aboutHeading", widget: "string" }
-          - { label: "Asset Heading", name: "assetHeading", widget: "string" }
-          - { label: "News Heading", name: "newsHeading", widget: "string" }
-          - { label: "Picture One", name: "picOne", widget: "image" }
-          - { label: "Picture Two", name: "picTwo", widget: "image" }
-          - { label: "Picture Three", name: "picThree", widget: "image" }
-          - {
-              label: "Map Body",
-              name: "mapBody",
-              widget: "markdown",
-              required: false,
-            }
-          - { label: "Map Image", name: "mapImage", widget: "image" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/pl/wolin.md"
-        label: "Wolin Page"
-        name: "wolin"
+          - fields:
+              - label: Template Key
+                name: templateKey
+                widget: hidden
+                default: pl-page
+              - label: Title
+                name: title
+                widget: string
+              - label: Heading Image
+                name: headingImage
+                widget: image
+                default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+              - label: Highlights Section
+                name: highlights
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Images
+                    name: images
+                    widget: list
+                    field:
+                      - label: Image
+                        name: image
+                        widget: image
+                  - label: Content
+                    name: data
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Body
+                        name: body
+                        widget: markdown
+              - label: Map Section
+                name: map
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Body
+                    name: body
+                    widget: markdown
+              - label: News Section
+                name: news
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+      - file: src/pages/pl/index.md
+        label: Main Page
+        name: pl
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "news-post",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: "Heading Image",
-              name: "headingImage",
-              widget: "image",
-              default: "/images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg",
-            }
-          - {
-              label: "Featured Image",
-              name: "image",
-              widget: "image",
-              required: false,
-            }
-          - {
-              label: "Description",
-              name: "description",
-              widget: "text",
-              required: false,
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - fields:
+              - label: Template Key
+                name: templateKey
+                widget: hidden
+                default: pl-page
+              - label: Title
+                name: title
+                widget: string
+              - label: Heading Image
+                name: headingImage
+                widget: image
+                default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+              - label: Map Section
+                name: map
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Body
+                    name: body
+                    widget: markdown
+              - label: Features Section
+                name: features
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Body
+                    name: body
+                    widget: markdown

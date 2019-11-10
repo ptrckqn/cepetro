@@ -182,7 +182,7 @@ const Highlights = ({ showButton, data: { title, images, data } }) => {
       <Section>
         <Composition>
           {images &&
-            images.map((image, count) => (
+            images.map(({ image }, count) => (
               <Wrapper>
                 <Photo
                   fluid={image.childImageSharp.fluid}

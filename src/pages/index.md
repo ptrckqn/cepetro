@@ -24,9 +24,9 @@ locations:
 highlights:
   title: About Us
   images:
-    - /images/uploads/gln_flare1.jpg
-    - /images/uploads/boat_equipment_2.jpg
-    - /images/uploads/obx-deployment.jpg
+    - image: /images/uploads/gln_flare1.jpg
+    - image: /images/uploads/boat_equipment_2.jpg
+    - image: /images/uploads/obx-deployment.jpg
   data:
     - title: Who We Are
       body: >-
