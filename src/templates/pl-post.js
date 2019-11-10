@@ -13,7 +13,7 @@ const PlPost = ({
   },
 }) => {
   return (
-    <Layout headingTitle={title} headingImage={headingImage}>
+    <Layout headingTitle={title} headingImage={headingImage} noNav>
       <SEO title="About Us" />
       <SideMap data={map} />
       <Features data={features} />
