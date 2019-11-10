@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 
 const Container = styled.div`
   width: 95%;
@@ -16,28 +17,7 @@ const Container = styled.div`
   }
 `
 
-const Secondary = styled.h2`
-  display: inline-block;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-image: linear-gradient(
-    to right,
-    rgb(64, 162, 255),
-    rgb(41, 108, 171)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  @media (max-width: 56.25em) {
-    font-size: 3rem;
-  }
-  @media (max-width: 37.5em) {
-    font-size: 2.25em;
-  }
-`
-
-const CountryContainer = styled.div`
+const CountryContainer = styled(BackgroundImage)`
   position: relative;
   display: flex;
   justify-content: center;
@@ -47,7 +27,6 @@ const CountryContainer = styled.div`
   background-repeat: no-repeat;
   transition: all 0.3s;
   cursor: pointer;
-  background-image: ${props => `url(${props.image})`};
 `
 
 const Title = styled.h3`
@@ -96,35 +75,30 @@ const Details = styled.div`
 
 const Text = styled.p``
 
-const LocationsButton = ({
-  germanyTitle,
-  germanyBody,
-  germanyImage,
-  polandTitle,
-  polandBody,
-  polandImage,
-}) => {
+const LocationsButton = ({ data }) => {
   return (
     <Container>
-      <CountryContainer image={germanyImage}>
-        <Background />
-        <a href="https://www.cepetro.de/cepetroleum.html">
-          <Title>{germanyTitle}</Title>
-          <Details>
-            <Text>{germanyBody}</Text>
-          </Details>
-        </a>
-      </CountryContainer>
-
-      <CountryContainer image={polandImage}>
-        <Background />
-        <Link to="/pl">
-          <Title>{polandTitle}</Title>
-          <Details>
-            <Text>{polandBody}</Text>
-          </Details>
-        </Link>
-      </CountryContainer>
+      {data &&
+        data.map(({ title, image, body, url }, count) => (
+          <CountryContainer fluid={image.childImageSharp.fluid} key={count}>
+            <Background />
+            {url.includes("https") || url.includes("http") ? (
+              <a href={url}>
+                <Title>{title}</Title>
+                <Details>
+                  <Text>{body}</Text>
+                </Details>
+              </a>
+            ) : (
+              <Link to={url}>
+                <Title>{title}</Title>
+                <Details>
+                  <Text>{body}</Text>
+                </Details>
+              </Link>
+            )}
+          </CountryContainer>
+        ))}
     </Container>
   )
 }

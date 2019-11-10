@@ -1,7 +1,8 @@
 import React from "react"
-import { graphql, StaticQuery, Link } from "gatsby"
+import { Link } from "gatsby"
 import styled, { css, keyframes } from "styled-components"
 import Logo from "./logo"
+import BackgroundImage from "gatsby-background-image"
 
 const moveInLeft = keyframes`
     0%{
@@ -19,38 +20,26 @@ const moveInLeft = keyframes`
     }
 `
 
-const moveInRight = keyframes`
-    0%{
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    80%{
-        transform: translateX(-1rem);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-`
-
-const Container = styled.header`
+const Container = styled(BackgroundImage)`
   z-index: 90;
   position: relative;
   height: 70vh;
-  background-image: url(${props => props.image});
   background-size: cover;
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 `
 
-/* background-image: linear-gradient(
-  to bottom,
-  rgba(41, 108, 171, 0) 40%, rgba(64, 162, 255, .1) 45%,
-  rgba(41, 108, 171, 1)),
-  url(${props => props.image}); */
+const ContainerPreview = styled.section`
+  z-index: 90;
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  background-image: ${props => props.image};
+`
 
 const LogoBox = styled.div`
   position: absolute;
@@ -95,22 +84,9 @@ const Main = styled.span`
   }
 `
 
-const Sub = styled.span`
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.75rem;
-  animation: ${css`
-    ${moveInRight} 1s ease-out
-  `};
-  @media (max-width: 37.5em) {
-    letter-spacing: 0.5rem;
-  }
-`
-
-const Header = ({ image, title }) => {
+const Hero = ({ image, title }) => {
   return (
-    <Container image={image}>
+    <Container fluid={image.childImageSharp.fluid} loading="eager">
       <LogoBox>
         <Link to="/">
           <Logo />
@@ -125,4 +101,4 @@ const Header = ({ image, title }) => {
   )
 }
 
-export default Header
+export default Hero

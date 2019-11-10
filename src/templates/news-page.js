@@ -5,18 +5,20 @@ import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Cards from "../components/cards"
 
-const NewsPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
-      <SEO title={frontmatter.title} />
-      <Cards />
-    </Layout>
-  )
-}
+export const NewsPageTemplate = ({ title, hero }) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title={title} />
+    <Cards data={{ title: null }} />
+  </Layout>
+)
+
+const NewsPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, hero },
+    },
+  },
+}) => <NewsPageTemplate title={title} hero={hero} />
 
 export default NewsPage
 
@@ -25,7 +27,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "news-page" } }) {
       frontmatter {
         title
-        headingImage
+        hero {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

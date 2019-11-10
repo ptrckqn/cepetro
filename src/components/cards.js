@@ -1,6 +1,7 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Link, StaticQuery, graphql } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 
 const Container = styled.section`
   padding: 10rem 0;
@@ -102,14 +103,13 @@ const Back = styled(Side)`
   }
 `
 
-const Photo = styled.div`
+const Photo = styled(BackgroundImage)`
   background-size: cover;
   background-position: center;
   height: 28rem;
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  background-image: url(${props => props.background});
 `
 
 const Title = styled.h4`
@@ -183,113 +183,103 @@ const Btn = styled(Link)`
   }
 `
 
-class Card extends Component {
-  render() {
-    return (
-      <Section>
-        <Box>
-          <Front>
-            <Photo background={this.props.background}>&nbsp;</Photo>
-            <Title>
-              <span>{this.props.title}</span>
-            </Title>
-            <Info>{this.props.date}</Info>
-          </Front>
-          <Back>
-            <Cta>
-              <CtaBox>
-                <Btn to={this.props.url}>Continue Reading</Btn>
-              </CtaBox>
-            </Cta>
-          </Back>
-        </Box>
-      </Section>
-    )
-  }
-}
+const Card = ({ image, title, date, url }) => (
+  <Section>
+    <Box>
+      <Front>
+        <Photo fluid={image.childImageSharp.fluid}>&nbsp;</Photo>
+        <Title>
+          <span>{title}</span>
+        </Title>
+        <Info>{date}</Info>
+      </Front>
+      <Back>
+        <Cta>
+          <CtaBox>
+            <Btn to={url}>Continue Reading</Btn>
+          </CtaBox>
+        </Cta>
+      </Back>
+    </Box>
+  </Section>
+)
 
-class Cards extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      short: this.props.short,
-    }
-  }
-
-  render() {
-    return (
-      <Container>
-        <HeadingBox>
-          <Secondary>{this.props.heading}</Secondary>
-        </HeadingBox>
-        <StaticQuery
-          query={graphql`
-            query newsPostsQuery {
-              allMarkdownRemark(
-                filter: { frontmatter: { templateKey: { eq: "news-post" } } }
-                sort: { fields: frontmatter___date, order: DESC }
-              ) {
-                edges {
-                  node {
-                    id
-                    fields {
-                      slug
+const Cards = ({ data: { title }, short, category }) => {
+  return (
+    <Container>
+      <HeadingBox>{title && <Secondary>{title}</Secondary>}</HeadingBox>
+      <StaticQuery
+        query={graphql`
+          query newsPostsQuery {
+            allMarkdownRemark(
+              filter: { frontmatter: { templateKey: { eq: "news-post" } } }
+              sort: { fields: frontmatter___date, order: DESC }
+            ) {
+              edges {
+                node {
+                  id
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    publish
+                    title
+                    image {
+                      childImageSharp {
+                        fluid {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
                     }
-                    frontmatter {
-                      publish
-                      title
-                      image
-                      category
-                      date(formatString: "MMM Do, YYYY")
-                    }
+                    category
+                    date(formatString: "MMM Do, YYYY")
                   }
                 }
               }
             }
-          `}
-          render={data => {
-            var { edges: posts } = data.allMarkdownRemark
-            if (this.state.short) {
-              posts = posts.slice(0, 3)
-            }
-            return (
-              <FlexContainer>
-                {posts &&
-                  posts.map(({ node: post }) => {
-                    if (!this.props.category && post.frontmatter.publish) {
-                      return (
-                        <Card
-                          key={post.id}
-                          background={post.frontmatter.image}
-                          title={post.frontmatter.title}
-                          date={post.frontmatter.date}
-                          url={post.fields.slug}
-                        />
-                      )
-                    } else if (
-                      post.frontmatter.category === this.props.category &&
-                      post.frontmatter.publish
-                    ) {
-                      return (
-                        <Card
-                          key={post.id}
-                          background={post.frontmatter.image}
-                          title={post.frontmatter.title}
-                          date={post.frontmatter.date}
-                          url={post.fields.slug}
-                        />
-                      )
-                    } else {
-                      return null
-                    }
-                  })}
-              </FlexContainer>
-            )
-          }}
-        />
-      </Container>
-    )
-  }
+          }
+        `}
+        render={({ allMarkdownRemark: { edges } }) => {
+          if (short) {
+            edges = edges.slice(0, 3)
+          }
+          return (
+            <FlexContainer>
+              {edges &&
+                edges.map(({ node }) => {
+                  if (!category && node.frontmatter.publish) {
+                    return (
+                      <Card
+                        key={node.id}
+                        image={node.frontmatter.image}
+                        title={node.frontmatter.title}
+                        date={node.frontmatter.date}
+                        url={node.fields.slug}
+                      />
+                    )
+                  } else if (
+                    node.frontmatter.category === category &&
+                    node.frontmatter.publish
+                  ) {
+                    return (
+                      <Card
+                        key={node.id}
+                        image={node.frontmatter.image}
+                        title={node.frontmatter.title}
+                        date={node.frontmatter.date}
+                        url={node.fields.slug}
+                      />
+                    )
+                  } else {
+                    return null
+                  }
+                })}
+            </FlexContainer>
+          )
+        }}
+      />
+    </Container>
+  )
 }
 
 export default Cards

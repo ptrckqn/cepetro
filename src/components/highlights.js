@@ -1,6 +1,7 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import remark from "remark"
 import remarkHtml from "remark-html"
 
@@ -82,11 +83,9 @@ const Composition = styled.div`
   height: 100%;
 `
 
-const Photo = styled.img`
+const Wrapper = styled.div`
   width: 55%;
   max-width: 35rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
   position: absolute;
   z-index: 9;
   transition: all 0.3s;
@@ -98,21 +97,22 @@ const Photo = styled.img`
   ${Composition}:hover &:not(:hover) {
     transform: scale(0.95) translate(-50%, -50%);
   }
+  :nth-child(1) {
+    left: 40%;
+    top: 35%;
+  }
+  :nth-child(2) {
+    left: 60%;
+    top: 50%;
+  }
+  :nth-child(3) {
+    left: 30%;
+    top: 60%;
+  }
 `
-
-const PhotoOne = styled(Photo)`
-  left: 40%;
-  top: 35%;
-`
-
-const PhotoTwo = styled(Photo)`
-  left: 60%;
-  top: 50%;
-`
-
-const PhotoThree = styled(Photo)`
-  left: 30%;
-  top: 60%;
+const Photo = styled(Img)`
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
 `
 
 const Content = styled.div`
@@ -156,46 +156,44 @@ const Content = styled.div`
   }
 `
 
-class Highlights extends Component {
-  render() {
-    const bodyOne = remark()
+const Highlights = ({ showButton, data: { title, images, data } }) => {
+  const toHtml = toHtml => {
+    const parsedData = remark()
       .use(remarkHtml)
-      .processSync(this.props.bodyOne)
+      .processSync(toHtml)
       .toString()
-    const bodyTwo = remark()
-      .use(remarkHtml)
-      .processSync(this.props.bodyTwo)
-      .toString()
-    const createHTML = toHtml => {
-      return { __html: toHtml }
-    }
-
-    return (
-      <Container>
-        <HeadingBox>
-          <Secondary>{this.props.heading}</Secondary>
-        </HeadingBox>
-        <Section>
-          <Tertiary>{this.props.titleOne}</Tertiary>
-          <Content dangerouslySetInnerHTML={createHTML(bodyOne)} />
-          <Tertiary>{this.props.titleTwo}</Tertiary>
-          <Content dangerouslySetInnerHTML={createHTML(bodyTwo)} />
-          {this.props.showButton ? (
-            <Btn to="/about">Learn More &rarr;</Btn>
-          ) : (
-            <span></span>
-          )}
-        </Section>
-        <Section>
-          <Composition>
-            <PhotoOne src={this.props.picOne} alt="Photo 1" />
-            <PhotoTwo src={this.props.picTwo} alt="Photo 2" />
-            <PhotoThree src={this.props.picThree} alt="Photo 3" />
-          </Composition>
-        </Section>
-      </Container>
-    )
+    return { __html: parsedData }
   }
+  return (
+    <Container>
+      <HeadingBox>
+        <Secondary>{title}</Secondary>
+      </HeadingBox>
+      <Section>
+        {data &&
+          data.map(({ title, body }, count) => (
+            <>
+              <Tertiary>{title}</Tertiary>
+              <Content dangerouslySetInnerHTML={toHtml(body)} />
+            </>
+          ))}
+        {showButton ? <Btn to="/about">Learn More &rarr;</Btn> : null}
+      </Section>
+      <Section>
+        <Composition>
+          {images &&
+            images.map(({ image }, count) => (
+              <Wrapper>
+                <Photo
+                  fluid={image.childImageSharp.fluid}
+                  alt={`Photo ${count}`}
+                />
+              </Wrapper>
+            ))}
+        </Composition>
+      </Section>
+    </Container>
+  )
 }
 
 export default Highlights

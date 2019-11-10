@@ -1,36 +1,32 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Story from "../components/story"
 import ContactCards from "../components/contactCards"
 
-const ContactPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
-      <SEO title="Contact Us" />
-      <Story
-        heading={frontmatter.heading}
-        title={frontmatter.titleEn}
-        pic={frontmatter.picEn}
-        contact={frontmatter.contactEn}
-      />
-      <ContactCards
-        titleDe={frontmatter.titleDe}
-        contactDe={frontmatter.contactDe}
-        titlePl={frontmatter.titlePl}
-        contactPl={frontmatter.contactPl}
-        titleNl={frontmatter.titleNl}
-        contactNl={frontmatter.contactNl}
-      />
-    </Layout>
-  )
-}
+export const ContactPageTemplate = ({ title, hero, main, secondary }) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title="Contact Us" />
+    <Story data={main} />
+    <ContactCards data={secondary} />
+  </Layout>
+)
+
+const ContactPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, hero, main, secondary },
+    },
+  },
+}) => (
+  <ContactPageTemplate
+    title={title}
+    hero={hero}
+    main={main}
+    secondary={secondary}
+  />
+)
 
 export default ContactPage
 
@@ -39,17 +35,29 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
       frontmatter {
         title
-        heading
-        headingImage
-        picEn
-        titleEn
-        contactEn
-        titleDe
-        contactDe
-        titleNl
-        contactNl
-        titlePl
-        contactPl
+        hero {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        main {
+          title
+          name
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          data
+        }
+        secondary {
+          title
+          data
+        }
       }
     }
   }

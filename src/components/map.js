@@ -1,5 +1,6 @@
-import React, { Component } from "react"
+import React from "react"
 import { Link } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import styled from "styled-components"
 
 const Container = styled.section`
@@ -35,8 +36,7 @@ const Secondary = styled.h2`
   }
 `
 
-const MapBox = styled.div`
-  background-image: ${props => `url(${props.image})`};
+const MapBox = styled(BackgroundImage)`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,24 +98,21 @@ const Poland = styled(Country)`
   }
 `
 
-class Map extends Component {
-  render() {
-    return (
-      <Container>
-        <HeadingBox>
-          <Secondary>{this.props.heading}</Secondary>
-        </HeadingBox>
-        <MapBox image={this.props.image}>
-          <Link to="/operations?view=germany">
-            <Germany src="images/uploads/germany.png" />
-          </Link>
-          <Link to="/operations?view=poland">
-            <Poland src="images/uploads/poland.png" />
-          </Link>
-        </MapBox>
-      </Container>
-    )
-  }
-}
+const Map = ({ data: { title, image } }) => (
+  <Container>
+    <HeadingBox>
+      <Secondary>{title}</Secondary>
+    </HeadingBox>
+
+    <MapBox fluid={image.childImageSharp.fluid}>
+      <Link to="/operations?view=germany">
+        <Germany src="images/uploads/germany.png" />
+      </Link>
+      <Link to="/operations?view=poland">
+        <Poland src="images/uploads/poland.png" />
+      </Link>
+    </MapBox>
+  </Container>
+)
 
 export default Map

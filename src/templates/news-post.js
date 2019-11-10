@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-
+import Img from "gatsby-image"
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 
@@ -49,7 +49,7 @@ const Tertiary = styled.h3`
     text-align: left;
 `
 
-const Image = styled.img`
+const Image = styled(Img)`
   max-height: 50rem;
   max-width: 100%;
   margin: 0 auto;
@@ -100,26 +100,53 @@ const Content = styled.div`
   }
 `
 
-const NewsPost = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  const createHTML = () => {
-    return { __html: data.markdownRemark.html }
+export const NewsPostTemplate = ({
+  title,
+  hero,
+  description,
+  date,
+  image,
+  html,
+  id,
+}) => {
+  const toHtml = toHtml => {
+    return { __html: toHtml }
   }
   return (
-    <Layout headingTitle="News" headingImage={frontmatter.headingImage}>
-      <SEO title={frontmatter.title} />
+    <Layout headingTitle="News" hero={hero}>
+      <SEO title={title} />
       <Container>
         <HeadingBox>
-          <Secondary>{frontmatter.title}</Secondary>
+          <Secondary>{title}</Secondary>
         </HeadingBox>
-        <Tertiary>{frontmatter.description}</Tertiary>
-        <Tertiary>{frontmatter.date}</Tertiary>
-        <Image src={frontmatter.image} />
-        <Content dangerouslySetInnerHTML={createHTML()} />
+        <Tertiary>{description}</Tertiary>
+        <Tertiary>{date}</Tertiary>
+        <Image fluid={image.childImageSharp.fluid} />
+        <Content dangerouslySetInnerHTML={toHtml(html)} />
       </Container>
     </Layout>
   )
 }
+
+const NewsPost = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, hero, description, date, image },
+      html,
+      id,
+    },
+  },
+}) => (
+  <NewsPostTemplate
+    title={title}
+    hero={hero}
+    description={description}
+    date={date}
+    image={image}
+    html={html}
+    id={id}
+  />
+)
 
 export default NewsPost
 
@@ -129,10 +156,22 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        headingImage
+        hero {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         title
         category
-        image
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         date(formatString: "MMMM Do, YYYY")
         description
       }

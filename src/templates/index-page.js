@@ -8,38 +8,39 @@ import Highlights from "../components/highlights"
 import Map from "../components/map"
 import Cards from "../components/cards"
 
-const LandingPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
-      <SEO title="Central European Petroleum" />
-      <LocationsButton
-        germanyTitle={frontmatter.germanySite.title}
-        germanyBody={frontmatter.germanySite.body}
-        germanyImage={frontmatter.germanySite.image}
-        polandTitle={frontmatter.polandSite.title}
-        polandBody={frontmatter.polandSite.body}
-        polandImage={frontmatter.polandSite.image}
-      />
-      <Highlights
-        heading={frontmatter.aboutHeading}
-        titleOne={frontmatter.about.title}
-        bodyOne={frontmatter.about.body}
-        titleTwo={frontmatter.work.title}
-        bodyTwo={frontmatter.work.body}
-        showButton
-        picOne={frontmatter.picOne}
-        picTwo={frontmatter.picTwo}
-        picThree={frontmatter.picThree}
-      />
-      <Map heading={frontmatter.mapHeading} image={frontmatter.mapImage} />
-      <Cards heading={frontmatter.newsHeading} short={true} />
-    </Layout>
-  )
-}
+export const LandingPageTemplate = ({
+  title,
+  hero,
+  locations,
+  highlights,
+  map,
+  news,
+}) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title="Central European Petroleum" />
+    <LocationsButton data={locations} />
+    <Highlights data={highlights} showButton />
+    <Map data={map} />
+    <Cards data={news} short />
+  </Layout>
+)
+
+const LandingPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, hero, locations, highlights, map, news },
+    },
+  },
+}) => (
+  <LandingPageTemplate
+    title={title}
+    hero={hero}
+    locations={locations}
+    highlights={highlights}
+    map={map}
+    news={news}
+  />
+)
 
 export default LandingPage
 
@@ -48,31 +49,53 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        picOne
-        headingImage
-        picTwo
-        picThree
-        aboutHeading
-        mapHeading
-        mapImage
-        newsHeading
-        germanySite {
-          title
-          body
-          image
+        hero {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
-        polandSite {
+        locations {
           title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           body
-          image
+          url
         }
-        about {
+        highlights {
           title
-          body
+          images {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+          }
+          data {
+            title
+            body
+          }
         }
-        work {
+        map {
           title
-          body
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+        }
+        news {
+          title
         }
       }
     }

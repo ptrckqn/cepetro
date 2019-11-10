@@ -3,7 +3,7 @@ module.exports = {
     title: "CEPetro | ",
     description:
       "Central European Petroleum Ltd., registered in Alberta, Canada in 2006, were set up to pursue petroleum exploration opportunities in the European Union.",
-    url: "https://www.cepetro.com",
+    siteUrl: "https://www.cepetro.com",
     keywords: [
       "Central European Petroleum",
       "CEPetro",
@@ -15,13 +15,15 @@ module.exports = {
     author: "@ptrckqn",
   },
   plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     {
       //Used for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
         name: "uploads",
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/images/uploads`,
       },
     },
     {
@@ -35,11 +37,9 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/images/uploads`,
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -51,7 +51,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-netlify-cms",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
@@ -83,6 +82,21 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.cepetro.com",
+        sitemap: "https://www.cepetro.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
     "gatsby-plugin-netlify",

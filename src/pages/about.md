@@ -1,220 +1,228 @@
 ---
 templateKey: about-page
 title: About Us
-heading: Who we are
-headingImage: /images/uploads/people_header.jpg
-management: >-
-  - - -
+hero: /images/uploads/people_header.jpg
+highlights:
+  title: Who we are
+  images:
+    - image: /images/uploads/rocks.jpg
+    - image: /images/uploads/observation-of-vibrators.jpg
+    - image: /images/uploads/bohrplatzbesichtigung_mh2017_web.jpg
+  data:
+    - title: About Us
+      body: >-
+        **Central European Petroleum Ltd. (CEP)** registered in Calgary, Canada in 2006, and its wholly-owned affiliates, CEP Central European Petroleum GmbH, registered in Germany in 2008, and Central European Petroleum Ltd. sp. z o.o., registered in Poland in 2017, were set up to pursue petroleum exploration opportunities in the European Union, initially focusing on Germany. The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance.
+features:
+  - title: CEP Management
+    body: >-
+      - - -
 
 
-  ## Peter Putnam, PhD, P. Geol
+      ## Peter Putnam, PhD, P. Geol
 
 
-  **CHAIRMAN & CHIEF EXECUTIVE OFFICER**
+      **CHAIRMAN & CHIEF EXECUTIVE OFFICER**
 
 
-  Experience:
+      Experience:
 
 
-  * Dr. Putnam has more than 30 years varied experience in research, operations
-  (exploration, development, and thermal oil recovery), corporate management,
-  strategic positioning, equity raising; and broad international experience
-  covering 6 continents and over 30 countries.  Dr. Putnam is a proven value
-  creator who has led several companies, including CEP, into significant land
-  positions in Canada, France, Australia, Germany, and Algeria.
+      * Dr. Putnam has more than 30 years varied experience in research, operations
+      (exploration, development, and thermal oil recovery), corporate management,
+      strategic positioning, equity raising; and broad international experience
+      covering 6 continents and over 30 countries.  Dr. Putnam is a proven value
+      creator who has led several companies, including CEP, into significant land
+      positions in Canada, France, Australia, Germany, and Algeria.
 
 
-  Education:
+      Education:
 
 
-  * Ph.D., Geology, University of Calgary, 1985.
+      * Ph.D., Geology, University of Calgary, 1985.
 
 
-  Other Associations:
+      Other Associations:
 
 
-  * President, Hay Valley Resources;
+      * President, Hay Valley Resources;
 
-  * President and Chief Operating Officer, OSUM Oil Sands Corp. 2007 to 2008;
+      * President and Chief Operating Officer, OSUM Oil Sands Corp. 2007 to 2008;
 
-  * President and Chief Executive Officer, Petrel Robertson Consulting Ltd. from
-  2000 to 2006.
+      * President and Chief Executive Officer, Petrel Robertson Consulting Ltd. from
+      2000 to 2006.
 
 
-  - - -
+      - - -
 
 
-  ## Alula Damte, PhD, P. Geol
+      ## Alula Damte, PhD, P. Geol
 
 
-  **PRESIDENT & CHIEF OPERATING OFFICER, MANAGING DIRECTOR OF CEP GMBH**
+      **PRESIDENT & CHIEF OPERATING OFFICER, MANAGING DIRECTOR OF CEP GMBH**
 
 
-  Experience:
+      Experience:
 
 
-  * Dr. Damte has 20 years of petroleum industry and related teaching experience
-  with expertise in petroleum systems analysis of basins in North, East and West
-  Africa, North and South America, Western and Central Europe, and Western
-  Australia.  Throughout his industry career, he has provided solutions to
-  structurally complex problems at the basin to prospect scale.  He is also
-  responsible for the identification of petroleum opportunities including the
-  eastern Germany play concept for CEP.  At CEP he has been the lead negotiator
-  for farmouts and during capital raising efforts.
+      * Dr. Damte has 20 years of petroleum industry and related teaching experience
+      with expertise in petroleum systems analysis of basins in North, East and West
+      Africa, North and South America, Western and Central Europe, and Western
+      Australia.  Throughout his industry career, he has provided solutions to
+      structurally complex problems at the basin to prospect scale.  He is also
+      responsible for the identification of petroleum opportunities including the
+      eastern Germany play concept for CEP.  At CEP he has been the lead negotiator
+      for farmouts and during capital raising efforts.
 
 
-  Education:
+      Education:
 
 
-  * Ph.D., Geology, UC Santa Barbara 1997.
+      * Ph.D., Geology, UC Santa Barbara 1997.
 
 
-  Other Associations:
+      Other Associations:
 
 
-  * Board Member, Petrel Robertson Consulting Ltd.;
+      * Board Member, Petrel Robertson Consulting Ltd.;
 
-  * Technical Adviser to the Board, SouthWest Energy (H.K.) Ltd.
+      * Technical Adviser to the Board, SouthWest Energy (H.K.) Ltd.
 
 
-  - - -
+      - - -
 
 
-  ## Robyn Hemminger
+      ## Robyn Hemminger
 
 
-  **CHIEF FINANCIAL OFFICER**
+      **CHIEF FINANCIAL OFFICER**
 
 
-  Experience:
+      Experience:
 
 
-  * Mr. Hemminger has more than 15 years experience in the investment business
-  including more than 12 years in the energy investment banking sector.  Mr.
-  Hemminger has varied experience in capital raising, mergers and acquisitions
-  and strategic planning across the international energy spectrum including
-  working with energy companies focused in Argentina, Australia, Azerbaijan,
-  Brazil, Canada, Chad, Colombia, Egypt, France, Kazakhstan, Kurdistan, Libya,
-  Mexico, Nigeria, Papua New Guinea, Poland, Romania, Trinidad, Tunisia, Turkey
-  and Yemen.
+      * Mr. Hemminger has more than 15 years experience in the investment business
+      including more than 12 years in the energy investment banking sector.  Mr.
+      Hemminger has varied experience in capital raising, mergers and acquisitions
+      and strategic planning across the international energy spectrum including
+      working with energy companies focused in Argentina, Australia, Azerbaijan,
+      Brazil, Canada, Chad, Colombia, Egypt, France, Kazakhstan, Kurdistan, Libya,
+      Mexico, Nigeria, Papua New Guinea, Poland, Romania, Trinidad, Tunisia, Turkey
+      and Yemen.
 
 
-  Education:
+      Education:
 
 
-  * B.Sc., Chemistry, University of Manitoba
+      * B.Sc., Chemistry, University of Manitoba
 
-  * B. Comm., Finance, University of Manitoba
+      * B. Comm., Finance, University of Manitoba
 
 
-  - - -
+      - - -
 
 
-  ## Jaap Bouwman, Economist
+      ## Jaap Bouwman, Economist
 
 
-  **EXECUTIVE VICE PRESIDENT OF CEP GmbH**
+      **EXECUTIVE VICE PRESIDENT OF CEP GmbH**
 
 
-  Experience:
+      Experience:
 
 
-  * Mr. Bouwman is a successful business executive with over 30 years
-  experience.  He has a proven track record of successful operations, strong
-  negotiator with extensive experience in building business relationships, with
-  in-depth knowledge of multicultural business environments in Europe, North
-  America, the Middle East, Africa and New Zealand.  Mr. Bouwman has worked with
-  CEP since August 2005.
+      * Mr. Bouwman is a successful business executive with over 30 years
+      experience.  He has a proven track record of successful operations, strong
+      negotiator with extensive experience in building business relationships, with
+      in-depth knowledge of multicultural business environments in Europe, North
+      America, the Middle East, Africa and New Zealand.  Mr. Bouwman has worked with
+      CEP since August 2005.
 
 
-  Education:
+      Education:
 
 
-  * Economist, Business Academy Münster-Osnabrück, 1972.
+      * Economist, Business Academy Münster-Osnabrück, 1972.
 
 
-  Other Associations:
+      Other Associations:
 
 
-  * Retired Honorary Consul of Germany in Calgary, Canada.
+      * Retired Honorary Consul of Germany in Calgary, Canada.
 
 
-  - - -
+      - - -
 
 
-  ## David Bertram, P.Eng.
+      ## David Bertram, P.Eng.
 
 
-  **VICE PRESIDENT, ENGINEERING**
+      **VICE PRESIDENT, ENGINEERING**
 
 
-  Experience:
+      Experience:
 
 
-  * Mr. Bertram has more than 30 years of world-wide experience in petroleum
-  engineering operations, oil and gas field appraisal & development planning,
-  production forecasting, economics, reserves evaluation, and M&A.  He worked in
-  production operations and reservoir engineering for Home Oil until 1992, when
-  he joined Shell International: worked in PDO (Muscat) on gas-condensate field
-  appraisal and development planning and then was seconded to Maersk Oil
-  (Copenhagen), where he managed petroleum engineering operations for the Tyra
-  Centre in the Danish sector of the North Sea.  Mr. Bertram then became a
-  partner in Adams Pearson Associates (now part of RPS Energy), where he worked
-  as a reservoir engineering specialist on world-wide projects before starting
-  his own reservoir engineering consulting company in 2006.  Mr. Bertram joined
-  CEP in early 2009.
+      * Mr. Bertram has more than 30 years of world-wide experience in petroleum
+      engineering operations, oil and gas field appraisal & development planning,
+      production forecasting, economics, reserves evaluation, and M&A.  He worked in
+      production operations and reservoir engineering for Home Oil until 1992, when
+      he joined Shell International: worked in PDO (Muscat) on gas-condensate field
+      appraisal and development planning and then was seconded to Maersk Oil
+      (Copenhagen), where he managed petroleum engineering operations for the Tyra
+      Centre in the Danish sector of the North Sea.  Mr. Bertram then became a
+      partner in Adams Pearson Associates (now part of RPS Energy), where he worked
+      as a reservoir engineering specialist on world-wide projects before starting
+      his own reservoir engineering consulting company in 2006.  Mr. Bertram joined
+      CEP in early 2009.
 
 
-  Education:
+      Education:
 
 
-  * BSc, Chemical Engineering, University of Calgary, 1979.
+      * BSc, Chemical Engineering, University of Calgary, 1979.
 
 
-  Professional Memberships:
+      Professional Memberships:
 
 
-  * APEGGA, SPE.
+      * APEGGA, SPE.
 
 
-  Other Associations:
+      Other Associations:
 
 
-  * President, Bertram Reservoir Solutions Inc.
-boardOfDirectors: |-
-  ## Peter Putnam (Chairman)
+      * President, Bertram Reservoir Solutions Inc.
+  - title: CEP Board of Directors
+    body: >-
+      ## Peter Putnam (Chairman)
 
-  **CEO, Central European Petroleum Ltd.**
+      **CEO, Central European Petroleum Ltd.**
 
-  ## R. Ian Molson (Deputy Chairman)
+      ## R. Ian Molson (Deputy Chairman)
 
-  **Independent Businessman**
+      **Independent Businessman**
 
-  ## Jeffrey Harris
+      ## Jeffrey Harris
 
-  **Independent Businessman**
+      **Independent Businessman**
 
-  ## Sabrina Liak
+      ## Sabrina Liak
 
-  **Founding Partner, ALOI Investment Management**
+      **Founding Partner, ALOI Investment Management**
 
-  ## Francis Sommer
+      ## Francis Sommer
 
-  **Partner, Pamplona Capital Management**
+      **Partner, Pamplona Capital Management**
 
-  ## Carlos A. Pérez-Davila
+      ## Carlos A. Pérez-Davila
 
-  **Managing Director, Quadrant Capital Advisors, Inc.**
+      **Managing Director, Quadrant Capital Advisors, Inc.**
 
-  ## Rolf G. Skaar
+      ## Rolf G. Skaar
 
-  **Managing Director, Vision iO**
+      **Managing Director, Vision iO**
 
-  ## Gregory G. Turnbull
+      ## Gregory G. Turnbull
 
-  **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLP**
-picOne: /images/uploads/rocks.jpg
-picTwo: /images/uploads/observation-of-vibrators.jpg
-picThree: /images/uploads/bohrplatzbesichtigung_mh2017_web.jpg
+      **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLP**
 ---
-**Central European Petroleum Ltd. (CEP)** registered in Calgary, Canada in 2006, and its wholly-owned affiliates, CEP Central European Petroleum GmbH, registered in Germany in 2008, and Central European Petroleum Ltd. sp. z o.o., registered in Poland in 2017, were set up to pursue petroleum exploration opportunities in the European Union, initially focusing on Germany. The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance.

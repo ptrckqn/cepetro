@@ -1,37 +1,32 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Highlights from "../components/highlights"
 import Features from "../components/features"
 
-const AboutPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
-      <SEO title="About Us" />
-      <Highlights
-        heading={frontmatter.heading}
-        titleOne={frontmatter.title}
-        bodyOne={data.markdownRemark.internal.content}
-        showButton={false}
-        picOne={frontmatter.picOne}
-        picTwo={frontmatter.picTwo}
-        picThree={frontmatter.picThree}
-      />
-      <Features
-        titleOne={"CEP Management"}
-        bodyOne={frontmatter.management}
-        titleTwo={"CEP Board of Directors"}
-        bodyTwo={frontmatter.boardOfDirectors}
-      />
-    </Layout>
-  )
-}
+export const AboutPageTemplate = ({ title, hero, highlights, features }) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title="About Us" />
+    <Highlights data={highlights} />
+    <Features data={features} />
+  </Layout>
+)
+
+const AboutPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, hero, highlights, features },
+    },
+  },
+}) => (
+  <AboutPageTemplate
+    title={title}
+    hero={hero}
+    highlights={highlights}
+    features={features}
+  />
+)
 
 export default AboutPage
 
@@ -40,17 +35,34 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
         title
-        heading
-        headingImage
-        image
-        management
-        boardOfDirectors
-        picOne
-        picTwo
-        picThree
-      }
-      internal {
-        content
+
+        hero {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        highlights {
+          title
+          images {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+          }
+          data {
+            title
+            body
+          }
+        }
+        features {
+          title
+          body
+        }
       }
     }
   }

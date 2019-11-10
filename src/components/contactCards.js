@@ -33,34 +33,13 @@ const Tertiary = styled.h3`
   text-align: center;
 `
 
-const Paragraph = styled.span`
-  width: 100%;
-  margin: 0 auto;
+const List = styled.ul`
   padding: 3rem;
   font-size: 1.6rem;
+  list-style: none;
 `
 
-const Content = styled.span`
-  font-weight: 300;
-  text-align: left;
-  h1 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  h2 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  hr {
-    margin: 1rem 3rem;
-  }
-  h1,
-  h2,
-  p {
-    padding: 0.5rem 0;
-  }
+const Item = styled.li`
   a {
     color: #ff4a53;
     text-decoration: none;
@@ -68,57 +47,31 @@ const Content = styled.span`
       text-decoration: underline;
     }
   }
-  blockquote {
-    border-left: 1px solid #777;
-    padding-left: 2rem;
-  }
-  img {
-    max-width: 100%;
-    object-fit: contain;
-  }
-  ul,
-  ol {
-    padding-left: 2rem;
-  }
 `
 
-const ContactCards = props => {
-  const contactDe = remark()
-    .use(remarkHtml)
-    .processSync(props.contactDe)
-    .toString()
-  const contactPl = remark()
-    .use(remarkHtml)
-    .processSync(props.contactPl)
-    .toString()
-  const contactNl = remark()
-    .use(remarkHtml)
-    .processSync(props.contactNl)
-    .toString()
-  const createHTML = toHtml => {
-    return { __html: toHtml }
+const ContactCards = ({ data }) => {
+  const toHtml = toHtml => {
+    const parsedData = remark()
+      .use(remarkHtml)
+      .processSync(toHtml)
+      .toString()
+    return { __html: parsedData }
   }
   return (
     <Container>
       <GridContainer>
-        <Box>
-          <Tertiary>{props.titleNl}</Tertiary>
-          <Paragraph>
-            <Content dangerouslySetInnerHTML={createHTML(contactNl)} />
-          </Paragraph>
-        </Box>
-        <Box>
-          <Tertiary>{props.titleDe}</Tertiary>
-          <Paragraph>
-            <Content dangerouslySetInnerHTML={createHTML(contactDe)} />
-          </Paragraph>
-        </Box>
-        <Box>
-          <Tertiary>{props.titlePl}</Tertiary>
-          <Paragraph>
-            <Content dangerouslySetInnerHTML={createHTML(contactPl)} />
-          </Paragraph>
-        </Box>
+        {data &&
+          data.map(({ title, data }, count) => (
+            <Box key={count}>
+              <Tertiary>{title}</Tertiary>
+              <List>
+                {data &&
+                  data.map((item, count) => (
+                    <Item key={count} dangerouslySetInnerHTML={toHtml(item)} />
+                  ))}
+              </List>
+            </Box>
+          ))}
       </GridContainer>
     </Container>
   )

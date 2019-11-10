@@ -1,61 +1,16 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
 import remark from "remark"
 import remarkHtml from "remark-html"
 
 const Container = styled.section`
-  display: grid;
+  display: flex;
+  justify-content: center;
   padding: 3rem 0;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: max-content 1fr;
+  flex-wrap: wrap;
   @media only screen and (max-width: 43em) {
     grid-template-columns: 1fr;
     padding: 3rem 1rem;
-  }
-`
-
-const HeadingBox = styled.div`
-  text-align: center;
-  margin-bottom: 4rem;
-`
-
-const Secondary = styled.h2`
-  display: inline-block;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-image: linear-gradient(
-    to right,
-    rgb(64, 162, 255),
-    rgb(41, 108, 171)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  @media (max-width: 56.25em) {
-    font-size: 3rem;
-  }
-  @media (max-width: 37.5em) {
-    font-size: 2.25em;
-  }
-`
-
-const Row = styled.div`
-  max-width: 114rem;
-  margin: 0 auto;
-  &:not(:last-child) {
-    margin-bottom: 8rem;
-    @media (max-width: 56.25em) {
-      margin-bottom: 6rem;
-    }
-  }
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media (max-width: 56.25em) {
-    max-width: 70rem;
   }
 `
 
@@ -63,10 +18,13 @@ const Box = styled.div`
   font-size: 1.5rem;
   padding: 2.5rem;
   border-radius: 3px;
-`
-
-const LightBox = styled(Box)`
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: ${props =>
+    props.even ? "transparent" : "rgba(255, 255, 255, 0.8)"};
+  height: 100%;
+  width: 50%;
+  @media only screen and (max-width: 56.25em) {
+    width: 100%;
+  }
 `
 
 const Tertiary = styled.h3`
@@ -116,33 +74,24 @@ const Content = styled.span`
   }
 `
 
-class Features extends Component {
-  render() {
-    const bodyOne = remark()
+const Features = ({ data }) => {
+  const toHtml = toHtml => {
+    const parsedData = remark()
       .use(remarkHtml)
-      .processSync(this.props.bodyOne)
+      .processSync(toHtml)
       .toString()
-    const bodyTwo = remark()
-      .use(remarkHtml)
-      .processSync(this.props.bodyTwo)
-      .toString()
-    const createHTML = toHtml => {
-      return { __html: toHtml }
-    }
-
-    return (
-      <Container>
-        <LightBox>
-          <Tertiary>{this.props.titleOne}</Tertiary>
-          <Content dangerouslySetInnerHTML={createHTML(bodyOne)} />
-        </LightBox>
-        <Box>
-          <Tertiary>{this.props.titleTwo}</Tertiary>
-          <Content dangerouslySetInnerHTML={createHTML(bodyTwo)} />
-        </Box>
-      </Container>
-    )
+    return { __html: parsedData }
   }
+  return (
+    <Container>
+      {data.map(({ title, body }, count) => (
+        <Box key={count} even={(count + 1) % 2 === 0}>
+          <Tertiary>{title}</Tertiary>
+          <Content dangerouslySetInnerHTML={toHtml(body)} />
+        </Box>
+      ))}
+    </Container>
+  )
 }
 
 export default Features
