@@ -96,35 +96,30 @@ const Details = styled.div`
 
 const Text = styled.p``
 
-const LocationsButton = ({
-  germanyTitle,
-  germanyBody,
-  germanyImage,
-  polandTitle,
-  polandBody,
-  polandImage,
-}) => {
+const LocationsButton = ({ data }) => {
   return (
     <Container>
-      <CountryContainer fluid={germanyImage.childImageSharp.fluid}>
-        <Background />
-        <a href="https://www.cepetro.de/cepetroleum.html">
-          <Title>{germanyTitle}</Title>
-          <Details>
-            <Text>{germanyBody}</Text>
-          </Details>
-        </a>
-      </CountryContainer>
-
-      <CountryContainer fluid={polandImage.childImageSharp.fluid}>
-        <Background />
-        <Link to="/pl">
-          <Title>{polandTitle}</Title>
-          <Details>
-            <Text>{polandBody}</Text>
-          </Details>
-        </Link>
-      </CountryContainer>
+      {data &&
+        data.map(({ title, image, body, url }, count) => (
+          <CountryContainer fluid={image.childImageSharp.fluid} key={count}>
+            <Background />
+            {url.includes("https") || url.includes("http") ? (
+              <a href={url}>
+                <Title>{title}</Title>
+                <Details>
+                  <Text>{body}</Text>
+                </Details>
+              </a>
+            ) : (
+              <Link to={url}>
+                <Title>{title}</Title>
+                <Details>
+                  <Text>{body}</Text>
+                </Details>
+              </Link>
+            )}
+          </CountryContainer>
+        ))}
     </Container>
   )
 }

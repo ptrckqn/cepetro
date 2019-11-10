@@ -121,7 +121,7 @@ const Content = styled.span`
 
 const Features = ({ data }) => {
   const toHtml = toHtml => {
-    let parsedData = remark()
+    const parsedData = remark()
       .use(remarkHtml)
       .processSync(toHtml)
       .toString()

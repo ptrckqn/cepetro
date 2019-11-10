@@ -98,25 +98,21 @@ const Poland = styled(Country)`
   }
 `
 
-class Map extends Component {
-  render() {
-    return (
-      <Container>
-        <HeadingBox>
-          <Secondary>{this.props.heading}</Secondary>
-        </HeadingBox>
+const Map = ({ data: { title, image } }) => (
+  <Container>
+    <HeadingBox>
+      <Secondary>{title}</Secondary>
+    </HeadingBox>
 
-        <MapBox fluid={this.props.image.childImageSharp.fluid}>
-          <Link to="/operations?view=germany">
-            <Germany src="images/uploads/germany.png" />
-          </Link>
-          <Link to="/operations?view=poland">
-            <Poland src="images/uploads/poland.png" />
-          </Link>
-        </MapBox>
-      </Container>
-    )
-  }
-}
+    <MapBox fluid={image.childImageSharp.fluid}>
+      <Link to="/operations?view=germany">
+        <Germany src="images/uploads/germany.png" />
+      </Link>
+      <Link to="/operations?view=poland">
+        <Poland src="images/uploads/poland.png" />
+      </Link>
+    </MapBox>
+  </Container>
+)
 
 export default Map

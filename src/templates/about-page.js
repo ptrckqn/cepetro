@@ -9,31 +9,14 @@ import Features from "../components/features"
 const AboutPage = ({
   data: {
     markdownRemark: {
-      frontmatter: {
-        title,
-        headingImage,
-        heading,
-        picOne,
-        picTwo,
-        picThree,
-        features,
-      },
-      internal,
+      frontmatter: { title, headingImage, highlights, features },
     },
   },
 }) => {
   return (
     <Layout headingTitle={title} headingImage={headingImage}>
       <SEO title="About Us" />
-      <Highlights
-        heading={heading}
-        titleOne={title}
-        bodyOne={internal.content}
-        showButton={false}
-        picOne={picOne}
-        picTwo={picTwo}
-        picThree={picThree}
-      />
+      <Highlights data={highlights} />
       <Features data={features} />
     </Layout>
   )
@@ -46,7 +29,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
         title
-        heading
+
         headingImage {
           childImageSharp {
             fluid {
@@ -54,41 +37,24 @@ export const pageQuery = graphql`
             }
           }
         }
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+        highlights {
+          title
+          images {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
             }
+          }
+          data {
+            title
+            body
           }
         }
         features {
           title
           body
         }
-        picOne {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        picTwo {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        picThree {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-      internal {
-        content
       }
     }
   }

@@ -1,8 +1,17 @@
 ---
 templateKey: about-page
 title: About Us
-heading: Who we are
 headingImage: /images/uploads/people_header.jpg
+highlights:
+  title: Who we are
+  images:
+    - /images/uploads/rocks.jpg
+    - /images/uploads/observation-of-vibrators.jpg
+    - /images/uploads/bohrplatzbesichtigung_mh2017_web.jpg
+  data:
+    - title: About Us
+      body: >-
+        **Central European Petroleum Ltd. (CEP)** registered in Calgary, Canada in 2006, and its wholly-owned affiliates, CEP Central European Petroleum GmbH, registered in Germany in 2008, and Central European Petroleum Ltd. sp. z o.o., registered in Poland in 2017, were set up to pursue petroleum exploration opportunities in the European Union, initially focusing on Germany. The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance.
 features:
   - title: CEP Management
     body: >-
@@ -216,9 +225,4 @@ features:
       ## Gregory G. Turnbull
 
       **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLP**
-picOne: /images/uploads/rocks.jpg
-picTwo: /images/uploads/observation-of-vibrators.jpg
-picThree: /images/uploads/bohrplatzbesichtigung_mh2017_web.jpg
 ---
-
-**Central European Petroleum Ltd. (CEP)** registered in Calgary, Canada in 2006, and its wholly-owned affiliates, CEP Central European Petroleum GmbH, registered in Germany in 2008, and Central European Petroleum Ltd. sp. z o.o., registered in Poland in 2017, were set up to pursue petroleum exploration opportunities in the European Union, initially focusing on Germany. The management of CEP are well-respected industry professionals with extensive international experience in oil & gas exploration, production, field operations and finance.

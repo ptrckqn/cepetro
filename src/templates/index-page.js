@@ -8,35 +8,20 @@ import Highlights from "../components/highlights"
 import Map from "../components/map"
 import Cards from "../components/cards"
 
-const LandingPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const LandingPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, headingImage, locations, highlights, map, news },
+    },
+  },
+}) => {
   return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
+    <Layout headingTitle={title} headingImage={headingImage}>
       <SEO title="Central European Petroleum" />
-      <LocationsButton
-        germanyTitle={frontmatter.germanySite.title}
-        germanyBody={frontmatter.germanySite.body}
-        germanyImage={frontmatter.germanySite.image}
-        polandTitle={frontmatter.polandSite.title}
-        polandBody={frontmatter.polandSite.body}
-        polandImage={frontmatter.polandSite.image}
-      />
-      <Highlights
-        heading={frontmatter.aboutHeading}
-        titleOne={frontmatter.about.title}
-        bodyOne={frontmatter.about.body}
-        titleTwo={frontmatter.work.title}
-        bodyTwo={frontmatter.work.body}
-        showButton
-        picOne={frontmatter.picOne}
-        picTwo={frontmatter.picTwo}
-        picThree={frontmatter.picThree}
-      />
-      <Map heading={frontmatter.mapHeading} image={frontmatter.mapImage} />
-      <Cards heading={frontmatter.newsHeading} short={true} />
+      <LocationsButton data={locations} />
+      <Highlights data={highlights} showButton />
+      <Map data={map} />
+      <Cards data={news} short />
     </Layout>
   )
 }
@@ -48,13 +33,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        picOne {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         headingImage {
           childImageSharp {
             fluid {
@@ -62,33 +40,8 @@ export const pageQuery = graphql`
             }
           }
         }
-        picTwo {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        picThree {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        aboutHeading
-        mapHeading
-        mapImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        newsHeading
-        germanySite {
+        locations {
           title
-          body
           image {
             childImageSharp {
               fluid {
@@ -96,25 +49,35 @@ export const pageQuery = graphql`
               }
             }
           }
-        }
-        polandSite {
-          title
           body
+          url
+        }
+        highlights {
+          title
+          images {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          data {
+            title
+            body
+          }
+        }
+        map {
+          title
           image {
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_noBase64
               }
             }
           }
         }
-        about {
+        news {
           title
-          body
-        }
-        work {
-          title
-          body
         }
       }
     }
