@@ -100,20 +100,20 @@ const Content = styled.div`
   }
 `
 
-const NewsPost = ({
-  data: {
-    markdownRemark: {
-      frontmatter: { title, headingImage, description, date, image },
-      html,
-      id,
-    },
-  },
+export const NewsPostTemplate = ({
+  title,
+  hero,
+  description,
+  date,
+  image,
+  html,
+  id,
 }) => {
   const toHtml = toHtml => {
     return { __html: toHtml }
   }
   return (
-    <Layout headingTitle="News" headingImage={headingImage}>
+    <Layout headingTitle="News" hero={hero}>
       <SEO title={title} />
       <Container>
         <HeadingBox>
@@ -128,6 +128,26 @@ const NewsPost = ({
   )
 }
 
+const NewsPost = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, hero, description, date, image },
+      html,
+      id,
+    },
+  },
+}) => (
+  <NewsPostTemplate
+    title={title}
+    hero={hero}
+    description={description}
+    date={date}
+    image={image}
+    html={html}
+    id={id}
+  />
+)
+
 export default NewsPost
 
 export const pageQuery = graphql`
@@ -136,7 +156,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        headingImage {
+        hero {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

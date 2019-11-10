@@ -1,7 +1,7 @@
 ---
 templateKey: responsibility-page
 title: Our Commitment and Responsibility
-headingImage: /images/uploads/header_lake.jpg
+hero: /images/uploads/header_lake.jpg
 highlights:
   title: What we are focused on
   images:

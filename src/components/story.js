@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
 import remark from "remark"
 import remarkHtml from "remark-html"
@@ -8,23 +8,6 @@ const Container = styled.section`
   padding: 10rem 0;
   position: relative;
   background-color: #f7f7f7;
-`
-
-const BackgroundVideo = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.15;
-`
-
-const Video = styled.video`
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
 `
 
 const HeadingBox = styled.div`
@@ -108,25 +91,6 @@ const Image = styled(Img)`
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
   transition: all 0.5s;
-`
-
-const Caption = styled.figcaption`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.7rem;
-  text-align: center;
-  opacity: 0;
-  transition: all 0.5s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform: skewX(12deg);
-  @media (max-width: 56.25em) {
-    transform: skewX(0);
-  }
 `
 
 const Detail = styled.div``

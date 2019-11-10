@@ -94,6 +94,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
     "gatsby-plugin-netlify",
   ],
 }

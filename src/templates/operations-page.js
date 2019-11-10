@@ -1,29 +1,35 @@
 import React from "react"
 import { graphql } from "gatsby"
 import queryString from "query-string"
-
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Showcase from "../components/showcase"
 
+export const OperationsPageTemplate = ({ title, hero, location, showcase }) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title="Operations" />
+    <Showcase
+      location={location.search ? queryString.parse(location.search) : null}
+      data={showcase}
+    />
+  </Layout>
+)
+
 const OperationsPage = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, headingImage, showcase },
+      frontmatter: { title, hero, showcase },
     },
   },
   location,
-}) => {
-  return (
-    <Layout headingTitle={title} headingImage={headingImage}>
-      <SEO title="Operations" />
-      <Showcase
-        location={location.search ? queryString.parse(location.search) : null}
-        data={showcase}
-      />
-    </Layout>
-  )
-}
+}) => (
+  <OperationsPageTemplate
+    title={title}
+    hero={hero}
+    showcase={showcase}
+    location={location}
+  />
+)
 
 export default OperationsPage
 
@@ -32,7 +38,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "operations-page" } }) {
       frontmatter {
         title
-        headingImage {
+        hero {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

@@ -1,26 +1,32 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Story from "../components/story"
 import ContactCards from "../components/contactCards"
 
+export const ContactPageTemplate = ({ title, hero, main, secondary }) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title="Contact Us" />
+    <Story data={main} />
+    <ContactCards data={secondary} />
+  </Layout>
+)
+
 const ContactPage = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, headingImage, main, secondary },
+      frontmatter: { title, hero, main, secondary },
     },
   },
-}) => {
-  return (
-    <Layout headingTitle={title} headingImage={headingImage}>
-      <SEO title="Contact Us" />
-      <Story data={main} />
-      <ContactCards data={secondary} />
-    </Layout>
-  )
-}
+}) => (
+  <ContactPageTemplate
+    title={title}
+    hero={hero}
+    main={main}
+    secondary={secondary}
+  />
+)
 
 export default ContactPage
 
@@ -29,7 +35,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
       frontmatter {
         title
-        headingImage {
+        hero {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

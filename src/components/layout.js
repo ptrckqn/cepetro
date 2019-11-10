@@ -2,7 +2,7 @@ import React from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import Nav from "./nav"
 import NavDesktop from "./navDesktop"
-import Header from "./header"
+import Hero from "./hero"
 import Footer from "./footer"
 
 // Primary Blue: #3078bc rgb(48, 120, 188)
@@ -54,13 +54,13 @@ const Container = styled.div`
   position: relative;
 `
 
-const Layout = ({ noNav, headingImage, headingTitle, children }) => {
+const Layout = ({ noNav, hero, headingTitle, children }) => {
   return (
     <Container>
       <GlobalStyle />
       <Nav noNav={noNav} />
       <NavDesktop noNav={noNav} />
-      <Header title={headingTitle} image={headingImage} />
+      <Hero title={headingTitle} image={hero} />
       {children}
       <Footer />
     </Container>

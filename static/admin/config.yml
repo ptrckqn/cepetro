@@ -30,8 +30,8 @@ collections:
       - label: Title
         name: title
         widget: string
-      - label: Heading Image
-        name: headingImage
+      - label: Hero
+        name: hero
         widget: image
         default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
       - label: Featured Image
@@ -71,8 +71,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Location Buttons
@@ -140,8 +140,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Highlights Section
@@ -189,8 +189,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Showcase Section
@@ -227,8 +227,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
       - file: src/pages/responsibility.md
@@ -242,8 +242,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Highlights Section
@@ -281,8 +281,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Main Contact Information
@@ -326,8 +326,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Highlights Section
@@ -385,8 +385,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Map Section

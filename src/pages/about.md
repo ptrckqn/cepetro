@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: About Us
-headingImage: /images/uploads/people_header.jpg
+hero: /images/uploads/people_header.jpg
 highlights:
   title: Who we are
   images:

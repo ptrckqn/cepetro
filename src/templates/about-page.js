@@ -1,26 +1,32 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Highlights from "../components/highlights"
 import Features from "../components/features"
 
+export const AboutPageTemplate = ({ title, hero, highlights, features }) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title="About Us" />
+    <Highlights data={highlights} />
+    <Features data={features} />
+  </Layout>
+)
+
 const AboutPage = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, headingImage, highlights, features },
+      frontmatter: { title, hero, highlights, features },
     },
   },
-}) => {
-  return (
-    <Layout headingTitle={title} headingImage={headingImage}>
-      <SEO title="About Us" />
-      <Highlights data={highlights} />
-      <Features data={features} />
-    </Layout>
-  )
-}
+}) => (
+  <AboutPageTemplate
+    title={title}
+    hero={hero}
+    highlights={highlights}
+    features={features}
+  />
+)
 
 export default AboutPage
 
@@ -30,7 +36,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
 
-        headingImage {
+        hero {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
