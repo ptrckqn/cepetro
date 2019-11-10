@@ -51,7 +51,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-netlify-cms",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {

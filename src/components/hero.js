@@ -30,6 +30,17 @@ const Container = styled(BackgroundImage)`
   clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 `
 
+const ContainerPreview = styled.section`
+  z-index: 90;
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  background-image: ${props => props.image};
+`
+
 const LogoBox = styled.div`
   position: absolute;
   top: 4rem;
