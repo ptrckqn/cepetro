@@ -4,11 +4,11 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
+import Features from "../components/features"
 
 const Container = styled.section`
   padding: 20rem 3rem;
   margin-top: -20vh;
-  text-align: center;
   background-color: #f7f7f7;
   @media (max-width: 56.25em) {
     padding: 3rem;
@@ -104,7 +104,14 @@ const NewsPost = ({
   data: {
     markdownRemark: {
       html,
-      frontmatter: { title, heading, headingImage, description, image },
+      frontmatter: {
+        title,
+        heading,
+        headingImage,
+        description,
+        image,
+        features,
+      },
     },
   },
 }) => {
@@ -119,8 +126,7 @@ const NewsPost = ({
           <Secondary>{heading}</Secondary>
         </HeadingBox>
         <Tertiary>{description}</Tertiary>
-        <Image fluid={image.childImageSharp.fluid} />
-        <Content dangerouslySetInnerHTML={createHTML(html)} />
+        <Features data={features} />
       </Container>
     </Layout>
   )
@@ -131,7 +137,6 @@ export default NewsPost
 export const pageQuery = graphql`
   query PlPostQuery {
     markdownRemark(frontmatter: { templateKey: { eq: "pl-post" } }) {
-      html
       frontmatter {
         headingImage {
           childImageSharp {
@@ -149,7 +154,10 @@ export const pageQuery = graphql`
             }
           }
         }
-        description
+        features {
+          title
+          body
+        }
       }
     }
   }

@@ -6,29 +6,35 @@ import Layout from "../components/layout"
 import Highlights from "../components/highlights"
 import Features from "../components/features"
 
-const AboutPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const AboutPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        title,
+        headingImage,
+        heading,
+        picOne,
+        picTwo,
+        picThree,
+        features,
+      },
+      internal,
+    },
+  },
+}) => {
   return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
+    <Layout headingTitle={title} headingImage={headingImage}>
       <SEO title="About Us" />
       <Highlights
-        heading={frontmatter.heading}
-        titleOne={frontmatter.title}
-        bodyOne={data.markdownRemark.internal.content}
+        heading={heading}
+        titleOne={title}
+        bodyOne={internal.content}
         showButton={false}
-        picOne={frontmatter.picOne}
-        picTwo={frontmatter.picTwo}
-        picThree={frontmatter.picThree}
+        picOne={picOne}
+        picTwo={picTwo}
+        picThree={picThree}
       />
-      <Features
-        titleOne={"CEP Management"}
-        bodyOne={frontmatter.management}
-        titleTwo={"CEP Board of Directors"}
-        bodyTwo={frontmatter.boardOfDirectors}
-      />
+      <Features data={features} />
     </Layout>
   )
 }
@@ -55,8 +61,10 @@ export const pageQuery = graphql`
             }
           }
         }
-        management
-        boardOfDirectors
+        features {
+          title
+          body
+        }
         picOne {
           childImageSharp {
             fluid {
