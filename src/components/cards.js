@@ -207,9 +207,7 @@ const Card = ({ image, title, date, url }) => (
 const Cards = ({ data: { title }, short, category }) => {
   return (
     <Container>
-      <HeadingBox>
-        <Secondary>{title}</Secondary>
-      </HeadingBox>
+      <HeadingBox>{title && <Secondary>{title}</Secondary>}</HeadingBox>
       <StaticQuery
         query={graphql`
           query newsPostsQuery {

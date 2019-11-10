@@ -5,23 +5,17 @@ import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Highlights from "../components/highlights"
 
-const ResponsibilityPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const ResponsibilityPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, headingImage, highlights },
+    },
+  },
+}) => {
   return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
+    <Layout headingTitle={title} headingImage={headingImage}>
       <SEO title="Responsibility" />
-      <Highlights
-        heading={frontmatter.heading}
-        titleOne={frontmatter.title}
-        bodyOne={data.markdownRemark.internal.content}
-        showButton={false}
-        picOne={frontmatter.picOne}
-        picTwo={frontmatter.picTwo}
-        picThree={frontmatter.picThree}
-      />
+      <Highlights data={highlights} />
     </Layout>
   )
 }
@@ -35,7 +29,6 @@ export const pageQuery = graphql`
     ) {
       frontmatter {
         title
-        heading
         headingImage {
           childImageSharp {
             fluid {
@@ -43,30 +36,20 @@ export const pageQuery = graphql`
             }
           }
         }
-        picOne {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+        highlights {
+          title
+          images {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
             }
           }
-        }
-        picTwo {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+          data {
+            title
+            body
           }
         }
-        picThree {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-      internal {
-        content
       }
     }
   }

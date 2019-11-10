@@ -6,28 +6,20 @@ import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Showcase from "../components/showcase"
 
-const OperationsPage = props => {
-  const { frontmatter } = props.data.markdownRemark
+const OperationsPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, headingImage, showcase },
+    },
+  },
+  location,
+}) => {
   return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
+    <Layout headingTitle={title} headingImage={headingImage}>
       <SEO title="Operations" />
       <Showcase
-        location={
-          props.location.search
-            ? queryString.parse(props.location.search)
-            : null
-        }
-        heading={frontmatter.heading}
-        germanyImage={frontmatter.germany.image}
-        germanyText={frontmatter.germany.text}
-        germanyOps={frontmatter.germany.ops}
-        polandImage={frontmatter.poland.image}
-        polandText={frontmatter.poland.text}
-        polandOps={frontmatter.poland.ops}
-        default={props.data.markdownRemark.html}
+        location={location.search ? queryString.parse(location.search) : null}
+        data={showcase}
       />
     </Layout>
   )
@@ -40,7 +32,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "operations-page" } }) {
       frontmatter {
         title
-        heading
         headingImage {
           childImageSharp {
             fluid {
@@ -48,30 +39,22 @@ export const pageQuery = graphql`
             }
           }
         }
-        germany {
-          ops
-          text
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+        showcase {
+          title
+          main
+          data {
+            title
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
-          }
-        }
-        poland {
-          ops
-          text
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
+            body
           }
         }
       }
-      html
     }
   }
 `

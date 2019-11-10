@@ -100,22 +100,29 @@ const Content = styled.div`
   }
 `
 
-const NewsPost = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  const createHTML = () => {
-    return { __html: data.markdownRemark.html }
+const NewsPost = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, headingImage, description, date, image },
+      html,
+      id,
+    },
+  },
+}) => {
+  const toHtml = toHtml => {
+    return { __html: toHtml }
   }
   return (
-    <Layout headingTitle="News" headingImage={frontmatter.headingImage}>
-      <SEO title={frontmatter.title} />
+    <Layout headingTitle="News" headingImage={headingImage}>
+      <SEO title={title} />
       <Container>
         <HeadingBox>
-          <Secondary>{frontmatter.title}</Secondary>
+          <Secondary>{title}</Secondary>
         </HeadingBox>
-        <Tertiary>{frontmatter.description}</Tertiary>
-        <Tertiary>{frontmatter.date}</Tertiary>
-        <Image fluid={frontmatter.image.childImageSharp.fluid} />
-        <Content dangerouslySetInnerHTML={createHTML()} />
+        <Tertiary>{description}</Tertiary>
+        <Tertiary>{date}</Tertiary>
+        <Image fluid={image.childImageSharp.fluid} />
+        <Content dangerouslySetInnerHTML={toHtml(html)} />
       </Container>
     </Layout>
   )

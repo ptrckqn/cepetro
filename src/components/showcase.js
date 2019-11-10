@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import remark from "remark"
 import remarkHtml from "remark-html"
@@ -180,119 +180,97 @@ const Content = styled.div`
   }
 `
 
-class Showcase extends Component {
-  constructor() {
-    super()
-    this.state = {
-      view: "default",
-    }
-
-    this.toggleGermany = this.toggleGermany.bind(this)
-    this.togglePoland = this.togglePoland.bind(this)
-  }
-
-  componentDidMount() {
-    if (this.props.location) {
-      this.setState({ view: this.props.location.view })
-    }
-  }
-
-  toggleGermany() {
-    if (this.state.view === "germany") {
-      this.setState({ view: "default" })
-    } else {
-      this.setState({ view: "germany" })
-    }
-  }
-
-  togglePoland() {
-    if (this.state.view === "poland") {
-      this.setState({ view: "default" })
-    } else {
-      this.setState({ view: "poland" })
-    }
-  }
-
-  render() {
-    const germanyOps = remark()
+const Showcase = ({ data: { title, main, data }, location }) => {
+  const [view, setView] = useState("default")
+  const toHtml = toHtml => {
+    const parsedData = remark()
       .use(remarkHtml)
-      .processSync(this.props.germanyOps)
+      .processSync(toHtml)
       .toString()
-    const polandOps = remark()
-      .use(remarkHtml)
-      .processSync(this.props.polandOps)
-      .toString()
-    const createHTML = toHtml => {
-      return { __html: toHtml }
-    }
-    const hideDefault = {
-      opacity: "0",
-      visibility: "hidden",
-    }
-
-    const showView = {
-      opacity: "1",
-      transform: "translateX(-50%)",
-      visibility: "visible",
-    }
-
-    return (
-      <Container>
-        <HeadingBox>
-          <Secondary>{this.props.heading}</Secondary>
-        </HeadingBox>
-        <Images>
-          <ImageBox
-            fluid={this.props.germanyImage.childImageSharp.fluid}
-            onClick={this.toggleGermany}
-            style={{ width: this.state.view === "germany" ? "90%" : "" }}
-          >
-            <HoverView>
-              <ViewMore>
-                {this.state.view !== "germany"
-                  ? this.props.germanyText
-                  : "Go back"}
-              </ViewMore>
-            </HoverView>
-          </ImageBox>
-          <ImageBox
-            fluid={this.props.polandImage.childImageSharp.fluid}
-            onClick={this.togglePoland}
-            style={{ width: this.state.view === "poland" ? "90%" : "" }}
-          >
-            <HoverView>
-              <ViewMore>
-                {this.state.view !== "poland"
-                  ? this.props.polandText
-                  : "Go back"}
-              </ViewMore>
-            </HoverView>
-          </ImageBox>
-        </Images>
-        <Contents>
-          <Default style={this.state.view === "default" ? {} : hideDefault}>
-            <Content dangerouslySetInnerHTML={createHTML(this.props.default)} />
-          </Default>
-          <Germany style={this.state.view === "germany" ? showView : {}}>
-            <Content dangerouslySetInnerHTML={createHTML(germanyOps)} />
-          </Germany>
-          <Poland style={this.state.view === "poland" ? showView : {}}>
-            <Content dangerouslySetInnerHTML={createHTML(polandOps)} />
-          </Poland>
-          {this.state.view === "default" ? (
-            <HiddenContent
-              dangerouslySetInnerHTML={createHTML(this.props.default)}
-            />
-          ) : null}
-          {this.state.view === "germany" ? (
-            <HiddenContent dangerouslySetInnerHTML={createHTML(germanyOps)} />
-          ) : null}
-          {this.state.view === "poland" ? (
-            <HiddenContent dangerouslySetInnerHTML={createHTML(polandOps)} />
-          ) : null}
-        </Contents>
-      </Container>
-    )
+    return { __html: parsedData }
   }
+
+  const toggleGermany = () => {
+    if (view === "germany") {
+      setView("default")
+    } else {
+      setView("germany")
+    }
+  }
+
+  const togglePoland = () => {
+    if (view === "poland") {
+      setView("default")
+    } else {
+      setView("poland")
+    }
+  }
+
+  const hideDefault = {
+    opacity: "0",
+    visibility: "hidden",
+  }
+
+  const showView = {
+    opacity: "1",
+    transform: "translateX(-50%)",
+    visibility: "visible",
+  }
+
+  useEffect(() => {
+    if (location) {
+      setView(location.view)
+    }
+  }, [])
+  return (
+    <Container>
+      <HeadingBox>
+        <Secondary>{title}</Secondary>
+      </HeadingBox>
+      <Images>
+        <ImageBox
+          fluid={data[0].image.childImageSharp.fluid}
+          onClick={toggleGermany}
+          style={{ width: view === "germany" ? "90%" : "" }}
+        >
+          <HoverView>
+            <ViewMore>
+              {view !== "germany" ? data[0].title : "Go back"}
+            </ViewMore>
+          </HoverView>
+        </ImageBox>
+        <ImageBox
+          fluid={data[1].image.childImageSharp.fluid}
+          onClick={togglePoland}
+          style={{ width: view === "poland" ? "90%" : "" }}
+        >
+          <HoverView>
+            <ViewMore>{view !== "poland" ? data[1].title : "Go back"}</ViewMore>
+          </HoverView>
+        </ImageBox>
+      </Images>
+      <Contents>
+        <Default style={view === "default" ? {} : hideDefault}>
+          <Content dangerouslySetInnerHTML={toHtml(main)} />
+        </Default>
+        <Germany style={view === "germany" ? showView : {}}>
+          <Content dangerouslySetInnerHTML={toHtml(data[0].body)} />
+        </Germany>
+        <Poland style={view === "poland" ? showView : {}}>
+          <Content dangerouslySetInnerHTML={toHtml(data[1].body)} />
+        </Poland>
+        {view === "default" ? (
+          <HiddenContent dangerouslySetInnerHTML={toHtml(main)} />
+        ) : null}
+        {view === "germany" ? (
+          <HiddenContent dangerouslySetInnerHTML={toHtml(data[0].body)} />
+        ) : null}
+        {view === "poland" ? (
+          <HiddenContent dangerouslySetInnerHTML={toHtml(data[1].body)} />
+        ) : null}
+      </Contents>
+    </Container>
+  )
 }
+
 export default Showcase
