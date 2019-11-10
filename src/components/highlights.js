@@ -156,61 +156,44 @@ const Content = styled.div`
   }
 `
 
-class Highlights extends Component {
-  render() {
-    const bodyOne = remark()
+const Highlights = ({ showButton, data: { title, images, data } }) => {
+  const toHtml = toHtml => {
+    const parsedData = remark()
       .use(remarkHtml)
-      .processSync(this.props.bodyOne)
+      .processSync(toHtml)
       .toString()
-    const bodyTwo = remark()
-      .use(remarkHtml)
-      .processSync(this.props.bodyTwo)
-      .toString()
-    const createHTML = toHtml => {
-      return { __html: toHtml }
-    }
-
-    return (
-      <Container>
-        <HeadingBox>
-          <Secondary>{this.props.heading}</Secondary>
-        </HeadingBox>
-        <Section>
-          <Tertiary>{this.props.titleOne}</Tertiary>
-          <Content dangerouslySetInnerHTML={createHTML(bodyOne)} />
-          <Tertiary>{this.props.titleTwo}</Tertiary>
-          <Content dangerouslySetInnerHTML={createHTML(bodyTwo)} />
-          {this.props.showButton ? (
-            <Btn to="/about">Learn More &rarr;</Btn>
-          ) : (
-            <span></span>
-          )}
-        </Section>
-        <Section>
-          <Composition>
-            <Wrapper>
-              <Photo
-                fluid={this.props.picOne.childImageSharp.fluid}
-                alt="Photo 1"
-              />
-            </Wrapper>
-            <Wrapper>
-              <Photo
-                fluid={this.props.picTwo.childImageSharp.fluid}
-                alt="Photo 2"
-              />
-            </Wrapper>
-            <Wrapper>
-              <Photo
-                fluid={this.props.picThree.childImageSharp.fluid}
-                alt="Photo 3"
-              />
-            </Wrapper>
-          </Composition>
-        </Section>
-      </Container>
-    )
+    return { __html: parsedData }
   }
+  return (
+    <Container>
+      <HeadingBox>
+        <Secondary>{title}</Secondary>
+      </HeadingBox>
+      <Section>
+        {data &&
+          data.map(({ title, body }, count) => (
+            <>
+              <Tertiary>{title}</Tertiary>
+              <Content dangerouslySetInnerHTML={toHtml(body)} />
+            </>
+          ))}
+        {showButton ? <Btn to="/about">Learn More &rarr;</Btn> : null}
+      </Section>
+      <Section>
+        <Composition>
+          {images &&
+            images.map(({ image }, count) => (
+              <Wrapper>
+                <Photo
+                  fluid={image.childImageSharp.fluid}
+                  alt={`Photo ${count}`}
+                />
+              </Wrapper>
+            ))}
+        </Composition>
+      </Section>
+    </Container>
+  )
 }
 
 export default Highlights

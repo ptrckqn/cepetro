@@ -141,37 +141,18 @@ const Tertiary = styled.h3`
   }
 `
 
-const Paragraph = styled.span`
+const List = styled.ul`
   padding: 3rem;
   font-size: 1.6rem;
   transform: skewX(12deg);
+  list-style: none;
   @media (max-width: 56.25em) {
     transform: skewX(0);
     padding: 0;
   }
 `
 
-const Content = styled.span`
-  font-weight: 300;
-  text-align: left;
-  h1 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  h2 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  hr {
-    margin: 1rem 3rem;
-  }
-  h1,
-  h2,
-  p {
-    padding: 0.5rem 0;
-  }
+const Item = styled.ul`
   a {
     color: #ff4a53;
     text-decoration: none;
@@ -179,54 +160,38 @@ const Content = styled.span`
       text-decoration: underline;
     }
   }
-  blockquote {
-    border-left: 1px solid #777;
-    padding-left: 2rem;
-  }
-  img {
-    max-width: 100%;
-    object-fit: contain;
-  }
-  ul,
-  ol {
-    padding-left: 2rem;
-  }
 `
 
-class Story extends Component {
-  render() {
-    const contact = remark()
+const Story = ({ data: { title, name, image, data } }) => {
+  const toHtml = toHtml => {
+    const parsedData = remark()
       .use(remarkHtml)
-      .processSync(this.props.contact)
+      .processSync(toHtml)
       .toString()
-    const createHTML = toHtml => {
-      return { __html: toHtml }
-    }
-
-    return (
-      <Container>
-        <HeadingBox>
-          <Secondary>{this.props.heading}</Secondary>
-        </HeadingBox>
-        <Row>
-          <Box>
-            <Shape>
-              <Image
-                fluid={this.props.pic.childImageSharp.fluid}
-                alt="Location"
-              />
-            </Shape>
-            <Detail>
-              <Tertiary>{this.props.title}</Tertiary>
-              <Paragraph>
-                <Content dangerouslySetInnerHTML={createHTML(contact)} />
-              </Paragraph>
-            </Detail>
-          </Box>
-        </Row>
-      </Container>
-    )
+    return { __html: parsedData }
   }
+  return (
+    <Container>
+      <HeadingBox>
+        <Secondary>{title}</Secondary>
+      </HeadingBox>
+      <Row>
+        <Box>
+          <Shape>
+            <Image fluid={image.childImageSharp.fluid} alt="Location" />
+          </Shape>
+          <Detail>
+            <Tertiary>{name}</Tertiary>
+            <List>
+              {data &&
+                data.map((item, count) => (
+                  <Item key={count} dangerouslySetInnerHTML={toHtml(item)} />
+                ))}
+            </List>
+          </Detail>
+        </Box>
+      </Row>
+    </Container>
+  )
 }
-
 export default Story

@@ -6,28 +6,18 @@ import Layout from "../components/layout"
 import Story from "../components/story"
 import ContactCards from "../components/contactCards"
 
-const ContactPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const ContactPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, headingImage, main, secondary },
+    },
+  },
+}) => {
   return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
+    <Layout headingTitle={title} headingImage={headingImage}>
       <SEO title="Contact Us" />
-      <Story
-        heading={frontmatter.heading}
-        title={frontmatter.titleEn}
-        pic={frontmatter.picEn}
-        contact={frontmatter.contactEn}
-      />
-      <ContactCards
-        titleDe={frontmatter.titleDe}
-        contactDe={frontmatter.contactDe}
-        titlePl={frontmatter.titlePl}
-        contactPl={frontmatter.contactPl}
-        titleNl={frontmatter.titleNl}
-        contactNl={frontmatter.contactNl}
-      />
+      <Story data={main} />
+      <ContactCards data={secondary} />
     </Layout>
   )
 }
@@ -39,7 +29,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
       frontmatter {
         title
-        heading
         headingImage {
           childImageSharp {
             fluid {
@@ -47,21 +36,22 @@ export const pageQuery = graphql`
             }
           }
         }
-        picEn {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+        main {
+          title
+          name
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
             }
           }
+          data
         }
-        titleEn
-        contactEn
-        titleDe
-        contactDe
-        titleNl
-        contactNl
-        titlePl
-        contactPl
+        secondary {
+          title
+          data
+        }
       }
     }
   }

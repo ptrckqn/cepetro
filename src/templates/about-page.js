@@ -6,29 +6,18 @@ import Layout from "../components/layout"
 import Highlights from "../components/highlights"
 import Features from "../components/features"
 
-const AboutPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const AboutPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, headingImage, highlights, features },
+    },
+  },
+}) => {
   return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
+    <Layout headingTitle={title} headingImage={headingImage}>
       <SEO title="About Us" />
-      <Highlights
-        heading={frontmatter.heading}
-        titleOne={frontmatter.title}
-        bodyOne={data.markdownRemark.internal.content}
-        showButton={false}
-        picOne={frontmatter.picOne}
-        picTwo={frontmatter.picTwo}
-        picThree={frontmatter.picThree}
-      />
-      <Features
-        titleOne={"CEP Management"}
-        bodyOne={frontmatter.management}
-        titleTwo={"CEP Board of Directors"}
-        bodyTwo={frontmatter.boardOfDirectors}
-      />
+      <Highlights data={highlights} />
+      <Features data={features} />
     </Layout>
   )
 }
@@ -40,7 +29,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
         title
-        heading
+
         headingImage {
           childImageSharp {
             fluid {
@@ -48,39 +37,26 @@ export const pageQuery = graphql`
             }
           }
         }
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+        highlights {
+          title
+          images {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
             }
           }
-        }
-        management
-        boardOfDirectors
-        picOne {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+          data {
+            title
+            body
           }
         }
-        picTwo {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
+        features {
+          title
+          body
         }
-        picThree {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-      internal {
-        content
       }
     }
   }

@@ -5,18 +5,18 @@ import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Cards from "../components/cards"
 
-const NewsPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  return (
-    <Layout
-      headingTitle={frontmatter.title}
-      headingImage={frontmatter.headingImage}
-    >
-      <SEO title={frontmatter.title} />
-      <Cards />
-    </Layout>
-  )
-}
+const NewsPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, headingImage },
+    },
+  },
+}) => (
+  <Layout headingTitle={title} headingImage={headingImage}>
+    <SEO title={title} />
+    <Cards data={{ title: null }} />
+  </Layout>
+)
 
 export default NewsPage
 

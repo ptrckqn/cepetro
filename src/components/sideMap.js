@@ -1,22 +1,26 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
 import remark from "remark"
 import remarkHtml from "remark-html"
+import Img from "gatsby-image"
 
-const Container = styled.section`
-  display: flex;
-  justify-content: center;
-  padding: 3rem 0;
-  flex-wrap: wrap;
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: max-content 1fr;
+  margin: 5rem auto;
+  padding: 3rem;
   @media only screen and (max-width: 43em) {
     grid-template-columns: 1fr;
-    padding: 3rem 1rem;
+    grid-row-gap: 2rem;
   }
 `
 
 const HeadingBox = styled.div`
   text-align: center;
   margin-bottom: 4rem;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 `
 
 const Secondary = styled.h2`
@@ -39,64 +43,26 @@ const Secondary = styled.h2`
     font-size: 2.25em;
   }
 `
-
-const Row = styled.div`
-  max-width: 114rem;
-  margin: 0 auto;
-  &:not(:last-child) {
-    margin-bottom: 8rem;
-    @media (max-width: 56.25em) {
-      margin-bottom: 6rem;
-    }
-  }
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media (max-width: 56.25em) {
-    max-width: 70rem;
-  }
-`
-
-const Box = styled.div`
-  font-size: 1.5rem;
-  padding: 2.5rem;
-  border-radius: 3px;
-  background-color: ${props =>
-    props.even ? "transparent" : "rgba(255, 255, 255, 0.8)"};
-  height: 100%;
-  width: 50%;
-  @media only screen and (max-width: 56.25em) {
-    width: 100%;
-  }
-`
-
-const Tertiary = styled.h3`
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-`
-
-const Content = styled.span`
-  font-size: 1.6rem;
-  margin-bottom: 3rem;
+const Content = styled.div`
   font-weight: 300;
+  text-align: left;
   h1 {
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 700;
     text-transform: uppercase;
   }
   h2 {
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
     text-transform: uppercase;
+  }
+  hr {
+    margin: 1rem 3rem;
   }
   h1,
   h2,
   p {
     padding: 0.5rem 0;
-  }
-  hr {
-    margin: 1rem 3rem;
   }
   a {
     color: #ff4a53;
@@ -119,7 +85,13 @@ const Content = styled.span`
   }
 `
 
-const Features = ({ data }) => {
+const Image = styled(Img)`
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+`
+
+const SideMap = ({ data: { title, body, image } }) => {
   const toHtml = toHtml => {
     const parsedData = remark()
       .use(remarkHtml)
@@ -129,14 +101,13 @@ const Features = ({ data }) => {
   }
   return (
     <Container>
-      {data.map(({ title, body }, count) => (
-        <Box key={count} even={(count + 1) % 2 === 0}>
-          <Tertiary>{title}</Tertiary>
-          <Content dangerouslySetInnerHTML={toHtml(body)} />
-        </Box>
-      ))}
+      <HeadingBox>
+        <Secondary>{title}</Secondary>
+      </HeadingBox>
+      <Content dangerouslySetInnerHTML={toHtml(body)} />
+      <Image fluid={image.childImageSharp.fluid} />
     </Container>
   )
 }
 
-export default Features
+export default SideMap
