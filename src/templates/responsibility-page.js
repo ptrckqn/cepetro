@@ -1,24 +1,28 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import Highlights from "../components/highlights"
 
+export const ResponsibilityPageTemplate = ({ title, hero, highlights }) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title="Responsibility" />
+    <Highlights data={highlights} />
+  </Layout>
+)
 const ResponsibilityPage = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, headingImage, highlights },
+      frontmatter: { title, hero, highlights },
     },
   },
-}) => {
-  return (
-    <Layout headingTitle={title} headingImage={headingImage}>
-      <SEO title="Responsibility" />
-      <Highlights data={highlights} />
-    </Layout>
-  )
-}
+}) => (
+  <ResponsibilityPageTemplate
+    title={title}
+    hero={hero}
+    highlights={highlights}
+  />
+)
 
 export default ResponsibilityPage
 
@@ -29,7 +33,7 @@ export const pageQuery = graphql`
     ) {
       frontmatter {
         title
-        headingImage {
+        hero {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

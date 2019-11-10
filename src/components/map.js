@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import styled from "styled-components"

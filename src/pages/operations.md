@@ -1,7 +1,7 @@
 ---
 templateKey: operations-page
 title: Operations
-headingImage: /images/uploads/guhlenrig_flare.jpg
+hero: /images/uploads/guhlenrig_flare.jpg
 showcase:
   title: Where we Operate
   main: >-

@@ -6,19 +6,28 @@ import Highlights from "../components/highlights"
 import SideMap from "../components/sideMap"
 import Cards from "../components/cards"
 
-const PlPage = ({
-  data: {
-    markdownRemark: {
-      frontmatter: { title, headingImage, highlights, map, news },
-    },
-  },
-}) => (
-  <Layout headingTitle={title} headingImage={headingImage} noNav>
+export const PlPageTemplate = ({ title, hero, highlights, map, news }) => (
+  <Layout headingTitle={title} hero={hero} noNav>
     <SEO title="Central European Petroleum Ltd SP Zoo" />
     <Highlights data={highlights} />
     <SideMap data={map} />
     <Cards data={news} category="Poland" />
   </Layout>
+)
+const PlPage = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, hero, highlights, map, news },
+    },
+  },
+}) => (
+  <PlPageTemplate
+    title={title}
+    hero={hero}
+    highlights={highlights}
+    map={map}
+    news={news}
+  />
 )
 
 export default PlPage
@@ -28,7 +37,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "pl-page" } }) {
       frontmatter {
         title
-        headingImage {
+        hero {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

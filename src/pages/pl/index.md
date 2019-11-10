@@ -1,7 +1,7 @@
 ---
 templateKey: pl-page
 title: Central European Petroleum Ltd. sp. z o.o.
-headingImage: /images/uploads/pl_sunset.jpg
+hero: /images/uploads/pl_sunset.jpg
 highlights:
   title: About Us
   images:

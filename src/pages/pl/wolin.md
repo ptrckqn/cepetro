@@ -1,7 +1,7 @@
 ---
 templateKey: pl-post
 title: Wolin title
-headingImage: /images/uploads/acquisition_office.jpg
+hero: /images/uploads/acquisition_office.jpg
 map:
   title: this is a title
   image: /images/uploads/wolinmap_news.png

@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Central European Petroleum
-headingImage: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+hero: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
 locations:
   - title: CEP Central European Petroleum GmbH
     image: /images/uploads/de_link.jpg

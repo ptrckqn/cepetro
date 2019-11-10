@@ -30,8 +30,8 @@ collections:
       - label: Title
         name: title
         widget: string
-      - label: Heading Image
-        name: headingImage
+      - label: Hero
+        name: hero
         widget: image
         default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
       - label: Featured Image
@@ -60,7 +60,7 @@ collections:
   - name: pages
     label: Pages
     files:
-      - files: src/pages/index.md
+      - file: src/pages/index.md
         label: Landing Page
         name: index
         fields:
@@ -71,13 +71,13 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Location Buttons
             name: locations
-            widget: object
+            widget: list
             fields:
               - label: Title
                 name: title
@@ -98,7 +98,7 @@ collections:
               - label: Images
                 name: images
                 widget: list
-                field:
+                fields:
                   - label: Image
                     name: image
                     widget: image
@@ -140,8 +140,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Highlights Section
@@ -154,7 +154,7 @@ collections:
               - label: Images
                 name: images
                 widget: list
-                field:
+                fields:
                   - label: Image
                     name: image
                     widget: image
@@ -189,8 +189,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Showcase Section
@@ -227,8 +227,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
       - file: src/pages/responsibility.md
@@ -242,8 +242,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Highlights Section
@@ -256,7 +256,7 @@ collections:
               - label: Images
                 name: images
                 widget: list
-                field:
+                fields:
                   - label: Image
                     name: image
                     widget: image
@@ -281,8 +281,8 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Heading Image
-            name: headingImage
+          - label: Hero
+            name: hero
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Main Contact Information
@@ -319,93 +319,33 @@ collections:
         label: Main Page
         name: pl
         fields:
-          - fields:
-              - label: Template Key
-                name: templateKey
-                widget: hidden
-                default: pl-page
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: pl-page
+          - label: Title
+            name: title
+            widget: string
+          - label: Hero
+            name: hero
+            widget: image
+            default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+          - label: Highlights Section
+            name: highlights
+            widget: object
+            fields:
               - label: Title
                 name: title
                 widget: string
-              - label: Heading Image
-                name: headingImage
-                widget: image
-                default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
-              - label: Highlights Section
-                name: highlights
-                widget: object
+              - label: Images
+                name: images
+                widget: list
                 fields:
-                  - label: Title
-                    name: title
-                    widget: string
-                  - label: Images
-                    name: images
-                    widget: list
-                    field:
-                      - label: Image
-                        name: image
-                        widget: image
-                  - label: Content
-                    name: data
-                    widget: list
-                    fields:
-                      - label: Title
-                        name: title
-                        widget: string
-                      - label: Body
-                        name: body
-                        widget: markdown
-              - label: Map Section
-                name: map
-                widget: object
-                fields:
-                  - label: Title
-                    name: title
-                    widget: string
                   - label: Image
                     name: image
                     widget: image
-                  - label: Body
-                    name: body
-                    widget: markdown
-              - label: News Section
-                name: news
-                widget: object
-                fields:
-                  - label: Title
-                    name: title
-                    widget: string
-      - file: src/pages/pl/index.md
-        label: Main Page
-        name: pl
-        fields:
-          - fields:
-              - label: Template Key
-                name: templateKey
-                widget: hidden
-                default: pl-page
-              - label: Title
-                name: title
-                widget: string
-              - label: Heading Image
-                name: headingImage
-                widget: image
-                default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
-              - label: Map Section
-                name: map
-                widget: object
-                fields:
-                  - label: Title
-                    name: title
-                    widget: string
-                  - label: Image
-                    name: image
-                    widget: image
-                  - label: Body
-                    name: body
-                    widget: markdown
-              - label: Features Section
-                name: features
+              - label: Content
+                name: data
                 widget: list
                 fields:
                   - label: Title
@@ -414,3 +354,61 @@ collections:
                   - label: Body
                     name: body
                     widget: markdown
+          - label: Map Section
+            name: map
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Image
+                name: image
+                widget: image
+              - label: Body
+                name: body
+                widget: markdown
+          - label: News Section
+            name: news
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+      - file: src/pages/pl/wolin.md
+        label: Wolin Page
+        name: wolin
+        fields:
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: pl-post
+          - label: Title
+            name: title
+            widget: string
+          - label: Hero
+            name: hero
+            widget: image
+            default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+          - label: Map Section
+            name: map
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Image
+                name: image
+                widget: image
+              - label: Body
+                name: body
+                widget: markdown
+          - label: Features Section
+            name: features
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Body
+                name: body
+                widget: markdown

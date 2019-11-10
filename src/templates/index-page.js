@@ -8,23 +8,39 @@ import Highlights from "../components/highlights"
 import Map from "../components/map"
 import Cards from "../components/cards"
 
+export const LandingPageTemplate = ({
+  title,
+  hero,
+  locations,
+  highlights,
+  map,
+  news,
+}) => (
+  <Layout headingTitle={title} hero={hero}>
+    <SEO title="Central European Petroleum" />
+    <LocationsButton data={locations} />
+    <Highlights data={highlights} showButton />
+    <Map data={map} />
+    <Cards data={news} short />
+  </Layout>
+)
+
 const LandingPage = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, headingImage, locations, highlights, map, news },
+      frontmatter: { title, hero, locations, highlights, map, news },
     },
   },
-}) => {
-  return (
-    <Layout headingTitle={title} headingImage={headingImage}>
-      <SEO title="Central European Petroleum" />
-      <LocationsButton data={locations} />
-      <Highlights data={highlights} showButton />
-      <Map data={map} />
-      <Cards data={news} short />
-    </Layout>
-  )
-}
+}) => (
+  <LandingPageTemplate
+    title={title}
+    hero={hero}
+    locations={locations}
+    highlights={highlights}
+    map={map}
+    news={news}
+  />
+)
 
 export default LandingPage
 
@@ -33,7 +49,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        headingImage {
+        hero {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

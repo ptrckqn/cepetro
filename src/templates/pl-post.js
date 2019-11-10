@@ -5,21 +5,21 @@ import Layout from "../components/layout"
 import SideMap from "../components/sideMap"
 import Features from "../components/features"
 
+export const PlPostTemplate = ({ title, hero, map, features }) => (
+  <Layout headingTitle={title} hero={hero} noNav>
+    <SEO title="About Us" />
+    <SideMap data={map} />
+    <Features data={features} />
+  </Layout>
+)
+
 const PlPost = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, headingImage, map, features },
+      frontmatter: { title, hero, map, features },
     },
   },
-}) => {
-  return (
-    <Layout headingTitle={title} headingImage={headingImage}>
-      <SEO title="About Us" />
-      <SideMap data={map} />
-      <Features data={features} />
-    </Layout>
-  )
-}
+}) => <PlPostTemplate title={title} hero={hero} map={map} features={features} />
 
 export default PlPost
 
@@ -28,7 +28,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "pl-post" } }) {
       frontmatter {
         title
-        headingImage {
+        hero {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

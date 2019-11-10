@@ -1,7 +1,7 @@
 ---
 templateKey: contact-page
 title: Contact us
-headingImage: /images/uploads/header-page2.jpeg
+hero: /images/uploads/header-page2.jpeg
 main:
   title: Our Offices
   name: Central European Petroleum Ltd.
