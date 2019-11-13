@@ -88,6 +88,6 @@ features:
       7. W odniesieniu do odwiertów morskich CEP będzie kontynuować proces
       zaangażowania interesariuszy, który okazał się skuteczny w odniesieniu do
       niedawno nabytego trójwymiarowego programu sejsmicznego.
-    title: Dlaczego Wolin? (need ML to review)
+    title: Dlaczego Wolin? (ML review)
 ---
 
