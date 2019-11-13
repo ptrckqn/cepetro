@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import remark from "remark"
 import remarkHtml from "remark-html"
@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content 1fr;
   margin: 5rem auto;
   padding: 3rem;
@@ -89,6 +89,24 @@ const Image = styled(Img)`
   width: 100%;
   max-width: 100rem;
   margin: 0 auto;
+  cursor: pointer;
+`
+
+const Modal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  display: ${props => (props.show ? "block" : "none")};
+  background: rgba(0, 0, 0, 0.8);
+`
+
+const ModalImage = styled(Image)`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 `
 
 const SideMap = ({ data: { title, body, image } }) => {
@@ -99,13 +117,42 @@ const SideMap = ({ data: { title, body, image } }) => {
       .toString()
     return { __html: parsedData }
   }
+
+  const [show, setShow] = useState(false)
+
+  useEffect(() => {
+    //If the modal is visible, prevents scrolling of the anything else other than the modal
+    show
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset")
+  })
+
+  useEffect(() => {
+    //Creating an event listener which will call the function escFunction anytime a key is pressed.
+    document.addEventListener("keydown", e =>
+      e.keyCode === 27 ? setShow(false) : null
+    )
+
+    //Removing the event listener attached to keypresses
+    return () =>
+      document.removeEventListener("keydown", e =>
+        e.keyCode === 27 ? setShow(false) : null
+      )
+  }, [])
+
   return (
     <Container>
       <HeadingBox>
         <Secondary>{title}</Secondary>
       </HeadingBox>
       <Content dangerouslySetInnerHTML={toHtml(body)} />
-      <Image fluid={image.childImageSharp.fluid} />
+      <Image
+        fluid={image.childImageSharp.fluid}
+        onClick={() => setShow(true)}
+      />
+      <Modal show={show} onClick={() => setShow(false)}>
+        <ModalImage fluid={image.childImageSharp.fluid} />
+      </Modal>
     </Container>
   )
 }
