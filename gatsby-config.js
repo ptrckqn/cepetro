@@ -52,14 +52,6 @@ module.exports = {
     },
     "gatsby-plugin-styled-components",
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Montserrat:300,400,700,900"],
-        },
-      },
-    },
-    {
       resolve: "gatsby-remark-images",
       options: {
         maxWidth: 2048,

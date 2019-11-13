@@ -13,7 +13,7 @@ highlights:
         Concession in northwest Poland in December 2017. The Onshore/ Offshore
         License is flanked by, and on trend with, two conventional gas-bearing
         reservoirs where 6 successful wells have been drilled to date.
-      title: '  '
+      title: "  "
   images:
     - image: /images/uploads/acquisition_office.jpg
     - image: /images/uploads/wood_vibes.jpg
@@ -23,12 +23,16 @@ map:
   body: >-
     # Wolin
 
+
     The Wolin Concession is an Onshore/ Offshore License Block located in
     Northwestern Poland along the Polish-German border and Baltic coast, 50 km
-    North of Szczecin
+    North of Szczecin  
+
+
+    For more information click
+    [here](https://ecstatic-hoover-d980c1.netlify.com/pl/wolin/)
   image: /images/uploads/poland-2.png
   title: Asset Location
 news:
   title: Latest News
 ---
-
