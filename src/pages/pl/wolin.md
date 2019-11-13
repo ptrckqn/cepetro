@@ -11,10 +11,6 @@ map:
     Sandstones.
 
 
-    \-block covers four communes with initial work conducted in commune of
-    Świnoujście?
-
-
     (ML Translation?)
   image: /images/uploads/wolin-prospect-map_web-version1.png
   title: Wolin Concession/ Koncesja Wolin  (ML review)
