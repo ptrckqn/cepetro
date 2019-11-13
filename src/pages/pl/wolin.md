@@ -4,10 +4,17 @@ title: Wolin
 hero: /images/uploads/acquisition_office.jpg
 map:
   body: >-
-    The Wolin concession is a 593 km`\super`2 area awarded on December 1, 2017
-    and grants CEP the exclusive rights to explore for, develop, and produce
-    hydrocarbons.  Main targets are Natural Gas accumulations in the Main
-    Dolomite margin trend and the Rotliegend Sandstones.
+    The Wolin concession is a 593 km`\super<2>` area awarded by the Ministry of
+    the Environment on December 1, 2017 and grants CEP the exclusive rights to
+    explore for, develop, and produce hydrocarbons.  Main targets are Natural
+    Gas accumulations in the Main Dolomite margin trend and the Rotliegend
+    Sandstones.
+
+
+    \-block covers four communes with initial work conducted in commune of
+    Świnoujście?
+
+
 
 
     (ML Translation?)
