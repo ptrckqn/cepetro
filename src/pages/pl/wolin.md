@@ -16,7 +16,7 @@ map:
 
 
     (ML Translation?)
-  image: /images/uploads/wolinmap_news.png
+  image: /images/uploads/wolin-prospect-map_web-version1.png
   title: Wolin Concession/ Koncesja Wolin  (ML review)
 features:
   - body: >-
