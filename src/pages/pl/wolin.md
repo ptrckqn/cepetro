@@ -9,7 +9,7 @@ map:
     hydrocarbons.  
 
 
-    \-origionally a LOTOS block held from (dates)
+    \-originally a LOTOS block held from (dates)
 
 
     \-known hydrocarbons
