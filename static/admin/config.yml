@@ -403,9 +403,7 @@ collections:
                 name: body
                 widget: list
                 fields:
-                  - label: Entry
-                    name: entry
-                    widget: markdown
+                  - widget: markdown
           - label: Features Section
             name: features
             widget: list

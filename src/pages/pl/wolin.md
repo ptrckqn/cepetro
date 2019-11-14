@@ -5,16 +5,15 @@ hero: /images/uploads/acquisition_office.jpg
 botmap:
   body:
     - entry: >-
-      The Wolin concession is a 593 km{\super 2} area awarded by the Ministry of
-      the Environment on December 1, 2017 and grants CEP the exclusive rights to
-      explore for, develop, and produce hydrocarbons.  Main targets are Natural
-      Gas accumulations in the Main Dolomite margin trend and the Rotliegend
-      Sandstones.
-
-      (ML Translation?)
+        The Wolin concession is a 593 km{\super 2} area awarded by the Ministry of
+        the Environment on December 1, 2017 and grants CEP the exclusive rights to
+        explore for, develop, and produce hydrocarbons.  Main targets are Natural
+        Gas accumulations in the Main Dolomite margin trend and the Rotliegend
+        Sandstones.
+        (ML Translation?)
 
     - entry: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut tortor pretium. Fusce ut placerat orci nulla pellentesque dignissim. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Consectetur lorem donec massa sapien faucibus et. Non tellus orci ac auctor augue mauris augue neque gravida. Ac tortor vitae purus faucibus ornare suspendisse. Maecenas volutpat blandit aliquam etiam erat. Sed odio morbi quis commodo. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Est placerat in egestas erat imperdiet. In cursus turpis massa tincidunt. Orci a scelerisque purus semper eget duis. In arcu cursus euismod quis viverra nibh.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut tortor pretium. Fusce ut placerat orci nulla pellentesque dignissim. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Consectetur lorem donec massa sapien faucibus et. Non tellus orci ac auctor augue mauris augue neque gravida. Ac tortor vitae purus faucibus ornare suspendisse. Maecenas volutpat blandit aliquam etiam erat. Sed odio morbi quis commodo. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Est placerat in egestas erat imperdiet. In cursus turpis massa tincidunt. Orci a scelerisque purus semper eget duis. In arcu cursus euismod quis viverra nibh.
   image: /images/uploads/wolin-prospect-map_web-version1.png
   title: Wolin Concession/ Koncesja Wolin  (ML review)
 features:
