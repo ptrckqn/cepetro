@@ -159,8 +159,9 @@ const BottomMap = ({ data: { title, body, image } }) => {
         <Secondary>{title}</Secondary>
       </HeadingBox>
       <ContentWrapper>
-        <Content dangerouslySetInnerHTML={toHtml(body[0])} />
-        <Content dangerouslySetInnerHTML={toHtml(body[1])} />
+        {body.map(({ entry }, count) => (
+          <Content dangerouslySetInnerHTML={toHtml(entry)} />
+        ))}
         <Image
           fluid={image.childImageSharp.fluid}
           onClick={() => setShow(true)}
