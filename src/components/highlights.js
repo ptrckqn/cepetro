@@ -115,6 +115,12 @@ const Photo = styled(Img)`
   border-radius: 3px;
 `
 
+const PhotoPreview = styled.img`
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  width: 300px;
+`
+
 const Content = styled.div`
   font-size: 1.6rem;
   margin-bottom: 3rem;
@@ -184,10 +190,14 @@ const Highlights = ({ showButton, data: { title, images, data } }) => {
           {images &&
             images.map(({ image }, count) => (
               <Wrapper>
-                <Photo
-                  fluid={image.childImageSharp.fluid}
-                  alt={`Photo ${count}`}
-                />
+                {image.childImageSharp ? (
+                  <Photo
+                    fluid={image.childImageSharp.fluid}
+                    alt={`Photo ${count}`}
+                  />
+                ) : (
+                  <PhotoPreview src={image} />
+                )}
               </Wrapper>
             ))}
         </Composition>

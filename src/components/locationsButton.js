@@ -29,6 +29,19 @@ const CountryContainer = styled(BackgroundImage)`
   cursor: pointer;
 `
 
+const CountryContainerPreview = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-image: ${props => `url(${props.src})`};
+`
+
 const Title = styled.h3`
   position: absolute;
   white-space: nowrap;
@@ -75,14 +88,28 @@ const Details = styled.div`
 
 const Text = styled.p``
 
+const CountryContainerWrapper = ({ image, children }) => {
+  if (image.childImageSharp) {
+    return (
+      <CountryContainer fluid={image.childImageSharp.fluid}>
+        {children}
+      </CountryContainer>
+    )
+  }
+  return (
+    <CountryContainerPreview src={image}>{children} </CountryContainerPreview>
+  )
+}
+
 const LocationsButton = ({ data }) => {
   return (
     <Container>
+      {console.log(data)}
       {data &&
         data.map(({ title, image, body, url }, count) => (
-          <CountryContainer fluid={image.childImageSharp.fluid} key={count}>
+          <CountryContainerWrapper image={image} key={count}>
             <Background />
-            {url.includes("https") || url.includes("http") ? (
+            {(url && url.includes("https")) || (url && url.includes("http")) ? (
               <a href={url}>
                 <Title>{title}</Title>
                 <Details>
@@ -97,7 +124,7 @@ const LocationsButton = ({ data }) => {
                 </Details>
               </Link>
             )}
-          </CountryContainer>
+          </CountryContainerWrapper>
         ))}
     </Container>
   )

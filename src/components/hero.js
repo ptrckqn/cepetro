@@ -38,7 +38,7 @@ const ContainerPreview = styled.section`
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
-  background-image: ${props => props.image};
+  background-image: ${props => `url(${props.image})`};
 `
 
 const LogoBox = styled.div`
@@ -84,9 +84,21 @@ const Main = styled.span`
   }
 `
 
+const ContainerWrapper = ({ image, children }) => {
+  if (image.childImageSharp) {
+    return (
+      <Container fluid={image.childImageSharp.fluid} loading="eager">
+        {children}
+      </Container>
+    )
+  }
+
+  return <ContainerPreview image={image}>{children} </ContainerPreview>
+}
+
 const Hero = ({ image, title }) => {
   return (
-    <Container fluid={image.childImageSharp.fluid} loading="eager">
+    <ContainerWrapper image={image}>
       <LogoBox>
         <Link to="/">
           <Logo />
@@ -97,7 +109,7 @@ const Hero = ({ image, title }) => {
           <Main>{title}</Main>
         </Primary>
       </TextBox>
-    </Container>
+    </ContainerWrapper>
   )
 }
 

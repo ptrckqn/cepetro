@@ -52,6 +52,23 @@ const MapBox = styled(BackgroundImage)`
   }
 `
 
+const PreviewMapBox = styled.div`
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: ${props => `url(${props.src})`};
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  @media only screen and (max-width: 56.25em) {
+    height: 50vh;
+  }
+  @media only screen and (max-width: 37.5em) {
+    background-size: 275%;
+  }
+`
+
 const Country = styled.img`
   position: absolute;
   transition: all 0.3s;
@@ -98,20 +115,27 @@ const Poland = styled(Country)`
   }
 `
 
+const MapBoxWrapper = ({ image, children }) => {
+  if (image.childImageSharp) {
+    return <MapBox fluid={image.childImageSharp.fluid}>{children}</MapBox>
+  }
+  return <PreviewMapBox src={image}>{children}</PreviewMapBox>
+}
+
 const Map = ({ data: { title, image } }) => (
   <Container>
     <HeadingBox>
       <Secondary>{title}</Secondary>
     </HeadingBox>
 
-    <MapBox fluid={image.childImageSharp.fluid}>
+    <MapBoxWrapper image={image}>
       <Link to="/operations?view=germany">
         <Germany src="images/uploads/germany.png" />
       </Link>
       <Link to="/operations?view=poland">
         <Poland src="images/uploads/poland.png" />
       </Link>
-    </MapBox>
+    </MapBoxWrapper>
   </Container>
 )
 

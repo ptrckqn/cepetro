@@ -1,7 +1,7 @@
 import React from "react"
 import { StyleSheetManager } from "styled-components"
 
-const cssInjector = ({ children }) => {
+const CSSInjector = ({ children }) => {
   const iframe = document.querySelector("#nc-root iframe")
   const iframeHeadEle = iframe && iframe.contentDocument.head
 
@@ -14,4 +14,4 @@ const cssInjector = ({ children }) => {
   )
 }
 
-export default cssInjector
+export default CSSInjector

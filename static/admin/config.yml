@@ -88,6 +88,9 @@ collections:
               - label: Body
                 name: body
                 widget: markdown
+              - label: Url
+                name: url
+                widget: hidden
           - label: Highlights Section
             name: highlights
             widget: object
