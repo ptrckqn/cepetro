@@ -6,7 +6,7 @@ import remarkHtml from "remark-html"
 const Container = styled.section`
   display: flex;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 3rem;
   flex-wrap: wrap;
   @media only screen and (max-width: 43em) {
     grid-template-columns: 1fr;
@@ -18,10 +18,11 @@ const Box = styled.div`
   font-size: 1.5rem;
   padding: 2.5rem;
   border-radius: 3px;
-  background-color: ${props =>
-    props.even ? "transparent" : "rgba(255, 255, 255, 0.8)"};
   height: 100%;
   width: 50%;
+  :nth-child(1) {
+    background: rgba(255, 255, 255, 0.8);
+  }
   @media only screen and (max-width: 56.25em) {
     width: 100%;
   }
@@ -85,7 +86,7 @@ const Features = ({ data }) => {
   return (
     <Container>
       {data.map(({ title, body }, count) => (
-        <Box key={count} even={(count + 1) % 2 === 0}>
+        <Box key={count}>
           <Tertiary>{title}</Tertiary>
           <Content dangerouslySetInnerHTML={toHtml(body)} />
         </Box>

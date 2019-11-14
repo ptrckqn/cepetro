@@ -390,7 +390,7 @@ collections:
             widget: image
             default: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
           - label: Map Section
-            name: map
+            name: botmap
             widget: object
             fields:
               - label: Title
@@ -401,7 +401,11 @@ collections:
                 widget: image
               - label: Body
                 name: body
-                widget: markdown
+                widget: list
+                fields:
+                  - label: Entry
+                    name: entry
+                    widget: markdown
           - label: Features Section
             name: features
             widget: list

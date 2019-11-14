@@ -30,7 +30,7 @@ map:
 
 
     For more information click
-    [here](https://ecstatic-hoover-d980c1.netlify.com/pl/wolin/)
+    [here](/pl/wolin/)
   image: /images/uploads/poland-2.png
   title: Asset Location
 news:

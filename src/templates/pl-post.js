@@ -2,13 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 import Layout from "../components/layout"
-import SideMap from "../components/sideMap"
+import BottomMap from "../components/bottomMap"
 import Features from "../components/features"
 
-export const PlPostTemplate = ({ title, hero, map, features }) => (
+export const PlPostTemplate = ({ title, hero, botmap, features }) => (
   <Layout headingTitle={title} hero={hero} noNav>
     <SEO title="About Us" />
-    <SideMap data={map} />
+    <BottomMap data={botmap} />
     <Features data={features} />
   </Layout>
 )
@@ -16,10 +16,17 @@ export const PlPostTemplate = ({ title, hero, map, features }) => (
 const PlPost = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, hero, map, features },
+      frontmatter: { title, hero, botmap, features },
     },
   },
-}) => <PlPostTemplate title={title} hero={hero} map={map} features={features} />
+}) => (
+  <PlPostTemplate
+    title={title}
+    hero={hero}
+    botmap={botmap}
+    features={features}
+  />
+)
 
 export default PlPost
 
@@ -35,7 +42,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        map {
+        botmap {
           title
           image {
             childImageSharp {

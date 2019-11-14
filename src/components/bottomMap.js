@@ -5,14 +5,10 @@ import remarkHtml from "remark-html"
 import Img from "gatsby-image"
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: max-content 1fr;
   margin: 5rem auto;
   padding: 3rem;
   @media only screen and (max-width: 43em) {
-    grid-template-columns: 1fr;
-    grid-row-gap: 2rem;
+    padding: 3rem 1rem;
   }
 `
 
@@ -43,9 +39,23 @@ const Secondary = styled.h2`
     font-size: 2.25em;
   }
 `
+
+const ContentWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3rem;
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: 1fr;
+  }
+`
+
 const Content = styled.div`
   font-weight: 300;
-  text-align: left;
+  padding: 2.5rem;
+  margin-bottom: auto;
+  :nth-child(1) {
+    background: rgba(255, 255, 255, 0.8);
+  }
   h1 {
     font-size: 1.6rem;
     font-weight: 700;
@@ -87,9 +97,10 @@ const Content = styled.div`
 
 const Image = styled(Img)`
   width: 100%;
-  max-width: 100rem;
+  max-width: 65rem;
   margin: 0 auto;
   cursor: pointer;
+  grid-column: 1 / -1;
 `
 
 const Modal = styled.div`
@@ -111,7 +122,7 @@ const ModalImage = styled(Image)`
   max-height: 90vh;
 `
 
-const SideMap = ({ data: { title, body, image } }) => {
+const BottomMap = ({ data: { title, body, image } }) => {
   const toHtml = toHtml => {
     const parsedData = remark()
       .use(remarkHtml)
@@ -147,11 +158,15 @@ const SideMap = ({ data: { title, body, image } }) => {
       <HeadingBox>
         <Secondary>{title}</Secondary>
       </HeadingBox>
-      <Content dangerouslySetInnerHTML={toHtml(body)} />
-      <Image
-        fluid={image.childImageSharp.fluid}
-        onClick={() => setShow(true)}
-      />
+      <ContentWrapper>
+        <Content dangerouslySetInnerHTML={toHtml(body[0])} />
+        <Content dangerouslySetInnerHTML={toHtml(body[1])} />
+        <Image
+          fluid={image.childImageSharp.fluid}
+          onClick={() => setShow(true)}
+        />
+      </ContentWrapper>
+
       <Modal show={show} onClick={() => setShow(false)}>
         <ModalImage fluid={image.childImageSharp.fluid} />
       </Modal>
@@ -159,4 +174,4 @@ const SideMap = ({ data: { title, body, image } }) => {
   )
 }
 
-export default SideMap
+export default BottomMap
