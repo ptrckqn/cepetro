@@ -5,18 +5,16 @@ hero: /images/uploads/acquisition_office.jpg
 botmap:
   body:
     - body: >-
-        The Wolin concession is a 593 km{\super 2} area awarded by the Ministry of
-        the Environment on December 1, 2017 and grants CEP the exclusive rights to
-        explore for, develop, and produce hydrocarbons.  Main targets are Natural
-        Gas accumulations in the Main Dolomite margin trend and the Rotliegend
-        Sandstones.
+        The Wolin concession is a 593 km`{\super 2}` area awarded by the
+        Ministry of the Environment on December 1, 2017 and grants CEP the
+        exclusive rights to explore for, develop, and produce hydrocarbons. 
+        Main targets are Natural Gas accumulations in the Main Dolomite margin
+        trend and the Rotliegend Sandstones.
 
         (ML Translation?)
-
-    - body: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut tortor pretium. Fusce ut placerat orci nulla pellentesque dignissim. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Consectetur lorem donec massa sapien faucibus et. Non tellus orci ac auctor augue mauris augue neque gravida. Ac tortor vitae purus faucibus ornare suspendisse. Maecenas volutpat blandit aliquam etiam erat. Sed odio morbi quis commodo. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Est placerat in egestas erat imperdiet. In cursus turpis massa tincidunt. Orci a scelerisque purus semper eget duis. In arcu cursus euismod quis viverra nibh.
+    - body: "Koncesja Wolin o powierzchni 593 km2, wydana 1 grudnia 2017 r. przez Ministerstwo Środowiska, przyznaje CEP wyłączne prawo do poszukiwania, rozpoznawania oraz wydobywania węglowodorów. \r\n\nPrzedmiotem geologicznych prac jest nagromadzenie gazu ziemnego w utworach dolomitu głównego facji barierowej oraz piaskowcach czerwonego spągowca."
   image: /images/uploads/wolin-prospect-map_web-version1.png
-  title: Wolin Concession/ Koncesja Wolin  (ML review)
+  title: Wolin Concession/ Koncesja Wolin
 features:
   - body: >-
       1. CEP’s focus is on natural gas development in the Wolin area.  
@@ -94,3 +92,4 @@ features:
       niedawno nabytego trójwymiarowego programu sejsmicznego.
     title: Dlaczego Wolin? (ML review)
 ---
+
