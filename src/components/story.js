@@ -93,6 +93,12 @@ const Image = styled(Img)`
   transition: all 0.5s;
 `
 
+const ImagePreview = styled.img`
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  transition: all 0.5s;
+`
+
 const Detail = styled.div``
 
 const Tertiary = styled.h3`
@@ -142,7 +148,11 @@ const Story = ({ data: { title, name, image, data } }) => {
       <Row>
         <Box>
           <Shape>
-            <Image fluid={image.childImageSharp.fluid} alt="Location" />
+            {image.childImageSharp ? (
+              <Image fluid={image.childImageSharp.fluid} alt="Location" />
+            ) : (
+              <ImagePreview src={image} alt="Location" />
+            )}
           </Shape>
           <Detail>
             <Tertiary>{name}</Tertiary>
