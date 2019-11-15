@@ -58,6 +58,15 @@ const Image = styled(Img)`
   margin: 3rem 0;
 `
 
+const ImagePreview = styled.img`
+  max-height: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+  margin: 3rem 0;
+`
+
 const Content = styled.div`
   font-weight: 300;
   text-align: left;
@@ -121,7 +130,11 @@ export const NewsPostTemplate = ({
         </HeadingBox>
         <Tertiary>{description}</Tertiary>
         <Tertiary>{date}</Tertiary>
-        <Image fluid={image.childImageSharp.fluid} />
+        {image.childImageSharp ? (
+          <Image fluid={image.childImageSharp.fluid} />
+        ) : (
+          <ImagePreview src={image} />
+        )}
         <Content dangerouslySetInnerHTML={toHtml(html)} />
       </Container>
     </Layout>

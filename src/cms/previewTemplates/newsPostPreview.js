@@ -5,14 +5,13 @@ import { NewsPostTemplate } from "../../templates/news-post"
 const NewsPostPreview = ({ entry, widgetsFor }) => {
   return (
     <CSSInjector>
-      {console.log(entry.getIn(["data"]))}
       <NewsPostTemplate
         title={entry.getIn(["data", "title"])}
         hero={entry.getIn(["data", "hero"])}
         description={entry.getIn(["data", "description"])}
-        date={entry.getIn(["data", "date"])}
+        date="11/11/1111"
         image={entry.getIn(["data", "image"])}
-        html={entry.getIn(["data", "html"])}
+        html={entry.getIn(["data", "body"])}
         id={entry.getIn(["data", "id"])}
       />
     </CSSInjector>
