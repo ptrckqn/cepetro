@@ -13,7 +13,7 @@ public_folder: /images/uploads # The src attribute in HTML for uploaded media wi
 # Collections define the structure of different content types that are managed by the netlify-cms
 
 collections:
-  - name: news # Used in routes.
+  - name: newspost # Used in routes.
     label: News # Used in the admin UI for post types
     folder: src/pages/news # The path to the folder where the documents are stored. For a gatsbyjs markdown files would be created in /src/pages/news
     create: true # Allows the user to create new documents in this collection through netlify-cms
