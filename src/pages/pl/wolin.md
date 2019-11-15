@@ -13,7 +13,7 @@ botmap:
 
         (ML Translation?)
     - body: "Koncesja Wolin o powierzchni 593 km<sup>2</sup>, wydana 1 grudnia 2017 r. przez Ministerstwo Środowiska, przyznaje CEP wyłączne prawo do poszukiwania, rozpoznawania oraz wydobywania węglowodorów. \r\n\nPrzedmiotem geologicznych prac jest nagromadzenie gazu ziemnego w utworach dolomitu głównego facji barierowej oraz piaskowcach czerwonego spągowca."
-  image: /images/uploads/wolin-prospect-map_web-version1.png
+  image: /images/uploads/website-wolin-page_sm.png
   title: Wolin Concession/ Koncesja Wolin
 features:
   - body: >-
