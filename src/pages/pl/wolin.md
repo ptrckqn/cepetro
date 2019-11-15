@@ -5,14 +5,14 @@ hero: /images/uploads/acquisition_office.jpg
 botmap:
   body:
     - body: >-
-        The Wolin concession is a 593 km`{\super 2}` area awarded by the
+        The Wolin concession is a 593 km<sup>2</sup> area awarded by the
         Ministry of the Environment on December 1, 2017 and grants CEP the
         exclusive rights to explore for, develop, and produce hydrocarbons. 
         Main targets are Natural Gas accumulations in the Main Dolomite margin
         trend and the Rotliegend Sandstones.
 
         (ML Translation?)
-    - body: "Koncesja Wolin o powierzchni 593 km2, wydana 1 grudnia 2017 r. przez Ministerstwo Środowiska, przyznaje CEP wyłączne prawo do poszukiwania, rozpoznawania oraz wydobywania węglowodorów. \r\n\nPrzedmiotem geologicznych prac jest nagromadzenie gazu ziemnego w utworach dolomitu głównego facji barierowej oraz piaskowcach czerwonego spągowca."
+    - body: "Koncesja Wolin o powierzchni 593 km<sup>2</sup>, wydana 1 grudnia 2017 r. przez Ministerstwo Środowiska, przyznaje CEP wyłączne prawo do poszukiwania, rozpoznawania oraz wydobywania węglowodorów. \r\n\nPrzedmiotem geologicznych prac jest nagromadzenie gazu ziemnego w utworach dolomitu głównego facji barierowej oraz piaskowcach czerwonego spągowca."
   image: /images/uploads/wolin-prospect-map_web-version1.png
   title: Wolin Concession/ Koncesja Wolin
 features:
