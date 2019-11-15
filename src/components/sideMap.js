@@ -92,6 +92,13 @@ const Image = styled(Img)`
   cursor: pointer;
 `
 
+const ImagePreview = styled.img`
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  cursor: pointer;
+`
+
 const Modal = styled.div`
   position: fixed;
   top: 0;
@@ -104,6 +111,14 @@ const Modal = styled.div`
 `
 
 const ModalImage = styled(Image)`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 90vw;
+  max-height: 90vh;
+`
+
+const ModalImagePreview = styled.img`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -148,12 +163,20 @@ const SideMap = ({ data: { title, body, image } }) => {
         <Secondary>{title}</Secondary>
       </HeadingBox>
       <Content dangerouslySetInnerHTML={toHtml(body)} />
-      <Image
-        fluid={image.childImageSharp.fluid}
-        onClick={() => setShow(true)}
-      />
+      {image.childImageSharp ? (
+        <Image
+          fluid={image.childImageSharp.fluid}
+          onClick={() => setShow(true)}
+        />
+      ) : (
+        <ImagePreview src={image} onClick={() => setShow(true)} />
+      )}
       <Modal show={show} onClick={() => setShow(false)}>
-        <ModalImage fluid={image.childImageSharp.fluid} />
+        {image.childImageSharp ? (
+          <ModalImage fluid={image.childImageSharp.fluid} />
+        ) : (
+          <ModalImagePreview src={image} />
+        )}
       </Modal>
     </Container>
   )

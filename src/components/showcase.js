@@ -50,7 +50,21 @@ const ImageBox = styled(BackgroundImage)`
   width: 50%;
   height: 50rem;
   position: relative;
-  background-image: url(${props => props.image});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  @media only screen and (max-width: 56.25em) {
+    height: 25rem;
+    width: 100% !important;
+  }
+`
+
+const ImageBoxPreview = styled.div`
+  width: 50%;
+  height: 50rem;
+  position: relative;
+  background-image: url(${props => props.src});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,6 +194,26 @@ const Content = styled.div`
   }
 `
 
+const ImageBoxWrapper = ({ data, onClick, style, children }) => {
+  if (data.image.childImageSharp) {
+    return (
+      <ImageBox
+        fluid={data.image.childImageSharp.fluid}
+        onClick={onClick}
+        style={style}
+      >
+        {children}
+      </ImageBox>
+    )
+  }
+
+  return (
+    <ImageBoxPreview src={data.image} onClick={onClick} style={style}>
+      {children}
+    </ImageBoxPreview>
+  )
+}
+
 const Showcase = ({ data: { title, main, data }, location }) => {
   const [view, setView] = useState("default")
   const toHtml = toHtml => {
@@ -228,8 +262,8 @@ const Showcase = ({ data: { title, main, data }, location }) => {
         <Secondary>{title}</Secondary>
       </HeadingBox>
       <Images>
-        <ImageBox
-          fluid={data[0].image.childImageSharp.fluid}
+        <ImageBoxWrapper
+          data={data[0]}
           onClick={toggleGermany}
           style={{ width: view === "germany" ? "90%" : "" }}
         >
@@ -238,16 +272,17 @@ const Showcase = ({ data: { title, main, data }, location }) => {
               {view !== "germany" ? data[0].title : "Go back"}
             </ViewMore>
           </HoverView>
-        </ImageBox>
-        <ImageBox
-          fluid={data[1].image.childImageSharp.fluid}
+        </ImageBoxWrapper>
+
+        <ImageBoxWrapper
+          data={data[1]}
           onClick={togglePoland}
           style={{ width: view === "poland" ? "90%" : "" }}
         >
           <HoverView>
             <ViewMore>{view !== "poland" ? data[1].title : "Go back"}</ViewMore>
           </HoverView>
-        </ImageBox>
+        </ImageBoxWrapper>
       </Images>
       <Contents>
         <Default style={view === "default" ? {} : hideDefault}>

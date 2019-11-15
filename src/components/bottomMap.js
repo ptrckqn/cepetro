@@ -103,6 +103,14 @@ const Image = styled(Img)`
   grid-column: 1 / -1;
 `
 
+const ImagePreview = styled.img`
+  width: 100%;
+  max-width: 65rem;
+  margin: 0 auto;
+  cursor: pointer;
+  grid-column: 1 / -1;
+`
+
 const Modal = styled.div`
   position: fixed;
   top: 0;
@@ -115,6 +123,14 @@ const Modal = styled.div`
 `
 
 const ModalImage = styled(Image)`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 90vw;
+  max-height: 90vh;
+`
+
+const ModalImagePreview = styled.img`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -162,14 +178,22 @@ const BottomMap = ({ data: { title, body, image } }) => {
         {body.map(({ body }, count) => (
           <Content dangerouslySetInnerHTML={toHtml(body)} />
         ))}
-        <Image
-          fluid={image.childImageSharp.fluid}
-          onClick={() => setShow(true)}
-        />
+        {image.childImageSharp ? (
+          <Image
+            fluid={image.childImageSharp.fluid}
+            onClick={() => setShow(true)}
+          />
+        ) : (
+          <ImagePreview src={image} onClick={() => setShow(true)} />
+        )}
       </ContentWrapper>
 
       <Modal show={show} onClick={() => setShow(false)}>
-        <ModalImage fluid={image.childImageSharp.fluid} />
+        {image.childImageSharp ? (
+          <ModalImage fluid={image.childImageSharp.fluid} />
+        ) : (
+          <ModalImagePreview src={image} />
+        )}
       </Modal>
     </Container>
   )

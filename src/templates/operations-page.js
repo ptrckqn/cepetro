@@ -9,7 +9,9 @@ export const OperationsPageTemplate = ({ title, hero, location, showcase }) => (
   <Layout headingTitle={title} hero={hero}>
     <SEO title="Operations" />
     <Showcase
-      location={location.search ? queryString.parse(location.search) : null}
+      location={
+        location && location.search ? queryString.parse(location.search) : null
+      }
       data={showcase}
     />
   </Layout>
