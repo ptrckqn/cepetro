@@ -100,6 +100,9 @@ const Image = styled(Img)`
   max-width: 65rem;
   margin: 0 auto;
   cursor: pointer;
+`
+
+const ImageWrapper = styled.div`
   grid-column: 1 / -1;
 `
 
@@ -178,13 +181,13 @@ const BottomMap = ({ data: { title, body, image } }) => {
         {body.map(({ body }, count) => (
           <Content dangerouslySetInnerHTML={toHtml(body)} />
         ))}
-        <div onClick={() => setShow(true)}>
+        <ImageWrapper onClick={() => setShow(true)}>
           {image.childImageSharp ? (
             <Image fluid={image.childImageSharp.fluid} />
           ) : (
             <ImagePreview src={image} />
           )}
-        </div>
+        </ImageWrapper>
       </ContentWrapper>
 
       <Modal show={show} onClick={() => setShow(false)}>
