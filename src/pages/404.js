@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 const GlobalStyle = createGlobalStyle`
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap&subset=latin-ext');
     *, *::after, *::before{
         margin: 0;
         padding: 0;

@@ -13,6 +13,7 @@ import Footer from "./footer"
 // Primary Red Light: #ff3d47 rgb(255, 61, 71)
 // Primary Red Dark: #ba2d34 rgb(186, 45, 52)
 const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap&subset=latin-ext');
     *, *::after, *::before{
         margin: 0;
         padding: 0;
