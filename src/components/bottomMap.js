@@ -50,7 +50,6 @@ const ContentWrapper = styled.div`
 `
 
 const Content = styled.div`
-  font-weight: 400;
   padding: 2.5rem;
   margin-bottom: auto;
   :nth-child(1) {
