@@ -163,14 +163,13 @@ const SideMap = ({ data: { title, body, image } }) => {
         <Secondary>{title}</Secondary>
       </HeadingBox>
       <Content dangerouslySetInnerHTML={toHtml(body)} />
-      {image.childImageSharp ? (
-        <Image
-          fluid={image.childImageSharp.fluid}
-          onClick={() => setShow(true)}
-        />
-      ) : (
-        <ImagePreview src={image} onClick={() => setShow(true)} />
-      )}
+      <div onClick={() => setShow(true)}>
+        {image.childImageSharp ? (
+          <Image fluid={image.childImageSharp.fluid} />
+        ) : (
+          <ImagePreview src={image} />
+        )}
+      </div>
       <Modal show={show} onClick={() => setShow(false)}>
         {image.childImageSharp ? (
           <ModalImage fluid={image.childImageSharp.fluid} />

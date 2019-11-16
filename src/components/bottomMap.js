@@ -178,14 +178,13 @@ const BottomMap = ({ data: { title, body, image } }) => {
         {body.map(({ body }, count) => (
           <Content dangerouslySetInnerHTML={toHtml(body)} />
         ))}
-        {image.childImageSharp ? (
-          <Image
-            fluid={image.childImageSharp.fluid}
-            onClick={() => setShow(true)}
-          />
-        ) : (
-          <ImagePreview src={image} onClick={() => setShow(true)} />
-        )}
+        <div onClick={() => setShow(true)}>
+          {image.childImageSharp ? (
+            <Image fluid={image.childImageSharp.fluid} />
+          ) : (
+            <ImagePreview src={image} />
+          )}
+        </div>
       </ContentWrapper>
 
       <Modal show={show} onClick={() => setShow(false)}>
