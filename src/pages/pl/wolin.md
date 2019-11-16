@@ -10,8 +10,6 @@ botmap:
         exclusive rights to explore for, develop, and produce hydrocarbons. 
         Main targets are Natural Gas accumulations in the Main Dolomite margin
         trend and the Rotliegend Sandstones.
-
-        (ML Translation?)
     - body: "Koncesja Wolin o powierzchni 593 km<sup>2</sup>, wydana 1 grudnia 2017 r. przez Ministerstwo Środowiska, przyznaje CEP wyłączne prawo do poszukiwania, rozpoznawania oraz wydobywania węglowodorów. \r\n\nPrzedmiotem geologicznych prac jest nagromadzenie gazu ziemnego w utworach dolomitu głównego facji barierowej oraz piaskowcach czerwonego spągowca."
   image: /images/uploads/wolin-prospect-map_upload.png
   title: Wolin Concession/ Koncesja Wolin
