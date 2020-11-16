@@ -130,11 +130,7 @@ export const NewsPostTemplate = ({
         </HeadingBox>
         <Tertiary>{description}</Tertiary>
         <Tertiary>{date}</Tertiary>
-        {image.childImageSharp ? (
-          <Image fluid={image.childImageSharp.fluid} />
-        ) : (
-          <ImagePreview src={image} />
-        )}
+        {image && <Image fluid={image.childImageSharp.fluid} />}
         <Content dangerouslySetInnerHTML={toHtml(html)} />
       </Container>
     </Layout>
