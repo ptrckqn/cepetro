@@ -183,11 +183,12 @@ const Btn = styled(Link)`
   }
 `
 
-const Card = ({ image, title, date, url }) => (
+const Card = ({ hero, title, date, url }) => (
   <Section>
     <Box>
       <Front>
-        <Photo fluid={image.childImageSharp.fluid}>&nbsp;</Photo>
+        <Photo fluid={hero.childImageSharp.fluid}>&nbsp;</Photo>
+
         <Title>
           <span>{title}</span>
         </Title>
@@ -224,7 +225,7 @@ const Cards = ({ data: { title }, short, category }) => {
                   frontmatter {
                     publish
                     title
-                    image {
+                    hero {
                       childImageSharp {
                         fluid {
                           ...GatsbyImageSharpFluid
@@ -251,7 +252,7 @@ const Cards = ({ data: { title }, short, category }) => {
                     return (
                       <Card
                         key={node.id}
-                        image={node.frontmatter.image}
+                        hero={node.frontmatter.hero}
                         title={node.frontmatter.title}
                         date={node.frontmatter.date}
                         url={node.fields.slug}
