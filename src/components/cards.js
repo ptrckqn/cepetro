@@ -187,7 +187,7 @@ const Card = ({ hero, title, date, url }) => (
   <Section>
     <Box>
       <Front>
-        <Photo fluid={hero.childImageSharp.fluid}>&nbsp;</Photo>
+        {hero && <Photo fluid={hero.childImageSharp.fluid}>&nbsp;</Photo>}
 
         <Title>
           <span>{title}</span>
