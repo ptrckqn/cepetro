@@ -1,7 +1,6 @@
 import React from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import { graphql, Link } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 
 const GlobalStyle = createGlobalStyle`
       @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap&subset=latin-ext');
@@ -38,7 +37,7 @@ padding: 0
     }
 `
 
-const Container = styled(BackgroundImage)`
+const Container = styled.div`
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -53,7 +52,7 @@ const Content = styled.div`
 `
 
 const Primary = styled.h1`
-  color: #fff;
+  color: #010101;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -63,7 +62,7 @@ const Primary = styled.h1`
 `
 
 const Main = styled.span`
-  color: #fff;
+  color: #010101;
   display: block;
   font-size: 4rem;
   font-weight: 300;
@@ -81,7 +80,7 @@ const StyledLink = styled(Link)`
 const NotFoundPage = ({ data: { file } }) => (
   <>
     <GlobalStyle />
-    <Container fluid={file.childImageSharp.fluid}>
+    <Container>
       <Content>
         <Primary>404</Primary>
         <Main>Page not found.</Main>
