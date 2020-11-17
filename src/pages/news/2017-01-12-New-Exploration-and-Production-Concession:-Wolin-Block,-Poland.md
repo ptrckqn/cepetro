@@ -2,7 +2,7 @@
 templateKey: news-post
 publish: true
 title: Central European Petroleum Announces Receipt of Wolin License
-hero: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+hero: /images/uploads/img_3858_crop.jpg
 image: /images/uploads/wolinmap_news.png
 category: Poland
 date: 2017-12-01T14:04:00.000Z
