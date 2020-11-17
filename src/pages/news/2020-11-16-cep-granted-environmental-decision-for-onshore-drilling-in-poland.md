@@ -11,4 +11,4 @@ The Regional Directorate for Environmental Protection in Szczecin (Regionalna Dy
 
 The Wolin Concession was awarded to CEP by the Ministry of Environment in December 2017. Following the acquisition of 2D and 3D seismic data in 2018/2019, a KIP (Karta Informacyjna Przedsięwzięcia) for onshore drilling was filed at RDOŚ on February 27th, 2020. After several months of evaluation and consultation with impacted stakeholders, RDOŚ issued its Environmental Decision on October 22nd, 2020.
 
-For the full Environmental Decision document, [click here](https://www.cepetro.com/images/uploads/environmental-decision-onshore-oct2020-reduced).
+For the full Environmental Decision document, [click here](https://www.cepetro.com/images/uploads/environmental-decision-onshore-oct2020-reduced.pdf).

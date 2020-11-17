@@ -17,4 +17,4 @@ The Wolin Concession was awarded to CEP by the Ministry of Environment (“MoE�
 
 CEP’s updated Projekt Robót Geologicznych (geological work program, “PRG”), which includes the details of the planned seismic acquisition operations and the conditions of the Environmental Decision, has been filed with the MoE and the company will commence seismic acquisition operations once the MoE has reviewed and approved the update.
 
-For the full Environmental Decision document, click [here](http://www.cepetro.com/images/uploads/environmental-decision-july-31st-2018.pdf).
+For the full Environmental Decision document, click [here](http://www.cepetro.com/images/uploads/environmental-decision-july-31st-2018-reduced.pdf).

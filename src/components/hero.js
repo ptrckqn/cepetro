@@ -28,6 +28,7 @@ const Container = styled(BackgroundImage)`
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  margin-bottom: 100px;
 `
 
 const ContainerPreview = styled.section`
