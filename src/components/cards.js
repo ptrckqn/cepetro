@@ -183,27 +183,36 @@ const Btn = styled(Link)`
   }
 `
 
-const Card = ({ hero, title, date, url }) => (
-  <Section>
-    <Box>
-      <Front>
-        {hero && <Photo fluid={hero.childImageSharp.fluid}>&nbsp;</Photo>}
+const Card = ({ hero, image, title, date, url }) => {
+  let img
+  if (image) {
+    img = image.childImageSharp.fluid
+  } else if (hero) {
+    img = hero.childImageSharp.fluid
+  }
 
-        <Title>
-          <span>{title}</span>
-        </Title>
-        <Info>{date}</Info>
-      </Front>
-      <Back>
-        <Cta>
-          <CtaBox>
-            <Btn to={url}>Continue Reading</Btn>
-          </CtaBox>
-        </Cta>
-      </Back>
-    </Box>
-  </Section>
-)
+  return (
+    <Section>
+      <Box>
+        <Front>
+          {img && <Photo fluid={img}>&nbsp;</Photo>}
+
+          <Title>
+            <span>{title}</span>
+          </Title>
+          <Info>{date}</Info>
+        </Front>
+        <Back>
+          <Cta>
+            <CtaBox>
+              <Btn to={url}>Continue Reading</Btn>
+            </CtaBox>
+          </Cta>
+        </Back>
+      </Box>
+    </Section>
+  )
+}
 
 const Cards = ({ data: { title }, short, category }) => {
   return (
@@ -225,6 +234,13 @@ const Cards = ({ data: { title }, short, category }) => {
                   frontmatter {
                     publish
                     title
+                    image {
+                      childImageSharp {
+                        fluid {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                    }
                     hero {
                       childImageSharp {
                         fluid {
@@ -253,6 +269,7 @@ const Cards = ({ data: { title }, short, category }) => {
                       <Card
                         key={node.id}
                         hero={node.frontmatter.hero}
+                        image={node.frontmatter.image}
                         title={node.frontmatter.title}
                         date={node.frontmatter.date}
                         url={node.fields.slug}
@@ -265,6 +282,7 @@ const Cards = ({ data: { title }, short, category }) => {
                     return (
                       <Card
                         key={node.id}
+                        hero={node.frontmatter.hero}
                         image={node.frontmatter.image}
                         title={node.frontmatter.title}
                         date={node.frontmatter.date}
