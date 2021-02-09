@@ -4,7 +4,10 @@ title: Contact us
 hero: /images/uploads/header-page2.jpeg
 main:
   data:
-    - 'Address: 1000-521, 3 Ave SW Calgary, AB, T2P 3T3'
+    - 'Address: 500-736'
+    - 8 Ave SW Calgary
+    - AB
+    - T2P 1H4
     - 'Phone: [1-403-532-6551](tel:1-403-532-6551)'
     - 'Direct: [1-587-955-1050](tel:1-587-955-1050)'
     - 'Fax: [1-403-532-6554](tel:1-403-532-6554)'
