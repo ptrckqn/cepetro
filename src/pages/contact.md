@@ -5,9 +5,9 @@ hero: /images/uploads/header-page2.jpeg
 main:
   data:
     - 'Address: 500-736 8 Ave SW'
-    - Calgary AB T2P 1H4
+    - Calgary AB
+    - T2P 1H4
     - 'Phone: [1-403-532-6551](tel:1-403-532-6551)'
-    - 'Direct: [1-587-955-1050](tel:1-587-955-1050)'
     - 'Fax: [1-403-532-6554](tel:1-403-532-6554)'
     - 'Email: [info@cepetro.com](mailto:info@cepetro.com)'
   image: /images/uploads/screen-shot-2019-08-11-at-10.17.12-pm.png
