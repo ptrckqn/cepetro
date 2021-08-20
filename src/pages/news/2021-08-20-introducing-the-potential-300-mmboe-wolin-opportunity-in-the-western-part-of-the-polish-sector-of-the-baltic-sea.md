@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-publish: true
+publish: false
 title: >-
   Introducing the potential >300 MMboe Wolin Opportunity in the western part of
   the Polish sector of the Baltic Sea.
