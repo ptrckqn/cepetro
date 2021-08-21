@@ -9,8 +9,7 @@ image: ''
 category: Poland
 date: 2021-08-20T18:00:33.079Z
 ---
-
-The Wolin Project with Central European Petroleum
-![](https://cepetro.com/images/uploads/shutterstock_sm.jpg) T
+![](https://cepetro.com/images/uploads/shutterstock_sm.jpg) **The Wolin Project with Central European Petroleum**
+ihsmarkit.com
 
 [https://ihsmarkit.com/research-analysis/the-wolin-project-with-central-european-petroleum.html](https://ihsmarkit.com/research-analysis/the-wolin-project-with-central-european-petroleum.html)
