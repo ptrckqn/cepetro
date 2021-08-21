@@ -11,4 +11,6 @@ date: 2021-08-20T18:00:33.079Z
 ---
 
 
+![](/images/uploads/shutterstock_204473680.jpg "The Wolin Project with Central European Petroleum")
+
 [https://ihsmarkit.com/research-analysis/the-wolin-project-with-central-european-petroleum.htm](https://ihsmarkit.com/research-analysis/the-wolin-project-with-central-european-petroleum.html)
