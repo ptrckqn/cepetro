@@ -9,8 +9,6 @@ image: ''
 category: Poland
 date: 2021-08-20T18:00:33.079Z
 ---
-
-
-![](/images/uploads/ihs-title.jpg)
+![](/images/uploads/ihs-title.jpg "The Wolin Project with Central European Petroleum")
 
 <https://ihsmarkit.com/research-analysis/the-wolin-project-with-central-european-petroleum.html>
