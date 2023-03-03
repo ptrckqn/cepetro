@@ -100,36 +100,6 @@ features:
       - - -
 
 
-      ## Robyn Hemminger
-
-
-      **CHIEF FINANCIAL OFFICER**
-
-
-      Experience:
-
-
-      * Mr. Hemminger has more than 15 years experience in the investment
-      business including more than 12 years in the energy investment banking
-      sector.  Mr. Hemminger has varied experience in capital raising, mergers
-      and acquisitions and strategic planning across the international energy
-      spectrum including working with energy companies focused in Argentina,
-      Australia, Azerbaijan, Brazil, Canada, Chad, Colombia, Egypt, France,
-      Kazakhstan, Kurdistan, Libya, Mexico, Nigeria, Papua New Guinea, Poland,
-      Romania, Trinidad, Tunisia, Turkey and Yemen.
-
-
-      Education:
-
-
-      * B.Sc., Chemistry, University of Manitoba
-
-      * B. Comm., Finance, University of Manitoba
-
-
-      - - -
-
-
       ## Jaap Bouwman, Economist
 
 
