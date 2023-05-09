@@ -100,38 +100,6 @@ features:
       - - -
 
 
-      ## Jaap Bouwman, Economist
-
-
-      **EXECUTIVE VICE PRESIDENT OF CEP GmbH**
-
-
-      Experience:
-
-
-      * Mr. Bouwman is a successful business executive with over 30 years
-      experience.  He has a proven track record of successful operations, strong
-      negotiator with extensive experience in building business relationships,
-      with in-depth knowledge of multicultural business environments in Europe,
-      North America, the Middle East, Africa and New Zealand.  Mr. Bouwman has
-      worked with CEP since August 2005.
-
-
-      Education:
-
-
-      * Economist, Business Academy Münster-Osnabrück, 1972.
-
-
-      Other Associations:
-
-
-      * Retired Honorary Consul of Germany in Calgary, Canada.
-
-
-      - - -
-
-
       ## David Bertram, P.Eng.
 
 
