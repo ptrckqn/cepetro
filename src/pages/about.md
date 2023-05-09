@@ -24,40 +24,37 @@ features:
       - - -
 
 
-      ## Peter Putnam, PhD, P. Geol
+      ## Rolf Gregor Skaar
 
 
-      **CHAIRMAN & CHIEF EXECUTIVE OFFICER**
+      **CHIEF EXECUTIVE OFFICER**
 
 
       Experience:
 
 
-      * Dr. Putnam has more than 30 years varied experience in research,
-      operations (exploration, development, and thermal oil recovery), corporate
-      management, strategic positioning, equity raising; and broad international
-      experience covering 6 continents and over 30 countries.  Dr. Putnam is a
-      proven value creator who has led several companies, including CEP, into
-      significant land positions in Canada, France, Australia, Germany, and
-      Algeria.
+      * Mr. Skaar has over 30 years of technical and managerial experience
+      working for large multinationals such as Shell, Equinor and VNG but also
+      for several smaller well services companies. Rolf has recently also worked
+      for family offices with numerous board seats within apparel, retail,
+      travel and aviation. Key competencies include Management, Strategy &
+      Innovation, Business development/M&A & company start-ups with broad
+      international experience.
 
 
       Education:
 
 
-      * Ph.D., Geology, University of Calgary, 1985.
+      * MEng Petroleum Engineering, Imperial College of Science Technology and
+      Medicine, 1992.
+
+      * Postgraduate Diploma in Strategy and Innovation, Oxford University, 2015
 
 
       Other Associations:
 
 
-      * President, Hay Valley Resources;
-
-      * President and Chief Operating Officer, OSUM Oil Sands Corp. 2007 to
-      2008;
-
-      * President and Chief Executive Officer, Petrel Robertson Consulting Ltd.
-      from 2000 to 2006.
+      * https://www.linkedin.com/in/rolf-gregor-skaar/
 
 
       - - -
@@ -66,7 +63,7 @@ features:
       ## Alula Damte, PhD, P. Geol
 
 
-      **PRESIDENT & CHIEF OPERATING OFFICER, MANAGING DIRECTOR OF CEP GMBH**
+      **PRESIDENT & CHIEF OPERATING OFFICER**
 
 
       Experience:
