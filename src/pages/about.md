@@ -140,20 +140,35 @@ features:
     title: CEP Management
   - body: |-
       ## Peter Putnam (Chairman)
-      **CEO, Central European Petroleum Ltd.**
+
+      **Independent Businessman**
+
       ## R. Ian Molson (Deputy Chairman)
+
       **Independent Businessman**
+
       ## Jeffrey Harris
+
       **Independent Businessman**
+
       ## Sabrina Liak
+
       **Founding Partner, ALOI Investment Management**
+
       ## Francis Sommer
+
       **Partner, Pamplona Capital Management**
+
       ## Carlos A. Pérez-Davila
+
       **Managing Director, Quadrant Capital Advisors, Inc.**
+
       ## Rolf G. Skaar
-      **Managing Director, Vision iO**
+
+      **Central European Petroleum Ltd.**
+
       ## Gregory G. Turnbull
+
       **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLP**
     title: CEP Board of Directors
 ---
