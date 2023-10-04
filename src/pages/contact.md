@@ -15,20 +15,10 @@ main:
   title: Our Offices
 secondary:
   - data:
-      - 'Address: Rosenstraße 2 D-10178 Berlin'
-      - 'Phone: [+49 (30) 24 31 02 190](tel:+49(30)243102190)'
-      - 'Fax: [+49 (30) 24 31 02 528](tel:+49(30)243102528)'
-      - 'Email: [de-info@cepetro.com](mailto:de-info@cepetro.com)'
-    title: CEP Central European Petroleum GmbH
-  - data:
-      - 'Address: Al. Jana Pawła II 23'
-      - 00-854 Warsaw
-      - 'Phone: [1-403-532-6551](tel:1-403-532-6551)'
-      - 'Fax: [1-403-532-6554](tel:1-403-532-6554)'
-      - >-
-        For all media inquiries please contact:
-        [prasa@cepetro.com](mailto:prasa@cepetro)
-    title: Central European Petroleum Ltd. sp. z o.o.
+      - 'Address: al. Jana Pawła II'
+      - 2300-854 Warszawa
+      - Poland
+    title: Central European Petroleum sp. z o.o.
   - data:
       - 'Address:  Siriusdreef 17, 2132 WT Hoofddorp'
       - 'Phone: [1-403-532-6551](tel:1-403-532-6551)'
