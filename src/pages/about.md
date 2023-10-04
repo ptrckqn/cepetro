@@ -151,10 +151,6 @@ features:
 
       **Independent Businessman**
 
-      ## Sabrina Liak
-
-      **Founding Partner, ALOI Investment Management**
-
       ## Francis Sommer
 
       **Partner, Pamplona Capital Management**
