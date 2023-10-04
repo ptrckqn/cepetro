@@ -5,9 +5,9 @@ hero: /images/uploads/guhlenrig_flare.jpg
 showcase:
   data:
     - body: >-
-        ## CEP is currently exploring the hydrocarbon potential along the Baltic
-        Sea in Mecklenburg-Vorpommern and along the German-Polish border in
-        Brandenburg (Germany).
+        ## Until June 2023, CEP explored the hydrocarbon potential along the
+        Baltic Sea in Mecklenburg-Vorpommern and along the German-Polish border
+        in Brandenburg (Germany).
 
 
         > Following the initial grant in 2007, CEP held eight exploration
@@ -16,11 +16,7 @@ showcase:
         2009 with acquisition of 3D seismic and the first exploration well was
         drilled in 2011. CEP made a gas condensate discovery in 2016 and was
         later awarded the Guhlen Production License in September 2017.
-        Activities are currently focused on appraising the discovery
-
-
-        More information on CEP's activities in Germany can be found
-        [here](https://www.cepetro.de/cepetroleum.html) (German)
+        Activities have now ceased and all licenses have been relinquished.
       image: /images/uploads/guhlen_flare.jpg
       title: View our German Operations
     - body: >-
