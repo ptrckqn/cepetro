@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-publish: true
+publish: false
 title: CEP Granted Environmental Decision for Offshore Drilling in Poland
 hero: /images/uploads/envdecision_offshore-wells.jpg
 category: Poland
