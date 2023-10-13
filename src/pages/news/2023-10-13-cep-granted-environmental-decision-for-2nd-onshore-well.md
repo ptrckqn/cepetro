@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-publish: false
+publish: true
 title: CEP Granted Environmental Decision for 2nd Onshore Well
 hero: /images/uploads/2023-07_envdecision_2ndonshore.jpg
 category: Poland
