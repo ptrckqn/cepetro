@@ -15,8 +15,8 @@ main:
   title: Our Offices
 secondary:
   - data:
-      - 'Address: al. Jana Pawła II'
-      - 23  00-854 Warszawa
+      - 'Address: al. Jana Pawła II 23'
+      - 00-854 Warszawa
       - Poland
     title: Central European Petroleum sp. z o.o.
   - data:
