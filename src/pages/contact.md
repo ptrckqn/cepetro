@@ -16,7 +16,7 @@ main:
 secondary:
   - data:
       - 'Address: al. Jana Pawła II'
-      - 2300-854 Warszawa
+      - 23  00-854 Warszawa
       - Poland
     title: Central European Petroleum sp. z o.o.
   - data:
