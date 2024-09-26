@@ -8,4 +8,4 @@ category: Poland
 date: 2024-06-07T15:40:04.819Z
 description: ''
 ---
-Full Ministry Decision [here](blob:https://www.cepetro.com/0b802297-4487-457a-b265-98ca91d5c023)
+Full Ministry Decision [here](https://www.cepetro.com/images/uploads/04.06.2024_cep_mkiś_decyzja-o-zmianie-koncesji-nr-9_2017_ł-641683047.1-.pdf)
