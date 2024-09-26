@@ -5,7 +5,7 @@ title: >-
   Ministry of Climate and Environment grants extension of the Wolin Concession
   Exploration Phase and drilling approval of Wolin East 1
 hero: /images/uploads/swinoujscie_shutterstock.jpg
-image: /images/uploads/concessionchanges_june2024.jpg
+image: /images/uploads/ministryofclimate_enviro.jpg
 category: Poland
 date: 2024-06-07T15:40:04.819Z
 description: ''
