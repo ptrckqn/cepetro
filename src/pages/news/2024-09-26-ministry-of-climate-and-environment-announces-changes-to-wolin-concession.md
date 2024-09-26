@@ -8,4 +8,4 @@ category: Poland
 date: 2024-06-07T15:40:04.819Z
 description: ''
 ---
-Full Ministry Decision here
+Full Ministry Decision [here](blob:https://www.cepetro.com/0b802297-4487-457a-b265-98ca91d5c023)
