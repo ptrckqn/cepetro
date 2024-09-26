@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-publish: true
+publish: false
 title: Ministry of Climate and Environment announces changes to Wolin Concession
 hero: /images/uploads/swinoujscie_shutterstock.jpg
 image: /images/uploads/concessionchanges_june2024.jpg
