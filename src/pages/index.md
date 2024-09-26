@@ -9,7 +9,7 @@ locations:
       Brandenburg (Germany)
     image: /images/uploads/de_link.jpg
     title: CEP Central European Petroleum GmbH
-    url: 'https://www.cepetro.de/cepetroleum.html'
+    url: /operations?view=germany
   - body: >-
       Central European Petroleum Ltd SP Zoo Registered in Poland in 2017, is a
       wholly-owned affiliate of Central European Petroleum Ltd. pursuing
