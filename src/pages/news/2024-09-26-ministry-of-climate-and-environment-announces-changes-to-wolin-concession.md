@@ -1,7 +1,9 @@
 ---
 templateKey: news-post
 publish: true
-title: Ministry of Climate and Environment announces changes to Wolin Concession
+title: >-
+  Ministry of Climate and Environment grants extension of the Wolin Concession
+  Exploration Phase and drilling approval of Wolin East 1
 hero: /images/uploads/swinoujscie_shutterstock.jpg
 image: /images/uploads/concessionchanges_june2024.jpg
 category: Poland
