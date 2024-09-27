@@ -18,7 +18,7 @@ secondary:
       - 'Address: al. Jana Pawła II 23'
       - 00-854 Warszawa
       - Poland
-    title: Central European Petroleum sp. z o.o.
+    title: Central European Petroleum Ltd Sp. z o.o.
   - data:
       - 'Address:  Siriusdreef 17, 2132 WT Hoofddorp'
       - 'Phone: [1-403-532-6551](tel:1-403-532-6551)'
