@@ -6,7 +6,7 @@ title: >-
   the Wolin Concession
 hero: /images/uploads/shutterstock_seabreak.jpg
 image: /images/uploads/x03_01_teaserbild_gross.jpg.pagespeed.ic.iyxprvscnk.jpg
-category: General
+category: Poland
 date: 2025-02-23T02:49:46.014Z
 ---
 Press Information :
