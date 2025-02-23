@@ -9,6 +9,6 @@ image: /images/uploads/x03_01_teaserbild_gross.jpg.pagespeed.ic.iyxprvscnk.jpg
 category: Poland
 date: 2025-02-23T02:49:46.014Z
 ---
-Central European Petroleum (CEP) has completed drilling the first well, Wolin East 1 (WE 1), on the Wolin concession. The data obtained during drilling is now undergoing detailed analysis with the initial results looking promising. The well is now suspended for future use and the specialized drilling rig, the Noble Resolve, which conducted the drilling operation, will move to Frederikshavn, Denmark.
+Central European Petroleum (CEP) has completed drilling the first well, Wolin East 1 (WE 1), on the Wolin concession.
 
-Read Full Press Information Release [here](blob:https://www.cepetro.com/19af5b56-4deb-4e2a-8e98-a376240ef028)
+Full Press Information available [here](blob:https://www.cepetro.com/19af5b56-4deb-4e2a-8e98-a376240ef028)
