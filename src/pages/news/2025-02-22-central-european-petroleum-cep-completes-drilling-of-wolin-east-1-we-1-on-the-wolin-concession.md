@@ -2,8 +2,8 @@
 templateKey: news-post
 publish: true
 title: >-
-  Central European Petroleum (CEP) Completes Drilling of Wolin East 1     (WE 1)
-  on the Wolin Concession
+  Central European Petroleum (CEP) Completes Drilling of Wolin East 1 (WE 1) on
+  the Wolin Concession
 hero: /images/uploads/shutterstock_seabreak.jpg
 image: /images/uploads/x03_01_teaserbild_gross.jpg.pagespeed.ic.iyxprvscnk.jpg
 category: Poland
