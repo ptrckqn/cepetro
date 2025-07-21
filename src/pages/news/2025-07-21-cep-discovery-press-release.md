@@ -1,8 +1,9 @@
 ---
 templateKey: news-post
 publish: false
-title: CEP Discovery Press Release
-hero: /images/uploads/pl_link_lng.jpg
+title: 'Press Release - CEP Announces Discovery '
+hero: /images/uploads/shutterstock_seabreak.jpg
+image: /images/uploads/pl_link_lng.jpg
 category: General
 date: 2025-07-21T16:21:44.721Z
 description: ''
