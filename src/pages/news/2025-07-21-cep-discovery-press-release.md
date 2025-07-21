@@ -8,4 +8,4 @@ category: General
 date: 2025-07-21T16:21:44.721Z
 description: ''
 ---
-CEP Announces Significant Discovery in the Wolin License Block.  Click for the Press Release
+CEP Announces Significant Discovery in the Wolin License Block.  Click here to read the Press Release
