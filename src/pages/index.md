@@ -35,7 +35,7 @@ highlights:
       title: What We Do
   images:
     - image: /images/uploads/gln_flare1.jpg
-    - image: /images/uploads/boat_equipment_2.jpg
+    - image: /images/uploads/jackup_rig_deck_sunset.jpg
     - image: /images/uploads/obx-deployment.jpg
   title: About Us
 map:
