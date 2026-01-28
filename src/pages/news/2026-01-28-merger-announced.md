@@ -1,0 +1,89 @@
+---
+templateKey: news-post
+publish: false
+title: Merger Announced
+hero: /images/uploads/cep-logo_small.png
+category: Poland
+date: 2026-01-28T21:53:48.610Z
+---
+
+
+Polish version:
+
+
+
+Informujemy, że dnia 28 stycznia 2026 roku zarządy spółek CEP Central European Petroleum sp. z o.o., spółka z ograniczoną odpowiedzialnością utworzona i istniejąca zgodnie z prawem Rzeczypospolitej Polskiej, z siedzibą w Warszawie, przy ul. Grzybowskiej 2/29, 00-131 Warszawa, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy dla m.st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, pod numerem KRS: 0000761902 („Spółka Przejmująca”) oraz CEP Central European Petroleum B.V., spółka prywatna z ograniczoną odpowiedzialnością prawa holenderskiego, z siedzibą w Amsterdamie, Królestwo Niderlandów, z adresem przy Siriusdreef 17, 2132 WT Hoofddorp, Królestwo Niderlandów, wpisana do holenderskiego rejestru handlowego pod numerem 73918660 („Spółka Przejmowana”), podpisały plan połączenia transgranicznego („Plan Połączenia”). Spółka Przejmowana oraz Spółka Przejmująca dalej jako „Łączące się Spółki”.
+
+
+
+Połączenie zostanie przeprowadzone poprzez przeniesienie całego majątku Spółki Przejmowanej na Spółkę Przejmującą, w zamian za udziały własne Spółki Przejmującej, które Spółka Przejmująca przydzieli jedynemu wspólnikowi Spółki Przejmowanej, tj. Central European Petroleum Ltd., spółce z ograniczoną odpowiedzialnością utworzoną i istniejącą zgodnie z prawem Kanady, z siedzibą przy Suite 500, 736 - 8th Avenue SW, Alberta, T2P 1H4, Kanada, zarejestrowaną w Rejestrze Korporacyjnym (Province of Alberta), Kanada, pod numerem 2012591240, (połączenie przez przejęcie), w wyniku czego Spółka Przejmowana ulegnie rozwiązaniu bez przeprowadzenia postępowania likwidacyjnego („Połączenie”).
+
+
+
+Jako że, Spółka Przejmowana posiada wszystkie udziały Spółki Przejmującej, w wyniku Połączenia udziały Spółki Przejmującej (posiadane obecnie przez Spółkę Przejmowaną) zostaną przeniesione do jedynego wspólnika Spółki Przejmowanej tj. CEP Ltd. (tzw. połączenie odwrotne – down-stream merger). Połączenie zostanie przeprowadzone bez podwyższenia kapitału zakładowego Spółki Przejmującej.
+
+
+
+Połączenie jest realizowane w ramach grupy kapitałowej Central European Petroleum Group i ma na celu uproszczenie struktury korporacyjnej grupy, usprawnienie nadzoru oraz zmniejszenie złożoności administracyjnej i operacyjnej.
+
+
+
+Plan Połączenia oraz samo Połączenie zostały uzgodnione zgodnie z prawem Rzeczypospolitej Polskiej oraz Królestwa Niderlandów, tj. w szczególności zgodnie z art. 516³ ustawy z dnia 15 września 2000 r. – Kodeks spółek handlowych, z późn. zm. („KSH”) stanowiącym implementację dyrektywy (UE) 2017/1132 Parlamentu Europejskiego i Rady z dnia 14 czerwca 2017 r. w sprawie niektórych aspektów prawa spółek (tekst jednolity), z późn. zm. dyrektywą (UE) 2019/2121 Parlamentu Europejskiego i Rady z dnia 27 listopada 2019 r., zmieniającą dyrektywę (UE) 2017/1132 w odniesieniu do transgranicznego przekształcenia, łączenia się i podziału spółek oraz zgodnie z art. 2:309 w związku z art. 2:333c ust. 1 Kodeksu cywilnego Królestwa Niderlandów („DCC”). 
+
+
+
+Jako że żadna z Łączących Się Spółek nie zatrudnia pracowników - przepisy dotyczące praw pracowniczych nie znajdą zastosowania do Połączenia. W szczególności, zgodnie z art. 516⁵ § 5 KSH oraz art. 2:333f ust. 5 DCC, zarządy Łączących się Spółek są zwolnione z obowiązku sporządzenia części sprawozdania zarządu przeznaczonej dla pracowników, o której mowa w art. 516⁵ § 1 KSH oraz art. 2:333f ust. 4 DCC. Zgodnie z art. 516⁵ § 4 KSH oraz art. 2:333f ust. 3 DCC, wspólnicy obu Łączących się Spółek wyrazili na piśmie zgodę na zrzeczenie się obowiązku sporządzenia części sprawozdania zarządu przeznaczonej dla wspólników, o której mowa w art. 516⁵ § 1 KSH oraz art. 2:333f ust. 2 DCC. W związku z powyższym sporządzenie sprawozdania zarządu, o który mowa w art. 516⁵ KSH oraz art. 2:333f ust. 8 DCC nie było wymagane.
+
+
+
+Zgodnie z art. 516⁶ § 3 KSH oraz art. 2:328 ust. 6 w związku z art. 2:328 ust. 2 DCC, wszyscy wspólnicy Łączących się Spółek postanowili zrzec się obowiązku badania Planu Połączenia przez biegłego oraz sporządzenia opinii biegłego.
+
+
+
+Zgodnie z art. 5166a oraz art. 516⁴ § 3 w zw. z art. 516⁴ § 1 pkt 1 KSH, wszelkie uwagi do Planu Połączenia, w tym zgłaszane przez wierzycieli oraz wspólników Łączących Się Spółek, mogą być przesyłane na adresy rejestrowe dowolnej ze spółek łączących się (wskazane powyżej) lub na następujący adres e-mail: info@cepetro.com Szczegóły znajdują się w umieszczonym na niniejszej stronie internetowej zawiadomieniu.
+
+
+
+Na podstawie art. 516⁴ § 3, art.  5167 § 3 i 4 w zw. z art. 5167 § 1 oraz art. 5166a KSH, dokumenty dotyczące Połączenia o których mowa w art. 516⁴ § 1 pkt 1) oraz 2), art. 5167 § 1 pkt 1) i 2) oraz art. 5166a § 1 KSH, tj. (i) Plan Połączenia; (ii) zawiadomienie jedynego wspólnika i wierzycieli o możliwości zgłaszania uwag do Planu Połączenia; (iii) pierwsze zawiadomienie jedynego wspólnika o planowanym Połączeniu; oraz (iv) sprawozdania finansowe oraz sprawozdania zarządów z działalności Łączących Się Spółek za trzy ostatnie lata obrotowe; zostają udostępnione bezpłatnie do publicznej wiadomości na niniejszej stronie internetowej. 
+
+\    
+
+
+
+English version:
+
+
+
+We hereby inform that on 28 January 2026, the management boards of CEP Central European Petroleum sp. z o.o., a limited liability company incorporated and existing under the laws of the Republic of Poland, with its registered office in Warsaw, at ul. Grzybowska 2/29, 00-131 Warsaw, entered in the register of entrepreneurs of the National Court Register kept by the District Court for the Capital City of Warsaw in Warsaw, 12th Commercial Division of the National Court Register, under KRS number 0000761902 (the “Acquiring Company”), and CEP Central European Petroleum B.V., a private limited liability company governed by the laws of the Netherlands, with its registered office in Amsterdam, the Kingdom of the Netherlands, with its address at Siriusdreef 17, 2132 WT Hoofddorp, the Kingdom of the Netherlands, registered with the Dutch Trade Register under number 73918660 (the “Acquired Company”), executed a cross-border merger plan (the “Merger Plan”). The Acquired Company and the Acquiring Company, hereinafter referred to as the “Merging Companies”.
+
+
+
+The merger will be carried out by way of the transfer of all assets of the Acquired Company to the Acquiring Company by operation of law (universal succession), in exchange for its own shares of the Acquiring Company, which the Acquiring Company will allot to the sole shareholder of the Acquired Company, i.e. Central European Petroleum Ltd., a limited liability company incorporated and existing under the laws of Canada, with its registered office in Suite 500, 736 - 8th Avenue SW, Alberta, T2P 1H4, Canada, registered with the Corporate Registry (Province of Alberta), Canada, under number 2012591240 (merger by acquisition), as a result of which the Acquired Company will be dissolved, without undergoing liquidation proceedings (the “Merger”). 
+
+
+
+Since the Acquired Company holds all shares of the Acquiring Company, as a result of the Merger, the shares of the Acquiring Company (currently held by the Acquired Company) will be transferred to the sole shareholder of the Acquired Company, i.e. CEP Ltd. (a so-called reverse merger – down-stream merger). The Merger will be carried out without an increase of the share capital of the Acquiring Company.
+
+
+
+The Merger is carried out within the Central European Petroleum Group and aims to simplify the Group’s corporate structure, improve supervision, and reduce administrative and operational complexity.
+
+
+
+The Merger Plan and the Merger itself have been agreed in particular in accordance with the laws of the Republic of Poland and the Kingdom of the Netherlands, i.e. Article 516³ of the Act of 15 September 2000 – the Polish Commercial Companies Code, as amended (the “CCC”), implementing Title II, Chapter II of Directive (EU) 2017/1132 of the European Parliament and of the Council of 14 June 2017 relating to certain aspects of company law (codified version), as amended by Directive (EU) 2019/2121 of the European Parliament and of the Council of 27 November 2019 amending Directive (EU) 2017/1132 as regards cross-border conversions, mergers and divisions, and in accordance with Article 2:309 in conjunction with Article 2:333c(1) of the Dutch Civil Code (the “DCC”).
+
+
+
+Since neither of the Merging Companies employs any employees, the provisions regarding employment rights shall not apply to the Merger. In particular, pursuant to Article 516⁵ § 5 of the CCC and Article 2:333f(5) of the DCC, the management boards of both Merging Companies are exempt from the obligation to prepare the part of the management board report addressed to employees, as referred to in Article 516⁵ § 1 of the CCC and Article 2:333f(4) of the DCC. Pursuant to Article 516⁵ § 4 of the CCC and Article 2:333f(3) of the DCC, the shareholders of both Merging Companies have given their written consent to waive the obligation to prepare the part of the management board report addressed to shareholders, as referred to in Article 516⁵ § 1 of the CCC and Article 2:333f(2) of the DCC. Consequently, in view of the exemptions described above, the preparation of a management board report referred to in Article 516⁵ of the CCC and Article 2:333f(8) of the DCC), was not required.
+
+
+
+Pursuant to Article 516⁶ § 3 of the CCC and Article 2:328(6) in conjunction with Article 2:328(2) of the DCC, all shareholders of the Merging Companies have resolved to waive the obligation to have the Merger Plan reviewed by an auditor and to prepare an auditor’s opinion.
+
+
+
+Pursuant to Article 516⁶a and Article 516⁴ § 3 in connection with Article 516⁴ § 1 point 1 of the CCC, any comments on the Merger Plan, including those submitted by the creditors and shareholders of the Merging Companies, may be submitted to the registered addresses of any of the merging companies (indicated above) or to the following e-mail address: info@cepetro.com Details are provided in the notice published on this website.
+
+
+
+Pursuant to Articles 516⁴ § 3, 516⁷ § 3 and 4 in connection with Article 516⁷ § 1, and Article 516⁶a of the CCC, the documents relating to the Merger referred to in Articles 516⁴ § 1 points 1) and 2), Articles 516⁷ § 1 points 1) and 2), and Article 516⁶a § 1 of the CCC, i.e.: (i) the Merger Plan; (ii) the notice to the sole shareholder and creditors regarding the possibility of submitting comments on the Merger Plan; (iii) the first notice to the sole shareholder regarding the planned Merger; and (iv) the financial statements and management reports on the activities of the Merging Companies for the last three financial years; are made available to the public free of charge on this website.
