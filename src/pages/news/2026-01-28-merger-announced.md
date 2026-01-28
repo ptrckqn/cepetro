@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-publish: false
+publish: true
 title: Merger Announced
 hero: /images/uploads/cep-logo_small.png
 category: Poland
