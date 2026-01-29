@@ -51,4 +51,4 @@ Pursuant to Articles 516⁴ § 3, 516⁷ § 3 and 4 in connection with Article 5
 
 [Pierwsze zawiadomienie jedynego wspólnika o planowanym połączeniu/ First Notification to the Shareholder](https://www.cepetro.com/images/uploads/Notification_Shareholder.pdf)
 
-[Financial Reports](https://cepetro.sharepoint.com/:f:/s/MergerFinancialStatements/IgAx5o9xtl6ARrS3A06Qvn-LARNUnkdgUluDbkz-haaf7hE?e=a25A0f)
+[Sprawozdania Finansowe/ Financial Reports](https://cepetro.sharepoint.com/:f:/s/MergerFinancialStatements/IgAx5o9xtl6ARrS3A06Qvn-LARCF9LAVE4ki8NArPbtYyjQ?e=gKhf1K)
