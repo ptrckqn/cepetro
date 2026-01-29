@@ -1,6 +1,6 @@
 ---
 templateKey: pl-page
-title: Central European Petroleum Ltd. sp. z o.o.
+title: CEP Central European Petroleum Sp. z o.o.
 hero: /images/uploads/pl_sunset.jpg
 highlights:
   data:
@@ -13,7 +13,7 @@ highlights:
         Concession in northwest Poland in December 2017. The Onshore/ Offshore
         License is flanked by, and on trend with, two conventional gas-bearing
         reservoirs where 6 successful wells have been drilled to date.
-      title: "  "
+      title: '  '
   images:
     - image: /images/uploads/acquisition_office.jpg
     - image: /images/uploads/wood_vibes.jpg
@@ -29,10 +29,10 @@ map:
     North of Szczecin  
 
 
-    For more information click
-    [here](/pl/wolin/)
+    For more information click [here](/pl/wolin/)
   image: /images/uploads/poland-2.png
   title: Asset Location
 news:
   title: Latest News
 ---
+
