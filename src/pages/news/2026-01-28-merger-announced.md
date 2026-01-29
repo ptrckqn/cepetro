@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-publish: false
+publish: true
 title: Central European Petroleum Corporate Merger
 hero: /images/uploads/cep-logo_small.png
 image: /images/uploads/ship_sunset.jpg
