@@ -23,11 +23,7 @@ Zgodnie z art. 516⁶ § 3 KSH oraz art. 2:328 ust. 6 w związku z art. 2:328 us
 
 Zgodnie z art. 5166a oraz art. 516⁴ § 3 w zw. z art. 516⁴ § 1 pkt 1 KSH, wszelkie uwagi do Planu Połączenia, w tym zgłaszane przez wierzycieli oraz wspólników Łączących Się Spółek, mogą być przesyłane na adresy rejestrowe dowolnej ze spółek łączących się (wskazane powyżej) lub na następujący adres e-mail: info@cepetro.com Szczegóły znajdują się w umieszczonym na niniejszej stronie internetowej zawiadomieniu.
 
-Na podstawie art. 516⁴ § 3, art.  5167 § 3 i 4 w zw. z art. 5167 § 1 oraz art. 5166a KSH, dokumenty dotyczące Połączenia o których mowa w art. 516⁴ § 1 pkt 1) oraz 2), art. 5167 § 1 pkt 1) i 2) oraz art. 5166a § 1 KSH, tj. (i) Plan Połączenia; (ii) zawiadomienie jedynego wspólnika i wierzycieli o możliwości zgłaszania uwag do Planu Połączenia; (iii) pierwsze zawiadomienie jedynego wspólnika o planowanym Połączeniu; oraz (iv) sprawozdania finansowe oraz sprawozdania zarządów z działalności Łączących Się Spółek za trzy ostatnie lata obrotowe; zostają udostępnione bezpłatnie do publicznej wiadomości na niniejszej stronie internetowej. 
-
-\    
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Na podstawie art. 516⁴ § 3, art.  5167 § 3 i 4 w zw. z art. 5167 § 1 oraz art. 5166a KSH, dokumenty dotyczące Połączenia o których mowa w art. 516⁴ § 1 pkt 1) oraz 2), art. 5167 § 1 pkt 1) i 2) oraz art. 5166a § 1 KSH, tj. (i) Plan Połączenia; (ii) zawiadomienie jedynego wspólnika i wierzycieli o możliwości zgłaszania uwag do Planu Połączenia; (iii) pierwsze zawiadomienie jedynego wspólnika o planowanym Połączeniu; oraz (iv) sprawozdania finansowe oraz sprawozdania zarządów z działalności Łączących Się Spółek za trzy ostatnie lata obrotowe; zostają udostępnione bezpłatnie do publicznej wiadomości na niniejszej stronie internetowej. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
 We hereby inform that on 28 January 2026, the management boards of CEP Central European Petroleum sp. z o.o., a limited liability company incorporated and existing under the laws of the Republic of Poland, with its registered office in Warsaw, at ul. Grzybowska 2/29, 00-131 Warsaw, entered in the register of entrepreneurs of the National Court Register kept by the District Court for the Capital City of Warsaw in Warsaw, 12th Commercial Division of the National Court Register, under KRS number 0000761902 (the “Acquiring Company”), and CEP Central European Petroleum B.V., a private limited liability company governed by the laws of the Netherlands, with its registered office in Amsterdam, the Kingdom of the Netherlands, with its address at Siriusdreef 17, 2132 WT Hoofddorp, the Kingdom of the Netherlands, registered with the Dutch Trade Register under number 73918660 (the “Acquired Company”), executed a cross-border merger plan (the “Merger Plan”). The Acquired Company and the Acquiring Company, hereinafter referred to as the “Merging Companies”.
 
@@ -47,12 +43,12 @@ Pursuant to Article 516⁶a and Article 516⁴ § 3 in connection with Article 5
 
 Pursuant to Articles 516⁴ § 3, 516⁷ § 3 and 4 in connection with Article 516⁷ § 1, and Article 516⁶a of the CCC, the documents relating to the Merger referred to in Articles 516⁴ § 1 points 1) and 2), Articles 516⁷ § 1 points 1) and 2), and Article 516⁶a § 1 of the CCC, i.e.: (i) the Merger Plan; (ii) the notice to the sole shareholder and creditors regarding the possibility of submitting comments on the Merger Plan; (iii) the first notice to the sole shareholder regarding the planned Merger; and (iv) the financial statements and management reports on the activities of the Merging Companies for the last three financial years; are made available to the public free of charge on this website.
 
+
+
 [PLAN POŁĄCZENIA TRANSGRANICZNEGO/ CROSS-BORDER MERGER PLAN](https://www.cepetro.com/images/uploads/CEP-Cross-border-merger-plan-28.01.2026-.pdf)
 
-\***\*[**Zawiadomienie o możliwości zgłoszania uwag do planu połączenia/  Notice on the Opportunity to Submit Comments on the Merger Plan**](https://www.cepetro.com/images/uploads/Opportunity_To_Comment.pdf)\*\***
+[Zawiadomienie o możliwości zgłoszania uwag do planu połączenia/ Notice on the Opportunity to Submit Comments on the Merger Plan](https://www.cepetro.com/images/uploads/Opportunity_To_Comment.pdf)
 
-\***\*[**Pierwsze zawiadomienie jedynego wspólnika o planowanym połączeniu/  First Notification to the Shareholder**](https://www.cepetro.com/images/uploads/Notification_Shareholder.pdf)\*\***
+[Pierwsze zawiadomienie jedynego wspólnika o planowanym połączeniu/ First Notification to the Shareholder](https://www.cepetro.com/images/uploads/Notification_Shareholder.pdf)
 
-****[**Financial Statements**](https://cepetro.sharepoint.com/:f:/s/MergerFinancialStatements/IgAx5o9xtl6ARrS3A06Qvn-LARNUnkdgUluDbkz-haaf7hE?e=x6XQcF)****
-
-- - -
+[Financial Reports](https://cepetro.sharepoint.com/:f:/s/MergerFinancialStatements/IgAx5o9xtl6ARrS3A06Qvn-LARNUnkdgUluDbkz-haaf7hE?e=a25A0f)
