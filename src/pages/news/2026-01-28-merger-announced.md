@@ -47,6 +47,6 @@ Pursuant to Article 516⁶a and Article 516⁴ § 3 in connection with Article 5
 
 Pursuant to Articles 516⁴ § 3, 516⁷ § 3 and 4 in connection with Article 516⁷ § 1, and Article 516⁶a of the CCC, the documents relating to the Merger referred to in Articles 516⁴ § 1 points 1) and 2), Articles 516⁷ § 1 points 1) and 2), and Article 516⁶a § 1 of the CCC, i.e.: (i) the Merger Plan; (ii) the notice to the sole shareholder and creditors regarding the possibility of submitting comments on the Merger Plan; (iii) the first notice to the sole shareholder regarding the planned Merger; and (iv) the financial statements and management reports on the activities of the Merging Companies for the last three financial years; are made available to the public free of charge on this website.
 
+****[**PLAN POŁĄCZENIA TRANSGRANICZNEGO/ CROSS-BORDER MERGER PLAN**](https://www.cepetro.com/images/uploads/CEP-Cross-border-merger-plan-28.01.2026-.pdf)****
 
-
-PLAN POŁĄCZENIA TRANSGRANICZNEGO/ CROSS-BORDER MERGER PLAN
+****
