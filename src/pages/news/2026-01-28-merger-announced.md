@@ -3,7 +3,7 @@ templateKey: news-post
 publish: true
 title: Central European Petroleum Corporate Merger
 hero: /images/uploads/ship_sunset.jpg
-image: /images/uploads/cep-logo_small.png
+image: ''
 category: Poland
 date: 2026-01-28T21:53:48.610Z
 ---
