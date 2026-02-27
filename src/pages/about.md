@@ -21,45 +21,6 @@ highlights:
   title: Who we are
 features:
   - body: >-
-      - - -
-
-
-      ## Rolf Gregor Skaar
-
-
-      **CHIEF EXECUTIVE OFFICER**
-
-
-      Experience:
-
-
-      * Mr. Skaar has over 30 years of technical and managerial experience
-      working for large multinationals such as Shell, Equinor and VNG but also
-      for several smaller well services companies. Rolf has recently also worked
-      for family offices with numerous board seats within apparel, retail,
-      travel and aviation. Key competencies include Management, Strategy &
-      Innovation, Business development/M&A & company start-ups with broad
-      international experience.
-
-
-      Education:
-
-
-      * MEng Petroleum Engineering, Imperial College of Science Technology and
-      Medicine, 1992.
-
-      * Postgraduate Diploma in Strategy and Innovation, Oxford University, 2015
-
-
-      Other Associations:
-
-
-      * https://www.linkedin.com/in/rolf-gregor-skaar/
-
-
-      - - -
-
-
       ## Alula Damte, PhD, P. Geol
 
 
@@ -69,15 +30,17 @@ features:
       Experience:
 
 
-      * Dr. Damte has 20 years of petroleum industry and related teaching
-      experience with expertise in petroleum systems analysis of basins in
-      North, East and West Africa, North and South America, Western and Central
-      Europe, and Western Australia.  Throughout his industry career, he has
-      provided solutions to structurally complex problems at the basin to
-      prospect scale.  He is also responsible for the identification of
-      petroleum opportunities including the eastern Germany play concept for
-      CEP.  At CEP he has been the lead negotiator for farmouts and during
-      capital raising efforts.
+      * Dr. Damte has 30 years of experience in the petroleum industry and
+      related academic teaching, with deep expertise in petroleum systems
+      analysis across basins in North, East, and West Africa; North and South
+      America; Western and Central Europe; and Western Australia. Throughout his
+      industry career, he has delivered solutions to structurally complex
+      challenges ranging from basin scale evaluations to prospect level
+      assessments. He has led the identification of petroleum opportunities,
+      including the development of eastern Germany and Poland play concepts for
+      CEP. At CEP, Dr. Damte has spearheaded exploration and operational
+      initiatives, serving as lead negotiator for joint ventures and actively
+      participating in capital raising activities.
 
 
       Education:
@@ -89,9 +52,7 @@ features:
       Other Associations:
 
 
-      * Board Member, Petrel Robertson Consulting Ltd.;
-
-      * Technical Adviser to the Board, SouthWest Energy (H.K.) Ltd.
+      * Board Member, Petrel Robertson Consulting Ltd.
 
 
       - - -
@@ -226,6 +187,18 @@ features:
 
 
       * President, Bertram Reservoir Solutions Inc.
+
+
+      - - -
+
+
+      ## Gregory G. Turnbull, KC
+
+
+      **CORPORATE SECRETARY**
+
+
+      * Former long-time partner and managing partner at McCarthy Tétrault LLP
     title: CEP Management
   - body: |-
       ## Peter Putnam (Chairman, Non-Executive Director)
