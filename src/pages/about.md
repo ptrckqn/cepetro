@@ -198,6 +198,9 @@ features:
       **CORPORATE SECRETARY**
 
 
+      Experience:
+
+
       * Former long-time partner and managing partner at McCarthy Tétrault LLP
     title: CEP Management
   - body: |-
