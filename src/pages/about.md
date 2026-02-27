@@ -228,13 +228,17 @@ features:
       * President, Bertram Reservoir Solutions Inc.
     title: CEP Management
   - body: |-
-      ## Peter Putnam (Chairman)
+      ## Peter Putnam (Chairman, Non-Executive Director)
 
       **Independent Businessman**
 
       ## R. Ian Molson (Deputy Chairman)
 
       **Independent Businessman**
+
+      ## Rolf G. Skaar (Executive Director)
+
+      **Central European Petroleum Ltd.**
 
       ## Jeffrey Harris
 
@@ -247,14 +251,6 @@ features:
       ## Carlos A. Pérez-Davila
 
       **Managing Director, Quadrant Capital Advisors, Inc.**
-
-      ## Rolf G. Skaar
-
-      **Central European Petroleum Ltd.**
-
-      ## Gregory G. Turnbull
-
-      **Corporate Secretary, Q.C., Managing Partner with McCarthy Tétrault LLP**
     title: CEP Board of Directors
 ---
 
