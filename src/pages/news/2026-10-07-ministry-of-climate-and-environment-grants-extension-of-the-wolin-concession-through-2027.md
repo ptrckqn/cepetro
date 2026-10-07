@@ -4,7 +4,7 @@ publish: false
 title: >-
   Ministry of Climate and Environment grants extension of the Wolin Concession
   through 2027
-hero: /images/uploads/mark-koch-kirln3jjvnu-unsplash.jpg
+hero: /images/uploads/swinoujscie_shutterstock.jpg
 category: General
 date: 2026-06-24T17:12:37.503Z
 description: ''
