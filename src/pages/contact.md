@@ -10,7 +10,7 @@ main:
     - 'Phone: [1-403-532-6551](tel:1-403-532-6551)'
     - 'Fax: [1-403-532-6554](tel:1-403-532-6554)'
     - 'Email: [info@cepetro.com](mailto:info@cepetro.com)'
-    - 'Press Contact: [Dariusz Sobczyński](mailto:d.sobczynski@pov.pl)'
+    - 'Press Contact: [Dariusz Sobczyński](mailto:dsobczynski@cepetro.com)'
   image: /images/uploads/screen-shot-2019-08-11-at-10.17.12-pm.png
   name: Central European Petroleum Ltd.
   title: Our Offices
